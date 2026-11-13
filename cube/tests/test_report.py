@@ -41,12 +41,14 @@ def test_tied_best_programs_are_all_shown():
 def test_budgets_table():
     by_distance, _ = figures()
     lines = report.budgets_text(by_distance, 8000).splitlines()
-    assert lines[0].split() == ["distance", "allowance", "thinking_tokens", "tokens_used", "forced", "cut_off_readable",
-                                "lookahead_1_positions", "most_cubes_written"]
-    # Distance 1: tokens used 1570, so at most 1570 / 40 = 39.25 cubes.
-    assert lines[2].split() == ["1", "8000", "1560.000", "1570.000", "0.080", "0.040", "18.000", "39.250"]
+    # The column of answers without a thinking count is always there, so the table has one shape.
+    assert lines[0].split() == ["distance", "allowance", "thinking_tokens", "without_thinking_count", "tokens_used",
+                                "forced", "cut_off_readable", "lookahead_1_positions", "most_cubes_written"]
+    # Distance 1: every answer has a count (0 without); tokens used 1570, so at most 1570 / 40 = 39.25 cubes.
+    assert lines[2].split() == ["1", "8000", "1560.000", "0", "1570.000", "0.080", "0.040", "18.000", "39.250"]
     by_distance["2"]["thinking_tokens_mean"] = None
-    assert report.budgets_text(by_distance, 8000).splitlines()[3].split()[2] == "n/a"
+    by_distance["2"]["answers_without_thinking_count"] = 25
+    assert report.budgets_text(by_distance, 8000).splitlines()[3].split()[2:4] == ["n/a", "25"]
 
 
 def test_state_by_state_table_with_both_chance_columns():

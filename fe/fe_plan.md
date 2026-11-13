@@ -22,12 +22,12 @@ The claim stays in its ceiling form: whatever the model scores beyond the best s
 ## The problems
 
 - **How they are made.** An equation is built from one of seven families of functions (constant, linear, quadratic and so on), so that it is true for that family. A goal is then made by applying two short chains of random substitutions and combining what they produce. The depth is measured afterwards by the search; it can be shorter than the chains used.
-- **What the post must say.** The goals are built this way, so they are long and do not look like textbook problems. Every problem has a planted route, and the shortest proof may be a different one.
+- **What the post must say.** The goals are built this way, so they are long and do not look like textbook problems. Every problem has a planted route, and the shortest proof may be a different one. The planted routes are three to five moves long, so every depth-2 problem is one where a two-move shortcut happens to exist (about 6% of attempts in the earlier run); depths 3 to 5 are the generator's ordinary output.
 - **Test set:** 300 different problems at each depth from 2 to 5, 1,200 in all. Two problems are "the same" if one becomes the other by swapping x and y or by scaling f.
 - **No filter on the share of right moves.** The old run kept only problems where 3% to 40% of moves were right. Here every problem is kept and guessing is reported at each depth. The old run's extra sets, made only of problems that one-move lookahead got wrong, are not rebuilt.
 - **Training set** for the programs that learn: up to 1,000 other problems per depth from the same generator (the cube's size), used all depths mixed, never containing a test problem or one that is the same in the sense above.
 - **Seed:** 20261112, the cube's.
-- **Nothing dropped silently.** A problem whose search exceeds its time limit is recorded as such and counted. If more than 1% do, the build stops.
+- **Nothing dropped silently.** A problem whose search exceeds its time limit is recorded as such and counted. If more than 1% of the problems searched do, the build stops.
 
 ## The simple programs
 
@@ -41,7 +41,7 @@ The claim stays in its ceiling form: whatever the model scores beyond the best s
 | Search | Lookahead of up to 1, 2 and 3 moves. A sequence that proves the goal wins outright, as the cube's lookahead stops when it sees a solved cube. Otherwise it scores the identities at the end of each sequence by how many of the goal's terms are present, less terms that belong to neither the goal nor the equation |
 | Search, narrow and deep | At each step, work out every available move, score each as above, keep the three best, and go on from those, for up to five moves or until the goal is proved. The answer is the first move of the path that proved the goal, or of the best-scoring path if none did. It works out a few hundred identities per problem, where three-move lookahead works out about 5,000 |
 
-The three paths and the five moves of the narrow-and-deep program are settings, fixed here before anything is scored, and the post names them. Ties are scored as the share of tied-best moves that are right. No neural network is on the ladder. **Room** at each depth is one minus the best simple program, counting all of them.
+The three paths and the five moves of the narrow-and-deep program are settings, fixed here before anything is scored, and the post names them. When pages tie for the last place kept, the choice among them is random, from the run's seed. Ties are scored as the share of tied-best moves that are right. No neural network is on the ladder. **Room** at each depth is one minus the best simple program, counting all of them.
 
 The old run's lookahead scored the same way but never checked whether the goal was proved. It is not on the ladder. It is kept in the tests only, to show that the rebuilt code gives the old run's scores on old problems.
 
@@ -51,7 +51,7 @@ The old run's lookahead scored the same way but never checked whether the goal w
 
 - **Model:** the standard Qwen model (Qwen3.8-27B, same version as the cube run), thinking on.
 - **Question:** the old layout, with the last lines changed to state the rule, in the same form as the cube's question: "A move is correct if it is the first move of a shortest possible proof of the goal. Each substitution applied to one identity counts as one move. Give one correct move, with the substitution written exactly as it appears in the list. Answer with `MOVE: (<identity number>) <substitution>`." The depth is not given.
-- **Thinking allowance:** 8,000 tokens, the cube's. On the cube, a probe with no limit found that the model's thinking did not end even within 64,000 tokens, and 8,000 was kept. Known for this puzzle from the earlier run, with the old question: the model had finished within 8,000 tokens on 18, 10 and 1 of 300 problems at depths 3, 4 and 5, and within 16,000 on 73, 35 and 9. So nearly every answer here will be a forced answer, as on the cube, and the post says so.
+- **Thinking allowance:** chosen after a probe on this puzzle that shows how long the model thinks when nothing cuts it off (see stage 3). On the cube the same probe found that thinking did not end even within 64,000 tokens, and 8,000 was kept; that is not assumed here. Known for this puzzle from the earlier run, with the old question: the model had finished within 8,000 tokens on 18, 10 and 1 of 300 problems at depths 3, 4 and 5, and within 16,000 on 73, 35 and 9.
 - **Enforcing it:** as in the cube run. Up to 1,000 more tokens are allowed for the answer. When the thinking reaches the limit the model server closes it with the stop sentence from the Qwen3 documentation and the model answers from what it has, in the same turn. Such an answer is called forced.
 - **Tries:** five per problem, with the cube run's settings, read from the model's own card: temperature 1.0, top-p 0.95, top-k 20, min-p 0.
 - **Total:** 1,200 problems x 5 tries = 6,000 answers.
@@ -63,8 +63,8 @@ As for the cube:
 - An unreadable answer counts as wrong and the model is not asked again. A readable move that is not available (it produces nothing new) also counts as wrong. Both shares are reported at each depth.
 - A problem's score is the share of its five tries that are right; a depth's score is the average over its 300 problems; every score has a standard error.
 - Problem by problem: the model "gets" a problem when at least three of five tries are right; a program gets it when more than half its weight is on right moves. For each program and depth: both, only the model, only the program, neither, with the count expected if the two were unrelated.
-- Budgets in their own units: the model's tokens used and share of forced answers; each search program's number of sequences examined.
-- **Same wrong moves,** defined exactly as in the cube plan. For each simple program and each depth, take every try where the model gave a readable move that is wrong, and look up how much weight the program put on that same move for that problem. The average, problem by problem, is the match rate. Two figures stand beside it: what uniform guessing among the wrong moves would give on those problems, and a shuffle figure (the same model moves set against the program's choices on the other problems at that depth), which shows how many matches come from habits alone. The recall rule and the strict surface reader serve as controls. It is worked out afterwards from the saved answers and picks.
+- Budgets, each in its own units: the model's allowance, tokens actually used and share of forced answers at each depth; each lookahead's number of sequences examined; the narrow-and-deep program's number of identities worked out. One common figure, as an upper limit only, as for the cube: the most identities the model could have written out in its tokens. The post says this places the model among the programs and does not rank them on equal terms.
+- **Same wrong moves,** defined exactly as in the cube plan. For each simple program and each depth, take every try where the model gave a readable move that is available and wrong (a move that is not available is left out, as an answer that is not one of the 18 turns is on the cube; how many are left out is reported), and look up how much weight the program put on that same move for that problem. The average, problem by problem, is the match rate. Two figures stand beside it: what uniform guessing among the wrong moves would give on those problems, and a shuffle figure (the same model moves set against the program's choices on the other problems at that depth), which shows how many matches come from habits alone. The recall rule and the strict surface reader serve as controls. It is worked out afterwards from the saved answers and picks.
 
 New for this puzzle:
 - **Forced and unforced answers are reported separately** at each depth: how many, and the share right.
@@ -81,7 +81,7 @@ New for this puzzle:
 - **No pass-or-fail verdict on the experiment.**
 
 ### Stage 3. The model run (GPUs)
-**Beside the run, a probe, copied from the cube's.** 32 problems from the training set, eight at each depth from 2 to 5, never test problems; one answer each; the real question and settings; no thinking limit, and up to 64,000 tokens per reply. Reported: thinking tokens per answer and by depth; how many finish within 8,000, 16,000, 32,000 and 64,000; whether an answer can be read. Nothing about right or wrong, no pass or fail, and none of it enters the experiment's data. One card for at most an hour. It does not change the allowance; its figures are reported beside the cube's.
+**First, a probe, copied from the cube's.** 32 problems from the training set, eight at each depth from 2 to 5, never test problems; one answer each; the real question and settings; no thinking limit, and up to 64,000 tokens per reply. Reported: thinking tokens per answer and by depth; how many finish within 8,000, 16,000, 32,000 and 64,000; whether an answer can be read. Nothing about right or wrong, no pass or fail, and none of it enters the experiment's data. One card for at most an hour. The allowance is chosen from its figures, before the run.
 
 The cube run's code as it stands after the cube's own run, and the cube's way of running: one pod with the asking program on the same pod as the model servers; first one card for the first 100 answers and the run's checks, then several cards of the same type once the checks have passed. The checks are the cube's: every record complete; forced answers readable about as often as unforced ones; no more than 15% unreadable; projected cost under the ceiling.
 
@@ -89,7 +89,7 @@ The cube run's code as it stands after the cube's own run, and the cube's way of
 - **Where the model sits, at each depth.** The model is above a program when the gap on the same problems is more than two standard errors of the gap. One depth alone is not a finding.
 - **Do its wrong moves resemble a program's?** The cube's rule: at a depth, the model's wrong moves resemble a program's when the match rate is more than two standard errors above the shuffle figure, and the excess is also more than two standard errors above the excess of each control (the recall rule and the strict surface reader). The post reports this as a resemblance between mistakes and claims nothing more from it.
 - **Same problems** is reported with the controls beside it and carries no verdict, because problems that are easy for one solver tend to be easy for all.
-- **Expected shape, written down so a surprise is visible** (from the old run): room zero at depths 2 and 3, where lookahead is perfect; the best program somewhere between .4 and .6 at depths 4 and 5; the model unknown under the new question, five tries and an 8,000-token allowance.
+- **Expected shape, written down so a surprise is visible** (from the old run): room zero at depths 2 and 3, where lookahead is perfect; the best program somewhere between .4 and .6 at depths 4 and 5; the model unknown under the new question and five tries.
 
 ## Code
 
@@ -101,7 +101,7 @@ A folder `fe/` beside `cube/` with the same layout: a package with one idea per 
 |---|---|---|
 | 1 and 2. CPU pod | $10, approved 2026-11-12 | The old build took about 10 minutes on 32 cores for 10,000 attempts; $1.12 an hour when last read |
 | 3. Probe | $8, approved 2026-11-12 | One card for at most an hour, as for the cube |
-| 3. Model run | $250, approved 2026-11-12 | 6,000 answers at 8,000 tokens of thinking. The cube's first measurement projects about $36 for 8,500 such answers on one card, so this should come in far under the ceiling |
+| 3. Model run | $250, approved 2026-11-12 | 6,000 answers. At 8,000 tokens of thinking the cube's first measurement projects about $36 for 8,500 answers on one card; a larger allowance costs in proportion. To be looked at again once the allowance is chosen |
 
 The run is set up for speed, not cost: the answers are independent of each other, so the number of cards is whatever finishes fastest, as for the cube. Spreading the work over more cards shortens the run and leaves the total about the same. Prices and stock are read again and stated before anything is created; every pod is stopped when done and none is deleted.
 

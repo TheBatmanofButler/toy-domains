@@ -67,16 +67,18 @@ def model_minus_program_text(by_distance):
 
 
 def budgets_text(by_distance, allowance):
-    """Each side's budget in its own units, plus the upper-limit figure: most cubes the thinking could hold."""
+    """Each side's budget in its own units, plus the upper-limit figure: most cubes the thinking could hold.
+    Beside the thinking tokens, always, the number of answers without a count, so the table has one shape."""
     distances = sorted(by_distance, key=int)
     searchers = sorted(by_distance[distances[0]].get("positions_examined_mean", {}))
-    header = ["distance", "allowance", "thinking_tokens", "tokens_used", "forced", "cut_off_readable"]
+    header = ["distance", "allowance", "thinking_tokens", "without_thinking_count", "tokens_used", "forced",
+              "cut_off_readable"]
     header += [f"{s}_positions" for s in searchers] + ["most_cubes_written"]
     rows = []
     for d in distances:
         row = by_distance[d]
-        rows.append([int(d), allowance, row["thinking_tokens_mean"], row["tokens_used_mean"], row["forced_share"],
-                     row["cut_off_but_readable_share"]]
+        rows.append([int(d), allowance, row["thinking_tokens_mean"], row["answers_without_thinking_count"],
+                     row["tokens_used_mean"], row["forced_share"], row["cut_off_but_readable_share"]]
                     + [row["positions_examined_mean"][s] for s in searchers] + [row["most_cubes_written"]])
     return _table(header, rows)
 

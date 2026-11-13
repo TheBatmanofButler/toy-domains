@@ -1,0 +1,177 @@
+"""Writes the report's tables as text and draws score against depth as an SVG picture.
+
+No figure is worked out here: every number comes from scoring.py (and, for the same-wrong-moves table, from
+wrong_moves.py). The picture is drawn by hand as SVG so that
+no plotting library is needed.
+"""
+from xml.sax.saxutils import escape
+
+
+def _cell(value):
+    if value is None:
+        return "n/a"
+    return f"{value:.3f}" if isinstance(value, float) else str(value)
+
+
+def _table(header, rows):
+    widths = [max(len(_cell(r[i])) for r in [header] + rows) for i in range(len(header))]
+    lines = ["  ".join(_cell(v).rjust(w) for v, w in zip(row, widths)) for row in [header] + rows]
+    return "\n".join([lines[0], "-" * len(lines[0])] + lines[1:])
+
+
+def scores_text(by_depth):
+    """One row per depth: each program, the best programs (ties joined by +), room, and the model's figures."""
+    depths = sorted(by_depth, key=int)
+    programs = sorted(by_depth[depths[0]]["programs"])
+    with_model = "model" in by_depth[depths[0]]
+    header = ["depth", "problems"] + programs + ["best", "room"]
+    if with_model:
+        header += ["model", "unreadable", "not_available", "forced", "thinking_tokens"]
+    rows = []
+    for d in depths:
+        row = by_depth[d]
+        line = ([int(d), row["problems"]] + [row["programs"][p] for p in programs]
+                + ["+".join(row["best_programs"]), row["room"]])
+        if with_model:
+            line += [row["model"], row["unreadable_share"], row["not_available_share"], row["forced_share"],
+                     row["thinking_tokens_mean"]]
+        rows.append(line)
+    return _table(header, rows)
+
+
+def standard_errors_text(by_depth):
+    """One row per depth: the standard error of each program's score, of room (the best program's, named),
+    and of the model's score. n/a where a depth has one problem."""
+    depths = sorted(by_depth, key=int)
+    programs = sorted(by_depth[depths[0]]["programs"])
+    with_model = "model" in by_depth[depths[0]]
+    header = ["depth"] + programs + ["room", "room_of"] + (["model"] if with_model else [])
+    rows = []
+    for d in depths:
+        row = by_depth[d]
+        line = ([int(d)] + [row["programs_standard_error"][p] for p in programs]
+                + [row["room_standard_error"], row["room_standard_error_of"]])
+        rows.append(line + ([row["model_standard_error"]] if with_model else []))
+    return _table(header, rows)
+
+
+def model_minus_program_text(by_depth):
+    """One row per depth: for each program, the model's mean per-problem score minus the program's on the same
+    problems, and that difference's standard error."""
+    depths = sorted(by_depth, key=int)
+    programs = sorted(by_depth[depths[0]]["programs"])
+    header = ["depth"] + [f"{p}{part}" for p in programs for part in ("", "_se")]
+    rows = [[int(d)] + [value for p in programs for value in (by_depth[d]["model_minus_program"][p]["mean"],
+                                                              by_depth[d]["model_minus_program"][p]["standard_error"])]
+            for d in depths]
+    return _table(header, rows)
+
+
+def budgets_text(by_depth, allowance):
+    """Each side's budget in its own units (each lookahead's sequences examined, narrow-and-deep's identities
+    worked out), plus the upper-limit figure: most identities the model could have written out."""
+    depths = sorted(by_depth, key=int)
+    sequences = sorted(by_depth[depths[0]].get("sequences_examined_mean", {}))
+    identities = sorted(by_depth[depths[0]].get("identities_worked_out_mean", {}))
+    header = ["depth", "allowance", "thinking_tokens", "tokens_used", "forced", "cut_off_readable"]
+    header += [f"{s}_sequences" for s in sequences] + [f"{s}_identities" for s in identities]
+    header += ["most_identities_written"]
+    rows = []
+    for d in depths:
+        row = by_depth[d]
+        rows.append([int(d), allowance, row["thinking_tokens_mean"], row["tokens_used_mean"], row["forced_share"],
+                     row["cut_off_but_readable_share"]]
+                    + [row["sequences_examined_mean"][s] for s in sequences]
+                    + [row["identities_worked_out_mean"][s] for s in identities] + [row["most_identities_written"]])
+    return _table(header, rows)
+
+
+def problem_by_problem_text(table):
+    """For each program, the four counts per depth and the 'only the model' count expected by chance, in
+    two forms: if the model guessed, and if the model got problems independently of the program (with its
+    standard error)."""
+    parts = []
+    for program in sorted(table):
+        rows = [[int(d), r["both"], r["only_model"], r["only_program"], r["neither"],
+                 r["only_model_expected_by_chance"], r["only_model_expected_if_independent"],
+                 r["only_model_if_independent_standard_error"]]
+                for d, r in sorted(table[program].items(), key=lambda item: int(item[0]))]
+        parts.append(f"{program}\n" + _table(["depth", "both", "only_model", "only_program", "neither",
+                                               "only_model_if_guessing", "only_model_if_independent",
+                                               "if_independent_se"], rows))
+    return "\n\n".join(parts)
+
+
+def wrong_moves_text(table):
+    """For each program, one row per depth from wrong_moves.py: the problems with a wrong try and the wrong
+    tries behind the figures, the tries left out because their move is not available, the match rate, the
+    uniform and shuffle figures, the excess (match minus shuffle) and its standard error, and the excess over
+    each control with its standard error."""
+    parts = []
+    for program in sorted(table):
+        rows_by_depth = sorted(table[program].items(), key=lambda item: int(item[0]))
+        controls = sorted(rows_by_depth[0][1]["excess_over_control"])
+        header = (["depth", "problems", "wrong_tries", "left_out_not_available", "match", "uniform", "shuffle",
+                   "excess", "excess_se"]
+                  + [f"over_{c}{part}" for c in controls for part in ("", "_se")])
+        rows = [[int(d), r["problems"], r["wrong_tries"], r["not_available_left_out"], r["match_rate"], r["uniform"], r["shuffle"], r["excess"],
+                 r["excess_standard_error"]]
+                + [value for c in controls for value in (r["excess_over_control"][c]["mean"],
+                                                         r["excess_over_control"][c]["standard_error"])]
+                for d, r in rows_by_depth]
+        parts.append(f"{program}\n" + _table(header, rows))
+    return "\n\n".join(parts)
+
+
+def forced_and_unforced_text(by_depth):
+    """One row per depth: how many answers were forced and how many not, and the share right among each."""
+    rows = [[int(d), by_depth[d]["forced_answers"], by_depth[d]["forced_share_right"], by_depth[d]["unforced_answers"],
+             by_depth[d]["unforced_share_right"]] for d in sorted(by_depth, key=int)]
+    return _table(["depth", "forced", "forced_right", "unforced", "unforced_right"], rows)
+
+
+def curve_svg(by_depth, width=720, height=420):
+    """Score (0 to 1) against depth, one line per program and, if present, the model's line drawn thicker,
+    in black and dashed, so it stands out from the programs. Every point has a bar of one standard error above
+    and below (none where a depth has one problem); bars are cut at 0 and 1 in the drawing only."""
+    depths = sorted(by_depth, key=int)
+    names = sorted(by_depth[depths[0]]["programs"])
+    series = {name: [(by_depth[d]["programs"][name], by_depth[d]["programs_standard_error"][name])
+                     for d in depths] for name in names}
+    if "model" in by_depth[depths[0]]:
+        series["model"] = [(by_depth[d]["model"], by_depth[d]["model_standard_error"]) for d in depths]
+    left, right, top, bottom = 60, 170, 20, 50
+    first, last = int(depths[0]), int(depths[-1])
+
+    def x(d):
+        return left + (int(d) - first) * (width - left - right) / max(1, last - first)
+
+    def y(score):
+        return top + (1 - score) * (height - top - bottom)
+
+    colours = ["#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b", "#e377c2", "#7f7f7f",
+               "#bcbd22", "#17becf"]
+    parts = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}">',
+             f'<rect width="{width}" height="{height}" fill="white"/>',
+             f'<line x1="{left}" y1="{y(0)}" x2="{x(last)}" y2="{y(0)}" stroke="black"/>',
+             f'<line x1="{left}" y1="{y(0)}" x2="{left}" y2="{y(1)}" stroke="black"/>',
+             f'<text x="{(left + x(last)) / 2}" y="{height - 10}" text-anchor="middle">depth</text>']
+    for tick in (0, 0.25, 0.5, 0.75, 1):
+        parts.append(f'<text x="{left - 8}" y="{y(tick) + 4}" text-anchor="end">{tick}</text>')
+    for d in depths:
+        parts.append(f'<text x="{x(d)}" y="{y(0) + 18}" text-anchor="middle">{int(d)}</text>')
+    for n, (name, scores) in enumerate(series.items()):
+        is_model = name == "model"
+        colour = "#000000" if is_model else colours[n % len(colours)]
+        style = 'stroke-width="4" stroke-dasharray="8 4"' if is_model else 'stroke-width="2"'
+        points = " ".join(f"{x(d):.1f},{y(s):.1f}" for d, (s, _) in zip(depths, scores))
+        parts.append(f'<polyline fill="none" stroke="{colour}" {style} points="{points}"/>')
+        for d, (score, error) in zip(depths, scores):
+            if error is not None:
+                low, high = y(max(0, score - error)), y(min(1, score + error))
+                parts.append(f'<line class="error-bar" x1="{x(d):.1f}" y1="{low:.1f}" x2="{x(d):.1f}" y2="{high:.1f}" '
+                             f'stroke="{colour}" stroke-width="1"/>')
+        label = "MODEL" if is_model else name
+        parts.append(f'<text x="{width - right + 10}" y="{top + 16 * n + 10}" fill="{colour}">{escape(label)}</text>')
+    parts.append("</svg>")
+    return "\n".join(parts)

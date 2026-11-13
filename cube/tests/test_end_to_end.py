@@ -9,7 +9,8 @@ script k = 1 right, 2 wrong, 3 unreadable, 4 out of thinking. So at every distan
 then the end-of-thinking token and 10 answer tokens (101 in all), or reaches the budget after 8,000 tokens,
 when the server's end-of-thinking text adds 19 thinking tokens and the end-of-thinking token, then 4 answer
 tokens (8,024 in all). The thinking figure is the model's own, the 8,000 before the end text for a forced
-answer: (3 x 90 + 8000) / 4 = 2067.5; tokens used (3 x 101 + 8024) / 4 = 2081.75.
+answer: (3 x 90 + 8000) / 4 = 2067.5, with no answer lacking a count; tokens used (3 x 101 + 8024) / 4 =
+2081.75. Every answer is asked with the same settings and model version, so the report stage goes ahead.
 Tokens per cube string: the stand-in counts words + 10 = 11.
 The model gets states 1 and 4. Lookahead of depth k scores 1 at distances up to k, so room is 0 at 2 and 3,
 and lookahead_3 gets every state there: both 2, only the program 2, only the model 0, neither 0, and no
@@ -121,6 +122,8 @@ def test_final_scores_equal_the_hand_worked_table(chain):
         assert row["model"] == 0.5
         assert row["unreadable_share"] == 0.25 and row["forced_share"] == 0.25 and row["failed_share"] == 0
         assert row["thinking_tokens_mean"] == 2067.5 and row["tokens_used_mean"] == 2081.75
+        # The stand-in gives token ids with every reply, so no answer lacks a thinking count.
+        assert row["answers_without_thinking_count"] == 0
         assert row["most_cubes_written"] == pytest.approx(2081.75 / 11)
         for depth in (1, 2, 3):
             if int(distance) <= depth:

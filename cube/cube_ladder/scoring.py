@@ -180,17 +180,20 @@ def answer_use(answers):
     that did not fail. An answer is unreadable when the request worked but no turn could be read from it.
     An answer is forced when the server closed its thinking at the allowance (see thinking_end.py).
     `thinking_tokens_mean` is the model's own thinking (`own_thinking_tokens`), so it can be set beside the
-    allowance; it is exact but None unless the server gave token ids for every answer. `tokens_used_mean`
+    allowance. It is exact, and taken over the answers that have a count (the server gave token ids);
+    `answers_without_thinking_count` says how many that did not fail lack one, so a missing count shows
+    rather than emptying the figure. It is None only when no answer has a count. `tokens_used_mean`
     counts every token of the reply (thinking, the server's end text, answer), so it is an upper limit on
     thinking."""
     worked = [a for a in answers if not a["failed"]]
-    thinking = [own_thinking_tokens(a) for a in worked]
+    counted = [t for t in (own_thinking_tokens(a) for a in worked) if t is not None]
     return {"answers": len(answers),
             "failed_share": _mean([bool(a["failed"]) for a in answers]),
             "unreadable_share": _mean([not a["failed"] and model_turn(a) is None for a in answers]),
             "forced_share": _mean([bool(a["forced"]) for a in answers]),
             "cut_off_but_readable_share": _mean([bool(a["cut_off_but_readable"]) for a in answers]),
-            "thinking_tokens_mean": _mean(thinking) if worked and None not in thinking else None,
+            "thinking_tokens_mean": _mean(counted) if counted else None,
+            "answers_without_thinking_count": len(worked) - len(counted),
             "tokens_used_mean": _mean([a["tokens_used"] for a in worked]) if worked else None}
 
 

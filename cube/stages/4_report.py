@@ -1,7 +1,8 @@
 """Stage 4: score everything and write the report.
 
 Reads test_states.jsonl, program_picks.jsonl, model_answers.jsonl and (for the tokens one cube takes to write
-out) model_run_check.json from --data. Writes scores_by_distance.json, state_by_state.json, wrong_turns.json,
+out) model_run_check.json from --data. Stops if the answers were not all asked under the same settings
+(cube_ladder/run_settings.py). Writes scores_by_distance.json, state_by_state.json, wrong_turns.json,
 report.txt and curve.svg. Every figure comes from cube_ladder/scoring.py and, for the same wrong turns,
 cube_ladder/wrong_turns.py.
 """
@@ -12,7 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from cube_ladder import report, scoring, wrong_turns  # noqa: E402
+from cube_ladder import report, run_settings, scoring, wrong_turns  # noqa: E402
 from cube_ladder.states import read_jsonl  # noqa: E402
 
 
@@ -45,7 +46,11 @@ def main(argv=None):
     picks = read_jsonl(data / "program_picks.jsonl")
     answers = read_jsonl(data / "model_answers.jsonl")
     tokens_per_cube = json.loads((data / "model_run_check.json").read_text())["tokens_per_cube_string"]
-    allowance = answers[0]["settings"]["thinking_allowance"]
+    # Every answer's settings are read: answers asked in different ways must not be mixed in one report.
+    try:
+        allowance = run_settings.shared_settings(answers)["thinking_allowance"]
+    except run_settings.SettingsDiffer as error:
+        sys.exit(f"STOP: {error}")
 
     by_distance = scoring.scores_by_distance(test, picks, answers, args.tries)
     for row in by_distance.values():

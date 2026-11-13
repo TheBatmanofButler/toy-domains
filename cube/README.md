@@ -10,8 +10,8 @@ move: memory, reading the surface, search, or something more. Started 2026-11-12
   `programs/` holds one file per simple program; `question.py`, `model_server.py`, `model_run.py`,
   `thinking_end.py`, `run_check.py` and `answers.py` ask the model, see how its thinking ended, check the run
   and read its answers; `scoring.py` works out
-  every figure, except the same-wrong-turns comparison, which is in `wrong_turns.py`; `report.py` writes the
-  tables and the curve.
+  every figure, except the same-wrong-turns comparison, which is in `wrong_turns.py`; `run_settings.py`
+  checks that every answer was asked under the same settings; `report.py` writes the tables and the curve.
 - `stages/`: one command per stage of `cube_plan.md`. Stages talk only through files in a data folder.
 - `tests/`: one test file per code file (three for `model_run.py`: the order of asking and several servers are
   in `test_model_run_servers.py`, how answers are saved in `test_model_run_saving.py`; two for
@@ -19,7 +19,8 @@ move: memory, reading the surface, search, or something more. Started 2026-11-12
   server; the budget check apart from the rest of `run_check.py` in `test_budget_check.py`; the figures on
   the model's use of its answers apart from the rest of `scoring.py` in `test_answer_use.py`; and stage 3's
   own work around the run, beyond what `test_stages.py` covers, in `test_stage_3.py` and, for the thinking
-  budget, `test_stage_3_budget.py`), an end-to-end test, a stand-in model server (its tokenizer and scripted
+  budget, `test_stage_3_budget.py`; `run_settings.py` with the report stage that uses it, in
+  `test_stage_4.py`), an end-to-end test, a stand-in model server (its tokenizer and scripted
   replies in `stand_in_replies.py`) and a stand-in solver program, saved fixtures (see `tests/fixtures/README.md`) and a copy of the
   old run's cube model used only as a second opinion (`tests/reference/`).
 - `data/`: where the stages write, when given `--data data`.
@@ -211,6 +212,16 @@ message if one of its checks fails.
    comparison: for each program and distance, the match rate, the uniform and shuffle figures, the excess and
    the excess over each control, with their standard errors and the counts behind them), `report.txt` and
    `curve.svg`. It reads only saved files, and run twice it writes the same files.
+
+   It reads the settings of every answer, not just the first: if the thinking allowance, the answer
+   allowance, the stop sentence, the sampling values or the model version differ between answers, it stops
+   and names each setting that differs with every value and how many answers have it
+   (`cube_ladder/run_settings.py`), rather than mixing answers asked in different ways under one allowance.
+
+   The thinking-tokens figure at each distance is the mean over the answers whose thinking tokens were
+   counted (the server gave token ids). Beside it, `answers_without_thinking_count` says how many answers
+   that did not fail lack a count; the budgets table always shows it as a column (0 in the normal case), so
+   the table has one shape. The figure is n/a only when no answer at the distance has a count.
 
 ## Margins of error
 
