@@ -120,8 +120,11 @@ message if one of its checks fails.
    After the first 100 answers the run checks itself and writes `model_run_check.json`: every record complete
    and thinking present on most answers; forced answers readable at least as often as unforced ones less
    `--readable-margin` (0.15); no more than 15% unreadable; projected cost under `--cost-ceiling` ($300): the
-   speed measured on those 100 answers, from the time the first finished to the time the last did, at
-   `--price-per-hour` as given on the start that makes the check. The file and the printout give the number of
+   speed measured on those 100 answers, at `--price-per-hour` as given on the start that makes the check. The
+   speed is the number of answers over the time from the first request starting (an answer's `finished_at`
+   less its `seconds`) to the last answer finishing. It is measured from the first start, not the first
+   finish, because requests sent together also finish together. Answers saved without `seconds` stop the
+   check with a plain message. The file and the printout give the number of
    forced and of unforced answers compared; if either is under 10, that comparison is reported as "not tested"
    (`forced_comparison`) and the run carries on, with one exception: 3 to 9 forced answers of which fewer than
    half are readable fail the check (`forced_comparison` still reads "not tested"); with 0, 1 or 2 forced

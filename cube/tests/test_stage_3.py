@@ -1,6 +1,7 @@
 """Tests of stage 3's own work around the run: the check made once, failed first answers asked again before
-the check, the servers and price the check file records, the token counts, the same address given twice, and
-a server that hangs. The thinking budget's part in stage 3 is tested in test_stage_3_budget.py."""
+the check, the servers and price the check file records, the token counts, the same address given twice, a
+server that hangs, and answers saved without how long they took. The thinking budget's part in stage 3 is
+tested in test_stage_3_budget.py."""
 import importlib.util
 import json
 import threading
@@ -175,3 +176,14 @@ def test_a_server_that_hangs_gives_failed_records_after_the_timeout(tmp_path, st
     assert sorted(r["server"] for r in records) == sorted([hanging.base_url, alive.base_url] * 2)
     assert all(r["failed"] and "timed out" in r["error"] for r in records if r["server"] == hanging.base_url)
     assert not any(r["failed"] for r in records if r["server"] == alive.base_url)
+
+
+def test_answers_saved_without_seconds_stop_the_check_with_a_plain_message(tmp_path, stand_in):
+    respond = four_states(tmp_path)
+    with pytest.raises(SystemExit, match="STOP"):
+        stage_3(tmp_path, [stand_in(respond)], "--cost-ceiling", "1e-12")
+    # As an older file would have them: no `seconds`, so the speed cannot be measured from the first start.
+    old = [{k: v for k, v in r.items() if k != "seconds"} for r in saved(tmp_path)]
+    write_jsonl(tmp_path / "model_answers.jsonl", old)
+    with pytest.raises(SystemExit, match="cannot be made: speed cannot be measured: 12 answers were saved without"):
+        stage_3(tmp_path, [stand_in(respond)])

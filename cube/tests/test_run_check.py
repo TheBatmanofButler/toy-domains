@@ -2,16 +2,17 @@
 The check on the server's thinking budget is tested in test_budget_check.py, on the same answers."""
 import pytest
 
-from cube_ladder.run_check import answers_per_hour, check, projected_run, readable_share
-from cube_ladder.scoring import ScoringError
+from cube_ladder.run_check import check, projected_run, readable_share
 
 
 def answer(n, text="MOVE: R", forced=False, thinking="I think.", failed=False, tokens=100):
-    """Answer number n finishes at 36 n seconds, so 100 answers take 99 x 36 s: 100 per hour after the first.
+    """Answer number n starts at 36 n seconds and takes 36 s, one after another, so 100 answers take 100 x 36 s
+    from the first start to the last finish: 100 per hour.
     Unforced answers think 100 tokens; forced ones were closed at the allowance (see `as_forced`)."""
     return as_forced({"state_id": f"test-02-{n:04d}", "try": 1, "question": "q", "thinking": thinking,
                       "answer_text": text, "failed": failed, "generated_tokens": tokens, "tokens_used": tokens,
-                      "cut_off_but_readable": False, "finished_at": 36.0 * n, "settings": {"thinking_allowance": 8000},
+                      "cut_off_but_readable": False, "finished_at": 36.0 * (n + 1), "seconds": 36.0,
+                      "settings": {"thinking_allowance": 8000},
                       "completion_token_ids": [1], "think_end_token_id": 9, "end_text_token_ids": [5] * 19 + [9]},
                      forced)
 
@@ -49,7 +50,7 @@ def test_good_answers_pass_with_figures_by_hand():
     assert result["budget_check"] == "as assumed" and result["end_text_outside_budget_count"] == 20
     assert result["end_text_inside_budget_count"] == 0 and result["thinking_allowances"] == [8000]
     assert result["budget_misfits"] == [] and result["budget_misfit_count"] == 0
-    # 99 answers in 99 x 36 s = 100 per hour; 8,500 answers take 85 hours, at $2 an hour $170.
+    # 100 answers in 100 x 36 s = 100 per hour; 8,500 answers take 85 hours, at $2 an hour $170.
     assert result["answers_per_hour"] == pytest.approx(100)
     assert result["projected_hours"] == pytest.approx(85) and result["projected_cost"] == pytest.approx(170)
 
@@ -145,9 +146,6 @@ def test_projected_cost_above_the_ceiling_fails():
     assert not result["passed"] and "projected cost $340 is above $300" in result["problems"][0]
 
 
-def test_speed_and_projection():
+def test_projection():
+    # The speed itself is tested in test_run_speed.py.
     assert projected_run(answers_per_hour=500, answers_needed=9000, price_per_hour=10) == {"hours": 18, "cost": 180}
-    # 5 answers finishing at 0, 9, 18, 27 and 36 seconds: 4 answers in 36 s = 400 per hour.
-    assert answers_per_hour([18, 0, 9, 36, 27]) == pytest.approx(400)
-    with pytest.raises(ScoringError):
-        answers_per_hour([5.0, 5.0])

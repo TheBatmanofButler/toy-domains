@@ -2,7 +2,8 @@
 
 Writes model_answers.jsonl to --data, saving each answer as it arrives; the same command carries on where it
 stopped. After the first --check-after answers (100) the run pauses and checks itself (cube_ladder/run_check.py)
-and writes model_run_check.json, with the tokens one cube takes to write out. If a check fails it stops; after
+and writes model_run_check.json, with the tokens one cube takes to write out. Speed is those answers over the
+time from the first request starting to the last answer finishing. If a check fails it stops; after
 a decision to go on anyway, run again with --carry-on. Too few forced or unforced answers to compare is reported
 as not tested, but 3 to 9 forced answers with fewer than half readable fails the check. With --retry-failed,
 failed requests are asked again; failed ones among the first answers are asked again before the check.
@@ -97,8 +98,11 @@ def make_check(args, test, servers, out, check_path, ask):
     ask(limit=max(0, args.check_after - len(model_run.read_saved(out))))
     first = model_run.read_saved(out)[:args.check_after]
     # The budget is judged by the allowance each answer was asked with, which is in its own record.
-    result = run_check.check(first, len(test) * args.tries, args.price_per_hour, args.cost_ceiling,
-                             args.readable_margin)
+    try:
+        result = run_check.check(first, len(test) * args.tries, args.price_per_hour, args.cost_ceiling,
+                                 args.readable_margin)
+    except scoring.ScoringError as error:    # e.g. answers saved without `seconds`: say so, without a trace
+        sys.exit(f"STOP: the run's check on itself cannot be made: {error}")
     # One server that answers is found once and gives all 20 counts (every server runs the same model).
     counts = model_run.from_any_server(servers, lambda server: [server.count_tokens(colours(s["cube"]))
                                                                 for s in test[:20]])

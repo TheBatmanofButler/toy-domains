@@ -6,19 +6,34 @@ ceiling. With too few forced or too few unforced answers to compare, the second 
 tested, except that a handful of forced answers (3 to 9) mostly unreadable still fails it. Beside those four,
 a check that the server's thinking budget behaves as the run assumes (`budget_check`). The answers checked are
 part of the real data. The answers' figures come from scoring.py; the speed and cost projection are worked out
-here. With several servers the speed is theirs together, so the price per hour is the total for all of them.
+here. Speed is the number of answers checked over the time from the first request starting to the last answer
+finishing (see `answers_per_hour`). With several servers the speed is theirs together, so the price per hour is
+the total for all of them.
 """
 from cube_ladder import scoring
 from cube_ladder.scoring import ScoringError
 from cube_ladder.thinking_end import ALLOWANCE_TOLERANCE, fits_allowance
 
 
-def answers_per_hour(finished_at):
-    """Speed from the times (seconds) at which answers finished: answers after the first, per hour between
-    the first and the last. A pause in the run makes it look slower, never faster."""
-    if len(finished_at) < 2 or max(finished_at) == min(finished_at):
-        raise ScoringError("need at least two answers finished at different times to measure speed")
-    return (len(finished_at) - 1) / ((max(finished_at) - min(finished_at)) / 3600)
+def answers_per_hour(answers):
+    """Speed, in answers per hour: the number of `answers` over the time from the first request starting to
+    the last answer finishing. A request started at its record's `finished_at` less its `seconds` (how long
+    that try took). Measured from the first start, not the first finish, because requests sent together finish
+    together: the time between finishes says nothing about how long each took. A single answer gives one
+    answer over its own duration. A pause in the run (the time between two starts of it) only adds to the
+    time measured, so it makes the run look slower, never faster. Records saved without `seconds` (an older
+    file) cannot be measured and give a plain error."""
+    if not answers:
+        raise ScoringError("no answers to measure speed on")
+    unmeasured = [f"{a['state_id']} try {a['try']}" for a in answers if "seconds" not in a or "finished_at" not in a]
+    if unmeasured:
+        raise ScoringError(f"speed cannot be measured: {len(unmeasured)} answers were saved without how long they "
+                           f"took (`seconds`) or when they finished (`finished_at`), first {unmeasured[:3]}")
+    first_start = min(a["finished_at"] - a["seconds"] for a in answers)
+    last_finish = max(a["finished_at"] for a in answers)
+    if last_finish <= first_start:
+        raise ScoringError("speed cannot be measured: the answers took no time")
+    return len(answers) / ((last_finish - first_start) / 3600)
 
 
 def projected_run(answers_per_hour, answers_needed, price_per_hour):
@@ -117,7 +132,7 @@ def check(answers, answers_needed, price_per_hour, cost_ceiling=300.0, readable_
     budget, budget_problem, misfits = budget_check(answers)
     if budget_problem:
         problems.append(budget_problem)
-    speed = answers_per_hour([a["finished_at"] for a in answers])
+    speed = answers_per_hour(answers)
     projected = projected_run(speed, answers_needed, price_per_hour)
     if projected["cost"] > cost_ceiling:
         problems.append(f"projected cost ${projected['cost']:.0f} is above ${cost_ceiling:.0f}")
