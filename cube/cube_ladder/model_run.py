@@ -1,25 +1,33 @@
 """Asks the model about each test state several times and saves every answer as it arrives.
 
-Thinking is on, with an allowance of 8,000 tokens for thinking and, on top, a small allowance for the answer.
-If the model runs out before a readable answer, its thinking is closed with a stop sentence and it carries on
-into its answer in the same turn (model_server.continuation_request); the record is marked `forced`. Every
-record keeps the exact question, thinking and answer, the token ids if the server returns them, the model
-version and the settings. A request that keeps failing is recorded as failed, never dropped. A stopped run
-can be started again: answers already saved are skipped.
+Thinking is on, with an allowance of 8,000 tokens for thinking and, on top, 1,000 for the answer.
+One request per answer: the server enforces the thinking allowance itself, closing the thinking with the stop
+sentence when it runs out, and the model answers in the same reply; such a record is marked `forced` (see
+thinking_end.py for what that takes). Every record keeps the exact question, thinking and answer, the token
+ids if the server returns them, the model version, the settings and the server that answered. A request that
+keeps failing is recorded as failed, never dropped. A stopped run can be started again, with more or fewer
+servers: answers already saved are skipped.
+
+Order of asking: the first try of every state before the second try of any, and within a try one state at each
+distance in turn, so the first answers (the ones the run checks itself on) are different states spread evenly
+over the distances.
 """
 import json
 import os
+import random
 import threading
 import time
 import zlib
 from concurrent.futures import ThreadPoolExecutor
 
 from cube_ladder.answers import read_turn
-from cube_ladder.model_server import BadReply, RequestFailed, continuation_request, question_request, read_reply
+from cube_ladder.model_server import (THINK_END, BadReply, RequestFailed, end_of_thinking_text, question_request,
+                                      read_reply)
 from cube_ladder.question import SYSTEM_TEXT, build_question
+from cube_ladder.thinking_end import how_thinking_ended
 
 THINKING_ALLOWANCE = 8000
-ANSWER_ALLOWANCE = 200
+ANSWER_ALLOWANCE = 1000
 
 
 def request_seed(run_seed, state_id, try_number):
@@ -28,58 +36,55 @@ def request_seed(run_seed, state_id, try_number):
     return zlib.crc32(f"{run_seed}:{state_id}:{try_number}".encode()) % 2**31
 
 
-def split_token_count(token_ids, think_end_id):
-    """(thinking tokens, answer tokens) from the completion's token ids: the tokens before and after the
-    end-of-thinking token, which itself counts as neither. If the thinking never ended, every token is
-    thinking. (None, None) if the server gave no ids or the model has no single end-of-thinking token."""
-    if token_ids is None or think_end_id is None:
-        return None, None
-    if think_end_id not in token_ids:
-        return len(token_ids), 0
-    end = token_ids.index(think_end_id)
-    return end, len(token_ids) - end - 1
+def order_of_asking(states, tries, run_seed):
+    """Every (state, try) in the order they are asked. Try 1 of every state comes first, then try 2, and so on.
+    Within a try the states go one distance after another, smallest first (a state at 2, one at 3, ..., then
+    round again; a distance whose states are used up drops out). Inside each distance the order is a shuffle
+    set by the run's seed and that distance, the same for every try; states are sorted by id before the
+    shuffle so the order does not depend on the order of the file."""
+    by_distance = {}
+    for state in sorted(states, key=lambda s: s["id"]):
+        by_distance.setdefault(state["distance"], []).append(state)
+    for distance, group in by_distance.items():
+        random.Random(f"{run_seed}:order:{distance}").shuffle(group)
+    groups = [by_distance[d] for d in sorted(by_distance)]
+    one_try = [group[i] for i in range(max(map(len, groups), default=0)) for group in groups if i < len(group)]
+    return [(state, t) for t in range(1, tries + 1) for state in one_try]
 
 
-def ask(server, state, try_number, settings, model_version, run_seed, think_end_id):
-    """One try at one state. Returns the record to save. `settings` holds "sampling" (sent with each
-    request), "source" (where those values were read), "stop_sentence", "thinking_allowance" and
-    "answer_allowance"; all are written into the record."""
+def ask(server, state, try_number, settings, model_version, run_seed, think_end_id, end_text_ids):
+    """One try at one state, in one request. Returns the record to save. `settings` holds "sampling" (sent
+    with each request), "source" (where those values were read), "stop_sentence", "thinking_allowance" and
+    "answer_allowance"; all are written into the record. `end_text_ids` is the end-of-thinking text in the
+    model's tokens (or None), used to see whether the server closed the thinking."""
     question = build_question(state["cube"])
     seed = request_seed(run_seed, state["id"], try_number)
     record = {"state_id": state["id"], "try": try_number, "distance": state["distance"], "question": question,
               "system_text": SYSTEM_TEXT, "thinking": None, "answer_text": None, "turn": None, "right": False,
-              "forced": False, "cut_off_but_readable": False, "thinking_tokens": None, "answer_tokens": None,
-              "generated_tokens": None, "forced_answer_tokens": 0, "model_version": model_version,
-              "settings": settings, "request_seed": seed, "think_end_token_id": think_end_id,
+              "forced": False, "stop_sentence_found_in": [], "thinking_tokens_before_end_text": None,
+              "at_allowance": None, "end_text_inside_budget": None, "cut_off": False,
+              "cut_off_but_readable": False, "thinking_tokens": None, "answer_tokens": None,
+              "generated_tokens": None, "model_version": model_version, "settings": settings, "request_seed": seed,
+              "think_end_token_id": think_end_id, "end_text_token_ids": end_text_ids, "server": server.base_url,
               "failed": False, "error": None}
     started = time.time()
     messages = [{"role": "system", "content": SYSTEM_TEXT}, {"role": "user", "content": question}]
-    sampling = settings["sampling"]
     try:
-        first = question_request(server.model_name, messages, settings["thinking_allowance"] + settings["answer_allowance"],
-                                 sampling, seed)
-        thinking, answer, finish, token_ids, generated, prompt_ids = read_reply(server.chat(first))
-        thinking_tokens, answer_tokens = split_token_count(token_ids, think_end_id)
-        ran_out = finish == "length"
-        record.update(thinking=thinking, answer_text=answer, first_answer_text=answer, finish_reason=finish,
-                      generated_tokens=generated, thinking_tokens=thinking_tokens, answer_tokens=answer_tokens,
-                      prompt_token_ids=prompt_ids, completion_token_ids=token_ids,
-                      cut_off_but_readable=ran_out and read_turn(answer) is not None)
-        if ran_out and read_turn(answer) is None:
-            request, assistant_text = continuation_request(server.model_name, messages, thinking,
-                                                           settings["stop_sentence"], settings["answer_allowance"],
-                                                           sampling, seed)
-            more_thinking, more_answer, _, more_ids, more_tokens, _ = read_reply(server.chat(request))
-            # The reasoning parser may label the continuation as thinking; the answer is whichever came back.
-            record.update(forced=True, answer_text=more_answer or more_thinking,
-                          continuation_answer_field="content" if more_answer else "reasoning",
-                          continuation_text=assistant_text, forced_answer_tokens=more_tokens,
-                          continuation_token_ids=more_ids)
+        request = question_request(server.model_name, messages, settings["thinking_allowance"],
+                                   settings["answer_allowance"], settings["sampling"], seed)
+        reply = read_reply(server.chat(request))
+        cut_off = reply["finish_reason"] == "length"     # any other reason ("stop", "abort", ...) is not the limit
+        record.update(thinking=reply["thinking"], answer_text=reply["answer"], finish_reason=reply["finish_reason"],
+                      generated_tokens=reply["completion_tokens"], prompt_token_ids=reply["prompt_token_ids"],
+                      completion_token_ids=reply["token_ids"], completion_text=reply["text"],
+                      cut_off=cut_off, cut_off_but_readable=cut_off and read_turn(reply["answer"]) is not None,
+                      **how_thinking_ended(reply, settings["stop_sentence"], think_end_id, end_text_ids,
+                                           settings["thinking_allowance"]))
     except (RequestFailed, BadReply) as error:
         record.update(failed=True, error=repr(error))
     record["turn"] = None if record["failed"] else read_turn(record["answer_text"])
     record["right"] = record["turn"] in state["right_turns"]
-    record["tokens_used"] = (record["generated_tokens"] or 0) + record["forced_answer_tokens"]
+    record["tokens_used"] = record["generated_tokens"] or 0     # one reply: everything the model wrote
     record["seconds"] = round(time.time() - started, 3)
     record["finished_at"] = time.time()
     return record
@@ -98,38 +103,78 @@ def read_saved(path):
     return [json.loads(line) for line in data.decode().splitlines() if line.strip()]
 
 
-def end_of_thinking_token(server):
-    """The id of the token that ends the thinking, if '</think>' is a single token; else None."""
-    ids = server.token_ids("</think>")
-    return ids[0] if len(ids) == 1 else None
+def drop_failed(path):
+    """Remove the records of failed requests from the file, so they are asked again; returns those kept. The
+    kept records go to a new file beside it, which then replaces the old one in one step: a run killed during
+    the rewrite leaves the old file whole."""
+    kept = [r for r in read_saved(path) if not r["failed"]]
+    new = f"{path}.rewrite"
+    with open(new, "w") as f:
+        f.writelines(json.dumps(r) + "\n" for r in kept)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(new, path)
+    return kept
 
 
-def run(states, server, out_path, tries, settings, model_version, run_seed, limit=None, workers=1,
+def from_any_server(servers, lookup):
+    """`lookup(server)` from the first server that answers. Every server runs the same model, so any will do;
+    trying the others too means one server down at the start does not stop the run."""
+    for server in servers[:-1]:
+        try:
+            return lookup(server)
+        except RequestFailed:
+            pass
+    return lookup(servers[-1])
+
+
+def thinking_end_tokens(servers, stop_sentence):
+    """(the id of the end-of-thinking token, or None; the end-of-thinking text for `stop_sentence` in the
+    model's tokens, or None if there are none), both from one server. The id is None unless the marker is a
+    single token and the end text's tokens end with it, as they must if the marker is one token everywhere:
+    otherwise thinking tokens cannot be counted."""
+    def lookup(server):
+        return server.token_ids(THINK_END), server.token_ids(end_of_thinking_text(stop_sentence))
+    marker, end_text = from_any_server(servers, lookup)
+    single = len(marker) == 1 and end_text[-1:] == marker
+    return (marker[0] if single else None), (end_text or None)
+
+
+def run(states, servers, out_path, tries, settings, model_version, run_seed, limit=None, workers=1,
         retry_failed=False, log=print):
-    """Ask every state `tries` times, in the order states x tries, appending each record to `out_path` as
-    soon as it arrives; with `limit`, ask at most that many. With `retry_failed`, records of failed requests
-    are removed first and asked again."""
-    saved = read_saved(out_path)
-    if retry_failed:
-        saved = [r for r in saved if not r["failed"]]
-        with open(out_path, "w") as f:
-            f.writelines(json.dumps(r) + "\n" for r in saved)
+    """Ask every state `tries` times, in the order of `order_of_asking`, spread evenly over `servers` (a list),
+    with `workers` requests in flight at each; every record is appended to the one file `out_path` as soon as
+    it arrives. With `limit`, ask at most that many. With `retry_failed`, records of failed requests are
+    removed first and asked again."""
+    saved = drop_failed(out_path) if retry_failed else read_saved(out_path)
     done = {(r["state_id"], r["try"]) for r in saved}
-    todo = [(s, t) for s in states for t in range(1, tries + 1) if (s["id"], t) not in done]
+    todo = [(s, t) for s, t in order_of_asking(states, tries, run_seed) if (s["id"], t) not in done]
     todo = todo if limit is None else todo[:limit]
     log(f"{len(done)} answers already saved, {len(todo)} to ask")
     if not todo:
         return []
-    think_end_id = end_of_thinking_token(server)
+    think_end_id, end_text_ids = thinking_end_tokens(servers, settings["stop_sentence"])
     lock = threading.Lock()
-    with open(out_path, "a") as out, ThreadPoolExecutor(max_workers=workers) as pool:
-        def ask_and_save(job):
-            record = ask(server, job[0], job[1], settings, model_version, run_seed, think_end_id)
-            with lock:
-                out.write(json.dumps(record) + "\n")
-                out.flush()
-                os.fsync(out.fileno())
-            return record
-        records = list(pool.map(ask_and_save, todo))
+
+    def ask_and_save(server, job):
+        record = ask(server, job[0], job[1], settings, model_version, run_seed, think_end_id, end_text_ids)
+        with lock:
+            out.write(json.dumps(record) + "\n")
+            out.flush()
+            os.fsync(out.fileno())
+        return record
+    # Each server has its own pool, so a server that keeps failing slows only its own share. What is left to
+    # ask is dealt out in turn, so the servers get equal shares however many there are on this start.
+    # An error in our own code stops the run: what has not started is cancelled, and the file stays open
+    # until what has started is saved.
+    pools = [ThreadPoolExecutor(max_workers=workers) for _ in servers]
+    with open(out_path, "a") as out:
+        try:
+            futures = [pools[n % len(servers)].submit(ask_and_save, servers[n % len(servers)], job)
+                       for n, job in enumerate(todo)]
+            records = [future.result() for future in futures]
+        finally:
+            for pool in pools:
+                pool.shutdown(cancel_futures=True)
     log(f"asked {len(records)}: {sum(r['forced'] for r in records)} forced, {sum(r['failed'] for r in records)} failed")
     return records

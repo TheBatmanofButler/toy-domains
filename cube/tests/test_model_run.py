@@ -2,45 +2,20 @@
 import json
 
 import pytest
-from stand_in_server import THINK_END, StandInServer, chat_reply, scripted, tokenize
+import urllib.error
+import urllib.request
+
+from stand_in_replies import END_TEXT_IDS, THINK_END, chat_reply, tokenize
+from stand_in_server import SETTINGS, make_states, stand_in  # noqa: F401
 
 from cube_ladder import model_run
-from cube_ladder.cube import SOLVED, TURNS, apply_turns
-from cube_ladder.model_server import STOP_SENTENCES, ModelServer, continuation_request
-from cube_ladder.question import colours
-
-SETTINGS = {"sampling": {"temperature": 0.6, "top_p": 0.95}, "source": "the model's documentation (test value)",
-            "stop_sentence": STOP_SENTENCES["qwen"], "thinking_allowance": 8000, "answer_allowance": 200}
-
-
-def make_states(kinds):
-    """One state per kind; each is one turn from solved, so its right turn is known."""
-    states, kind_of, turns_of = [], {}, {}
-    for n, kind in enumerate(kinds):
-        turn = TURNS[n]
-        cube = apply_turns(SOLVED, [turn])
-        right = turn[0] + {"": "'", "'": "", "2": "2"}[turn[1:]]
-        states.append({"id": f"test-02-{n + 1:04d}", "cube": cube, "distance": 2, "right_turns": [right]})
-        kind_of[colours(cube)] = kind
-        turns_of[colours(cube)] = (right, "B2" if right != "B2" else "U")
-    return states, scripted(kind_of, turns_of)
-
-
-@pytest.fixture
-def stand_in():
-    servers = []
-
-    def start(respond):
-        servers.append(StandInServer(respond))
-        return servers[-1]
-    yield start
-    for server in servers:
-        server.close()
+from cube_ladder.model_server import STOP_SENTENCES, ModelServer, end_of_thinking_text, reasoning_config
+from cube_ladder.thinking_end import split_token_count
 
 
 def run(states, server, path, **options):
     client = ModelServer(server.base_url, "test-model", wait_seconds=0, **options.pop("client", {}))
-    return model_run.run(states, client, path, 5, SETTINGS, "test-model@abc123", run_seed=3, log=lambda *_: None,
+    return model_run.run(states, [client], path, 5, SETTINGS, "test-model@abc123", run_seed=3, log=lambda *_: None,
                          **options)
 
 
@@ -56,69 +31,53 @@ def test_five_tries_give_five_records(stand_in, tmp_path):
     assert [r["try"] for r in records] == [1, 2, 3, 4, 5]
     assert all(r["right"] and r["turn"] == states[0]["right_turns"][0] and not r["forced"] for r in records)
     assert all(r["model_version"] == "test-model@abc123" and r["settings"] == SETTINGS for r in records)
+    assert all(r["server"] == server.base_url for r in records)
     assert len({r["request_seed"] for r in records}) == 5
     first = chats(server)[0]
     assert records[0]["question"] == first["messages"][1]["content"]
-    assert first["max_tokens"] == 8000 + 200 and first["temperature"] == 0.6
+    assert first["thinking_token_budget"] == 8000 and first["max_tokens"] == 8000 + 1000 and first["temperature"] == 0.6
     assert first["chat_template_kwargs"] == {"enable_thinking": True} and first["seed"] == records[0]["request_seed"]
     # Token counts: 90 thinking ids, the end-of-thinking id, then 10 + seed % 7 answer ids.
     assert records[0]["thinking_tokens"] == 90 and records[0]["think_end_token_id"] == THINK_END
     assert records[0]["answer_tokens"] == 10 + records[0]["request_seed"] % 7
     assert records[0]["generated_tokens"] == records[0]["tokens_used"] == 91 + records[0]["answer_tokens"]
-    assert records[0]["forced_answer_tokens"] == 0
+    assert records[0]["at_allowance"] is False and not records[0]["cut_off"]
+    assert records[0]["stop_sentence_found_in"] == []
+    assert records[0]["thinking_tokens_before_end_text"] == 90 and records[0]["end_text_inside_budget"] is None
+    assert records[0]["end_text_token_ids"] == END_TEXT_IDS
 
 
-def test_running_out_continues_the_same_turn_after_the_stop_sentence(stand_in, tmp_path):
-    states, respond = make_states(["out_of_thinking"])
+def test_every_request_carries_the_thinking_budget_and_one_request_gives_one_answer(stand_in, tmp_path):
+    kinds = ["right", "wrong", "unreadable", "out_of_thinking", "cut_off_readable", "not_enforced"]
+    states, respond = make_states(kinds)
     server = stand_in(respond)
     run(states, server, tmp_path / "answers.jsonl")
-    records = model_run.read_saved(tmp_path / "answers.jsonl")
-    assert all(r["forced"] and r["right"] and not r["cut_off_but_readable"] for r in records)
-    assert len(chats(server)) == 10
-    first, continuation = chats(server)[0], chats(server)[1]
-    assert continuation["messages"][:2] == first["messages"]                    # no new user message
-    assert [m["role"] for m in continuation["messages"]] == ["system", "user", "assistant"]
-    text = continuation["messages"][2]["content"]
-    assert text == "<think>\n" + ("Hmm " * 50).strip() + "\n\n" + STOP_SENTENCES["qwen"] + "\n</think>\n\n"
-    assert continuation["continue_final_message"] is True and continuation["add_generation_prompt"] is False
-    assert continuation["max_tokens"] == 200
-    record = records[0]
-    assert record["thinking"] == "Hmm " * 50 and record["first_answer_text"] == "" and record["continuation_text"] == text
-    assert record["thinking_tokens"] == 8200 and record["answer_tokens"] == 0     # thinking never ended
-    assert record["forced_answer_tokens"] == 4 and record["tokens_used"] == 8204
-    assert record["continuation_answer_field"] == "content"
+    assert len(chats(server)) == len(model_run.read_saved(tmp_path / "answers.jsonl")) == 30
+    assert all(r["thinking_token_budget"] == 8000 and r["max_tokens"] == 9000 for r in chats(server))
+    assert all(set(r) == set(chats(server)[0]) for r in chats(server))      # the same shape every time
 
 
-def test_an_answer_cut_off_but_already_readable_is_not_forced(stand_in, tmp_path):
-    states, respond = make_states(["cut_off_readable"])
+def test_the_stand_in_refuses_a_request_without_the_budget(stand_in, tmp_path, monkeypatch):
+    states, respond = make_states(["right"])
     server = stand_in(respond)
-    run(states, server, tmp_path / "answers.jsonl")
-    records = model_run.read_saved(tmp_path / "answers.jsonl")
-    assert all(r["cut_off_but_readable"] and not r["forced"] and r["right"] for r in records)
-    assert len(chats(server)) == 5
+    request = urllib.request.Request(server.base_url + "/v1/chat/completions", data=b'{"messages": []}',
+                                     headers={"Content-Type": "application/json"})
+    with pytest.raises(urllib.error.HTTPError, match="400"):
+        urllib.request.urlopen(request)
+    real = model_run.question_request
+    monkeypatch.setattr(model_run, "question_request",
+                        lambda *a: {k: v for k, v in real(*a).items() if k != "thinking_token_budget"})
+    run(states, server, tmp_path / "answers.jsonl", client={"attempts": 1})
+    assert all(r["failed"] and "400" in r["error"] for r in model_run.read_saved(tmp_path / "answers.jsonl"))
 
 
-def test_continued_answer_may_come_back_as_thinking(stand_in, tmp_path):
-    states, _ = make_states(["right"])
-
-    def respond(path, request):
-        if path == "/tokenize":
-            return tokenize(request)
-        if request.get("continue_final_message"):
-            return 200, chat_reply("", reasoning="MOVE: R'", thinking_tokens=0, answer_tokens=3, closed=False)
-        return 200, chat_reply("", reasoning="Hmm", finish_reason="length", closed=False)
-    run(states[:1], stand_in(respond), tmp_path / "answers.jsonl")
-    record = model_run.read_saved(tmp_path / "answers.jsonl")[0]
-    assert record["forced"] and record["answer_text"] == "MOVE: R'" and record["continuation_answer_field"] == "reasoning"
-
-
-def test_continuation_request_shape():
-    request, text = continuation_request("m", [{"role": "user", "content": "q"}], "  thought \n", "Stop now.", 200,
-                                         {"temperature": 0.6}, 7)
-    assert text == "<think>\nthought\n\nStop now.\n</think>\n\n"
-    assert request == {"model": "m", "messages": [{"role": "user", "content": "q"}, {"role": "assistant", "content": text}],
-                       "add_generation_prompt": False, "continue_final_message": True, "max_tokens": 200, "seed": 7,
-                       "chat_template_kwargs": {"enable_thinking": True}, "return_token_ids": True, "temperature": 0.6}
+def test_the_end_of_thinking_text_and_the_servers_reasoning_config():
+    sentence = STOP_SENTENCES["qwen"]
+    assert sentence == ("Considering the limited time by the user, I have to give the solution based on the "
+                        "thinking directly now.")
+    assert end_of_thinking_text(sentence) == "\n\n" + sentence + "\n</think>"
+    assert json.loads(reasoning_config(sentence)) == {"reasoning_start_str": "<think>",
+                                                      "reasoning_end_str": "\n\n" + sentence + "\n</think>"}
 
 
 def test_an_unreadable_answer_is_saved_as_wrong(stand_in, tmp_path):
@@ -133,7 +92,7 @@ def test_an_unreadable_answer_is_saved_as_wrong(stand_in, tmp_path):
 
 @pytest.mark.parametrize("workers", [1, 3])
 def test_stopping_halfway_and_restarting_gives_the_same_file(stand_in, tmp_path, workers):
-    states, respond = make_states(["right", "wrong", "unreadable", "out_of_thinking"])
+    states, respond = make_states(["right", "wrong", "unreadable", "out_of_thinking"], distances=(2, 3))
     server = stand_in(respond)
     unbroken = tmp_path / "unbroken.jsonl"
     run(states, server, unbroken, workers=workers)
@@ -155,7 +114,9 @@ def test_a_limit_asks_only_the_first_answers(stand_in, tmp_path):
     states, respond = make_states(["right", "wrong"])
     server = stand_in(respond)
     assert len(run(states, server, tmp_path / "a.jsonl", limit=7)) == 7
-    assert [(r["state_id"], r["try"]) for r in model_run.read_saved(tmp_path / "a.jsonl")][-1] == (states[1]["id"], 2)
+    asked = [(r["state_id"], r["try"]) for r in model_run.read_saved(tmp_path / "a.jsonl")]
+    assert [t for _, t in asked] == [1, 1, 2, 2, 3, 3, 4]          # every state's try before anyone's next try
+    assert asked[-1][0] == asked[0][0] and {asked[0][0], asked[1][0]} == {s["id"] for s in states}
     assert run(states, server, tmp_path / "a.jsonl", limit=0) == []
 
 
@@ -226,7 +187,7 @@ def test_token_counts_without_ids_are_left_empty(stand_in, tmp_path):
     run(states, stand_in(no_ids), tmp_path / "answers.jsonl")
     record = model_run.read_saved(tmp_path / "answers.jsonl")[0]
     assert record["thinking_tokens"] is None and record["answer_tokens"] is None and record["generated_tokens"] > 0
-    assert model_run.split_token_count(None, 9) == (None, None)
+    assert split_token_count(None, 9) == (None, None)
 
 
 def test_count_tokens_and_the_key_is_sent(stand_in):

@@ -178,8 +178,10 @@ def test_real_solver_reproduces_60_old_states(real_solver):
 
 
 @pytest.mark.slow
-def test_real_solver_agrees_with_brute_force_on_200_cubes(real_solver, brute_force, distance_table):
-    cubes = [c for d in (1, 2, 3, 4, 5) for c in cubes_at(d, 40, distance_table, seed=300 + d)]
+def test_real_solver_agrees_with_brute_force_on_160_cubes(real_solver, brute_force, distance_table):
+    # 2 to 5 turns from solved: only 18 cubes are 1 turn away, too few for 40 different ones, and distance 1
+    # is not a tested distance. Cubes 1 away are still asked about, when the right turns at 2 are found.
+    cubes = [c for d in (2, 3, 4, 5) for c in cubes_at(d, 40, distance_table, seed=300 + d)]
     distances = [d for d, _ in real_solver.distances(cubes)]   # the solutions may differ; their lengths may not
     assert distances == [d for d, _ in brute_force.distances(cubes)]
     assert real_solver.right_turns_many(cubes, distances) == brute_force.right_turns_many(cubes, distances)

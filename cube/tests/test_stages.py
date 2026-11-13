@@ -1,5 +1,6 @@
-"""Tests of the stage scripts' own work: stage 1's summary, and stage 2's checks, its guard against leaks, the
-order of its printout, and its figures for lookup and recall on a set worked out by hand.
+"""Tests of the stage scripts' own work: stage 1's summary; stage 2's checks, its guard against leaks, the
+order of its printout, and its figures for lookup and recall on a set worked out by hand; stage 3 with two
+model servers and too few forced answers to compare.
 
 The hand-made set for stage 2. Training: ten cubes two turns from solved, each made by two turns X Y that do
 not commute, so the only shortest solution is Y' X' and the one right turn is Y':
@@ -20,6 +21,8 @@ from pathlib import Path
 
 import pytest
 from conftest import read_fixture
+from stand_in_replies import chat_reply, tokenize
+from stand_in_server import stand_in  # noqa: F401
 
 from cube_ladder.cube import SOLVED, apply_turns
 from cube_ladder.programs import lookahead
@@ -148,3 +151,28 @@ def test_stage_1_refuses_without_solver_or_old_states(tmp_path):
     with pytest.raises(SystemExit, match="--old-states"):
         module.main(["--data", str(tmp_path), "--seed", "1", "--solver-dir", str(tmp_path)])
     assert module.distance_list("2-4") == (2, 3, 4) and module.distance_list("17,18") == (17, 18)
+
+
+def test_stage_3_with_two_servers_and_too_few_forced_answers(tmp_path, stand_in, capsys):
+    hand_made_files(tmp_path, with_old_states=False)    # 4 test states
+    (tmp_path / "settings.json").write_text(json.dumps({"sampling": {"temperature": 0.6}, "source": "test value"}))
+
+    def respond(path, request):
+        return tokenize(request) if path == "/tokenize" else (200, chat_reply("MOVE: R'"))
+    servers = [stand_in(respond), stand_in(respond)]
+    stage("3_model_run").main(["--data", str(tmp_path), "--base-url", servers[0].base_url, "--base-url",
+                               servers[1].base_url, "--model-name", "m", "--model-version", "m@1", "--settings",
+                               str(tmp_path / "settings.json"), "--seed", "1", "--workers", "2", "--check-after", "12",
+                               "--price-per-hour", "1", "--wait-seconds", "0"])
+    result = json.loads((tmp_path / "model_run_check.json").read_text())
+    assert result["passed"] and result["forced_comparison"] == "not tested" and result["answers_checked"] == 12
+    assert result["forced_answers_compared"] == 0 and result["unforced_answers_compared"] == 12
+    assert result["servers"] == sorted(s.base_url for s in servers)
+    printed = capsys.readouterr().out
+    assert "check after 12 answers: the other three checks hold; forced against unforced not tested" in printed
+    assert "forced against unforced: not tested (0 forced, 12 unforced answers compared" in printed
+    assert ("server's thinking budget: as assumed (0 forced: 0 with the end text after the allowance, 0 with it "
+            "inside; 0 that do not fit)") in printed
+    assert "20 answers saved of 20" in printed     # the run carried on to the end
+    records = [json.loads(line) for line in (tmp_path / "model_answers.jsonl").read_text().splitlines()]
+    assert sorted(r["server"] for r in records) == sorted([s.base_url for s in servers] * 10)

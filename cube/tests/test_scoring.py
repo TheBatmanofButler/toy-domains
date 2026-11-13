@@ -56,9 +56,12 @@ def made_up():
             forced = (state["id"], t) in FORCED
             thinking = 8000 if forced else 1000 * state["distance"]
             # The stored `turn` and `right` are deliberately wrong: scoring must read the answer text afresh.
+            # A forced answer's thinking tokens count the server's end text (20 tokens) too; the model's own
+            # thinking is the 8,000 before it.
             answers.append({"state_id": state["id"], "try": t, "answer_text": text, "turn": "U", "right": not right,
                             "forced": forced, "cut_off_but_readable": (state["id"], t) == ("s2", 1), "failed": False,
-                            "thinking_tokens": thinking, "tokens_used": thinking + 10})
+                            "thinking_tokens": thinking + 20 * forced, "thinking_tokens_before_end_text": thinking,
+                            "tokens_used": thinking + 10})
     return states, picks, answers
 
 
@@ -178,26 +181,6 @@ def test_score_pick_and_bad_picks():
         scoring.score_pick([1.0] * 17, ["R"])
 
 
-def answer(text, failed=False, forced=False, thinking=1000, used=1100, cut_off_readable=False):
-    return {"failed": failed, "answer_text": text, "forced": forced, "thinking_tokens": thinking,
-            "tokens_used": used, "cut_off_but_readable": cut_off_readable}
-
-
-def test_answer_use_counts_failed_answers_apart():
-    answers = [answer(None, failed=True, thinking=None, used=0),
-               answer("no idea", forced=True, thinking=8000, used=8100),
-               answer("MOVE: R", thinking=2000, used=2100, cut_off_readable=True),
-               answer("MOVE: U", thinking=3000, used=3100)]
-    assert scoring.answer_use(answers) == {"answers": 4, "failed_share": 0.25, "unreadable_share": 0.25,
-                                           "forced_share": 0.25, "cut_off_but_readable_share": 0.25,
-                                           "thinking_tokens_mean": pytest.approx(13000 / 3),
-                                           "tokens_used_mean": pytest.approx(13300 / 3)}
-    use = scoring.answer_use(answers[:1])
-    assert use["thinking_tokens_mean"] is None and use["tokens_used_mean"] is None
-    # One answer without exact thinking tokens makes the exact mean unknown; tokens used are still counted.
-    assert scoring.answer_use([answer("MOVE: R"), answer("MOVE: U", thinking=None)])["thinking_tokens_mean"] is None
-
-
 def test_best_programs_name_every_tie():
     states = [{"id": "a", "distance": 2, "right_turns": ["R"]}, {"id": "b", "distance": 2, "right_turns": ["U"]}]
     picks = []
@@ -209,10 +192,6 @@ def test_best_programs_name_every_tie():
     row = scoring.scores_by_distance(states, picks)[2]
     assert row["programs"] == {"alpha": 1.0, "beta": 0.5, "zeta": 1.0}
     assert row["best_programs"] == ["alpha", "zeta"] and row["room"] == 0
-
-
-def test_budget_figures():
-    assert scoring.most_cubes_written(tokens_used=3000, tokens_per_cube=60) == 50
 
 
 @pytest.mark.parametrize("break_it, message", [

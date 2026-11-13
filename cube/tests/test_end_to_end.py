@@ -1,27 +1,39 @@
 """The whole chain, stage by stage, through files, on a tiny set: cubes scrambled by up to 4 turns, the
 brute-force solver, and a stand-in model scripted per state to be always right, always wrong, unreadable,
-or out of thinking (then right when its turn is continued after the stop sentence).
+or out of thinking (the server closes the thinking with the stop sentence and it answers right, in the same
+reply).
 
 Hand-worked expectations. Each distance 2 to 4 has 4 test states; state k at each distance gets the
 script k = 1 right, 2 wrong, 3 unreadable, 4 out of thinking. So at every distance: model score
 (1 + 0 + 0 + 1) / 4 = 0.5; unreadable 1/4; forced 1/4. Thinking tokens: the stand-in thinks 90 tokens,
-then the end-of-thinking token and 10 answer tokens (101 in all), or runs out after 8,200 tokens of thinking
-and writes 4 more when continued: thinking (3 x 90 + 8200) / 4 = 2117.5; tokens used (3 x 101 + 8204) / 4 =
-2126.75. Tokens per cube string: the stand-in counts words + 10 = 11.
+then the end-of-thinking token and 10 answer tokens (101 in all), or reaches the budget after 8,000 tokens,
+when the server's end-of-thinking text adds 19 thinking tokens and the end-of-thinking token, then 4 answer
+tokens (8,024 in all). The thinking figure is the model's own, the 8,000 before the end text for a forced
+answer: (3 x 90 + 8000) / 4 = 2067.5; tokens used (3 x 101 + 8024) / 4 = 2081.75.
+Tokens per cube string: the stand-in counts words + 10 = 11.
 The model gets states 1 and 4. Lookahead of depth k scores 1 at distances up to k, so room is 0 at 2 and 3,
 and lookahead_3 gets every state there: both 2, only the program 2, only the model 0, neither 0, and no
 "only the model" state expected by chance either way. Guessing never gets a state (at most 2 or 3 right turns
 of 18 here): only the model 2, neither 2 at every distance, and 4 x 2/4 = 2 expected if independent.
-The run's check is set to look at all 60 answers: 15 are unreadable (0.25, above 0.15), so it stops; forced
-answers are all readable (1.0) against 30 of 45 unforced (0.67), so that check holds. After the decision to
-carry on, the run is started again with --carry-on and finishes.
+The run's check is set to look at all 60 answers: 15 are unreadable (0.25, above 0.15), so it stops; the 15
+forced answers (enough to compare: at least 10 of each) are all readable (1.0) against 30 of 45 unforced
+(0.67), so that check holds. The budget behaves as assumed: the 15 forced answers have the end text after
+exactly 8,000 thinking tokens (the end text counted outside the budget), and the 45 others end by themselves
+after 90. After the decision to carry on, the
+run is started again with --carry-on and finishes.
+Same wrong turns: at each distance only state 2 has wrong tries, all five on the same wrong turn, so every
+figure rests on 1 cube and 5 wrong tries and none has a standard error. Guessing puts 1/18 on every turn of
+every cube, so its match, its uniform figure ((18 - r) x 1/18 over 18 - r wrong turns) and its shuffle are all
+1/18, and its excess is 0; its excess over a control is then minus the control's excess. lookahead_3 at 2 and
+3 puts all its weight on right turns, so its match and uniform figures are 0 there.
 """
 import importlib.util
 import json
 from pathlib import Path
 
 import pytest
-from stand_in_server import StandInServer, chat_reply, cube_colours_in, is_continuation, ran_out, tokenize
+from stand_in_replies import chat_reply, forced_reply, tokenize
+from stand_in_server import StandInServer, cube_colours_in
 
 from cube_ladder.cube import TURNS
 from cube_ladder.question import colours
@@ -49,10 +61,7 @@ def stand_in_for(test_states):
         right = state["right_turns"][0]
         wrong = next(t for t in TURNS if t not in state["right_turns"])
         if kind == "out_of_thinking":
-            if is_continuation(request):
-                return 200, chat_reply(f"MOVE: {right}", reasoning=None, thinking_tokens=0, answer_tokens=4,
-                                       closed=False)
-            return 200, ran_out()
+            return 200, forced_reply(f"MOVE: {right}")
         return 200, chat_reply({"right": f"MOVE: {right}", "wrong": f"MOVE: {wrong}",
                                 "unreadable": "Not sure."}[kind])
     return StandInServer(respond)
@@ -83,7 +92,7 @@ def test_files_are_written(chain):
     data, _ = chain
     for name in ("test_states.jsonl", "train_states.jsonl", "build_summary.json", "program_picks.jsonl",
                  "programs_summary.json", "model_run_check.json", "model_answers.jsonl",
-                 "scores_by_distance.json", "state_by_state.json", "report.txt", "curve.svg"):
+                 "scores_by_distance.json", "state_by_state.json", "wrong_turns.json", "report.txt", "curve.svg"):
         assert (data / name).exists(), name
     assert len(read_jsonl(data / "model_answers.jsonl")) == 12 * 5
     assert len(read_jsonl(data / "program_picks.jsonl")) == 12 * 9
@@ -97,6 +106,10 @@ def test_the_run_checks_itself_and_stops_on_unreadable_answers(chain):
     assert result["answers_checked"] == 60 and result["unreadable_share"] == 0.25 and result["forced_share"] == 0.25
     assert result["forced_readable_share"] == 1 and result["unforced_readable_share"] == pytest.approx(30 / 45)
     assert result["share_with_thinking"] == 1 and result["tokens_per_cube_string"] == 11
+    assert result["forced_comparison"] == "tested"
+    assert result["forced_answers_compared"] == 15 and result["unforced_answers_compared"] == 45
+    assert result["budget_check"] == "as assumed" and result["end_text_outside_budget_count"] == 15
+    assert result["budget_misfit_count"] == 0
 
 
 def test_final_scores_equal_the_hand_worked_table(chain):
@@ -107,8 +120,8 @@ def test_final_scores_equal_the_hand_worked_table(chain):
         assert row["states"] == 4
         assert row["model"] == 0.5
         assert row["unreadable_share"] == 0.25 and row["forced_share"] == 0.25 and row["failed_share"] == 0
-        assert row["thinking_tokens_mean"] == 2117.5 and row["tokens_used_mean"] == 2126.75
-        assert row["most_cubes_written"] == pytest.approx(2126.75 / 11)
+        assert row["thinking_tokens_mean"] == 2067.5 and row["tokens_used_mean"] == 2081.75
+        assert row["most_cubes_written"] == pytest.approx(2081.75 / 11)
         for depth in (1, 2, 3):
             if int(distance) <= depth:
                 assert row["programs"][f"lookahead_{depth}"] == 1
@@ -132,6 +145,33 @@ def test_final_state_by_state_equals_the_hand_worked_table(chain):
         assert [row[k] for k in ("both", "only_model", "only_program", "neither")] == [0, 2, 0, 2]
         assert row["only_model_expected_if_independent"] == 2
         assert row["only_model_if_independent_standard_error"] == 1   # sqrt(4 x 0.5 x 0.5)
+
+
+def test_same_wrong_turns_equal_the_hand_worked_line(chain):
+    data, _ = chain
+    table = json.loads((data / "wrong_turns.json").read_text())
+    controls = ["recall_bottom", "recall_top", "surface_strict"]
+    for distance in ("2", "3", "4"):
+        row = table["guessing"][distance]
+        assert row["cubes"] == 1 and row["wrong_tries"] == 5
+        assert row["match_rate"] == pytest.approx(1 / 18) and row["uniform"] == pytest.approx(1 / 18)
+        assert row["shuffle"] == pytest.approx(1 / 18) and row["excess"] == pytest.approx(0, abs=1e-12)
+        assert row["match_rate_standard_error"] is None and row["excess_standard_error"] is None
+        assert sorted(row["excess_over_control"]) == controls
+        for control in controls:
+            assert row["excess_over_control"][control]["mean"] == pytest.approx(-table[control][distance]["excess"])
+            assert row["excess_over_control"][control]["standard_error"] is None
+    for distance in ("2", "3"):
+        assert table["lookahead_3"][distance]["match_rate"] == 0 and table["lookahead_3"][distance]["uniform"] == 0
+    assert "Same wrong turns, over the cubes" in (data / "report.txt").read_text()
+
+
+def test_the_report_stage_run_twice_gives_identical_files(chain):
+    data, _ = chain
+    names = ("scores_by_distance.json", "state_by_state.json", "wrong_turns.json", "report.txt", "curve.svg")
+    before = {name: (data / name).read_bytes() for name in names}
+    stage("4_report")(["--data", str(data)])
+    assert {name: (data / name).read_bytes() for name in names} == before
 
 
 def test_rerunning_the_model_stage_asks_nothing_new(chain, capsys):

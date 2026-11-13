@@ -5,10 +5,11 @@ import xml.etree.ElementTree as ElementTree
 from math import sqrt
 
 from test_scoring import CHANCE, made_up
+from test_wrong_turns import made_up as made_up_wrong_turns
 
 import pytest
 
-from cube_ladder import report, scoring
+from cube_ladder import report, scoring, wrong_turns
 
 SVG = "{http://www.w3.org/2000/svg}"
 
@@ -56,6 +57,22 @@ def test_state_by_state_table_with_both_chance_columns():
                                 "only_model_if_independent", "if_independent_se"]
     assert block[3].split() == ["1", "1", "2", "1", "1", f"{3 * CHANCE[1]:.3f}", "1.800", f"{sqrt(0.72):.3f}"]
     assert block[4].split() == ["2", "1", "1", "2", "1", f"{CHANCE[1] + CHANCE[2]:.3f}", "0.800", f"{sqrt(0.48):.3f}"]
+
+
+def test_same_wrong_turns_table():
+    # The figures are those worked out by hand in test_wrong_turns.py; the stage reads them back from JSON.
+    table = json.loads(json.dumps(wrong_turns.same_wrong_turns(*made_up_wrong_turns())))
+    blocks = report.wrong_turns_text(table).split("\n\n")
+    lines = blocks[0].splitlines()
+    assert lines[0] == "lookahead_1"
+    assert lines[1].split() == ["distance", "cubes", "wrong_tries", "match", "uniform", "shuffle", "excess", "excess_se",
+                                "over_recall_top", "over_recall_top_se"]
+    assert lines[3].split() == ["1", "2", "3", f"{1 / 6:.3f}", f"{1 / 34:.3f}", "0.250", f"{-1 / 12:.3f}",
+                                f"{1 / 12:.3f}", f"{-1 / 12:.3f}", f"{7 / 12:.3f}"]
+    assert lines[4].split() == ["2", "1", "1", "0.500", "0.062", "1.000", "-0.500", "n/a", "-0.500", "n/a"]
+    # A control is not set against itself, so recall_top's rows have no columns over a control.
+    assert blocks[1].splitlines()[1].split()[-1] == "excess_se"
+    assert blocks[1].splitlines()[3].split() == ["1", "2", "3", "0.500", f"{1 / 17:.3f}", "0.500", "0.000", "0.500"]
 
 
 def test_standard_error_tables():

@@ -1,6 +1,7 @@
 """Writes the report's tables as text and draws score against distance as an SVG picture.
 
-No figure is worked out here: every number comes from scoring.py. The picture is drawn by hand as SVG so that
+No figure is worked out here: every number comes from scoring.py (and, for the same-wrong-turns table, from
+wrong_turns.py). The picture is drawn by hand as SVG so that
 no plotting library is needed.
 """
 from xml.sax.saxutils import escape
@@ -93,6 +94,25 @@ def state_by_state_text(table):
         parts.append(f"{program}\n" + _table(["distance", "both", "only_model", "only_program", "neither",
                                                "only_model_if_guessing", "only_model_if_independent",
                                                "if_independent_se"], rows))
+    return "\n\n".join(parts)
+
+
+def wrong_turns_text(table):
+    """For each program, one row per distance from wrong_turns.py: the cubes with a wrong try and the wrong
+    tries behind the figures, the match rate, the uniform and shuffle figures, the excess (match minus
+    shuffle) and its standard error, and the excess over each control with its standard error."""
+    parts = []
+    for program in sorted(table):
+        rows_by_distance = sorted(table[program].items(), key=lambda item: int(item[0]))
+        controls = sorted(rows_by_distance[0][1]["excess_over_control"])
+        header = (["distance", "cubes", "wrong_tries", "match", "uniform", "shuffle", "excess", "excess_se"]
+                  + [f"over_{c}{part}" for c in controls for part in ("", "_se")])
+        rows = [[int(d), r["cubes"], r["wrong_tries"], r["match_rate"], r["uniform"], r["shuffle"], r["excess"],
+                 r["excess_standard_error"]]
+                + [value for c in controls for value in (r["excess_over_control"][c]["mean"],
+                                                         r["excess_over_control"][c]["standard_error"])]
+                for d, r in rows_by_distance]
+        parts.append(f"{program}\n" + _table(header, rows))
     return "\n\n".join(parts)
 
 

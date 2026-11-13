@@ -1,6 +1,6 @@
 # The cube experiment: code specification
 
-Draft, 2026-11-12. This says what the code must do, file by file, so that it can be built and then read by a person. The experiment itself is described in `cube_plan.md`; read that first.
+2026-11-12. This says what the code must do, file by file, so that it can be built and then read by a person. The experiment itself is described in `cube_plan.md`; read that first.
 
 ## 1. Rules for the code
 
@@ -67,7 +67,7 @@ Asks the perfect solver. The solver is an outside program (Rokicki's nxopt at so
 - Every solution the solver returns is applied with `cube.py` and must reach `SOLVED` in the stated number of turns, or the call fails.
 - `BruteForceSolver`: the same two functions, done by trying everything, for cubes within 5 turns of solved. Used by the tests and by nothing else.
 
-Tests: on every cube within 3 turns of solved and 500 cubes at 4 and 5, `BruteForceSolver` agrees with a plain search written inside the test; the wrapper's reading of the solver's output is tested on saved output; a wrong solution is rejected. **Slow test, needs the real solver:** distance and right turns for 60 states from the old run equal the archive, and the real solver agrees with `BruteForceSolver` on 200 cubes within 5 turns.
+Tests: on every cube within 3 turns of solved and 500 cubes at 4 and 5, `BruteForceSolver` agrees with a plain search written inside the test; the wrapper's reading of the solver's output is tested on saved output; a wrong solution is rejected. **Slow test, needs the real solver:** distance and right turns for 60 states from the old run equal the archive, and the real solver agrees with `BruteForceSolver` on 160 cubes 2 to 5 turns from solved (40 at each).
 
 ### `cube_ladder/states.py`
 Builds the two sets.
@@ -102,36 +102,49 @@ Builds the text the model is shown: the old layout (role line, colour scheme, me
 Tests: the text for one fixed cube equals a saved copy letter for letter; everything before the last paragraph equals the old run's text for the same cube; the text contains no distance and no right turn.
 
 ### `cube_ladder/answers.py`
-`read_turn(answer_text)`: finds the last `MOVE:` line and returns the turn if it is one of the 18, otherwise nothing.
+`read_turn(answer_text)`: finds the last line that starts with the label `MOVE:` (the label in any letter case) and returns the turn if it is exactly one of the 18 names, otherwise nothing. A lower-case turn is not read.
 
-Tests: twenty hand-written answers, including two `MOVE:` lines, lower case, extra spaces, a turn that does not exist, and no `MOVE:` line.
+Tests: hand-written answers, including two `MOVE:` lines, a label in lower case and in title case, a lower-case turn, a stray `MOVE:` in later prose, extra spaces, a turn that does not exist, and no `MOVE:` line.
 
 ### `cube_ladder/model_run.py`
-(The exact requests sent to the model server, including the one that continues after the stop sentence, are kept apart in `cube_ladder/model_server.py`.)
+(The exact request sent to the model server, and the text the server must be started with to close cut-off thinking, are kept apart in `cube_ladder/model_server.py`. Working out how a reply's thinking ended is in `cube_ladder/thinking_end.py`.)
 Sends each question to a model server the given number of times and saves every answer.
+- **Order of asking.** The first try of every state before the second try of any. Within a try, states are taken one distance after another (one at the smallest distance, one at the next, and so on, then round again), in an order inside each distance set by the run's seed. So the first answers of a run are different states spread evenly over the distances, and the same seed gives the same order.
+- **Several servers.** The run may be given more than one model server. Questions are spread evenly over them, each server gets the same number of requests at a time, and every record says which server answered. All records go to one file. Starting again with more (or fewer) servers carries on from what is saved.
 - Settings (temperature and its companions) are passed in and written into every record.
-- Thinking allowance of 8,000 tokens. If it runs out before an answer: close the thinking by adding the makers' stop sentence to the end of it (passed in as a setting, with a neutral default for models that have none), let the model continue into its answer, and mark the record `forced`. No second message from the user is sent.
+- Thinking allowance of 8,000 tokens, and an allowance for the answer on top (1,000). The model server enforces the thinking allowance (vLLM's `thinking_token_budget`, sent with every request): at 8,000 thinking tokens the server itself writes the end-of-thinking text it was started with, which carries the stop sentence, and the model goes on to its answer in the same reply. There is one request per answer and no second request of any kind. The stop sentence is a setting (the Qwen sentence, or a neutral one for models with none); `model_server.py` gives the exact end-of-thinking text for it, so the server can be started with the same text the run records. The record says where the server's end-of-thinking text shows in the reply (`stop_sentence_found_in`: the end of the returned thinking, the completion's token ids, or a raw completion text), how many thinking tokens came before that end text (`thinking_tokens_before_end_text`), and whether that count is at the allowance (`at_allowance`): within 8 tokens either side, or short of it by no more than the end text's own length plus 8, since it is not documented whether the server counts its end text inside the budget (`end_text_inside_budget` records which). A record is `forced` when both hold: the end text is there, and it came at the allowance. The stop sentence showing up anywhere else (a model can write it itself) does not make an answer forced. `cut_off` says the reply ended on the length limit. A reply cut off by the total limit with no readable answer is saved as it is, unreadable and wrong, and marked as cut off.
 - Saves after every answer, and on restart skips what is already saved.
 - A failed request is retried a fixed number of times, then recorded as failed. It is never silently dropped.
 
-Tests, all with a stand-in server that answers by script: five tries give five records; a scripted "ran out of thinking" produces a continuation request whose thinking ends with the stop sentence, and the `forced` mark; an unreadable answer is saved with `turn` empty and `right` false; stopping halfway and restarting gives the same file as an unbroken run; a server error is retried and then recorded.
+Tests, all with a stand-in server that answers by script: five tries give five records; every request carries the thinking allowance as the server's thinking budget; a scripted "ran out of thinking" reply, whose thinking ends with the stop sentence, gets the `forced` mark and no second request is sent; a reply cut off with no answer is saved as unreadable and marked cut off; an unreadable answer is saved with `turn` empty and `right` false; stopping halfway and restarting gives the same set of records as an unbroken run (and, with one server and one request at a time, the same file); a server error is retried and then recorded; the first answers asked are different states spread evenly over the distances, and the same seed gives the same order; with two stand-in servers each gets its share of the questions, every record names its server, and a restart with a different number of servers asks nothing twice.
 
 ### `cube_ladder/scoring.py`
 - A state's model score: the share of its five tries that are right.
 - A distance's score, for the model and each program: the average over its states.
 - Room at a distance: one minus the best program.
-- Share of unreadable answers and share of forced answers, by distance. Thinking tokens used, by distance.
-- State by state: the model "gets" a state when at least three of five tries are right; a program "gets" a state when its score there is more than one half (the same bar: more than half). For each program and distance: both, only the model, only the program, neither, and the count of "only the model" expected if the model were guessing.
+- Share of unreadable answers and share of forced answers, by distance. Thinking tokens used, by distance: the model's own thinking, so for a forced answer the tokens before the server's end text.
+- State by state: the model "gets" a state when at least three of five tries are right; a program "gets" a state when its score there is more than one half (the same bar: more than half). For each program and distance: both, only the model, only the program, neither, the count of "only the model" expected if the model were guessing, and the count expected if the model's successes were unrelated to the program's.
+- Standard errors, as numbers only (no rule about what counts as "above" is in the code): of every score at every distance; of the model-minus-program difference on the same states; of room (the best program's); and of the only-the-model count against the count expected if unrelated. A distance with one state has none.
 
 Tests: a made-up set of ten states where every figure was worked out by hand and written into the test.
 
+- Same wrong turns, for each program and distance (in its own file, `cube_ladder/wrong_turns.py`, if `scoring.py` would pass 200 lines):
+  - A wrong try is a try whose answer reads as one of the 18 turns and that turn is not right. Unreadable and failed tries are left out.
+  - A cube's match value is the average, over its wrong tries, of the weight the program's pick puts on the model's turn. The distance's match rate is the average over cubes that have a wrong try; its standard error is worked out across those cubes.
+  - Uniform figure: for each such cube, the program's total weight on wrong turns divided by the number of wrong turns, averaged the same way.
+  - Shuffle figure: for each wrong try, the average weight the program puts on that same turn over all the other test cubes at that distance; then averaged by cube as above. No random numbers are used.
+  - The excess (match rate minus shuffle figure) with its standard error from the cube-by-cube differences, and, for each control program (both recall versions and the strict surface reader), the difference between this program's excess and the control's excess on the same cubes, with its standard error.
+  - Also given: the number of wrong tries and of cubes behind each figure. A distance with fewer than two such cubes has no standard error.
+  - Numbers only: no rule about what counts as a resemblance is in the code.
+  Tests: a made-up set where every figure is worked out by hand, including a program with a three-way tie, a cube whose every try is right (left out), an unreadable try, and a distance with one cube.
+
 ### `cube_ladder/report.py`
-Writes the tables as text and draws the curve: score against distance for the model and every program. No arithmetic happens here that is not in `scoring.py`.
+Writes the tables as text, including the same-wrong-turns table, and draws the curve: score against distance for the model and every program, with a bar of one standard error above and below every point. No arithmetic happens here that is not in `scoring.py`.
 
 ### `stages/`
 Four short scripts, each one command: `1_build_states.py`, `2_run_programs.py`, `3_model_run.py`, `4_report.py`. Each reads its inputs from and writes its outputs to the folder it is given, prints what it did, and runs the checks from `cube_plan.md` for its stage. A failed check is printed first.
 
-`3_model_run.py` has no separate pilot. It asks the first 100 answers, runs the four checks in `cube_ladder/run_check.py` (every record complete and thinking present on most answers; forced answers readable about as often as unforced ones; no more than 15% unreadable; projected cost under the ceiling), writes them to a file with the measured speed, and carries on only if all hold.
+`3_model_run.py` has no separate pilot. It asks the first 100 answers (100 different states spread over the distances, because of the order of asking), runs the four checks in `cube_ladder/run_check.py` (every record complete and thinking present on most answers; forced answers readable about as often as unforced ones; no more than 15% unreadable; projected cost under the ceiling), writes them to a file with the measured speed, and carries on only if all hold. The check file gives the number of forced and of unforced answers compared; if either is under 10 the comparison is reported as not tested (in the printed output and in the file), and the run carries on, with one exception: when there are 3 to 9 forced answers and fewer than half of them are readable, that is a failed check and the run stops. The check also fails if the server's budget is not behaving as the run assumes, judged against the allowance each answer was asked with: the end text found away from the allowance (the server closing the thinking early, or the model writing the sentence itself); thinking 8 or more tokens past the allowance with no end text; or thinking tokens that cannot be counted (and the message says why: no token ids, or no single end-of-thinking token). `--print-reasoning-config` prints the setting the server must be started with. The check is made once: it looks at exactly the first 100 answers, all of them complete (with `--retry-failed`, failed requests among them are asked again first; without it, they fail the check as incomplete), and its file records the servers and the total price at that moment. Once the check has passed, or has been overridden with `--carry-on`, a later start does not make it again and does not overwrite its file, because by then the servers and the price may have changed and the speed measured earlier would no longer match them.
 
 ### `tests/test_end_to_end.py`
 The whole chain on a tiny set: cubes scrambled up to 4 turns, `BruteForceSolver`, and a stand-in model that is scripted to be always right, always wrong, unreadable, or out of thinking. The final table must equal one worked out by hand.
@@ -145,7 +158,7 @@ The whole chain on a tiny set: cubes scrambled up to 4 turns, `BruteForceSolver`
 
 ## 6. Not to be built
 
-A second cube size; sequences of turns as answers; comparing two cubes; rotated drawings; error bars; any scoring other than right or wrong; saving the model's internal activity; a neural network.
+A second cube size; sequences of turns as answers; comparing two cubes; rotated drawings; any rule in the code for what counts as "above"; any scoring other than right or wrong; saving the model's internal activity; a neural network.
 
 ## 7. Where the reusable old code is
 

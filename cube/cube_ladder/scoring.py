@@ -166,14 +166,25 @@ def state_by_state(test_states, program_picks, answers, tries=5):
     return table
 
 
+def own_thinking_tokens(answer):
+    """The thinking tokens the model wrote itself: for a forced answer, those before the server's end text
+    (its record keeps both, `thinking_tokens` counting the end text too); for any other, all of them. A record
+    saved before the count without the end text was kept has only the count with it."""
+    if answer["forced"]:
+        return answer.get("thinking_tokens_before_end_text", answer["thinking_tokens"])
+    return answer["thinking_tokens"]
+
+
 def answer_use(answers):
     """Shares of failed, unreadable, forced and cut-off-but-already-readable answers, and token use per answer
     that did not fail. An answer is unreadable when the request worked but no turn could be read from it.
-    `thinking_tokens_mean` is exact but None unless the server gave token ids for every answer;
-    `tokens_used_mean` counts every token the model wrote (thinking, answer, forced answer), so it is an
-    upper limit on thinking."""
+    An answer is forced when the server closed its thinking at the allowance (see thinking_end.py).
+    `thinking_tokens_mean` is the model's own thinking (`own_thinking_tokens`), so it can be set beside the
+    allowance; it is exact but None unless the server gave token ids for every answer. `tokens_used_mean`
+    counts every token of the reply (thinking, the server's end text, answer), so it is an upper limit on
+    thinking."""
     worked = [a for a in answers if not a["failed"]]
-    thinking = [a["thinking_tokens"] for a in worked]
+    thinking = [own_thinking_tokens(a) for a in worked]
     return {"answers": len(answers),
             "failed_share": _mean([bool(a["failed"]) for a in answers]),
             "unreadable_share": _mean([not a["failed"] and model_turn(a) is None for a in answers]),
