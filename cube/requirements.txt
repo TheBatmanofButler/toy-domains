@@ -1,0 +1,10 @@
+# Needs Python 3.12 or later (numpy 2.5.3 does not install on 3.11). Versions used when the code and tests
+# were written, on Python 3.13.18.
+numpy==2.5.3
+scikit-learn==1.9.1
+pytest==9.1.1
+coverage==7.17.3
+future==1.0.0
+# rubik-solver 0.2.0 pins future==0.16.0, which does not install on recent Python; install it on its own
+# with --no-deps after the lines above (see README.md). It works with future 1.0.0.
+# rubik-solver==0.2.0

@@ -1,0 +1,23 @@
+Here is a 3x3x3 Rubik's cube.
+
+Colour scheme: the centre sticker of each face fixes its colour and never moves: U (up) = white W, D (down) = yellow Y, F (front) = green G, B (back) = blue B, R (right) = red R, L (left) = orange O.
+Moves: U, D, R, L, F, B each turn that face 90 degrees clockwise as seen looking directly at that face; X' is the 90 degree counterclockwise turn and X2 the 180 degree turn.
+The allowed moves are exactly: U U' U2 D D' D2 R R' R2 L L' L2 F F' F2 B B' B2 (no whole-cube rotations).
+
+Net (each face seen from outside):
+          U
+        B O G
+        W W B
+        O R G
+  L       F       R       B
+R G W   B B O   Y W Y   R Y W
+B O G   O G W   O R R   Y B Y
+Y R G   W G O   W G B   Y B O
+          D
+        R R G
+        W Y Y
+        B O R
+Facelet string (colour letters; faces in the order U R F D L B, 9 stickers each, read row by row as in the net):
+BOGWWBORGYWYORRWGBBBOOGWWGORRGWYYBORRGWBOGYRGRYWYBYYBO
+
+A move is correct if it is the first move of a shortest possible solution. Each of the 18 allowed moves counts as one move, so a 180 degree turn counts as one. Give one correct move, written exactly as it appears in the list of allowed moves. Answer with `MOVE: <move>`.

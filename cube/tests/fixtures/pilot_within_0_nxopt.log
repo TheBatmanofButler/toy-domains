@@ -1,0 +1,733 @@
+This is nxopt23 metric HALF
+ nxopt23 -t 30 -x 0 -
+Load nxopth23b.dat ....10....20....30....40....50....60....70....80....90....100 read in 4.46322
+Did not solve 1 in probes 6 evals 1 time 4.05312e-06
+Did not solve 2 in probes 6 evals 1 time 2.86102e-06
+Saving solution 4
+Saving solution 5
+Finished searching depth 0 pos 7 in 6 probes 1 evals.
+Saving solution 7
+Saving solution 8
+Saving solution 9
+Saving solution 10
+Saving solution 12
+Saving solution 13
+Saving solution 14
+Saving solution 15
+Saving solution 16
+Saving solution 19
+Saving solution 20
+Saving solution 21
+Saving solution 22
+Saving solution 23
+Finished searching depth 0 pos 25 in 6 probes 1 evals.
+Saving solution 25
+Saving solution 26
+Saving solution 27
+Saving solution 28
+Saving solution 29
+Saving solution 30
+Saving solution 11
+Saving solution 32
+Saving solution 33
+Saving solution 35
+Saving solution 38
+Saving solution 39
+Saving solution 40
+Saving solution 41
+Saving solution 42
+Saving solution 43
+Saving solution 45
+Saving solution 46
+Saving solution 48
+Saving solution 49
+Saving solution 50
+Saving solution 51
+Finished searching depth 0 pos 52 in 6 probes 1 evals.
+Saving solution 52
+Saving solution 53
+Saving solution 54
+Saving solution 55
+Saving solution 58
+Saving solution 59
+Saving solution 60
+Saving solution 61
+Saving solution 62
+Saving solution 63
+Finished searching depth 0 pos 64 in 6 probes 1 evals.
+Saving solution 64
+Saving solution 65
+Saving solution 66
+Saving solution 68
+Saving solution 69
+Saving solution 70
+Saving solution 71
+Saving solution 72
+Saving solution 74
+Finished searching depth 0 pos 77 in 6 probes 1 evals.
+Saving solution 44
+Saving solution 78
+Saving solution 80
+Saving solution 81
+Saving solution 82
+Saving solution 83
+Saving solution 84
+Saving solution 85
+Saving solution 86
+Saving solution 87
+Saving solution 88
+Saving solution 89
+Saving solution 90
+Saving solution 56
+Did not solve 3 in probes 6 evals 1 time 2.86102e-06
+Did not solve 4 in probes 6 evals 1 time 1.90735e-06
+Did not solve 5 in probes 6 evals 1 time 1.90735e-06
+Saving solution 93
+Saving solution 94
+Saving solution 95
+Saving solution 96
+Saving solution 97
+Saving solution 31
+Saving solution 99
+Saving solution 100
+Saving solution 101
+Saving solution 36
+Saving solution 102
+Saving solution 103
+Saving solution 104
+Finished searching depth 0 pos 105 in 6 probes 1 evals.
+Saving solution 105
+Saving solution 106
+Saving solution 107
+Saving solution 108
+Saving solution 109
+Saving solution 110
+Saving solution 111
+Saving solution 112
+Finished searching depth 0 pos 113 in 6 probes 1 evals.
+Saving solution 113
+Saving solution 115
+Saving solution 116
+Saving solution 117
+Saving solution 118
+Saving solution 119
+Saving solution 120
+Saving solution 121
+Saving solution 122
+Saving solution 123
+Saving solution 91
+Saving solution 124
+Saving solution 125
+Saving solution 126
+Finished searching depth 0 pos 127 in 6 probes 1 evals.
+Saving solution 127
+Saving solution 128
+Saving solution 129
+Saving solution 130
+Saving solution 131
+Saving solution 34
+Saving solution 132
+Saving solution 133
+Saving solution 134
+Saving solution 135
+Saving solution 136
+Saving solution 137
+Saving solution 138
+Saving solution 139
+Saving solution 17
+Saving solution 140
+Saving solution 142
+Saving solution 18
+Saving solution 76
+Saving solution 47
+Finished searching depth 0 pos 145 in 6 probes 1 evals.
+Saving solution 145
+Did not solve 6 in probes 6 evals 1 time 5.00679e-06
+Solved 7 in 0 probes 6 evals 1 time 1.78814e-05
+Did not solve 8 in probes 6 evals 1 time 1.19209e-06
+Did not solve 9 in probes 6 evals 1 time 1.90735e-06
+Did not solve 10 in probes 6 evals 1 time 1.90735e-06
+Did not solve 11 in probes 6 evals 1 time 3.09944e-06
+Did not solve 12 in probes 6 evals 1 time 9.53674e-07
+Did not solve 13 in probes 6 evals 1 time 9.53674e-07
+Did not solve 14 in probes 6 evals 1 time 9.53674e-07
+Did not solve 15 in probes 6 evals 1 time 1.90735e-06
+Did not solve 16 in probes 6 evals 1 time 9.53674e-07
+Did not solve 17 in probes 6 evals 1 time 2.14577e-06
+Did not solve 18 in probes 6 evals 1 time 3.09944e-06
+Did not solve 19 in probes 6 evals 1 time 1.19209e-06
+Did not solve 20 in probes 6 evals 1 time 1.19209e-06
+Did not solve 21 in probes 6 evals 1 time 0
+Did not solve 22 in probes 6 evals 1 time 9.53674e-07
+Did not solve 23 in probes 6 evals 1 time 1.19209e-06
+Saving solution 147
+Did not solve 24 in probes 6 evals 1 time 9.53674e-07
+Solved 25 in 0 probes 6 evals 1 time 7.86781e-06
+Did not solve 26 in probes 6 evals 1 time 0
+Did not solve 27 in probes 6 evals 1 time 0
+Did not solve 28 in probes 6 evals 1 time 0
+Did not solve 29 in probes 6 evals 1 time 9.53674e-07
+Did not solve 30 in probes 6 evals 1 time 9.53674e-07
+Did not solve 31 in probes 6 evals 1 time 9.53674e-07
+Did not solve 32 in probes 6 evals 1 time 2.14577e-06
+Did not solve 33 in probes 6 evals 1 time 1.90735e-06
+Did not solve 34 in probes 6 evals 1 time 3.09944e-06
+Did not solve 35 in probes 6 evals 1 time 4.05312e-06
+Did not solve 36 in probes 6 evals 1 time 2.86102e-06
+Saving solution 149
+Saving solution 150
+Saving solution 151
+Saving solution 154
+Saving solution 155
+Saving solution 156
+Saving solution 157
+Saving solution 159
+Saving solution 160
+Saving solution 161
+Saving solution 162
+Saving solution 163
+Saving solution 164
+Saving solution 75
+Saving solution 165
+Saving solution 166
+Saving solution 167
+Saving solution 168
+Saving solution 169
+Finished searching depth 0 pos 170 in 6 probes 1 evals.
+Saving solution 170
+Saving solution 171
+Saving solution 172
+Saving solution 173
+Saving solution 144
+Saving solution 175
+Saving solution 176
+Saving solution 146
+Saving solution 177
+Saving solution 148
+Saving solution 178
+Saving solution 179
+Saving solution 181
+Saving solution 182
+Saving solution 183
+Saving solution 184
+Saving solution 57
+Saving solution 185
+Saving solution 186
+Saving solution 67
+Saving solution 187
+Saving solution 189
+Saving solution 190
+Saving solution 191
+Saving solution 192
+Saving solution 193
+Finished searching depth 0 pos 195 in 6 probes 1 evals.
+Saving solution 195
+Saving solution 196
+Saving solution 197
+Saving solution 79
+Finished searching depth 0 pos 199 in 6 probes 1 evals.
+Saving solution 199
+Saving solution 200
+Saving solution 201
+Saving solution 202
+Saving solution 203
+Saving solution 204
+Saving solution 205
+Saving solution 206
+Saving solution 207
+Saving solution 208
+Saving solution 209
+Saving solution 210
+Saving solution 211
+Saving solution 213
+Saving solution 214
+Saving solution 215
+Saving solution 217
+Saving solution 218
+Saving solution 219
+Saving solution 188
+Saving solution 221
+Saving solution 222
+Saving solution 223
+Saving solution 224
+Saving solution 194
+Saving solution 226
+Saving solution 227
+Saving solution 141
+Saving solution 229
+Saving solution 230
+Saving solution 231
+Saving solution 143
+Saving solution 198
+Finished searching depth 0 pos 232 in 6 probes 1 evals.
+Saving solution 232
+Saving solution 233
+Saving solution 234
+Saving solution 235
+Saving solution 236
+Saving solution 237
+Saving solution 238
+Saving solution 239
+Saving solution 180
+Saving solution 152
+Saving solution 212
+Saving solution 241
+Saving solution 92
+Saving solution 216
+Saving solution 242
+Saving solution 243
+Saving solution 244
+Saving solution 245
+Saving solution 247
+Saving solution 248
+Saving solution 250
+Saving solution 251
+Saving solution 252
+Saving solution 253
+Saving solution 254
+Saving solution 255
+Saving solution 228
+Saving solution 257
+Saving solution 258
+Saving solution 259
+Saving solution 260
+Saving solution 261
+Saving solution 263
+Saving solution 264
+Saving solution 265
+Saving solution 266
+Saving solution 267
+Saving solution 268
+Finished searching depth 0 pos 269 in 6 probes 1 evals.
+Saving solution 269
+Saving solution 270
+Saving solution 271
+Saving solution 272
+Finished searching depth 0 pos 273 in 6 probes 1 evals.
+Saving solution 153
+Saving solution 275
+Saving solution 276
+Saving solution 277
+Saving solution 278
+Saving solution 279
+Saving solution 280
+Saving solution 281
+Saving solution 282
+Saving solution 283
+Saving solution 284
+Finished searching depth 0 pos 249 in 6 probes 1 evals.
+Saving solution 249
+Saving solution 225
+Saving solution 286
+Saving solution 288
+Saving solution 289
+Saving solution 290
+Saving solution 291
+Saving solution 292
+Saving solution 293
+Saving solution 294
+Saving solution 295
+Saving solution 296
+Saving solution 298
+Saving solution 299
+Saving solution 300
+Saving solution 301
+Finished searching depth 0 pos 302 in 6 probes 1 evals.
+Saving solution 302
+Saving solution 304
+Saving solution 305
+Saving solution 306
+Saving solution 307
+Saving solution 308
+Saving solution 309
+Saving solution 310
+Saving solution 311
+Finished searching depth 0 pos 312 in 6 probes 1 evals.
+Saving solution 312
+Saving solution 313
+Saving solution 287
+Saving solution 315
+Saving solution 316
+Saving solution 317
+Saving solution 318
+Saving solution 319
+Saving solution 320
+Saving solution 321
+Saving solution 322
+Saving solution 323
+Saving solution 324
+Saving solution 325
+Saving solution 327
+Saving solution 328
+Saving solution 274
+Saving solution 329
+Saving solution 330
+Saving solution 331
+Saving solution 334
+Saving solution 303
+Saving solution 336
+Saving solution 337
+Saving solution 246
+Saving solution 339
+Saving solution 340
+Saving solution 341
+Saving solution 342
+Saving solution 343
+Saving solution 344
+Saving solution 345
+Saving solution 346
+Saving solution 347
+Saving solution 314
+Saving solution 77
+Saving solution 348
+Saving solution 351
+Saving solution 352
+Saving solution 353
+Saving solution 354
+Saving solution 355
+Saving solution 356
+Finished searching depth 0 pos 357 in 6 probes 1 evals.
+Saving solution 357
+Saving solution 358
+Saving solution 359
+Saving solution 360
+Saving solution 332
+Saving solution 333
+Saving solution 98
+Saving solution 335
+Saving solution 158
+Finished searching depth 0 pos 338 in 6 probes 1 evals.
+Saving solution 338
+Did not solve 37 in probes 6 evals 1 time 9.53674e-07
+Did not solve 38 in probes 6 evals 1 time 1.90735e-06
+Did not solve 39 in probes 6 evals 1 time 3.09944e-06
+Did not solve 40 in probes 6 evals 1 time 2.14577e-06
+Did not solve 41 in probes 6 evals 1 time 9.53674e-07
+Did not solve 42 in probes 6 evals 1 time 9.53674e-07
+Did not solve 43 in probes 6 evals 1 time 9.53674e-07
+Did not solve 44 in probes 6 evals 1 time 1.90735e-06
+Did not solve 45 in probes 6 evals 1 time 9.53674e-07
+Did not solve 46 in probes 6 evals 1 time 9.53674e-07
+Did not solve 47 in probes 6 evals 1 time 1.90735e-06
+Did not solve 48 in probes 6 evals 1 time 2.86102e-06
+Did not solve 49 in probes 6 evals 1 time 2.14577e-06
+Did not solve 50 in probes 6 evals 1 time 9.53674e-07
+Did not solve 51 in probes 6 evals 1 time 0
+Solved 52 in 0 probes 6 evals 1 time 1.09673e-05
+Did not solve 53 in probes 6 evals 1 time 0
+Did not solve 54 in probes 6 evals 1 time 0
+Did not solve 55 in probes 6 evals 1 time 1.90735e-06
+Did not solve 56 in probes 6 evals 1 time 2.14577e-06
+Did not solve 57 in probes 6 evals 1 time 1.90735e-06
+Did not solve 58 in probes 6 evals 1 time 2.14577e-06
+Did not solve 59 in probes 6 evals 1 time 9.53674e-07
+Did not solve 60 in probes 6 evals 1 time 9.53674e-07
+Did not solve 61 in probes 6 evals 1 time 9.53674e-07
+Did not solve 62 in probes 6 evals 1 time 9.53674e-07
+Did not solve 63 in probes 6 evals 1 time 9.53674e-07
+Solved 64 in 0 probes 6 evals 1 time 5.00679e-06
+Did not solve 65 in probes 6 evals 1 time 1.19209e-06
+Did not solve 66 in probes 6 evals 1 time 1.19209e-06
+Did not solve 67 in probes 6 evals 1 time 1.19209e-06
+Did not solve 68 in probes 6 evals 1 time 1.90735e-06
+Did not solve 69 in probes 6 evals 1 time 1.90735e-06
+Did not solve 70 in probes 6 evals 1 time 1.19209e-06
+Did not solve 71 in probes 6 evals 1 time 1.19209e-06
+Did not solve 72 in probes 6 evals 1 time 9.53674e-07
+Saving solution 220
+Did not solve 73 in probes 6 evals 1 time 9.53674e-07
+Did not solve 74 in probes 6 evals 1 time 9.53674e-07
+Did not solve 75 in probes 6 evals 1 time 9.53674e-07
+Did not solve 76 in probes 6 evals 1 time 0
+Solved 77 in 0 probes 6 evals 1 time 5.96046e-06
+Did not solve 78 in probes 6 evals 1 time 0
+Did not solve 79 in probes 6 evals 1 time 0
+Did not solve 80 in probes 6 evals 1 time 9.53674e-07
+Did not solve 81 in probes 6 evals 1 time 9.53674e-07
+Did not solve 82 in probes 6 evals 1 time 9.53674e-07
+Did not solve 83 in probes 6 evals 1 time 0
+Did not solve 84 in probes 6 evals 1 time 1.19209e-06
+Did not solve 85 in probes 6 evals 1 time 9.53674e-07
+Did not solve 86 in probes 6 evals 1 time 9.53674e-07
+Did not solve 87 in probes 6 evals 1 time 9.53674e-07
+Did not solve 88 in probes 6 evals 1 time 9.53674e-07
+Did not solve 89 in probes 6 evals 1 time 9.53674e-07
+Did not solve 90 in probes 6 evals 1 time 1.19209e-06
+Did not solve 91 in probes 6 evals 1 time 9.53674e-07
+Did not solve 92 in probes 6 evals 1 time 1.90735e-06
+Did not solve 93 in probes 6 evals 1 time 9.53674e-07
+Did not solve 94 in probes 6 evals 1 time 9.53674e-07
+Did not solve 95 in probes 6 evals 1 time 0
+Did not solve 96 in probes 6 evals 1 time 0
+Did not solve 97 in probes 6 evals 1 time 1.19209e-06
+Did not solve 98 in probes 6 evals 1 time 9.53674e-07
+Did not solve 99 in probes 6 evals 1 time 9.53674e-07
+Did not solve 100 in probes 6 evals 1 time 9.53674e-07
+Did not solve 101 in probes 6 evals 1 time 9.53674e-07
+Did not solve 102 in probes 6 evals 1 time 2.14577e-06
+Did not solve 103 in probes 6 evals 1 time 0
+Did not solve 104 in probes 6 evals 1 time 0
+Solved 105 in 0 probes 6 evals 1 time 9.05991e-06
+Did not solve 106 in probes 6 evals 1 time 1.90735e-06
+Did not solve 107 in probes 6 evals 1 time 9.53674e-07
+Did not solve 108 in probes 6 evals 1 time 9.53674e-07
+Did not solve 109 in probes 6 evals 1 time 2.14577e-06
+Did not solve 110 in probes 6 evals 1 time 9.53674e-07
+Did not solve 111 in probes 6 evals 1 time 0
+Did not solve 112 in probes 6 evals 1 time 0
+Solved 113 in 0 probes 6 evals 1 time 7.15256e-06
+Saving solution 285
+Saving solution 256
+Saving solution 349
+Saving solution 350
+Saving solution 262
+Saving solution 174
+Did not solve 114 in probes 6 evals 1 time 1.19209e-06
+Did not solve 115 in probes 6 evals 1 time 2.14577e-06
+Did not solve 116 in probes 6 evals 1 time 9.53674e-07
+Did not solve 117 in probes 6 evals 1 time 0
+Did not solve 118 in probes 6 evals 1 time 0
+Did not solve 119 in probes 6 evals 1 time 0
+Did not solve 120 in probes 6 evals 1 time 9.53674e-07
+Did not solve 121 in probes 6 evals 1 time 9.53674e-07
+Did not solve 122 in probes 6 evals 1 time 9.53674e-07
+Did not solve 123 in probes 6 evals 1 time 1.19209e-06
+Did not solve 124 in probes 6 evals 1 time 9.53674e-07
+Did not solve 125 in probes 6 evals 1 time 0
+Did not solve 126 in probes 6 evals 1 time 0
+Solved 127 in 0 probes 6 evals 1 time 2.86102e-06
+Did not solve 128 in probes 6 evals 1 time 0
+Did not solve 129 in probes 6 evals 1 time 9.53674e-07
+Did not solve 130 in probes 6 evals 1 time 1.19209e-06
+Did not solve 131 in probes 6 evals 1 time 0
+Did not solve 132 in probes 6 evals 1 time 9.53674e-07
+Did not solve 133 in probes 6 evals 1 time 1.19209e-06
+Did not solve 134 in probes 6 evals 1 time 0
+Did not solve 135 in probes 6 evals 1 time 9.53674e-07
+Did not solve 136 in probes 6 evals 1 time 9.53674e-07
+Did not solve 137 in probes 6 evals 1 time 9.53674e-07
+Did not solve 138 in probes 6 evals 1 time 9.53674e-07
+Did not solve 139 in probes 6 evals 1 time 9.53674e-07
+Did not solve 140 in probes 6 evals 1 time 9.53674e-07
+Did not solve 141 in probes 6 evals 1 time 9.53674e-07
+Did not solve 142 in probes 6 evals 1 time 0
+Did not solve 143 in probes 6 evals 1 time 9.53674e-07
+Did not solve 144 in probes 6 evals 1 time 1.90735e-06
+Solved 145 in 0 probes 6 evals 1 time 7.86781e-06
+Did not solve 146 in probes 6 evals 1 time 1.19209e-06
+Did not solve 147 in probes 6 evals 1 time 0
+Did not solve 148 in probes 6 evals 1 time 0
+Did not solve 149 in probes 6 evals 1 time 9.53674e-07
+Did not solve 150 in probes 6 evals 1 time 0
+Did not solve 151 in probes 6 evals 1 time 9.53674e-07
+Did not solve 152 in probes 6 evals 1 time 9.53674e-07
+Did not solve 153 in probes 6 evals 1 time 9.53674e-07
+Did not solve 154 in probes 6 evals 1 time 1.19209e-06
+Did not solve 155 in probes 6 evals 1 time 9.53674e-07
+Did not solve 156 in probes 6 evals 1 time 9.53674e-07
+Did not solve 157 in probes 6 evals 1 time 1.19209e-06
+Did not solve 158 in probes 6 evals 1 time 0
+Did not solve 159 in probes 6 evals 1 time 9.53674e-07
+Did not solve 160 in probes 6 evals 1 time 1.90735e-06
+Did not solve 161 in probes 6 evals 1 time 9.53674e-07
+Did not solve 162 in probes 6 evals 1 time 9.53674e-07
+Did not solve 163 in probes 6 evals 1 time 1.19209e-06
+Did not solve 164 in probes 6 evals 1 time 2.14577e-06
+Did not solve 165 in probes 6 evals 1 time 1.90735e-06
+Did not solve 166 in probes 6 evals 1 time 1.19209e-06
+Did not solve 167 in probes 6 evals 1 time 9.53674e-07
+Did not solve 168 in probes 6 evals 1 time 0
+Did not solve 169 in probes 6 evals 1 time 9.53674e-07
+Solved 170 in 0 probes 6 evals 1 time 9.05991e-06
+Did not solve 171 in probes 6 evals 1 time 9.53674e-07
+Did not solve 172 in probes 6 evals 1 time 9.53674e-07
+Did not solve 173 in probes 6 evals 1 time 9.53674e-07
+Did not solve 174 in probes 6 evals 1 time 8.10623e-06
+Did not solve 175 in probes 6 evals 1 time 2.14577e-06
+Did not solve 176 in probes 6 evals 1 time 9.53674e-07
+Did not solve 177 in probes 6 evals 1 time 1.19209e-06
+Did not solve 178 in probes 6 evals 1 time 9.53674e-07
+Did not solve 179 in probes 6 evals 1 time 1.19209e-06
+Did not solve 180 in probes 6 evals 1 time 9.53674e-07
+Did not solve 181 in probes 6 evals 1 time 9.53674e-07
+Did not solve 182 in probes 6 evals 1 time 0
+Did not solve 183 in probes 6 evals 1 time 9.53674e-07
+Did not solve 184 in probes 6 evals 1 time 0
+Did not solve 185 in probes 6 evals 1 time 9.53674e-07
+Did not solve 186 in probes 6 evals 1 time 9.53674e-07
+Did not solve 187 in probes 6 evals 1 time 9.53674e-07
+Did not solve 188 in probes 6 evals 1 time 1.19209e-06
+Did not solve 189 in probes 6 evals 1 time 0
+Did not solve 190 in probes 6 evals 1 time 0
+Did not solve 191 in probes 6 evals 1 time 0
+Did not solve 192 in probes 6 evals 1 time 9.53674e-07
+Did not solve 193 in probes 6 evals 1 time 0
+Did not solve 194 in probes 6 evals 1 time 0
+Solved 195 in 0 probes 6 evals 1 time 5.96046e-06
+Did not solve 196 in probes 6 evals 1 time 0
+Did not solve 197 in probes 6 evals 1 time 9.53674e-07
+Did not solve 198 in probes 6 evals 1 time 0
+Solved 199 in 0 probes 6 evals 1 time 5.00679e-06
+Did not solve 200 in probes 6 evals 1 time 0
+Did not solve 201 in probes 6 evals 1 time 0
+Did not solve 202 in probes 6 evals 1 time 0
+Did not solve 203 in probes 6 evals 1 time 0
+Did not solve 204 in probes 6 evals 1 time 9.53674e-07
+Did not solve 205 in probes 6 evals 1 time 9.53674e-07
+Did not solve 206 in probes 6 evals 1 time 0
+Did not solve 207 in probes 6 evals 1 time 0
+Did not solve 208 in probes 6 evals 1 time 9.53674e-07
+Did not solve 209 in probes 6 evals 1 time 1.19209e-06
+Did not solve 210 in probes 6 evals 1 time 0
+Did not solve 211 in probes 6 evals 1 time 9.53674e-07
+Did not solve 212 in probes 6 evals 1 time 9.53674e-07
+Did not solve 213 in probes 6 evals 1 time 0
+Did not solve 214 in probes 6 evals 1 time 0
+Did not solve 215 in probes 6 evals 1 time 0
+Did not solve 216 in probes 6 evals 1 time 9.53674e-07
+Did not solve 217 in probes 6 evals 1 time 0
+Did not solve 218 in probes 6 evals 1 time 1.19209e-06
+Did not solve 219 in probes 6 evals 1 time 9.53674e-07
+Did not solve 220 in probes 6 evals 1 time 1.19209e-06
+Did not solve 221 in probes 6 evals 1 time 0
+Did not solve 222 in probes 6 evals 1 time 0
+Did not solve 223 in probes 6 evals 1 time 9.53674e-07
+Did not solve 224 in probes 6 evals 1 time 9.53674e-07
+Did not solve 225 in probes 6 evals 1 time 9.53674e-07
+Did not solve 226 in probes 6 evals 1 time 9.53674e-07
+Did not solve 227 in probes 6 evals 1 time 0
+Did not solve 228 in probes 6 evals 1 time 9.53674e-07
+Did not solve 229 in probes 6 evals 1 time 0
+Did not solve 230 in probes 6 evals 1 time 1.19209e-06
+Did not solve 231 in probes 6 evals 1 time 0
+Solved 232 in 0 probes 6 evals 1 time 5.96046e-06
+Did not solve 233 in probes 6 evals 1 time 0
+Did not solve 234 in probes 6 evals 1 time 0
+Did not solve 235 in probes 6 evals 1 time 0
+Did not solve 236 in probes 6 evals 1 time 0
+Did not solve 237 in probes 6 evals 1 time 9.53674e-07
+Did not solve 238 in probes 6 evals 1 time 9.53674e-07
+Did not solve 239 in probes 6 evals 1 time 0
+Saving solution 297
+Saving solution 326
+Did not solve 240 in probes 6 evals 1 time 9.53674e-07
+Did not solve 241 in probes 6 evals 1 time 1.19209e-06
+Did not solve 242 in probes 6 evals 1 time 0
+Did not solve 243 in probes 6 evals 1 time 1.19209e-06
+Did not solve 244 in probes 6 evals 1 time 0
+Did not solve 245 in probes 6 evals 1 time 0
+Did not solve 246 in probes 6 evals 1 time 0
+Did not solve 247 in probes 6 evals 1 time 0
+Did not solve 248 in probes 6 evals 1 time 0
+Solved 249 in 0 probes 6 evals 1 time 0.000169039
+Did not solve 250 in probes 6 evals 1 time 0
+Did not solve 251 in probes 6 evals 1 time 9.53674e-07
+Did not solve 252 in probes 6 evals 1 time 9.53674e-07
+Did not solve 253 in probes 6 evals 1 time 0
+Did not solve 254 in probes 6 evals 1 time 9.53674e-07
+Did not solve 255 in probes 6 evals 1 time 0
+Did not solve 256 in probes 6 evals 1 time 1.19209e-06
+Did not solve 257 in probes 6 evals 1 time 9.53674e-07
+Did not solve 258 in probes 6 evals 1 time 1.19209e-06
+Did not solve 259 in probes 6 evals 1 time 0
+Did not solve 260 in probes 6 evals 1 time 9.53674e-07
+Did not solve 261 in probes 6 evals 1 time 9.53674e-07
+Did not solve 262 in probes 6 evals 1 time 1.19209e-06
+Did not solve 263 in probes 6 evals 1 time 0
+Did not solve 264 in probes 6 evals 1 time 0
+Did not solve 265 in probes 6 evals 1 time 0
+Did not solve 266 in probes 6 evals 1 time 9.53674e-07
+Did not solve 267 in probes 6 evals 1 time 9.53674e-07
+Did not solve 268 in probes 6 evals 1 time 0
+Solved 269 in 0 probes 6 evals 1 time 4.05312e-06
+Did not solve 270 in probes 6 evals 1 time 0
+Did not solve 271 in probes 6 evals 1 time 9.53674e-07
+Did not solve 272 in probes 6 evals 1 time 0
+Solved 273 in 0 probes 6 evals 1 time 4.05312e-06
+Did not solve 274 in probes 6 evals 1 time 0
+Did not solve 275 in probes 6 evals 1 time 0
+Did not solve 276 in probes 6 evals 1 time 9.53674e-07
+Did not solve 277 in probes 6 evals 1 time 0
+Did not solve 278 in probes 6 evals 1 time 0
+Did not solve 279 in probes 6 evals 1 time 0
+Did not solve 280 in probes 6 evals 1 time 9.53674e-07
+Did not solve 281 in probes 6 evals 1 time 9.53674e-07
+Did not solve 282 in probes 6 evals 1 time 0
+Did not solve 283 in probes 6 evals 1 time 9.53674e-07
+Did not solve 284 in probes 6 evals 1 time 9.53674e-07
+Did not solve 285 in probes 6 evals 1 time 0
+Did not solve 286 in probes 6 evals 1 time 1.19209e-06
+Did not solve 287 in probes 6 evals 1 time 0
+Did not solve 288 in probes 6 evals 1 time 9.53674e-07
+Did not solve 289 in probes 6 evals 1 time 9.53674e-07
+Did not solve 290 in probes 6 evals 1 time 1.19209e-06
+Did not solve 291 in probes 6 evals 1 time 9.53674e-07
+Did not solve 292 in probes 6 evals 1 time 9.53674e-07
+Did not solve 293 in probes 6 evals 1 time 0
+Did not solve 294 in probes 6 evals 1 time 9.53674e-07
+Did not solve 295 in probes 6 evals 1 time 0
+Did not solve 296 in probes 6 evals 1 time 0
+Did not solve 297 in probes 6 evals 1 time 9.53674e-07
+Did not solve 298 in probes 6 evals 1 time 9.53674e-07
+Did not solve 299 in probes 6 evals 1 time 0
+Did not solve 300 in probes 6 evals 1 time 9.53674e-07
+Did not solve 301 in probes 6 evals 1 time 0
+Solved 302 in 0 probes 6 evals 1 time 9.05991e-06
+Did not solve 303 in probes 6 evals 1 time 9.53674e-07
+Did not solve 304 in probes 6 evals 1 time 0
+Did not solve 305 in probes 6 evals 1 time 0
+Did not solve 306 in probes 6 evals 1 time 0
+Did not solve 307 in probes 6 evals 1 time 1.19209e-06
+Did not solve 308 in probes 6 evals 1 time 0
+Did not solve 309 in probes 6 evals 1 time 0
+Did not solve 310 in probes 6 evals 1 time 9.53674e-07
+Did not solve 311 in probes 6 evals 1 time 0
+Solved 312 in 0 probes 6 evals 1 time 3.8147e-06
+Did not solve 313 in probes 6 evals 1 time 0
+Did not solve 314 in probes 6 evals 1 time 9.53674e-07
+Did not solve 315 in probes 6 evals 1 time 0
+Did not solve 316 in probes 6 evals 1 time 9.53674e-07
+Did not solve 317 in probes 6 evals 1 time 9.53674e-07
+Did not solve 318 in probes 6 evals 1 time 9.53674e-07
+Did not solve 319 in probes 6 evals 1 time 9.53674e-07
+Did not solve 320 in probes 6 evals 1 time 0
+Did not solve 321 in probes 6 evals 1 time 9.53674e-07
+Did not solve 322 in probes 6 evals 1 time 0
+Did not solve 323 in probes 6 evals 1 time 0
+Did not solve 324 in probes 6 evals 1 time 0
+Did not solve 325 in probes 6 evals 1 time 0
+Did not solve 326 in probes 6 evals 1 time 9.53674e-07
+Did not solve 327 in probes 6 evals 1 time 1.19209e-06
+Did not solve 328 in probes 6 evals 1 time 0
+Did not solve 329 in probes 6 evals 1 time 9.53674e-07
+Did not solve 330 in probes 6 evals 1 time 0
+Did not solve 331 in probes 6 evals 1 time 0
+Did not solve 332 in probes 6 evals 1 time 0
+Did not solve 333 in probes 6 evals 1 time 1.19209e-06
+Did not solve 334 in probes 6 evals 1 time 0
+Did not solve 335 in probes 6 evals 1 time 0
+Did not solve 336 in probes 6 evals 1 time 0
+Did not solve 337 in probes 6 evals 1 time 0
+Solved 338 in 0 probes 6 evals 1 time 0.000190973
+Did not solve 339 in probes 6 evals 1 time 0
+Did not solve 340 in probes 6 evals 1 time 0
+Did not solve 341 in probes 6 evals 1 time 0
+Did not solve 342 in probes 6 evals 1 time 9.53674e-07
+Did not solve 343 in probes 6 evals 1 time 0
+Did not solve 344 in probes 6 evals 1 time 1.19209e-06
+Did not solve 345 in probes 6 evals 1 time 9.53674e-07
+Did not solve 346 in probes 6 evals 1 time 9.53674e-07
+Did not solve 347 in probes 6 evals 1 time 0
+Did not solve 348 in probes 6 evals 1 time 0
+Did not solve 349 in probes 6 evals 1 time 9.53674e-07
+Did not solve 350 in probes 6 evals 1 time 9.53674e-07
+Did not solve 351 in probes 6 evals 1 time 9.53674e-07
+Did not solve 352 in probes 6 evals 1 time 0
+Did not solve 353 in probes 6 evals 1 time 0
+Did not solve 354 in probes 6 evals 1 time 0
+Did not solve 355 in probes 6 evals 1 time 0
+Did not solve 356 in probes 6 evals 1 time 0
+Solved 357 in 0 probes 6 evals 1 time 5.96046e-06
+Did not solve 358 in probes 6 evals 1 time 9.53674e-07
+Did not solve 359 in probes 6 evals 1 time 0
+Did not solve 360 in probes 6 evals 1 time 0

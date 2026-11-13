@@ -1,0 +1,15 @@
+# Private working notes: decisions, reversals and mistakes along the way. Not for publication.
+decisions.md
+private/
+
+# Bulky raw output (model transcripts, solver logs). Small result tables are kept.
+cube/data/raw/
+
+# Python and editor leftovers
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+.DS_Store

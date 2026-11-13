@@ -1,0 +1,1885 @@
+This is nxopt23 metric HALF
+ nxopt23 -t 30 -x 40 -
+Load nxopth23b.dat ....10....20....30....40....50....60....70....80....90....100 read in 4.39897
+Finished searching depth 13 pos 1 in 297 probes 97 evals.
+Finished searching depth 12 pos 4 in 59 probes 17 evals.
+Finished searching depth 12 pos 5 in 61 probes 17 evals.
+Finished searching depth 13 pos 4 in 574 probes 179 evals.
+Finished searching depth 12 pos 7 in 36 probes 14 evals.
+Finished searching depth 13 pos 6 in 323 probes 114 evals.
+Finished searching depth 12 pos 11 in 48 probes 14 evals.
+Finished searching depth 13 pos 5 in 516 probes 162 evals.
+Finished searching depth 13 pos 7 in 426 probes 145 evals.
+Finished searching depth 12 pos 8 in 27 probes 8 evals.
+Finished searching depth 12 pos 9 in 39 probes 14 evals.
+Finished searching depth 12 pos 2 in 30 probes 8 evals.
+Finished searching depth 13 pos 3 in 460 probes 160 evals.
+Finished searching depth 13 pos 9 in 561 probes 186 evals.
+Finished searching depth 13 pos 2 in 409 probes 145 evals.
+Finished searching depth 13 pos 8 in 486 probes 157 evals.
+Finished searching depth 12 pos 12 in 32 probes 8 evals.
+Finished searching depth 13 pos 11 in 451 probes 147 evals.
+Finished searching depth 13 pos 10 in 289 probes 96 evals.
+Finished searching depth 13 pos 12 in 498 probes 170 evals.
+Finished searching depth 12 pos 17 in 42 probes 14 evals.
+Finished searching depth 13 pos 17 in 935 probes 281 evals.
+Finished searching depth 13 pos 15 in 310 probes 104 evals.
+Finished searching depth 12 pos 14 in 71 probes 21 evals.
+Finished searching depth 12 pos 18 in 30 probes 8 evals.
+Finished searching depth 12 pos 13 in 42 probes 14 evals.
+Finished searching depth 13 pos 16 in 354 probes 122 evals.
+Finished searching depth 13 pos 14 in 577 probes 201 evals.
+Finished searching depth 13 pos 18 in 372 probes 129 evals.
+Finished searching depth 13 pos 13 in 480 probes 181 evals.
+Finished searching depth 12 pos 19 in 76 probes 28 evals.
+Finished searching depth 13 pos 19 in 677 probes 234 evals.
+Finished searching depth 13 pos 21 in 336 probes 107 evals.
+Finished searching depth 12 pos 20 in 30 probes 8 evals.
+Finished searching depth 13 pos 20 in 413 probes 150 evals.
+Finished searching depth 12 pos 23 in 30 probes 8 evals.
+Finished searching depth 13 pos 23 in 278 probes 87 evals.
+Finished searching depth 13 pos 22 in 241 probes 80 evals.
+Finished searching depth 12 pos 24 in 50 probes 14 evals.
+Finished searching depth 13 pos 24 in 486 probes 169 evals.
+Finished searching depth 13 pos 25 in 232 probes 71 evals.
+Finished searching depth 12 pos 26 in 24 probes 8 evals.
+Finished searching depth 13 pos 26 in 264 probes 96 evals.
+Finished searching depth 12 pos 28 in 24 probes 8 evals.
+Finished searching depth 12 pos 27 in 24 probes 8 evals.
+Finished searching depth 13 pos 27 in 320 probes 112 evals.
+Finished searching depth 13 pos 28 in 237 probes 81 evals.
+Finished searching depth 13 pos 29 in 240 probes 80 evals.
+Finished searching depth 13 pos 30 in 327 probes 106 evals.
+Finished searching depth 14 pos 9 in 130347 probes 43440 evals.
+Finished searching depth 14 pos 12 in 130320 probes 43424 evals.
+Finished searching depth 14 pos 3 in 130234 probes 43414 evals.
+Finished searching depth 14 pos 4 in 130357 probes 43433 evals.
+Finished searching depth 14 pos 20 in 130199 probes 43404 evals.
+Finished searching depth 14 pos 24 in 130278 probes 43423 evals.
+Finished searching depth 14 pos 25 in 130000 probes 43325 evals.
+Finished searching depth 14 pos 19 in 130604 probes 43488 evals.
+Finished searching depth 14 pos 1 in 130071 probes 43351 evals.
+Finished searching depth 14 pos 6 in 130085 probes 43368 evals.
+Finished searching depth 14 pos 18 in 130158 probes 43383 evals.
+Finished searching depth 14 pos 11 in 130222 probes 43401 evals.
+Finished searching depth 14 pos 16 in 130128 probes 43376 evals.
+Finished searching depth 14 pos 2 in 130183 probes 43399 evals.
+Finished searching depth 14 pos 17 in 130808 probes 43535 evals.
+Finished searching depth 14 pos 21 in 130107 probes 43361 evals.
+Finished searching depth 14 pos 15 in 130078 probes 43358 evals.
+Finished searching depth 14 pos 8 in 130275 probes 43411 evals.
+Finished searching depth 14 pos 7 in 130200 probes 43399 evals.
+Finished searching depth 14 pos 27 in 130091 probes 43366 evals.
+Finished searching depth 14 pos 13 in 130251 probes 43435 evals.
+Finished searching depth 14 pos 10 in 130057 probes 43350 evals.
+Finished searching depth 14 pos 5 in 130293 probes 43416 evals.
+Finished searching depth 14 pos 14 in 130366 probes 43455 evals.
+Finished searching depth 14 pos 23 in 130055 probes 43341 evals.
+Finished searching depth 14 pos 22 in 130003 probes 43334 evals.
+Finished searching depth 14 pos 29 in 130005 probes 43334 evals.
+Finished searching depth 14 pos 28 in 129999 probes 43335 evals.
+Finished searching depth 14 pos 30 in 130098 probes 43360 evals.
+Finished searching depth 14 pos 26 in 130035 probes 43350 evals.
+Finished searching depth 15 pos 3 in 269453 probes 87899 evals.
+Finished searching depth 15 pos 25 in 262162 probes 86682 evals.
+Finished searching depth 15 pos 20 in 268334 probes 87457 evals.
+Finished searching depth 15 pos 9 in 278801 probes 90069 evals.
+Finished searching depth 15 pos 24 in 272597 probes 88252 evals.
+Finished searching depth 15 pos 4 in 279954 probes 89856 evals.
+Finished searching depth 15 pos 12 in 282006 probes 89589 evals.
+Finished searching depth 15 pos 6 in 263826 probes 86864 evals.
+Finished searching depth 15 pos 1 in 271822 probes 88310 evals.
+Finished searching depth 15 pos 11 in 269444 probes 87640 evals.
+Finished searching depth 15 pos 18 in 273266 probes 87995 evals.
+Finished searching depth 15 pos 13 in 269734 probes 87824 evals.
+Finished searching depth 15 pos 19 in 295192 probes 90496 evals.
+Finished searching depth 15 pos 7 in 269636 probes 87733 evals.
+Finished searching depth 15 pos 27 in 265098 probes 87096 evals.
+Finished searching depth 15 pos 10 in 264358 probes 87019 evals.
+Finished searching depth 15 pos 29 in 264467 probes 87072 evals.
+Finished searching depth 15 pos 22 in 263778 probes 86904 evals.
+Finished searching depth 15 pos 21 in 266188 probes 87059 evals.
+Finished searching depth 15 pos 16 in 268382 probes 87418 evals.
+Finished searching depth 15 pos 2 in 268017 probes 87553 evals.
+Finished searching depth 15 pos 28 in 264560 probes 86969 evals.
+Finished searching depth 15 pos 30 in 265584 probes 86918 evals.
+Finished searching depth 15 pos 15 in 267392 probes 87146 evals.
+Finished searching depth 15 pos 8 in 271364 probes 88093 evals.
+Finished searching depth 15 pos 17 in 302600 probes 94655 evals.
+Finished searching depth 15 pos 23 in 264294 probes 86773 evals.
+Finished searching depth 15 pos 5 in 270825 probes 87808 evals.
+Finished searching depth 15 pos 14 in 278195 probes 89043 evals.
+Finished searching depth 15 pos 26 in 265048 probes 86876 evals.
+Finished searching depth 16 pos 25 in 903721 probes 287051 evals.
+Finished searching depth 16 pos 6 in 1023743 probes 323227 evals.
+Finished searching depth 16 pos 23 in 994185 probes 312267 evals.
+Finished searching depth 16 pos 15 in 1175689 probes 367149 evals.
+Finished searching depth 16 pos 10 in 1069884 probes 338207 evals.
+Finished searching depth 16 pos 27 in 1127232 probes 356658 evals.
+Finished searching depth 16 pos 22 in 1082265 probes 344653 evals.
+Finished searching depth 16 pos 28 in 1046211 probes 328569 evals.
+Finished searching depth 16 pos 26 in 1073453 probes 336574 evals.
+Finished searching depth 16 pos 20 in 1210825 probes 377155 evals.
+Finished searching depth 16 pos 21 in 1161262 probes 365052 evals.
+Finished searching depth 16 pos 29 in 1151663 probes 366272 evals.
+Finished searching depth 16 pos 30 in 1102287 probes 345109 evals.
+Finished searching depth 16 pos 2 in 1185780 probes 372155 evals.
+Finished searching depth 16 pos 11 in 1236741 probes 385314 evals.
+Finished searching depth 16 pos 3 in 1287049 probes 403680 evals.
+Finished searching depth 16 pos 18 in 1265969 probes 390138 evals.
+Finished searching depth 16 pos 16 in 1232800 probes 385535 evals.
+Finished searching depth 16 pos 7 in 1266337 probes 397224 evals.
+Finished searching depth 16 pos 24 in 1302388 probes 405208 evals.
+Finished searching depth 16 pos 1 in 1306532 probes 407020 evals.
+Finished searching depth 17 pos 24 in 1318799 probes 410106 evals.
+Saving solution 24
+Finished searching depth 12 pos 31 in 30 probes 8 evals.
+Finished searching depth 13 pos 31 in 570 probes 191 evals.
+Finished searching depth 16 pos 13 in 1275200 probes 398819 evals.
+Finished searching depth 16 pos 8 in 1356682 probes 424461 evals.
+Finished searching depth 14 pos 31 in 130449 probes 43445 evals.
+Finished searching depth 16 pos 5 in 1337070 probes 416159 evals.
+Finished searching depth 16 pos 12 in 1496455 probes 457285 evals.
+Finished searching depth 17 pos 15 in 1546471 probes 478280 evals.
+Saving solution 15
+Finished searching depth 13 pos 32 in 213 probes 71 evals.
+Finished searching depth 16 pos 9 in 1526951 probes 477238 evals.
+Finished searching depth 16 pos 4 in 1548071 probes 476948 evals.
+Finished searching depth 16 pos 14 in 1434906 probes 438769 evals.
+Finished searching depth 14 pos 32 in 129975 probes 43325 evals.
+Finished searching depth 15 pos 31 in 289538 probes 90985 evals.
+Finished searching depth 16 pos 19 in 1672513 probes 493491 evals.
+Finished searching depth 15 pos 32 in 261274 probes 86664 evals.
+Finished searching depth 16 pos 17 in 1884305 probes 570653 evals.
+Finished searching depth 17 pos 2 in 2110869 probes 654151 evals.
+Saving solution 2
+Finished searching depth 13 pos 33 in 407 probes 137 evals.
+Finished searching depth 16 pos 32 in 891913 probes 285871 evals.
+Finished searching depth 14 pos 33 in 130178 probes 43391 evals.
+Finished searching depth 15 pos 33 in 267948 probes 87460 evals.
+Finished searching depth 17 pos 1 in 2827844 probes 869437 evals.
+Solved 1 in 17 probes 2827844 evals 869437 time 0.352041
+ R3 F2 R3 F1 R1 L3 D1 F3 L2 R3 B1 D3 L2 F2 D1 F3 D2
+Solved 2 in 17 probes 2110869 evals 654151 time 0.274738
+ R3 B2 D3 L3 U3 D1 B2 R3 U2 F3 L2 D2 R3 B2 F1 L2 U3
+Finished searching depth 12 pos 34 in 32 probes 8 evals.
+Finished searching depth 13 pos 34 in 386 probes 124 evals.
+Finished searching depth 17 pos 27 in 2827344 probes 885679 evals.
+Saving solution 27
+Finished searching depth 12 pos 35 in 24 probes 8 evals.
+Finished searching depth 13 pos 35 in 208 probes 63 evals.
+Finished searching depth 14 pos 34 in 130181 probes 43381 evals.
+Finished searching depth 14 pos 35 in 129976 probes 43317 evals.
+Finished searching depth 16 pos 31 in 1656092 probes 500237 evals.
+Finished searching depth 15 pos 34 in 267875 probes 87300 evals.
+Finished searching depth 15 pos 35 in 262735 probes 86719 evals.
+Finished searching depth 16 pos 33 in 1170248 probes 366654 evals.
+Finished searching depth 16 pos 35 in 938737 probes 298081 evals.
+Finished searching depth 16 pos 34 in 1160322 probes 362080 evals.
+Finished searching depth 17 pos 14 in 5839033 probes 1781140 evals.
+Saving solution 14
+Finished searching depth 13 pos 36 in 251 probes 92 evals.
+Finished searching depth 14 pos 36 in 130022 probes 43346 evals.
+Finished searching depth 15 pos 36 in 267418 probes 87257 evals.
+Finished searching depth 17 pos 31 in 5292477 probes 1587968 evals.
+Saving solution 31
+Finished searching depth 12 pos 37 in 24 probes 8 evals.
+Finished searching depth 13 pos 37 in 361 probes 113 evals.
+Finished searching depth 14 pos 37 in 130123 probes 43367 evals.
+Finished searching depth 15 pos 37 in 265475 probes 87044 evals.
+Finished searching depth 16 pos 36 in 1181659 probes 370631 evals.
+Finished searching depth 16 pos 37 in 1121656 probes 352578 evals.
+Finished searching depth 17 pos 25 in 10073058 probes 3246696 evals.
+Finished searching depth 17 pos 32 in 9939203 probes 3229788 evals.
+Finished searching depth 17 pos 23 in 10996321 probes 3511667 evals.
+Finished searching depth 17 pos 6 in 11439252 probes 3666536 evals.
+Finished searching depth 18 pos 6 in 11464685 probes 3674370 evals.
+Saving solution 6
+Finished searching depth 12 pos 38 in 36 probes 14 evals.
+Finished searching depth 13 pos 38 in 774 probes 246 evals.
+Finished searching depth 14 pos 38 in 130623 probes 43500 evals.
+Finished searching depth 17 pos 13 in 11288617 probes 3559016 evals.
+Saving solution 13
+Finished searching depth 12 pos 39 in 30 probes 8 evals.
+Finished searching depth 13 pos 39 in 395 probes 141 evals.
+Finished searching depth 15 pos 38 in 289378 probes 91663 evals.
+Finished searching depth 14 pos 39 in 130178 probes 43395 evals.
+Finished searching depth 16 pos 38 in 352689 probes 110240 evals.
+Saving solution 38
+Finished searching depth 13 pos 40 in 447 probes 149 evals.
+Finished searching depth 15 pos 39 in 273540 probes 88061 evals.
+Finished searching depth 14 pos 40 in 130239 probes 43403 evals.
+Finished searching depth 15 pos 40 in 273817 probes 88423 evals.
+Finished searching depth 17 pos 26 in 11996055 probes 3831284 evals.
+Finished searching depth 17 pos 10 in 12138041 probes 3892537 evals.
+Finished searching depth 17 pos 22 in 12314886 probes 3974638 evals.
+Finished searching depth 16 pos 39 in 1328737 probes 408817 evals.
+Finished searching depth 16 pos 40 in 1368852 probes 423355 evals.
+Finished searching depth 17 pos 28 in 11687376 probes 3729704 evals.
+Finished searching depth 18 pos 28 in 11786823 probes 3759975 evals.
+Saving solution 28
+Finished searching depth 13 pos 41 in 448 probes 137 evals.
+Finished searching depth 17 pos 35 in 10399958 probes 3350144 evals.
+Finished searching depth 17 pos 40 in 1579456 probes 485916 evals.
+Saving solution 40
+Finished searching depth 12 pos 42 in 24 probes 8 evals.
+Finished searching depth 13 pos 42 in 357 probes 120 evals.
+Finished searching depth 14 pos 41 in 130258 probes 43391 evals.
+Finished searching depth 17 pos 20 in 13676324 probes 4325630 evals.
+Finished searching depth 14 pos 42 in 130131 probes 43374 evals.
+Finished searching depth 15 pos 41 in 273965 probes 88594 evals.
+Finished searching depth 17 pos 21 in 13035840 probes 4162237 evals.
+Finished searching depth 17 pos 29 in 13134929 probes 4232992 evals.
+Finished searching depth 15 pos 42 in 265914 probes 87265 evals.
+Finished searching depth 17 pos 16 in 14050103 probes 4458705 evals.
+Finished searching depth 17 pos 7 in 14301892 probes 4554879 evals.
+Finished searching depth 17 pos 30 in 12352740 probes 3925803 evals.
+Finished searching depth 17 pos 18 in 14202180 probes 4457263 evals.
+Finished searching depth 17 pos 11 in 14047031 probes 4448583 evals.
+Finished searching depth 16 pos 42 in 1142999 probes 361080 evals.
+Finished searching depth 17 pos 3 in 14607264 probes 4647617 evals.
+Finished searching depth 17 pos 8 in 15604597 probes 4942169 evals.
+Finished searching depth 16 pos 41 in 1394997 probes 433121 evals.
+Finished searching depth 17 pos 33 in 13149469 probes 4186531 evals.
+Finished searching depth 17 pos 5 in 15235299 probes 4815285 evals.
+Finished searching depth 17 pos 34 in 13093434 probes 4154833 evals.
+Finished searching depth 18 pos 8 in 16679184 probes 5269078 evals.
+Saving solution 8
+Finished searching depth 12 pos 43 in 30 probes 8 evals.
+Finished searching depth 13 pos 43 in 374 probes 117 evals.
+Finished searching depth 14 pos 43 in 130154 probes 43371 evals.
+Finished searching depth 15 pos 43 in 271993 probes 88201 evals.
+Finished searching depth 17 pos 12 in 16925647 probes 5268016 evals.
+Finished searching depth 17 pos 9 in 17148208 probes 5435642 evals.
+Finished searching depth 18 pos 9 in 17487263 probes 5540672 evals.
+Saving solution 9
+Finished searching depth 12 pos 44 in 51 probes 20 evals.
+Finished searching depth 13 pos 44 in 424 probes 143 evals.
+Finished searching depth 17 pos 4 in 17717736 probes 5539787 evals.
+Finished searching depth 16 pos 43 in 1343299 probes 419590 evals.
+Finished searching depth 14 pos 44 in 130258 probes 43397 evals.
+Finished searching depth 18 pos 12 in 17442423 probes 5422380 evals.
+Saving solution 12
+Finished searching depth 12 pos 45 in 42 probes 14 evals.
+Finished searching depth 13 pos 45 in 394 probes 141 evals.
+Finished searching depth 14 pos 45 in 130156 probes 43395 evals.
+Finished searching depth 15 pos 44 in 277871 probes 88145 evals.
+Finished searching depth 15 pos 45 in 265553 probes 87169 evals.
+Finished searching depth 17 pos 42 in 4300457 probes 1347988 evals.
+Saving solution 42
+Finished searching depth 12 pos 46 in 24 probes 8 evals.
+Finished searching depth 13 pos 46 in 346 probes 122 evals.
+Finished searching depth 14 pos 46 in 130117 probes 43376 evals.
+Finished searching depth 15 pos 46 in 270260 probes 87648 evals.
+Finished searching depth 16 pos 45 in 1137143 probes 358690 evals.
+Finished searching depth 16 pos 44 in 1359978 probes 412012 evals.
+Finished searching depth 18 pos 5 in 18655189 probes 5854644 evals.
+Saving solution 5
+Finished searching depth 12 pos 47 in 30 probes 8 evals.
+Finished searching depth 13 pos 47 in 382 probes 128 evals.
+Finished searching depth 14 pos 47 in 130153 probes 43382 evals.
+Finished searching depth 17 pos 19 in 18978281 probes 5736129 evals.
+Finished searching depth 15 pos 47 in 267469 probes 87633 evals.
+Finished searching depth 16 pos 46 in 1257637 probes 390682 evals.
+Finished searching depth 18 pos 18 in 19270793 probes 5980264 evals.
+Saving solution 18
+Finished searching depth 13 pos 48 in 246 probes 76 evals.
+Finished searching depth 14 pos 48 in 130032 probes 43330 evals.
+Finished searching depth 17 pos 36 in 13326297 probes 4246128 evals.
+Finished searching depth 15 pos 48 in 267538 probes 87170 evals.
+Finished searching depth 16 pos 47 in 1213778 probes 382523 evals.
+Finished searching depth 17 pos 37 in 12733149 probes 4062199 evals.
+Finished searching depth 18 pos 35 in 17394637 probes 5520513 evals.
+Saving solution 35
+Finished searching depth 12 pos 49 in 32 probes 8 evals.
+Finished searching depth 13 pos 49 in 301 probes 99 evals.
+Finished searching depth 16 pos 48 in 1187297 probes 369408 evals.
+Finished searching depth 14 pos 49 in 130081 probes 43353 evals.
+Finished searching depth 18 pos 3 in 20261892 probes 6373872 evals.
+Solved 3 in 18 probes 20261892 evals 6373872 time 2.474
+ B3 R3 B3 R1 B3 L3 F3 D3 B1 D1 B2 L3 D3 R3 U2 F1 R3 F3
+Finished searching depth 12 pos 50 in 39 probes 14 evals.
+Finished searching depth 13 pos 50 in 449 probes 150 evals.
+Finished searching depth 15 pos 49 in 270678 probes 87645 evals.
+Finished searching depth 14 pos 50 in 130235 probes 43404 evals.
+Finished searching depth 15 pos 50 in 276776 probes 88370 evals.
+Finished searching depth 16 pos 49 in 1248114 probes 386818 evals.
+Finished searching depth 16 pos 50 in 1404039 probes 427638 evals.
+Finished searching depth 17 pos 17 in 21059443 probes 6493417 evals.
+Finished searching depth 18 pos 22 in 22626583 probes 7176854 evals.
+Saving solution 22
+Finished searching depth 12 pos 51 in 30 probes 8 evals.
+Finished searching depth 13 pos 51 in 312 probes 117 evals.
+Finished searching depth 14 pos 51 in 130077 probes 43371 evals.
+Finished searching depth 15 pos 51 in 270100 probes 87341 evals.
+Finished searching depth 18 pos 11 in 23722900 probes 7408638 evals.
+Saving solution 11
+Finished searching depth 13 pos 52 in 192 probes 65 evals.
+Finished searching depth 14 pos 52 in 129957 probes 43319 evals.
+Finished searching depth 15 pos 52 in 261109 probes 86662 evals.
+Finished searching depth 16 pos 51 in 1236171 probes 382381 evals.
+Finished searching depth 18 pos 36 in 18706182 probes 5892092 evals.
+Saving solution 36
+Finished searching depth 12 pos 53 in 27 probes 8 evals.
+Finished searching depth 13 pos 53 in 349 probes 120 evals.
+Finished searching depth 14 pos 53 in 130126 probes 43374 evals.
+Finished searching depth 15 pos 53 in 272344 probes 88191 evals.
+Finished searching depth 18 pos 4 in 26038502 probes 8061765 evals.
+Solved 4 in 18 probes 26038502 evals 8061765 time 2.99442
+ L3 F2 D1 B2 D3 R1 U3 L1 B3 D1 B1 R2 D1 R2 U3 L3 R2 U3
+Solved 5 in 18 probes 18655189 evals 5854644 time 2.25157
+ D1 F2 U2 R1 D2 B3 L3 F3 L3 U2 F2 R2 F3 L1 D1 U1 F2 D1
+Solved 6 in 18 probes 11464685 evals 3674370 time 1.38882
+ F2 L3 U2 F2 B1 D1 F3 U2 R3 L1 F2 B2 D3 F2 R2 F2 D2 R3
+Finished searching depth 12 pos 54 in 58 probes 16 evals.
+Finished searching depth 13 pos 54 in 643 probes 231 evals.
+Finished searching depth 16 pos 52 in 855144 probes 275250 evals.
+Finished searching depth 14 pos 54 in 130468 probes 43485 evals.
+Finished searching depth 15 pos 54 in 288437 probes 91471 evals.
+Finished searching depth 16 pos 53 in 1358592 probes 420615 evals.
+Finished searching depth 18 pos 23 in 26314314 probes 8265391 evals.
+Saving solution 23
+Finished searching depth 12 pos 55 in 30 probes 8 evals.
+Finished searching depth 13 pos 55 in 568 probes 176 evals.
+Finished searching depth 14 pos 55 in 130387 probes 43430 evals.
+Finished searching depth 16 pos 54 in 1642905 probes 501044 evals.
+Finished searching depth 15 pos 55 in 282669 probes 90375 evals.
+Finished searching depth 18 pos 17 in 25411901 probes 7804369 evals.
+Saving solution 17
+Finished searching depth 12 pos 56 in 48 probes 14 evals.
+Finished searching depth 13 pos 56 in 464 probes 156 evals.
+Finished searching depth 14 pos 56 in 130244 probes 43410 evals.
+Finished searching depth 17 pos 53 in 2396632 probes 734661 evals.
+Saving solution 53
+Finished searching depth 12 pos 57 in 39 probes 14 evals.
+Finished searching depth 13 pos 57 in 353 probes 123 evals.
+Finished searching depth 15 pos 56 in 271362 probes 87973 evals.
+Finished searching depth 14 pos 57 in 130118 probes 43377 evals.
+Finished searching depth 15 pos 57 in 267069 probes 87496 evals.
+Finished searching depth 17 pos 39 in 15049037 probes 4719649 evals.
+Finished searching depth 16 pos 55 in 1604032 probes 494063 evals.
+Finished searching depth 16 pos 56 in 1241399 probes 385511 evals.
+Finished searching depth 16 pos 57 in 1174311 probes 371581 evals.
+Finished searching depth 18 pos 34 in 25978563 probes 8096507 evals.
+Saving solution 34
+Finished searching depth 12 pos 58 in 30 probes 8 evals.
+Finished searching depth 13 pos 58 in 408 probes 140 evals.
+Finished searching depth 14 pos 58 in 130194 probes 43394 evals.
+Finished searching depth 15 pos 58 in 272775 probes 88140 evals.
+Finished searching depth 17 pos 55 in 2369904 probes 724247 evals.
+Saving solution 55
+Finished searching depth 12 pos 59 in 24 probes 8 evals.
+Finished searching depth 13 pos 59 in 442 probes 135 evals.
+Finished searching depth 14 pos 59 in 130222 probes 43389 evals.
+Finished searching depth 15 pos 59 in 270797 probes 87615 evals.
+Finished searching depth 16 pos 58 in 1331960 probes 413149 evals.
+Finished searching depth 17 pos 43 in 15232368 probes 4825877 evals.
+Finished searching depth 17 pos 45 in 12840707 probes 4110517 evals.
+Finished searching depth 16 pos 59 in 1295570 probes 400060 evals.
+Finished searching depth 17 pos 41 in 15934671 probes 5022348 evals.
+Finished searching depth 18 pos 41 in 15998231 probes 5041886 evals.
+Saving solution 41
+Finished searching depth 12 pos 60 in 30 probes 8 evals.
+Finished searching depth 13 pos 60 in 315 probes 108 evals.
+Finished searching depth 14 pos 60 in 130080 probes 43362 evals.
+Finished searching depth 15 pos 60 in 266044 probes 87229 evals.
+Finished searching depth 18 pos 19 in 31302207 probes 9370749 evals.
+Saving solution 19
+Finished searching depth 12 pos 61 in 24 probes 8 evals.
+Finished searching depth 13 pos 61 in 328 probes 116 evals.
+Finished searching depth 14 pos 61 in 130114 probes 43370 evals.
+Finished searching depth 15 pos 61 in 270117 probes 87849 evals.
+Finished searching depth 18 pos 43 in 17292658 probes 5451450 evals.
+Saving solution 43
+Finished searching depth 12 pos 62 in 27 probes 8 evals.
+Finished searching depth 13 pos 62 in 472 probes 146 evals.
+Finished searching depth 18 pos 45 in 14780210 probes 4703449 evals.
+Saving solution 45
+Finished searching depth 12 pos 63 in 30 probes 8 evals.
+Finished searching depth 13 pos 63 in 352 probes 116 evals.
+Finished searching depth 14 pos 62 in 130252 probes 43400 evals.
+Finished searching depth 14 pos 63 in 130133 probes 43372 evals.
+Finished searching depth 15 pos 62 in 273815 probes 88452 evals.
+Finished searching depth 16 pos 60 in 1075668 probes 338953 evals.
+Finished searching depth 15 pos 63 in 268648 probes 87459 evals.
+Finished searching depth 17 pos 44 in 15303062 probes 4734600 evals.
+Finished searching depth 17 pos 46 in 14245309 probes 4498116 evals.
+Finished searching depth 16 pos 61 in 1262376 probes 394289 evals.
+Finished searching depth 16 pos 63 in 1188060 probes 370070 evals.
+Finished searching depth 17 pos 47 in 13773508 probes 4405796 evals.
+Finished searching depth 16 pos 62 in 1351844 probes 417774 evals.
+Finished searching depth 17 pos 48 in 13398089 probes 4240987 evals.
+Finished searching depth 17 pos 57 in 6859605 probes 2169111 evals.
+Saving solution 57
+Finished searching depth 12 pos 64 in 24 probes 8 evals.
+Finished searching depth 13 pos 64 in 253 probes 75 evals.
+Finished searching depth 17 pos 60 in 2840094 probes 886698 evals.
+Saving solution 60
+Finished searching depth 13 pos 65 in 150 probes 56 evals.
+Finished searching depth 14 pos 64 in 130015 probes 43329 evals.
+Finished searching depth 14 pos 65 in 129912 probes 43310 evals.
+Finished searching depth 18 pos 47 in 14878062 probes 4740850 evals.
+Saving solution 47
+Finished searching depth 13 pos 66 in 136 probes 41 evals.
+Finished searching depth 15 pos 64 in 262961 probes 86739 evals.
+Finished searching depth 15 pos 65 in 262048 probes 86647 evals.
+Finished searching depth 14 pos 66 in 129901 probes 43295 evals.
+Finished searching depth 17 pos 52 in 9507699 probes 3100719 evals.
+Finished searching depth 15 pos 66 in 262313 probes 86678 evals.
+Finished searching depth 16 pos 65 in 924347 probes 293593 evals.
+Finished searching depth 16 pos 64 in 1012679 probes 321559 evals.
+Finished searching depth 17 pos 49 in 14165035 probes 4467388 evals.
+Finished searching depth 18 pos 52 in 10168885 probes 3304797 evals.
+Saving solution 52
+Finished searching depth 13 pos 67 in 194 probes 65 evals.
+Finished searching depth 16 pos 66 in 916990 probes 289519 evals.
+Finished searching depth 14 pos 67 in 129959 probes 43319 evals.
+Finished searching depth 15 pos 67 in 263058 probes 86847 evals.
+Finished searching depth 17 pos 56 in 7879971 probes 2452826 evals.
+Saving solution 56
+Finished searching depth 12 pos 68 in 72 probes 18 evals.
+Finished searching depth 13 pos 68 in 505 probes 159 evals.
+Finished searching depth 14 pos 68 in 130423 probes 43413 evals.
+Finished searching depth 15 pos 68 in 293083 probes 90414 evals.
+Finished searching depth 18 pos 30 in 32297854 probes 10095868 evals.
+Saving solution 30
+Finished searching depth 12 pos 69 in 52 probes 14 evals.
+Finished searching depth 13 pos 69 in 369 probes 123 evals.
+Finished searching depth 14 pos 69 in 130167 probes 43377 evals.
+Finished searching depth 18 pos 10 in 34615926 probes 10913324 evals.
+Saving solution 10
+Finished searching depth 12 pos 70 in 36 probes 14 evals.
+Finished searching depth 13 pos 70 in 298 probes 96 evals.
+Finished searching depth 15 pos 69 in 276005 probes 88205 evals.
+Finished searching depth 14 pos 70 in 130066 probes 43350 evals.
+Finished searching depth 16 pos 67 in 1037837 probes 330575 evals.
+Finished searching depth 15 pos 70 in 265855 probes 87272 evals.
+Finished searching depth 16 pos 70 in 1165771 probes 368751 evals.
+Finished searching depth 16 pos 68 in 1599423 probes 473954 evals.
+Finished searching depth 16 pos 69 in 1364147 probes 417054 evals.
+Finished searching depth 17 pos 50 in 15931600 probes 4938270 evals.
+Finished searching depth 17 pos 51 in 14007291 probes 4409178 evals.
+Finished searching depth 18 pos 25 in 38525115 probes 12232028 evals.
+Saving solution 25
+Finished searching depth 12 pos 71 in 30 probes 8 evals.
+Finished searching depth 13 pos 71 in 313 probes 99 evals.
+Finished searching depth 14 pos 71 in 130126 probes 43353 evals.
+Finished searching depth 15 pos 71 in 272352 probes 87664 evals.
+Finished searching depth 16 pos 71 in 1238818 probes 380046 evals.
+Finished searching depth 17 pos 71 in 1298638 probes 397441 evals.
+Saving solution 71
+Finished searching depth 12 pos 72 in 34 probes 8 evals.
+Finished searching depth 13 pos 72 in 549 probes 168 evals.
+Finished searching depth 14 pos 72 in 130347 probes 43422 evals.
+Finished searching depth 15 pos 72 in 274971 probes 88697 evals.
+Finished searching depth 18 pos 16 in 40564053 probes 12627234 evals.
+Saving solution 16
+Finished searching depth 12 pos 73 in 36 probes 14 evals.
+Finished searching depth 13 pos 73 in 598 probes 176 evals.
+Finished searching depth 14 pos 73 in 130423 probes 43430 evals.
+Finished searching depth 15 pos 73 in 275628 probes 88010 evals.
+Finished searching depth 18 pos 39 in 27635654 probes 8533712 evals.
+Saving solution 39
+Finished searching depth 12 pos 74 in 24 probes 8 evals.
+Finished searching depth 13 pos 74 in 493 probes 167 evals.
+Finished searching depth 14 pos 74 in 130273 probes 43421 evals.
+Finished searching depth 16 pos 72 in 1357379 probes 419972 evals.
+Finished searching depth 15 pos 74 in 271037 probes 87985 evals.
+Finished searching depth 16 pos 73 in 1310449 probes 399016 evals.
+Finished searching depth 17 pos 73 in 1465846 probes 443999 evals.
+Saving solution 73
+Finished searching depth 13 pos 75 in 405 probes 131 evals.
+Finished searching depth 18 pos 48 in 21472020 probes 6698318 evals.
+Saving solution 48
+Finished searching depth 12 pos 76 in 30 probes 8 evals.
+Finished searching depth 13 pos 76 in 321 probes 114 evals.
+Finished searching depth 14 pos 75 in 130224 probes 43385 evals.
+Finished searching depth 14 pos 76 in 130089 probes 43368 evals.
+Finished searching depth 15 pos 75 in 277774 probes 88643 evals.
+Finished searching depth 15 pos 76 in 265942 probes 87059 evals.
+Finished searching depth 16 pos 74 in 1352204 probes 421630 evals.
+Finished searching depth 16 pos 76 in 1138412 probes 357697 evals.
+Finished searching depth 17 pos 76 in 1139654 probes 358070 evals.
+Saving solution 76
+Finished searching depth 12 pos 77 in 27 probes 8 evals.
+Finished searching depth 13 pos 77 in 237 probes 78 evals.
+Finished searching depth 14 pos 77 in 129999 probes 43332 evals.
+Finished searching depth 16 pos 75 in 1387080 probes 423810 evals.
+Finished searching depth 15 pos 77 in 263559 probes 86766 evals.
+Finished searching depth 17 pos 58 in 15016321 probes 4734946 evals.
+Finished searching depth 17 pos 65 in 8356302 probes 2686231 evals.
+Saving solution 65
+Finished searching depth 12 pos 78 in 27 probes 8 evals.
+Finished searching depth 13 pos 78 in 240 probes 78 evals.
+Finished searching depth 14 pos 78 in 130008 probes 43332 evals.
+Finished searching depth 15 pos 78 in 264055 probes 86867 evals.
+Finished searching depth 17 pos 54 in 18730956 probes 5807639 evals.
+Finished searching depth 16 pos 77 in 996268 probes 314402 evals.
+Finished searching depth 18 pos 54 in 18964070 probes 5878295 evals.
+Saving solution 54
+Finished searching depth 13 pos 79 in 273 probes 101 evals.
+Finished searching depth 17 pos 68 in 7831522 probes 2333702 evals.
+Saving solution 68
+Finished searching depth 12 pos 80 in 60 probes 18 evals.
+Finished searching depth 13 pos 80 in 478 probes 163 evals.
+Finished searching depth 14 pos 79 in 130053 probes 43355 evals.
+Finished searching depth 14 pos 80 in 130243 probes 43417 evals.
+Finished searching depth 15 pos 79 in 270102 probes 87519 evals.
+Finished searching depth 17 pos 59 in 14725946 probes 4623938 evals.
+Finished searching depth 15 pos 80 in 265959 probes 87211 evals.
+Finished searching depth 16 pos 78 in 1067698 probes 337326 evals.
+Finished searching depth 17 pos 66 in 10156338 probes 3254528 evals.
+Finished searching depth 16 pos 79 in 1187985 probes 366658 evals.
+Finished searching depth 17 pos 63 in 13251468 probes 4197497 evals.
+Finished searching depth 16 pos 80 in 1124217 probes 355603 evals.
+Finished searching depth 17 pos 64 in 11334344 probes 3650616 evals.
+Finished searching depth 17 pos 61 in 14248422 probes 4515557 evals.
+Finished searching depth 17 pos 74 in 4923393 probes 1526062 evals.
+Saving solution 74
+Finished searching depth 12 pos 81 in 39 probes 14 evals.
+Finished searching depth 13 pos 81 in 405 probes 138 evals.
+Finished searching depth 14 pos 81 in 130200 probes 43392 evals.
+Finished searching depth 17 pos 62 in 15249541 probes 4798044 evals.
+Finished searching depth 15 pos 81 in 276487 probes 87963 evals.
+Finished searching depth 18 pos 7 in 48054342 probes 15024930 evals.
+Solved 7 in 18 probes 48054342 evals 15024930 time 5.53717
+ D1 F1 U2 D3 R1 L3 F2 D2 U3 R3 U2 L2 D1 B1 R1 B3 F1 U2
+Solved 8 in 18 probes 16679184 evals 5269078 time 1.90435
+ U3 B1 U1 F2 U3 F1 R1 L2 U3 R1 D2 B3 D3 L3 D2 L3 F1 R2
+Solved 9 in 18 probes 17487263 evals 5540672 time 2.03835
+ U3 R1 U1 B1 R2 D2 F2 L2 D1 F2 D3 F1 R1 F3 L3 U2 L2 U3
+Solved 10 in 18 probes 34615926 evals 10913324 time 4.2768
+ R1 B1 L1 D3 B3 U1 D2 F2 U2 L3 R2 U2 F1 U3 R2 B2 R3 U2
+Solved 11 in 18 probes 23722900 evals 7408638 time 2.90327
+ F2 B1 U3 F1 D2 R3 B2 D3 R1 U1 R2 B1 F2 U3 B1 L2 D2 R3
+Solved 12 in 18 probes 17442423 evals 5422380 time 2.05396
+ U3 L3 D2 F1 R3 B2 R3 U2 B2 U2 R2 F2 L3 D2 B3 D3 B1 R2
+Solved 13 in 17 probes 11288617 evals 3559016 time 1.4099
+ B3 L2 B1 U1 R2 B2 U3 R2 L1 U1 L3 B3 R2 D2 R1 D3 F1
+Solved 14 in 17 probes 5839033 evals 1781140 time 0.724909
+ F2 B3 R3 F2 B3 R2 U2 F2 B2 D1 R2 F1 L3 D2 F3 L3 U3
+Solved 15 in 17 probes 1546471 evals 478280 time 0.190239
+ B1 U2 D1 F1 L3 D1 B2 L2 D3 R2 D2 U1 B3 F2 R2 D1 R1
+Solved 16 in 18 probes 40564053 evals 12627234 time 4.74995
+ U2 B3 D2 B1 D1 F2 L2 F2 D2 F1 D1 F1 B3 R3 U2 R3 B3 R1
+Solved 17 in 18 probes 25411901 evals 7804369 time 3.21092
+ F1 L1 F1 B1 U3 F2 L3 D3 F2 L3 U2 R2 D2 L1 B2 L3 D3 L1
+Solved 18 in 18 probes 19270793 evals 5980264 time 2.31444
+ D2 R1 U2 F1 B3 R3 F1 B3 U1 F2 U3 R2 B1 F3 L1 U3 F2 D3
+Solved 19 in 18 probes 31302207 evals 9370749 time 3.73744
+ F1 R3 U3 F3 U2 R2 B1 L1 U2 D2 F2 B1 R2 B3 F3 R3 U3 B2
+Finished searching depth 12 pos 82 in 36 probes 14 evals.
+Finished searching depth 13 pos 82 in 383 probes 136 evals.
+Finished searching depth 14 pos 82 in 130181 probes 43390 evals.
+Finished searching depth 15 pos 82 in 271449 probes 87557 evals.
+Finished searching depth 17 pos 67 in 11627878 probes 3755357 evals.
+Finished searching depth 16 pos 81 in 1312915 probes 396267 evals.
+Finished searching depth 18 pos 49 in 26585291 probes 8244852 evals.
+Saving solution 49
+Finished searching depth 12 pos 83 in 76 probes 22 evals.
+Finished searching depth 13 pos 83 in 863 probes 249 evals.
+Finished searching depth 14 pos 83 in 130817 probes 43503 evals.
+Finished searching depth 15 pos 83 in 292870 probes 92087 evals.
+Finished searching depth 16 pos 82 in 1274238 probes 393044 evals.
+Finished searching depth 18 pos 61 in 16311379 probes 5141385 evals.
+Saving solution 61
+Finished searching depth 12 pos 84 in 48 probes 14 evals.
+Finished searching depth 13 pos 84 in 349 probes 108 evals.
+Finished searching depth 14 pos 84 in 130132 probes 43362 evals.
+Finished searching depth 15 pos 84 in 269763 probes 87462 evals.
+Finished searching depth 16 pos 84 in 1288285 probes 400438 evals.
+Finished searching depth 16 pos 83 in 1657211 probes 500199 evals.
+Finished searching depth 17 pos 70 in 13106052 probes 4207515 evals.
+Finished searching depth 18 pos 66 in 16057517 probes 5076875 evals.
+Saving solution 66
+Finished searching depth 12 pos 85 in 30 probes 8 evals.
+Finished searching depth 13 pos 85 in 405 probes 132 evals.
+Finished searching depth 14 pos 85 in 130179 probes 43386 evals.
+Finished searching depth 15 pos 85 in 269273 probes 87691 evals.
+Finished searching depth 16 pos 85 in 1262872 probes 396089 evals.
+Finished searching depth 17 pos 85 in 1275521 probes 399884 evals.
+Saving solution 85
+Finished searching depth 12 pos 86 in 34 probes 8 evals.
+Finished searching depth 13 pos 86 in 347 probes 106 evals.
+Finished searching depth 14 pos 86 in 130127 probes 43360 evals.
+Finished searching depth 15 pos 86 in 271482 probes 87694 evals.
+Finished searching depth 17 pos 69 in 15426628 probes 4806160 evals.
+Finished searching depth 16 pos 86 in 1254535 probes 388576 evals.
+Finished searching depth 18 pos 58 in 25448561 probes 7898106 evals.
+Saving solution 58
+Finished searching depth 12 pos 87 in 48 probes 14 evals.
+Finished searching depth 13 pos 87 in 800 probes 238 evals.
+Finished searching depth 14 pos 87 in 130652 probes 43492 evals.
+Finished searching depth 15 pos 87 in 290795 probes 90600 evals.
+Finished searching depth 17 pos 77 in 11151599 probes 3574408 evals.
+Finished searching depth 17 pos 81 in 7891714 probes 2396456 evals.
+Saving solution 81
+Finished searching depth 12 pos 88 in 42 probes 14 evals.
+Finished searching depth 13 pos 88 in 601 probes 216 evals.
+Finished searching depth 14 pos 88 in 130381 probes 43470 evals.
+Finished searching depth 15 pos 88 in 276167 probes 88870 evals.
+Finished searching depth 17 pos 72 in 15121326 probes 4760461 evals.
+Finished searching depth 16 pos 87 in 1644886 probes 492336 evals.
+Finished searching depth 18 pos 72 in 15413632 probes 4846755 evals.
+Saving solution 72
+Finished searching depth 12 pos 89 in 24 probes 8 evals.
+Finished searching depth 13 pos 89 in 347 probes 114 evals.
+Finished searching depth 14 pos 89 in 130112 probes 43368 evals.
+Finished searching depth 15 pos 89 in 264482 probes 86937 evals.
+Finished searching depth 16 pos 88 in 1452465 probes 450726 evals.
+Finished searching depth 16 pos 89 in 1099804 probes 347638 evals.
+Finished searching depth 17 pos 78 in 11996654 probes 3841537 evals.
+Finished searching depth 18 pos 59 in 27184174 probes 8414730 evals.
+Saving solution 59
+Finished searching depth 12 pos 90 in 24 probes 8 evals.
+Finished searching depth 13 pos 90 in 531 probes 176 evals.
+Finished searching depth 14 pos 90 in 130329 probes 43430 evals.
+Finished searching depth 17 pos 79 in 13293486 probes 4175937 evals.
+Finished searching depth 15 pos 90 in 277820 probes 89227 evals.
+Finished searching depth 18 pos 69 in 19211580 probes 5940559 evals.
+Saving solution 69
+Finished searching depth 12 pos 91 in 32 probes 8 evals.
+Finished searching depth 13 pos 91 in 421 probes 145 evals.
+Finished searching depth 14 pos 91 in 130207 probes 43399 evals.
+Finished searching depth 15 pos 91 in 273617 probes 88333 evals.
+Finished searching depth 17 pos 80 in 12564222 probes 4032148 evals.
+Finished searching depth 17 pos 75 in 15583672 probes 4856401 evals.
+Finished searching depth 16 pos 90 in 1460421 probes 451539 evals.
+Finished searching depth 16 pos 91 in 1304190 probes 402867 evals.
+Finished searching depth 18 pos 64 in 25025195 probes 7928420 evals.
+Saving solution 64
+Finished searching depth 13 pos 92 in 280 probes 97 evals.
+Finished searching depth 14 pos 92 in 130057 probes 43351 evals.
+Finished searching depth 18 pos 21 in 56411536 probes 17730431 evals.
+Saving solution 21
+Finished searching depth 12 pos 93 in 24 probes 8 evals.
+Finished searching depth 13 pos 93 in 323 probes 111 evals.
+Finished searching depth 15 pos 92 in 273159 probes 88546 evals.
+Finished searching depth 14 pos 93 in 130106 probes 43365 evals.
+Finished searching depth 15 pos 93 in 274879 probes 89258 evals.
+Finished searching depth 18 pos 80 in 15128374 probes 4816685 evals.
+Saving solution 80
+Finished searching depth 12 pos 94 in 24 probes 8 evals.
+Finished searching depth 13 pos 94 in 246 probes 87 evals.
+Finished searching depth 14 pos 94 in 130011 probes 43341 evals.
+Finished searching depth 15 pos 94 in 262741 probes 86759 evals.
+Finished searching depth 18 pos 33 in 58970459 probes 18449615 evals.
+Saving solution 33
+Finished searching depth 12 pos 95 in 30 probes 8 evals.
+Finished searching depth 13 pos 95 in 492 probes 153 evals.
+Finished searching depth 14 pos 95 in 130266 probes 43407 evals.
+Finished searching depth 18 pos 26 in 60680335 probes 19126106 evals.
+Saving solution 26
+Finished searching depth 13 pos 96 in 264 probes 83 evals.
+Finished searching depth 15 pos 95 in 270976 probes 88210 evals.
+Finished searching depth 14 pos 96 in 130029 probes 43337 evals.
+Finished searching depth 15 pos 96 in 263573 probes 86963 evals.
+Finished searching depth 16 pos 96 in 277080 probes 90990 evals.
+Saving solution 96
+Finished searching depth 12 pos 97 in 54 probes 14 evals.
+Finished searching depth 13 pos 97 in 444 probes 144 evals.
+Finished searching depth 16 pos 92 in 1390528 probes 433125 evals.
+Finished searching depth 17 pos 82 in 14280565 probes 4487322 evals.
+Finished searching depth 14 pos 97 in 130239 probes 43398 evals.
+Finished searching depth 17 pos 86 in 8857193 probes 2761402 evals.
+Saving solution 86
+Finished searching depth 12 pos 98 in 36 probes 14 evals.
+Finished searching depth 13 pos 98 in 325 probes 114 evals.
+Finished searching depth 16 pos 94 in 958121 probes 303787 evals.
+Finished searching depth 14 pos 98 in 130093 probes 43368 evals.
+Finished searching depth 15 pos 97 in 275209 probes 88188 evals.
+Finished searching depth 15 pos 98 in 265180 probes 86975 evals.
+Finished searching depth 16 pos 93 in 1371983 probes 428191 evals.
+Finished searching depth 16 pos 95 in 1326477 probes 415964 evals.
+Finished searching depth 16 pos 98 in 1077009 probes 338386 evals.
+Finished searching depth 16 pos 97 in 1349356 probes 414402 evals.
+Finished searching depth 17 pos 84 in 14649750 probes 4627749 evals.
+Finished searching depth 18 pos 70 in 25258457 probes 7978777 evals.
+Saving solution 70
+Finished searching depth 12 pos 99 in 42 probes 14 evals.
+Finished searching depth 13 pos 99 in 516 probes 163 evals.
+Finished searching depth 14 pos 99 in 130335 probes 43417 evals.
+Finished searching depth 15 pos 99 in 282863 probes 89186 evals.
+Finished searching depth 16 pos 99 in 557872 probes 168995 evals.
+Saving solution 99
+Finished searching depth 12 pos 100 in 48 probes 14 evals.
+Finished searching depth 13 pos 100 in 522 probes 168 evals.
+Finished searching depth 14 pos 100 in 130305 probes 43422 evals.
+Finished searching depth 15 pos 100 in 270417 probes 88433 evals.
+Finished searching depth 17 pos 95 in 4102139 probes 1277724 evals.
+Saving solution 95
+Finished searching depth 12 pos 101 in 27 probes 8 evals.
+Finished searching depth 13 pos 101 in 440 probes 144 evals.
+Finished searching depth 14 pos 101 in 130208 probes 43398 evals.
+Finished searching depth 16 pos 100 in 1365296 probes 431326 evals.
+Finished searching depth 15 pos 101 in 274834 probes 88776 evals.
+Finished searching depth 18 pos 63 in 34206715 probes 10641943 evals.
+Saving solution 63
+Finished searching depth 13 pos 102 in 219 probes 77 evals.
+Finished searching depth 14 pos 102 in 129993 probes 43331 evals.
+Finished searching depth 17 pos 100 in 2385294 probes 745508 evals.
+Saving solution 100
+Finished searching depth 12 pos 103 in 27 probes 8 evals.
+Finished searching depth 13 pos 103 in 360 probes 114 evals.
+Finished searching depth 15 pos 102 in 265602 probes 86922 evals.
+Finished searching depth 14 pos 103 in 130134 probes 43368 evals.
+Finished searching depth 16 pos 101 in 1438324 probes 446878 evals.
+Finished searching depth 15 pos 103 in 267561 probes 87415 evals.
+Finished searching depth 18 pos 79 in 22781928 probes 7045664 evals.
+Saving solution 79
+Finished searching depth 12 pos 104 in 27 probes 8 evals.
+Finished searching depth 13 pos 104 in 297 probes 99 evals.
+Finished searching depth 18 pos 62 in 36763590 probes 11351109 evals.
+Saving solution 62
+Finished searching depth 12 pos 105 in 122 probes 42 evals.
+Finished searching depth 13 pos 105 in 1324 probes 436 evals.
+Finished searching depth 14 pos 104 in 130071 probes 43353 evals.
+Finished searching depth 14 pos 105 in 131419 probes 43696 evals.
+Finished searching depth 15 pos 104 in 268554 probes 87220 evals.
+Finished searching depth 15 pos 105 in 335187 probes 101809 evals.
+Finished searching depth 17 pos 83 in 18614441 probes 5724305 evals.
+Finished searching depth 16 pos 102 in 1067198 probes 333118 evals.
+Finished searching depth 18 pos 44 in 50498178 probes 15322905 evals.
+Saving solution 44
+Finished searching depth 12 pos 106 in 50 probes 14 evals.
+Finished searching depth 13 pos 106 in 824 probes 264 evals.
+Finished searching depth 16 pos 103 in 1229357 probes 386541 evals.
+Finished searching depth 14 pos 106 in 130734 probes 43520 evals.
+Finished searching depth 15 pos 106 in 301318 probes 93911 evals.
+Finished searching depth 16 pos 104 in 1204603 probes 373981 evals.
+Finished searching depth 17 pos 89 in 12382668 probes 3974668 evals.
+Finished searching depth 18 pos 83 in 20119755 probes 6173822 evals.
+Saving solution 83
+Finished searching depth 12 pos 107 in 30 probes 8 evals.
+Finished searching depth 13 pos 107 in 177 probes 48 evals.
+Finished searching depth 14 pos 107 in 129945 probes 43302 evals.
+Finished searching depth 15 pos 107 in 264732 probes 86779 evals.
+Finished searching depth 16 pos 105 in 2295540 probes 682784 evals.
+Finished searching depth 17 pos 105 in 2296780 probes 683166 evals.
+Saving solution 105
+Finished searching depth 12 pos 108 in 24 probes 8 evals.
+Finished searching depth 13 pos 108 in 249 probes 84 evals.
+Finished searching depth 18 pos 84 in 20527681 probes 6403821 evals.
+Saving solution 84
+Finished searching depth 12 pos 109 in 36 probes 14 evals.
+Finished searching depth 13 pos 109 in 447 probes 174 evals.
+Finished searching depth 14 pos 108 in 130011 probes 43338 evals.
+Finished searching depth 14 pos 109 in 130236 probes 43428 evals.
+Finished searching depth 15 pos 108 in 263455 probes 86868 evals.
+Finished searching depth 15 pos 109 in 272687 probes 88580 evals.
+Finished searching depth 16 pos 106 in 1838932 probes 556325 evals.
+Finished searching depth 16 pos 107 in 1008430 probes 313809 evals.
+Finished searching depth 16 pos 108 in 996765 probes 316355 evals.
+Finished searching depth 16 pos 109 in 1360636 probes 425109 evals.
+Finished searching depth 17 pos 106 in 3528507 probes 1056966 evals.
+Saving solution 106
+Finished searching depth 12 pos 110 in 62 probes 18 evals.
+Finished searching depth 13 pos 110 in 548 probes 187 evals.
+Finished searching depth 14 pos 110 in 130325 probes 43441 evals.
+Finished searching depth 15 pos 110 in 271993 probes 88014 evals.
+Finished searching depth 18 pos 37 in 61539149 probes 19328336 evals.
+Saving solution 37
+Finished searching depth 12 pos 111 in 32 probes 8 evals.
+Finished searching depth 13 pos 111 in 361 probes 123 evals.
+Finished searching depth 14 pos 111 in 130135 probes 43377 evals.
+Finished searching depth 17 pos 94 in 10532171 probes 3388204 evals.
+Finished searching depth 15 pos 111 in 267602 probes 87566 evals.
+Finished searching depth 17 pos 88 in 16353950 probes 5154684 evals.
+Finished searching depth 18 pos 94 in 11108081 probes 3564803 evals.
+Saving solution 94
+Finished searching depth 12 pos 112 in 30 probes 8 evals.
+Finished searching depth 13 pos 112 in 436 probes 151 evals.
+Finished searching depth 17 pos 87 in 18654167 probes 5702563 evals.
+Finished searching depth 16 pos 110 in 1358167 probes 421816 evals.
+Finished searching depth 14 pos 112 in 130234 probes 43405 evals.
+Finished searching depth 15 pos 112 in 274869 probes 88465 evals.
+Finished searching depth 16 pos 111 in 1192239 probes 374954 evals.
+Finished searching depth 18 pos 88 in 17358396 probes 5458120 evals.
+Saving solution 88
+Finished searching depth 12 pos 113 in 34 probes 8 evals.
+Finished searching depth 13 pos 113 in 485 probes 145 evals.
+Finished searching depth 14 pos 113 in 130424 probes 43399 evals.
+Finished searching depth 17 pos 91 in 14506726 probes 4558033 evals.
+Finished searching depth 18 pos 75 in 31105762 probes 9534474 evals.
+Saving solution 75
+Finished searching depth 12 pos 114 in 33 probes 8 evals.
+Finished searching depth 13 pos 114 in 399 probes 125 evals.
+Finished searching depth 15 pos 113 in 296665 probes 92157 evals.
+Finished searching depth 14 pos 114 in 130164 probes 43379 evals.
+Finished searching depth 15 pos 114 in 267064 probes 87301 evals.
+Finished searching depth 16 pos 112 in 1363736 probes 419989 evals.
+Finished searching depth 17 pos 98 in 12020743 probes 3838796 evals.
+Finished searching depth 17 pos 90 in 16624208 probes 5218980 evals.
+Finished searching depth 16 pos 114 in 1225475 probes 384625 evals.
+Finished searching depth 16 pos 113 in 1698802 probes 507196 evals.
+Finished searching depth 17 pos 111 in 3431686 probes 1069746 evals.
+Saving solution 111
+Finished searching depth 12 pos 115 in 33 probes 8 evals.
+Finished searching depth 13 pos 115 in 462 probes 143 evals.
+Finished searching depth 18 pos 98 in 13341328 probes 4236803 evals.
+Saving solution 98
+Finished searching depth 12 pos 116 in 30 probes 8 evals.
+Finished searching depth 13 pos 116 in 546 probes 182 evals.
+Finished searching depth 14 pos 115 in 130224 probes 43397 evals.
+Finished searching depth 14 pos 116 in 130352 probes 43440 evals.
+Finished searching depth 18 pos 91 in 16089225 probes 5036995 evals.
+Saving solution 91
+Finished searching depth 12 pos 117 in 62 probes 19 evals.
+Finished searching depth 13 pos 117 in 895 probes 299 evals.
+Finished searching depth 15 pos 115 in 268937 probes 87571 evals.
+Finished searching depth 14 pos 117 in 130759 probes 43553 evals.
+Finished searching depth 15 pos 116 in 274202 probes 88647 evals.
+Finished searching depth 15 pos 117 in 301596 probes 94811 evals.
+Finished searching depth 17 pos 92 in 15909662 probes 5029662 evals.
+Finished searching depth 16 pos 115 in 1282390 probes 400586 evals.
+Finished searching depth 16 pos 116 in 1407150 probes 437392 evals.
+Finished searching depth 17 pos 97 in 15205769 probes 4764606 evals.
+Finished searching depth 17 pos 93 in 15670902 probes 4957197 evals.
+Finished searching depth 16 pos 117 in 1922085 probes 587170 evals.
+Finished searching depth 17 pos 102 in 11879357 probes 3773917 evals.
+Finished searching depth 18 pos 93 in 16423425 probes 5188139 evals.
+Saving solution 93
+Finished searching depth 12 pos 118 in 39 probes 14 evals.
+Finished searching depth 13 pos 118 in 515 probes 170 evals.
+Finished searching depth 14 pos 118 in 130307 probes 43424 evals.
+Finished searching depth 15 pos 118 in 279319 probes 89582 evals.
+Finished searching depth 18 pos 90 in 20558784 probes 6416562 evals.
+Saving solution 90
+Finished searching depth 12 pos 119 in 24 probes 8 evals.
+Finished searching depth 13 pos 119 in 377 probes 129 evals.
+Finished searching depth 14 pos 119 in 130157 probes 43383 evals.
+Finished searching depth 15 pos 119 in 268753 probes 87487 evals.
+Finished searching depth 17 pos 108 in 11091944 probes 3570223 evals.
+Finished searching depth 16 pos 118 in 1480394 probes 454897 evals.
+Finished searching depth 16 pos 119 in 1232528 probes 384259 evals.
+Finished searching depth 17 pos 107 in 11121300 probes 3524069 evals.
+Finished searching depth 17 pos 104 in 13538155 probes 4269513 evals.
+Finished searching depth 18 pos 104 in 13549204 probes 4272909 evals.
+Saving solution 104
+Finished searching depth 12 pos 120 in 36 probes 14 evals.
+Finished searching depth 13 pos 120 in 291 probes 99 evals.
+Finished searching depth 14 pos 120 in 130053 probes 43353 evals.
+Finished searching depth 15 pos 120 in 265203 probes 86941 evals.
+Finished searching depth 17 pos 103 in 14018393 probes 4469385 evals.
+Finished searching depth 17 pos 101 in 16448841 probes 5182323 evals.
+Finished searching depth 16 pos 120 in 1090758 probes 341050 evals.
+Finished searching depth 18 pos 87 in 28314195 probes 8576692 evals.
+Saving solution 87
+Finished searching depth 12 pos 121 in 48 probes 14 evals.
+Finished searching depth 13 pos 121 in 739 probes 239 evals.
+Finished searching depth 14 pos 121 in 130585 probes 43493 evals.
+Finished searching depth 15 pos 121 in 299915 probes 95067 evals.
+Finished searching depth 16 pos 121 in 1897115 probes 582715 evals.
+Finished searching depth 17 pos 109 in 15313499 probes 4864745 evals.
+Finished searching depth 17 pos 118 in 6714549 probes 2054313 evals.
+Saving solution 118
+Finished searching depth 13 pos 122 in 279 probes 92 evals.
+Finished searching depth 14 pos 122 in 130041 probes 43346 evals.
+Finished searching depth 15 pos 122 in 263329 probes 86738 evals.
+Finished searching depth 16 pos 122 in 988688 probes 312210 evals.
+Finished searching depth 17 pos 110 in 15380714 probes 4851167 evals.
+Finished searching depth 18 pos 103 in 19793089 probes 6239531 evals.
+Saving solution 103
+Finished searching depth 12 pos 123 in 30 probes 8 evals.
+Finished searching depth 13 pos 123 in 390 probes 138 evals.
+Finished searching depth 14 pos 123 in 130161 probes 43392 evals.
+Finished searching depth 17 pos 114 in 13859123 probes 4414763 evals.
+Finished searching depth 18 pos 114 in 13884443 probes 4422502 evals.
+Saving solution 114
+Finished searching depth 13 pos 124 in 198 probes 62 evals.
+Finished searching depth 15 pos 123 in 267397 probes 87148 evals.
+Finished searching depth 14 pos 124 in 129972 probes 43316 evals.
+Finished searching depth 15 pos 124 in 267645 probes 86909 evals.
+Finished searching depth 18 pos 92 in 27475113 probes 8555530 evals.
+Saving solution 92
+Finished searching depth 12 pos 125 in 24 probes 8 evals.
+Finished searching depth 13 pos 125 in 765 probes 229 evals.
+Finished searching depth 14 pos 125 in 130684 probes 43485 evals.
+Finished searching depth 15 pos 125 in 295779 probes 92371 evals.
+Finished searching depth 18 pos 89 in 32014292 probes 10108755 evals.
+Saving solution 89
+Finished searching depth 12 pos 126 in 27 probes 8 evals.
+Finished searching depth 13 pos 126 in 468 probes 153 evals.
+Finished searching depth 14 pos 126 in 130269 probes 43407 evals.
+Finished searching depth 15 pos 126 in 274959 probes 88506 evals.
+Finished searching depth 16 pos 123 in 1158750 probes 360753 evals.
+Finished searching depth 16 pos 124 in 1098607 probes 338608 evals.
+Finished searching depth 17 pos 112 in 15465737 probes 4841167 evals.
+Finished searching depth 17 pos 119 in 10536958 probes 3313324 evals.
+Saving solution 119
+Finished searching depth 12 pos 127 in 27 probes 8 evals.
+Finished searching depth 13 pos 127 in 428 probes 143 evals.
+Finished searching depth 14 pos 127 in 130232 probes 43397 evals.
+Finished searching depth 16 pos 126 in 1355074 probes 417378 evals.
+Finished searching depth 15 pos 127 in 272284 probes 88495 evals.
+Finished searching depth 16 pos 125 in 1730514 probes 523745 evals.
+Finished searching depth 17 pos 115 in 14591171 probes 4626241 evals.
+Finished searching depth 16 pos 127 in 1374220 probes 430920 evals.
+Finished searching depth 17 pos 125 in 3121237 probes 935687 evals.
+Saving solution 125
+Finished searching depth 12 pos 128 in 32 probes 8 evals.
+Finished searching depth 13 pos 128 in 471 probes 157 evals.
+Finished searching depth 14 pos 128 in 130257 probes 43411 evals.
+Finished searching depth 15 pos 128 in 273785 probes 88370 evals.
+Finished searching depth 17 pos 116 in 15725449 probes 4972536 evals.
+Finished searching depth 18 pos 109 in 22413344 probes 7032255 evals.
+Saving solution 109
+Finished searching depth 12 pos 129 in 62 probes 19 evals.
+Finished searching depth 13 pos 129 in 700 probes 206 evals.
+Finished searching depth 18 pos 116 in 15865637 probes 5014487 evals.
+Saving solution 116
+Finished searching depth 13 pos 130 in 234 probes 92 evals.
+Finished searching depth 14 pos 129 in 130483 probes 43460 evals.
+Finished searching depth 14 pos 130 in 130002 probes 43346 evals.
+Finished searching depth 15 pos 129 in 272748 probes 87874 evals.
+Finished searching depth 15 pos 130 in 265266 probes 86916 evals.
+Finished searching depth 16 pos 128 in 1328625 probes 410744 evals.
+Finished searching depth 16 pos 130 in 1089132 probes 341995 evals.
+Finished searching depth 17 pos 126 in 4590317 probes 1404384 evals.
+Saving solution 126
+Finished searching depth 13 pos 131 in 284 probes 101 evals.
+Finished searching depth 17 pos 120 in 12216857 probes 3882545 evals.
+Finished searching depth 16 pos 129 in 1325221 probes 409588 evals.
+Finished searching depth 14 pos 131 in 130058 probes 43355 evals.
+Finished searching depth 15 pos 131 in 267196 probes 87326 evals.
+Finished searching depth 18 pos 102 in 27542156 probes 8594852 evals.
+Saving solution 102
+Finished searching depth 12 pos 132 in 75 probes 20 evals.
+Finished searching depth 13 pos 132 in 730 probes 241 evals.
+Finished searching depth 17 pos 113 in 19046835 probes 5799909 evals.
+Finished searching depth 14 pos 132 in 130564 probes 43495 evals.
+Finished searching depth 15 pos 132 in 291350 probes 91905 evals.
+Finished searching depth 17 pos 128 in 2809804 probes 856704 evals.
+Saving solution 128
+Finished searching depth 12 pos 133 in 24 probes 8 evals.
+Finished searching depth 13 pos 133 in 193 probes 63 evals.
+Finished searching depth 14 pos 133 in 129961 probes 43317 evals.
+Finished searching depth 16 pos 131 in 1190264 probes 374515 evals.
+Finished searching depth 17 pos 131 in 1193947 probes 375589 evals.
+Saving solution 131
+Finished searching depth 12 pos 134 in 36 probes 14 evals.
+Finished searching depth 13 pos 134 in 404 probes 144 evals.
+Finished searching depth 18 pos 29 in 89520335 probes 28506593 evals.
+Saving solution 29
+Finished searching depth 12 pos 135 in 24 probes 8 evals.
+Finished searching depth 13 pos 135 in 341 probes 111 evals.
+Finished searching depth 15 pos 133 in 263429 probes 86744 evals.
+Finished searching depth 14 pos 134 in 130181 probes 43398 evals.
+Finished searching depth 14 pos 135 in 130103 probes 43365 evals.
+Finished searching depth 18 pos 115 in 18366871 probes 5775431 evals.
+Saving solution 115
+Finished searching depth 12 pos 136 in 24 probes 8 evals.
+Finished searching depth 13 pos 136 in 395 probes 125 evals.
+Finished searching depth 15 pos 134 in 270192 probes 88037 evals.
+Finished searching depth 15 pos 135 in 266077 probes 86978 evals.
+Finished searching depth 14 pos 136 in 130169 probes 43379 evals.
+Finished searching depth 15 pos 136 in 270257 probes 87685 evals.
+Finished searching depth 17 pos 127 in 5123002 probes 1594314 evals.
+Saving solution 127
+Finished searching depth 12 pos 137 in 30 probes 8 evals.
+Finished searching depth 13 pos 137 in 590 probes 193 evals.
+Finished searching depth 14 pos 137 in 130370 probes 43447 evals.
+Finished searching depth 16 pos 133 in 972613 probes 305236 evals.
+Finished searching depth 15 pos 137 in 278541 probes 89430 evals.
+Finished searching depth 16 pos 132 in 1704920 probes 521134 evals.
+Finished searching depth 16 pos 135 in 1127437 probes 351018 evals.
+Finished searching depth 16 pos 134 in 1284356 probes 403532 evals.
+Finished searching depth 16 pos 136 in 1285969 probes 398835 evals.
+Finished searching depth 16 pos 137 in 1544185 probes 477014 evals.
+Finished searching depth 18 pos 113 in 22188150 probes 6729192 evals.
+Saving solution 113
+Finished searching depth 12 pos 138 in 27 probes 8 evals.
+Finished searching depth 13 pos 138 in 485 probes 152 evals.
+Finished searching depth 14 pos 138 in 130298 probes 43406 evals.
+Finished searching depth 15 pos 138 in 275718 probes 88214 evals.
+Finished searching depth 17 pos 137 in 2378205 probes 728691 evals.
+Saving solution 137
+Finished searching depth 12 pos 139 in 24 probes 8 evals.
+Finished searching depth 13 pos 139 in 444 probes 148 evals.
+Finished searching depth 14 pos 139 in 130212 probes 43402 evals.
+Finished searching depth 15 pos 139 in 265529 probes 87168 evals.
+Finished searching depth 17 pos 122 in 11038085 probes 3539167 evals.
+Finished searching depth 18 pos 110 in 27081041 probes 8419217 evals.
+Saving solution 110
+Finished searching depth 13 pos 140 in 162 probes 56 evals.
+Finished searching depth 14 pos 140 in 129924 probes 43310 evals.
+Finished searching depth 16 pos 138 in 1345322 probes 411823 evals.
+Finished searching depth 16 pos 139 in 1131720 probes 357270 evals.
+Finished searching depth 15 pos 140 in 261279 probes 86635 evals.
+Finished searching depth 16 pos 140 in 626964 probes 199979 evals.
+Saving solution 140
+Finished searching depth 13 pos 141 in 135 probes 41 evals.
+Finished searching depth 14 pos 141 in 129906 probes 43295 evals.
+Finished searching depth 15 pos 141 in 265307 probes 86799 evals.
+Finished searching depth 18 pos 120 in 18676243 probes 5852587 evals.
+Saving solution 120
+Finished searching depth 12 pos 142 in 30 probes 8 evals.
+Finished searching depth 13 pos 142 in 457 probes 153 evals.
+Finished searching depth 14 pos 142 in 130231 probes 43407 evals.
+Finished searching depth 15 pos 142 in 269007 probes 87746 evals.
+Finished searching depth 16 pos 141 in 1057953 probes 329885 evals.
+Finished searching depth 17 pos 124 in 12224230 probes 3840997 evals.
+Finished searching depth 17 pos 117 in 21806061 probes 6766549 evals.
+Finished searching depth 18 pos 117 in 22139823 probes 6869806 evals.
+Saving solution 117
+Finished searching depth 13 pos 143 in 234 probes 81 evals.
+Finished searching depth 16 pos 142 in 1252274 probes 392272 evals.
+Finished searching depth 14 pos 143 in 129996 probes 43335 evals.
+Finished searching depth 17 pos 142 in 1307649 probes 408806 evals.
+Saving solution 142
+Finished searching depth 13 pos 144 in 297 probes 98 evals.
+Finished searching depth 15 pos 143 in 264366 probes 86961 evals.
+Finished searching depth 14 pos 144 in 130083 probes 43352 evals.
+Finished searching depth 15 pos 144 in 271507 probes 88146 evals.
+Finished searching depth 17 pos 123 in 13020274 probes 4123039 evals.
+Finished searching depth 16 pos 143 in 1054340 probes 332469 evals.
+Finished searching depth 16 pos 144 in 1341500 probes 419843 evals.
+Finished searching depth 17 pos 121 in 21512740 probes 6695185 evals.
+Finished searching depth 18 pos 101 in 38560046 probes 11960265 evals.
+Saving solution 101
+Finished searching depth 12 pos 145 in 34 probes 8 evals.
+Finished searching depth 13 pos 145 in 496 probes 160 evals.
+Finished searching depth 14 pos 145 in 130279 probes 43414 evals.
+Finished searching depth 15 pos 145 in 273345 probes 88076 evals.
+Finished searching depth 18 pos 82 in 57443886 probes 17763630 evals.
+Saving solution 82
+Finished searching depth 12 pos 146 in 36 probes 14 evals.
+Finished searching depth 13 pos 146 in 408 probes 132 evals.
+Finished searching depth 14 pos 146 in 130176 probes 43386 evals.
+Finished searching depth 15 pos 146 in 269515 probes 87536 evals.
+Finished searching depth 17 pos 144 in 3637100 probes 1127362 evals.
+Saving solution 144
+Finished searching depth 13 pos 147 in 306 probes 116 evals.
+Finished searching depth 17 pos 130 in 12314429 probes 3927031 evals.
+Finished searching depth 14 pos 147 in 130080 probes 43370 evals.
+Finished searching depth 15 pos 147 in 269658 probes 87429 evals.
+Finished searching depth 16 pos 145 in 1318695 probes 403943 evals.
+Finished searching depth 17 pos 133 in 10730932 probes 3422693 evals.
+Finished searching depth 16 pos 146 in 1208277 probes 375392 evals.
+Finished searching depth 16 pos 147 in 1240066 probes 384916 evals.
+Finished searching depth 17 pos 129 in 15008363 probes 4715772 evals.
+Finished searching depth 17 pos 136 in 12077575 probes 3784471 evals.
+Saving solution 136
+Finished searching depth 13 pos 148 in 262 probes 84 evals.
+Finished searching depth 14 pos 148 in 130027 probes 43338 evals.
+Finished searching depth 15 pos 148 in 264765 probes 87162 evals.
+Finished searching depth 17 pos 135 in 12668526 probes 4008911 evals.
+Finished searching depth 16 pos 148 in 1105436 probes 350346 evals.
+Finished searching depth 17 pos 134 in 14633918 probes 4670190 evals.
+Finished searching depth 17 pos 148 in 2273240 probes 714393 evals.
+Saving solution 148
+Finished searching depth 12 pos 149 in 48 probes 20 evals.
+Finished searching depth 13 pos 149 in 526 probes 182 evals.
+Finished searching depth 14 pos 149 in 130300 probes 43436 evals.
+Finished searching depth 15 pos 149 in 268857 probes 87809 evals.
+Finished searching depth 18 pos 129 in 18122264 probes 5649769 evals.
+Saving solution 129
+Finished searching depth 12 pos 150 in 24 probes 8 evals.
+Finished searching depth 13 pos 150 in 285 probes 99 evals.
+Finished searching depth 14 pos 150 in 130047 probes 43353 evals.
+Finished searching depth 15 pos 150 in 263957 probes 86835 evals.
+Finished searching depth 17 pos 139 in 12838063 probes 4111555 evals.
+Finished searching depth 17 pos 141 in 11929958 probes 3782751 evals.
+Finished searching depth 16 pos 149 in 1235531 probes 387129 evals.
+Finished searching depth 16 pos 150 in 1041395 probes 327510 evals.
+Finished searching depth 17 pos 146 in 8578376 probes 2678976 evals.
+Saving solution 146
+Finished searching depth 12 pos 151 in 62 probes 18 evals.
+Finished searching depth 13 pos 151 in 627 probes 203 evals.
+Finished searching depth 14 pos 151 in 130459 probes 43459 evals.
+Finished searching depth 15 pos 151 in 288336 probes 90624 evals.
+Finished searching depth 17 pos 132 in 19197318 probes 5971382 evals.
+Finished searching depth 18 pos 135 in 17549981 probes 5497664 evals.
+Saving solution 135
+Finished searching depth 12 pos 152 in 24 probes 8 evals.
+Finished searching depth 13 pos 152 in 442 probes 150 evals.
+Finished searching depth 14 pos 152 in 130204 probes 43404 evals.
+Finished searching depth 17 pos 138 in 15283090 probes 4769817 evals.
+Finished searching depth 18 pos 138 in 15285949 probes 4770657 evals.
+Saving solution 138
+Finished searching depth 12 pos 153 in 38 probes 10 evals.
+Finished searching depth 13 pos 153 in 442 probes 134 evals.
+Finished searching depth 15 pos 152 in 266191 probes 87243 evals.
+Finished searching depth 16 pos 152 in 291098 probes 94615 evals.
+Saving solution 152
+Finished searching depth 12 pos 154 in 30 probes 8 evals.
+Finished searching depth 13 pos 154 in 405 probes 134 evals.
+Finished searching depth 14 pos 153 in 130270 probes 43388 evals.
+Finished searching depth 14 pos 154 in 130185 probes 43388 evals.
+Finished searching depth 15 pos 153 in 278733 probes 88718 evals.
+Finished searching depth 15 pos 154 in 271962 probes 88081 evals.
+Finished searching depth 18 pos 112 in 38468682 probes 11828193 evals.
+Saving solution 112
+Finished searching depth 12 pos 155 in 30 probes 8 evals.
+Finished searching depth 13 pos 155 in 301 probes 103 evals.
+Finished searching depth 14 pos 155 in 130072 probes 43357 evals.
+Finished searching depth 15 pos 155 in 267091 probes 87206 evals.
+Finished searching depth 18 pos 77 in 68983444 probes 21866564 evals.
+Saving solution 77
+Finished searching depth 12 pos 156 in 30 probes 8 evals.
+Finished searching depth 13 pos 156 in 424 probes 144 evals.
+Finished searching depth 14 pos 156 in 130213 probes 43398 evals.
+Finished searching depth 16 pos 151 in 1659507 probes 501026 evals.
+Finished searching depth 15 pos 156 in 275905 probes 88543 evals.
+Finished searching depth 16 pos 153 in 1441576 probes 439409 evals.
+Finished searching depth 16 pos 154 in 1348776 probes 416963 evals.
+Finished searching depth 16 pos 155 in 1155335 probes 360840 evals.
+Finished searching depth 17 pos 143 in 11910337 probes 3810571 evals.
+Finished searching depth 16 pos 156 in 1405373 probes 432417 evals.
+Finished searching depth 18 pos 122 in 28665448 probes 9057737 evals.
+Saving solution 122
+Finished searching depth 12 pos 157 in 24 probes 8 evals.
+Finished searching depth 13 pos 157 in 231 probes 81 evals.
+Finished searching depth 14 pos 157 in 130017 probes 43335 evals.
+Finished searching depth 15 pos 157 in 269096 probes 87221 evals.
+Finished searching depth 16 pos 157 in 1123651 probes 346479 evals.
+Finished searching depth 17 pos 147 in 13947519 probes 4404956 evals.
+Finished searching depth 17 pos 145 in 14911199 probes 4645107 evals.
+Finished searching depth 18 pos 145 in 16342762 probes 5072742 evals.
+Saving solution 145
+Finished searching depth 12 pos 158 in 42 probes 14 evals.
+Finished searching depth 13 pos 158 in 542 probes 169 evals.
+Finished searching depth 14 pos 158 in 130400 probes 43423 evals.
+Finished searching depth 15 pos 158 in 284633 probes 89709 evals.
+Finished searching depth 18 pos 124 in 32854537 probes 10145092 evals.
+Saving solution 124
+Finished searching depth 12 pos 159 in 39 probes 14 evals.
+Finished searching depth 13 pos 159 in 407 probes 139 evals.
+Finished searching depth 18 pos 121 in 38810222 probes 11972687 evals.
+Saving solution 121
+Finished searching depth 12 pos 160 in 48 probes 20 evals.
+Finished searching depth 13 pos 160 in 556 probes 209 evals.
+Finished searching depth 14 pos 159 in 130181 probes 43393 evals.
+Finished searching depth 14 pos 160 in 130363 probes 43463 evals.
+Finished searching depth 15 pos 159 in 268105 probes 87699 evals.
+Finished searching depth 15 pos 160 in 276273 probes 88828 evals.
+Finished searching depth 16 pos 158 in 1500370 probes 454347 evals.
+Finished searching depth 16 pos 159 in 1220194 probes 384916 evals.
+Finished searching depth 16 pos 160 in 1423140 probes 439534 evals.
+Finished searching depth 17 pos 150 in 11604402 probes 3707503 evals.
+Finished searching depth 17 pos 149 in 14040057 probes 4464115 evals.
+Finished searching depth 18 pos 132 in 30743391 probes 9469741 evals.
+Saving solution 132
+Finished searching depth 13 pos 161 in 267 probes 95 evals.
+Finished searching depth 14 pos 161 in 130029 probes 43349 evals.
+Finished searching depth 15 pos 161 in 262720 probes 86807 evals.
+Finished searching depth 17 pos 151 in 12664734 probes 3858661 evals.
+Saving solution 151
+Finished searching depth 13 pos 162 in 257 probes 92 evals.
+Finished searching depth 14 pos 162 in 130034 probes 43346 evals.
+Finished searching depth 16 pos 161 in 962082 probes 306057 evals.
+Finished searching depth 15 pos 162 in 267321 probes 86893 evals.
+Finished searching depth 16 pos 162 in 1116570 probes 344686 evals.
+Finished searching depth 17 pos 155 in 13008251 probes 4127659 evals.
+Finished searching depth 18 pos 32 in 139269236 probes 45269797 evals.
+Finished searching depth 18 pos 50 in 103850074 probes 31876424 evals.
+Saving solution 50
+Finished searching depth 13 pos 163 in 202 probes 72 evals.
+Finished searching depth 14 pos 163 in 129967 probes 43326 evals.
+Finished searching depth 15 pos 163 in 263708 probes 86988 evals.
+Finished searching depth 17 pos 154 in 15358822 probes 4826301 evals.
+Finished searching depth 17 pos 157 in 12387397 probes 3894433 evals.
+Finished searching depth 18 pos 141 in 31185538 probes 9728565 evals.
+Saving solution 141
+Finished searching depth 13 pos 164 in 264 probes 89 evals.
+Finished searching depth 14 pos 164 in 130026 probes 43343 evals.
+Finished searching depth 15 pos 164 in 264596 probes 86945 evals.
+Finished searching depth 17 pos 153 in 16333482 probes 5072971 evals.
+Finished searching depth 16 pos 163 in 1089198 probes 347297 evals.
+Finished searching depth 17 pos 156 in 15914792 probes 4976398 evals.
+Finished searching depth 16 pos 164 in 1055328 probes 333139 evals.
+Finished searching depth 18 pos 139 in 36171856 probes 11355314 evals.
+Saving solution 139
+Finished searching depth 12 pos 165 in 24 probes 8 evals.
+Finished searching depth 13 pos 165 in 404 probes 132 evals.
+Finished searching depth 17 pos 159 in 13305484 probes 4252232 evals.
+Saving solution 159
+Finished searching depth 12 pos 166 in 24 probes 8 evals.
+Finished searching depth 13 pos 166 in 272 probes 94 evals.
+Finished searching depth 14 pos 165 in 130178 probes 43386 evals.
+Finished searching depth 14 pos 166 in 130040 probes 43348 evals.
+Finished searching depth 19 pos 32 in 145214995 probes 47112354 evals.
+Saving solution 32
+Finished searching depth 12 pos 167 in 54 probes 17 evals.
+Finished searching depth 13 pos 167 in 539 probes 177 evals.
+Finished searching depth 15 pos 165 in 266697 probes 87244 evals.
+Finished searching depth 14 pos 167 in 130322 probes 43431 evals.
+Finished searching depth 15 pos 166 in 263641 probes 86923 evals.
+Finished searching depth 15 pos 167 in 273798 probes 88105 evals.
+Finished searching depth 16 pos 166 in 1055844 probes 336263 evals.
+Finished searching depth 16 pos 165 in 1190800 probes 374573 evals.
+Finished searching depth 17 pos 161 in 10749478 probes 3468880 evals.
+Finished searching depth 16 pos 167 in 1312364 probes 403997 evals.
+Finished searching depth 18 pos 161 in 10784635 probes 3479405 evals.
+Saving solution 161
+Finished searching depth 12 pos 168 in 36 probes 14 evals.
+Finished searching depth 13 pos 168 in 363 probes 129 evals.
+Finished searching depth 14 pos 168 in 130131 probes 43383 evals.
+Finished searching depth 15 pos 168 in 266125 probes 87124 evals.
+Finished searching depth 16 pos 168 in 1173795 probes 369251 evals.
+Finished searching depth 17 pos 160 in 16098991 probes 5057681 evals.
+Finished searching depth 18 pos 153 in 22620911 probes 6963181 evals.
+Saving solution 153
+Finished searching depth 12 pos 169 in 52 probes 14 evals.
+Finished searching depth 13 pos 169 in 699 probes 224 evals.
+Finished searching depth 14 pos 169 in 130497 probes 43478 evals.
+Finished searching depth 15 pos 169 in 279524 probes 89663 evals.
+Finished searching depth 17 pos 158 in 17014781 probes 5254675 evals.
+Finished searching depth 17 pos 162 in 12437044 probes 3906826 evals.
+Finished searching depth 17 pos 167 in 3855305 probes 1178093 evals.
+Saving solution 167
+Finished searching depth 12 pos 170 in 36 probes 14 evals.
+Finished searching depth 13 pos 170 in 389 probes 141 evals.
+Finished searching depth 14 pos 170 in 130163 probes 43395 evals.
+Finished searching depth 15 pos 170 in 265856 probes 87214 evals.
+Finished searching depth 16 pos 170 in 1185441 probes 374480 evals.
+Finished searching depth 16 pos 169 in 1523977 probes 470973 evals.
+Finished searching depth 18 pos 158 in 19554524 probes 6012054 evals.
+Saving solution 158
+Finished searching depth 12 pos 171 in 24 probes 8 evals.
+Finished searching depth 13 pos 171 in 258 probes 84 evals.
+Finished searching depth 18 pos 123 in 49485515 probes 15415005 evals.
+Saving solution 123
+Finished searching depth 12 pos 172 in 39 probes 14 evals.
+Finished searching depth 13 pos 172 in 565 probes 183 evals.
+Finished searching depth 14 pos 171 in 130035 probes 43338 evals.
+Finished searching depth 14 pos 172 in 130354 probes 43437 evals.
+Finished searching depth 15 pos 171 in 268823 probes 87302 evals.
+Finished searching depth 15 pos 172 in 278163 probes 89645 evals.
+Finished searching depth 18 pos 160 in 19979031 probes 6227086 evals.
+Saving solution 160
+Finished searching depth 12 pos 173 in 24 probes 8 evals.
+Finished searching depth 13 pos 173 in 216 probes 78 evals.
+Finished searching depth 14 pos 173 in 129984 probes 43332 evals.
+Finished searching depth 15 pos 173 in 263503 probes 86735 evals.
+Finished searching depth 16 pos 171 in 1208383 probes 374203 evals.
+Finished searching depth 17 pos 169 in 3882899 probes 1188433 evals.
+Saving solution 169
+Finished searching depth 12 pos 174 in 27 probes 8 evals.
+Finished searching depth 13 pos 174 in 348 probes 114 evals.
+Finished searching depth 16 pos 173 in 972893 probes 305046 evals.
+Finished searching depth 14 pos 174 in 130119 probes 43368 evals.
+Finished searching depth 17 pos 173 in 975097 probes 305686 evals.
+Saving solution 173
+Finished searching depth 13 pos 175 in 273 probes 90 evals.
+Finished searching depth 14 pos 175 in 130065 probes 43344 evals.
+Finished searching depth 15 pos 174 in 274642 probes 88306 evals.
+Finished searching depth 18 pos 134 in 46731643 probes 14636835 evals.
+Saving solution 134
+Finished searching depth 12 pos 176 in 24 probes 8 evals.
+Finished searching depth 13 pos 176 in 362 probes 120 evals.
+Finished searching depth 16 pos 172 in 1521933 probes 471227 evals.
+Finished searching depth 17 pos 172 in 1539881 probes 476613 evals.
+Saving solution 172
+Finished searching depth 12 pos 177 in 30 probes 8 evals.
+Finished searching depth 13 pos 177 in 460 probes 163 evals.
+Finished searching depth 14 pos 176 in 130148 probes 43374 evals.
+Finished searching depth 15 pos 175 in 270890 probes 87412 evals.
+Finished searching depth 14 pos 177 in 130228 probes 43417 evals.
+Finished searching depth 17 pos 164 in 11845067 probes 3790620 evals.
+Finished searching depth 15 pos 176 in 270862 probes 87778 evals.
+Finished searching depth 15 pos 177 in 265813 probes 87299 evals.
+Finished searching depth 17 pos 163 in 12392684 probes 4002400 evals.
+Finished searching depth 18 pos 163 in 12673321 probes 4089106 evals.
+Saving solution 163
+Finished searching depth 12 pos 178 in 24 probes 8 evals.
+Finished searching depth 13 pos 178 in 418 probes 132 evals.
+Finished searching depth 14 pos 178 in 130186 probes 43386 evals.
+Finished searching depth 16 pos 175 in 1192175 probes 365761 evals.
+Finished searching depth 18 pos 162 in 17626948 probes 5482470 evals.
+Saving solution 162
+Finished searching depth 12 pos 179 in 24 probes 8 evals.
+Finished searching depth 13 pos 179 in 391 probes 129 evals.
+Finished searching depth 15 pos 178 in 268613 probes 87542 evals.
+Finished searching depth 14 pos 179 in 130162 probes 43383 evals.
+Finished searching depth 16 pos 174 in 1387491 probes 428423 evals.
+Finished searching depth 16 pos 177 in 1191762 probes 378140 evals.
+Finished searching depth 16 pos 176 in 1292415 probes 402372 evals.
+Finished searching depth 15 pos 179 in 267048 probes 87259 evals.
+Finished searching depth 18 pos 20 in 143372099 probes 45217137 evals.
+Solved 20 in 18 probes 143372099 evals 45217137 time 16.6878
+ F2 R1 U3 F2 L2 U1 R1 L1 D1 L1 U1 F3 R3 L2 B1 U2 B2 D2
+Solved 21 in 18 probes 56411536 evals 17730431 time 7.04381
+ F1 L2 D1 F1 L1 U2 B3 R2 L2 U1 B3 L3 U3 F3 D1 R3 D2 R2
+Solved 22 in 18 probes 22626583 evals 7176854 time 2.80476
+ R3 L3 D3 R1 B3 U1 L1 B2 L3 B2 D1 F2 R1 D1 L2 F3 L2 B3
+Solved 23 in 18 probes 26314314 evals 8265391 time 3.15224
+ F2 B2 D3 R3 L2 D2 B1 L3 F2 B1 D1 L1 B3 L3 R3 F3 U3 B2
+Solved 24 in 17 probes 1318799 evals 410106 time 0.168663
+ R1 L1 F2 B1 R3 D2 B1 U3 B3 L1 U2 L3 U3 B3 D1 B1 L2
+Solved 25 in 18 probes 38525115 evals 12232028 time 4.55184
+ F3 D1 B1 D2 R2 B2 L3 D1 B2 D2 L3 D2 L1 F1 R3 F3 D1 L2
+Solved 26 in 18 probes 60680335 evals 19126106 time 7.14087
+ R2 F3 D2 R3 U1 F1 D3 B1 U1 R1 U3 L2 B2 D2 L1 R3 D1 B1
+Solved 27 in 17 probes 2827344 evals 885679 time 0.351696
+ R2 U1 R3 B1 D3 F2 B2 U2 R1 F3 U3 L2 B1 R2 B3 F2 L2
+Solved 28 in 18 probes 11786823 evals 3759975 time 1.60171
+ D2 L1 F3 B3 R2 D1 F2 L3 D2 R2 L1 D1 F2 R2 D2 U3 R1 F2
+Solved 29 in 18 probes 89520335 evals 28506593 time 10.9711
+ B2 U2 D3 F1 D1 L1 B1 R1 L1 D1 B1 R1 D1 B1 L1 F2 U3 R1
+Solved 30 in 18 probes 32297854 evals 10095868 time 4.24536
+ U2 R3 D2 B3 D1 B1 R3 L2 F1 D3 F2 U3 L3 B1 D1 L2 B3 F1
+Solved 31 in 17 probes 5292477 evals 1587968 time 0.639606
+ U2 L1 U1 F1 R2 F1 U1 F2 D2 R1 D1 R3 B2 D2 L1 D2 B3
+Solved 32 in 19 probes 145214995 evals 47112354 time 15.4053
+ D3 F3 B2 D2 L3 D2 L1 U3 R3 U1 R3 L1 D2 U3 F3 R3 F2 D1 R2
+Solved 33 in 18 probes 58970459 evals 18449615 time 6.84854
+ L3 F1 L3 U2 B1 R2 F3 R3 D2 F3 R2 B3 U1 F3 L2 U3 R3 B2
+Solved 34 in 18 probes 25978563 evals 8096507 time 3.02416
+ D1 L3 B3 D1 F1 D1 B3 L1 U3 L1 U1 L1 R1 U1 L2 D1 U2 R1
+Solved 35 in 18 probes 17394637 evals 5520513 time 2.1034
+ U2 B2 L2 B1 L1 F1 B2 D1 L3 D2 R1 B1 U3 L3 R3 F3 D2 R1
+Solved 36 in 18 probes 18706182 evals 5892092 time 2.23299
+ B3 L1 U1 D1 F1 R1 B3 D2 R3 F2 L1 B2 U2 R2 B2 U1 L1 D1
+Solved 37 in 18 probes 61539149 evals 19328336 time 7.55081
+ B3 L1 F3 R3 D1 B2 R3 L3 U1 D3 B3 D3 R1 D2 F2 U3 L2 F2
+Solved 38 in 16 probes 352689 evals 110240 time 0.0399301
+ U1 R3 U1 F3 D1 R2 U3 L1 R1 U3 R1 D1 L3 U3 R3 D3
+Solved 39 in 18 probes 27635654 evals 8533712 time 3.42988
+ B3 U3 L2 U3 L3 F3 L2 U2 B1 R1 U3 F1 D1 U3 R2 D3 B3 F3
+Solved 40 in 17 probes 1579456 evals 485916 time 0.189033
+ B2 R2 D1 L1 F1 B1 R2 L2 F3 R1 L2 B2 D2 L1 U1 F1 D2
+Solved 41 in 18 probes 15998231 evals 5041886 time 2.07809
+ B2 U1 F3 D3 R3 D3 R1 L2 F2 D3 F2 R1 D2 L2 R3 U2 R3 D3
+Solved 42 in 17 probes 4300457 evals 1347988 time 0.524374
+ R1 U3 L3 U2 L3 F2 B1 L1 D2 L3 U3 L1 D1 B3 R2 F1 R3
+Solved 43 in 18 probes 17292658 evals 5451450 time 1.88346
+ U2 R2 L2 B3 D1 L2 F1 R3 F3 L3 U2 B3 R2 B3 D3 R2 D2 L1
+Solved 44 in 18 probes 50498178 evals 15322905 time 5.85365
+ D2 F3 U1 D2 F2 B2 U1 F3 D3 L3 B3 L2 U3 B3 L2 R2 U3 L3
+Solved 45 in 18 probes 14780210 evals 4703449 time 1.73872
+ R2 U3 D2 F1 U3 F2 L1 U1 B2 D3 L3 B2 D1 L3 R3 F2 L3 D2
+Finished searching depth 12 pos 180 in 27 probes 8 evals.
+Finished searching depth 13 pos 180 in 303 probes 102 evals.
+Finished searching depth 14 pos 180 in 130077 probes 43356 evals.
+Finished searching depth 15 pos 180 in 263823 probes 87011 evals.
+Finished searching depth 16 pos 178 in 1258929 probes 396259 evals.
+Finished searching depth 16 pos 179 in 1163983 probes 364382 evals.
+Finished searching depth 16 pos 180 in 1031175 probes 327543 evals.
+Finished searching depth 18 pos 157 in 26251783 probes 8112098 evals.
+Saving solution 157
+Finished searching depth 12 pos 181 in 39 probes 14 evals.
+Finished searching depth 13 pos 181 in 339 probes 114 evals.
+Finished searching depth 14 pos 181 in 130113 probes 43368 evals.
+Finished searching depth 18 pos 155 in 29271124 probes 9131069 evals.
+Saving solution 155
+Finished searching depth 12 pos 182 in 42 probes 14 evals.
+Finished searching depth 13 pos 182 in 354 probes 123 evals.
+Finished searching depth 15 pos 181 in 272561 probes 87390 evals.
+Finished searching depth 14 pos 182 in 130164 probes 43377 evals.
+Finished searching depth 15 pos 182 in 277920 probes 88564 evals.
+Finished searching depth 18 pos 78 in 89542367 probes 28413311 evals.
+Saving solution 78
+Finished searching depth 12 pos 183 in 30 probes 8 evals.
+Finished searching depth 13 pos 183 in 433 probes 136 evals.
+Finished searching depth 14 pos 183 in 130201 probes 43390 evals.
+Finished searching depth 18 pos 150 in 34809207 probes 10955032 evals.
+Saving solution 150
+Finished searching depth 12 pos 184 in 30 probes 8 evals.
+Finished searching depth 13 pos 184 in 420 probes 135 evals.
+Finished searching depth 15 pos 183 in 267347 probes 87359 evals.
+Finished searching depth 14 pos 184 in 130194 probes 43389 evals.
+Finished searching depth 15 pos 184 in 269423 probes 87596 evals.
+Finished searching depth 16 pos 181 in 1247027 probes 379525 evals.
+Finished searching depth 17 pos 166 in 12001743 probes 3872799 evals.
+Finished searching depth 16 pos 182 in 1399599 probes 426209 evals.
+Finished searching depth 16 pos 184 in 1206140 probes 375217 evals.
+Finished searching depth 16 pos 183 in 1219261 probes 381402 evals.
+Finished searching depth 18 pos 166 in 13061616 probes 4196805 evals.
+Saving solution 166
+Finished searching depth 12 pos 185 in 30 probes 8 evals.
+Finished searching depth 13 pos 185 in 241 probes 84 evals.
+Finished searching depth 14 pos 185 in 130012 probes 43338 evals.
+Finished searching depth 15 pos 185 in 262695 probes 86784 evals.
+Finished searching depth 17 pos 165 in 13366590 probes 4269157 evals.
+Finished searching depth 18 pos 165 in 13559789 probes 4327464 evals.
+Saving solution 165
+Finished searching depth 13 pos 186 in 269 probes 86 evals.
+Finished searching depth 14 pos 186 in 130037 probes 43340 evals.
+Finished searching depth 16 pos 185 in 985271 probes 313583 evals.
+Finished searching depth 15 pos 186 in 264006 probes 87028 evals.
+Finished searching depth 18 pos 51 in 118902491 probes 37213356 evals.
+Saving solution 51
+Finished searching depth 13 pos 187 in 257 probes 80 evals.
+Finished searching depth 14 pos 187 in 130019 probes 43334 evals.
+Finished searching depth 15 pos 187 in 262420 probes 86702 evals.
+Finished searching depth 17 pos 168 in 13275864 probes 4240182 evals.
+Finished searching depth 17 pos 176 in 6942262 probes 2156874 evals.
+Saving solution 176
+Finished searching depth 12 pos 188 in 86 probes 26 evals.
+Finished searching depth 13 pos 188 in 834 probes 279 evals.
+Finished searching depth 14 pos 188 in 130806 probes 43533 evals.
+Finished searching depth 15 pos 188 in 299338 probes 94256 evals.
+Finished searching depth 16 pos 186 in 1077587 probes 342909 evals.
+Finished searching depth 16 pos 187 in 944893 probes 300358 evals.
+Finished searching depth 18 pos 97 in 86265896 probes 26736975 evals.
+Saving solution 97
+Finished searching depth 12 pos 189 in 36 probes 14 evals.
+Finished searching depth 13 pos 189 in 290 probes 102 evals.
+Finished searching depth 14 pos 189 in 130058 probes 43356 evals.
+Finished searching depth 15 pos 189 in 265786 probes 87155 evals.
+Finished searching depth 17 pos 170 in 13411893 probes 4294317 evals.
+Finished searching depth 18 pos 170 in 13841138 probes 4425112 evals.
+Saving solution 170
+Finished searching depth 12 pos 190 in 30 probes 8 evals.
+Finished searching depth 13 pos 190 in 342 probes 108 evals.
+Finished searching depth 16 pos 188 in 1773979 probes 540204 evals.
+Finished searching depth 16 pos 189 in 1100962 probes 346062 evals.
+Finished searching depth 17 pos 188 in 1774728 probes 540418 evals.
+Saving solution 188
+Finished searching depth 12 pos 191 in 46 probes 16 evals.
+Finished searching depth 13 pos 191 in 351 probes 122 evals.
+Finished searching depth 14 pos 190 in 130110 probes 43362 evals.
+Finished searching depth 14 pos 191 in 130134 probes 43376 evals.
+Finished searching depth 17 pos 182 in 5382225 probes 1634094 evals.
+Saving solution 182
+Finished searching depth 13 pos 192 in 252 probes 92 evals.
+Finished searching depth 15 pos 190 in 265514 probes 87191 evals.
+Finished searching depth 14 pos 192 in 130020 probes 43346 evals.
+Finished searching depth 15 pos 191 in 271702 probes 87964 evals.
+Finished searching depth 15 pos 192 in 265428 probes 87007 evals.
+Finished searching depth 16 pos 190 in 1118668 probes 353696 evals.
+Finished searching depth 16 pos 192 in 1106685 probes 348047 evals.
+Finished searching depth 16 pos 191 in 1312789 probes 408055 evals.
+Finished searching depth 17 pos 171 in 13624651 probes 4283964 evals.
+Finished searching depth 17 pos 175 in 13287134 probes 4155225 evals.
+Finished searching depth 17 pos 180 in 11590595 probes 3732370 evals.
+Finished searching depth 18 pos 67 in 115995827 probes 37215402 evals.
+Saving solution 67
+Finished searching depth 13 pos 193 in 296 probes 99 evals.
+Finished searching depth 18 pos 171 in 15344042 probes 4802130 evals.
+Saving solution 171
+Finished searching depth 12 pos 194 in 48 probes 14 evals.
+Finished searching depth 13 pos 194 in 553 probes 166 evals.
+Finished searching depth 14 pos 193 in 130070 probes 43353 evals.
+Finished searching depth 14 pos 194 in 130345 probes 43420 evals.
+Finished searching depth 15 pos 193 in 268995 probes 87763 evals.
+Finished searching depth 17 pos 177 in 13336458 probes 4290186 evals.
+Saving solution 177
+Finished searching depth 12 pos 195 in 30 probes 8 evals.
+Finished searching depth 13 pos 195 in 343 probes 112 evals.
+Finished searching depth 15 pos 194 in 274335 probes 88169 evals.
+Finished searching depth 17 pos 179 in 13071242 probes 4158168 evals.
+Finished searching depth 14 pos 195 in 130123 probes 43366 evals.
+Finished searching depth 15 pos 195 in 268842 probes 87387 evals.
+Finished searching depth 17 pos 183 in 9390047 probes 2958053 evals.
+Saving solution 183
+Finished searching depth 12 pos 196 in 30 probes 8 evals.
+Finished searching depth 13 pos 196 in 363 probes 126 evals.
+Finished searching depth 14 pos 196 in 130128 probes 43380 evals.
+Finished searching depth 15 pos 196 in 266035 probes 87319 evals.
+Finished searching depth 16 pos 193 in 1265057 probes 396536 evals.
+Finished searching depth 16 pos 194 in 1300619 probes 399001 evals.
+Finished searching depth 16 pos 195 in 1222022 probes 380507 evals.
+Finished searching depth 16 pos 196 in 1047794 probes 330115 evals.
+Saving solution 196
+Finished searching depth 12 pos 197 in 24 probes 8 evals.
+Finished searching depth 13 pos 197 in 401 probes 128 evals.
+Finished searching depth 14 pos 197 in 130169 probes 43382 evals.
+Finished searching depth 17 pos 178 in 14310060 probes 4573360 evals.
+Finished searching depth 15 pos 197 in 269716 probes 87720 evals.
+Finished searching depth 17 pos 174 in 15875626 probes 4982253 evals.
+Finished searching depth 18 pos 174 in 16108165 probes 5052511 evals.
+Saving solution 174
+Finished searching depth 12 pos 198 in 48 probes 14 evals.
+Finished searching depth 13 pos 198 in 598 probes 195 evals.
+Finished searching depth 17 pos 185 in 11026434 probes 3558959 evals.
+Finished searching depth 14 pos 198 in 130390 probes 43449 evals.
+Finished searching depth 18 pos 185 in 11134559 probes 3591764 evals.
+Saving solution 185
+Finished searching depth 12 pos 199 in 30 probes 8 evals.
+Finished searching depth 13 pos 199 in 304 probes 106 evals.
+Finished searching depth 15 pos 198 in 278575 probes 89023 evals.
+Finished searching depth 14 pos 199 in 130069 probes 43360 evals.
+Finished searching depth 15 pos 199 in 263598 probes 86855 evals.
+Finished searching depth 18 pos 179 in 16136724 probes 5092632 evals.
+Saving solution 179
+Finished searching depth 12 pos 200 in 42 probes 14 evals.
+Finished searching depth 13 pos 200 in 595 probes 212 evals.
+Finished searching depth 16 pos 197 in 1288785 probes 404642 evals.
+Finished searching depth 14 pos 200 in 130498 probes 43466 evals.
+Finished searching depth 15 pos 200 in 287035 probes 90539 evals.
+Finished searching depth 17 pos 187 in 10381212 probes 3345055 evals.
+Finished searching depth 17 pos 184 in 13586554 probes 4296169 evals.
+Finished searching depth 16 pos 199 in 1022036 probes 323764 evals.
+Finished searching depth 17 pos 181 in 14141575 probes 4387229 evals.
+Finished searching depth 16 pos 198 in 1466915 probes 449562 evals.
+Finished searching depth 16 pos 200 in 1396083 probes 423233 evals.
+Saving solution 200
+Finished searching depth 17 pos 186 in 12113175 probes 3906692 evals.
+Finished searching depth 18 pos 143 in 51344051 probes 16140090 evals.
+Saving solution 143
+Finished searching depth 18 pos 133 in 66294638 probes 20957544 evals.
+Saving solution 133
+Finished searching depth 17 pos 190 in 12581502 probes 4038004 evals.
+Finished searching depth 17 pos 189 in 12201229 probes 3896982 evals.
+Finished searching depth 18 pos 186 in 13837284 probes 4437105 evals.
+Saving solution 186
+Finished searching depth 17 pos 192 in 12549765 probes 4000651 evals.
+Finished searching depth 18 pos 149 in 52602674 probes 16430052 evals.
+Saving solution 149
+Finished searching depth 18 pos 164 in 34449773 probes 10830250 evals.
+Saving solution 164
+Finished searching depth 18 pos 189 in 15740282 probes 4977461 evals.
+Saving solution 189
+Finished searching depth 17 pos 191 in 14922035 probes 4711110 evals.
+Finished searching depth 18 pos 130 in 72762955 probes 22939965 evals.
+Saving solution 130
+Finished searching depth 18 pos 178 in 24157423 probes 7605715 evals.
+Saving solution 178
+Finished searching depth 17 pos 199 in 11366329 probes 3653848 evals.
+Finished searching depth 17 pos 193 in 14425462 probes 4589940 evals.
+Finished searching depth 17 pos 198 in 11369651 probes 3509731 evals.
+Saving solution 198
+Finished searching depth 17 pos 195 in 13802749 probes 4367067 evals.
+Finished searching depth 17 pos 194 in 14595971 probes 4559567 evals.
+Finished searching depth 18 pos 199 in 13014086 probes 4158315 evals.
+Saving solution 199
+Finished searching depth 17 pos 197 in 14591368 probes 4643027 evals.
+Finished searching depth 18 pos 191 in 24154820 probes 7506485 evals.
+Saving solution 191
+Finished searching depth 18 pos 147 in 73372039 probes 22898121 evals.
+Saving solution 147
+Finished searching depth 18 pos 180 in 35490262 probes 11194011 evals.
+Saving solution 180
+Finished searching depth 18 pos 156 in 64415482 probes 19814865 evals.
+Saving solution 156
+Finished searching depth 18 pos 184 in 36923805 probes 11455986 evals.
+Saving solution 184
+Finished searching depth 18 pos 195 in 28223794 probes 8784323 evals.
+Saving solution 195
+Finished searching depth 18 pos 107 in 119601367 probes 37896524 evals.
+Saving solution 107
+Finished searching depth 18 pos 193 in 36481812 probes 11387635 evals.
+Saving solution 193
+Finished searching depth 18 pos 168 in 64145342 probes 20145399 evals.
+Saving solution 168
+Finished searching depth 18 pos 46 in 178078072 probes 56352576 evals.
+Solved 46 in 18 probes 178078072 evals 56352576 time 21.1016
+ L2 D2 L3 B2 R3 B2 D2 B3 R2 U3 R1 D3 L3 U1 L2 R3 F3 L2
+Solved 47 in 18 probes 14878062 evals 4740850 time 1.81104
+ R1 U1 D2 R2 B2 R3 D1 B1 R2 D2 L1 U1 R3 B3 L1 F1 D2 U3
+Solved 48 in 18 probes 21472020 evals 6698318 time 2.61079
+ F2 D3 B2 L2 B2 R1 U3 R1 F3 U3 L1 F1 U3 L2 B1 F3 L3 R3
+Solved 49 in 18 probes 26585291 evals 8244852 time 3.17841
+ R3 B2 R3 D3 R1 B2 U2 R2 L3 D2 L1 B1 D3 L3 R1 U3 B2 R2
+Solved 50 in 18 probes 103850074 evals 31876424 time 12.5627
+ B1 D3 B1 U1 L2 B2 U2 F3 B3 D3 F3 R1 U2 B2 D2 U3 R3 U1
+Solved 51 in 18 probes 118902491 evals 37213356 time 14.4501
+ F2 R2 D3 F3 R3 F2 B2 R3 F3 L1 F2 L1 B3 R3 F3 U1 B3 L1
+Solved 52 in 18 probes 10168885 evals 3304797 time 1.26171
+ D1 B1 U2 D2 L3 F2 R2 U2 R2 B2 U1 R1 U3 R3 F3 L1 D3 U1
+Solved 53 in 17 probes 2396632 evals 734661 time 0.282335
+ D1 L3 U3 B1 L2 U1 D1 F1 L3 D3 L3 D3 F2 R3 D3 F3 R1
+Solved 54 in 18 probes 18964070 evals 5878295 time 2.19789
+ F1 L3 U1 L1 D2 B2 R1 U3 R3 L3 U1 L1 U2 L3 U3 B2 R2 U2
+Solved 55 in 17 probes 2369904 evals 724247 time 0.285749
+ F3 U3 R3 D2 R2 B2 D3 F2 L3 F3 L3 B1 L2 D1 R1 B3 F3
+Solved 56 in 17 probes 7879971 evals 2452826 time 1.00707
+ F3 L2 U1 B1 L2 B3 L1 U3 R1 D2 F1 U3 L3 R2 U1 B2 D3
+Solved 57 in 17 probes 6859605 evals 2169111 time 0.795655
+ B1 L3 F3 B1 L2 F1 U3 D2 R1 D1 L1 R1 D3 R2 F3 L2 R3
+Solved 58 in 18 probes 25448561 evals 7898106 time 2.9152
+ F2 D2 F3 B2 L3 B1 D1 R2 D3 R2 U2 L2 F1 D1 L2 F1 U1 F3
+Solved 59 in 18 probes 27184174 evals 8414730 time 3.26204
+ B2 R1 U1 R3 D2 R2 L3 U2 D2 B1 L2 F2 D2 U1 F2 R2 D1 U2
+Solved 60 in 17 probes 2840094 evals 886698 time 0.35583
+ D2 R2 U3 F2 B1 D1 R2 U2 L1 U1 R3 U3 L1 D2 B1 R3 D2
+Solved 61 in 18 probes 16311379 evals 5141385 time 1.94344
+ F3 R1 L1 D2 F2 D2 L2 D2 R1 F3 D2 U2 L3 D2 R2 D3 U1 L1
+Solved 62 in 18 probes 36763590 evals 11351109 time 4.0273
+ R1 L2 B1 L2 D2 R2 B2 L2 U1 L3 B2 L1 F2 U2 B3 L2 D2 U1
+Solved 63 in 18 probes 34206715 evals 10641943 time 3.93653
+ R3 U2 D2 B1 U3 F2 B3 L1 U3 B1 R2 B2 U3 L3 U1 B1 R1 F1
+Solved 64 in 18 probes 25025195 evals 7928420 time 2.98465
+ B3 U1 B3 D3 R1 L2 U1 L1 B1 L2 F2 B3 U1 L1 U2 B1 L3 R2
+Solved 65 in 17 probes 8356302 evals 2686231 time 1.07794
+ D2 R2 U2 D3 L3 F1 U3 D2 B3 L2 U3 L3 D3 L2 R1 D3 R2
+Solved 66 in 18 probes 16057517 evals 5076875 time 1.92398
+ B1 U1 D3 F3 R3 L3 F1 B3 U2 R3 D1 R3 U3 R2 U2 R3 B3 R2
+Solved 67 in 18 probes 115995827 evals 37215402 time 13.9083
+ F3 R3 L2 F1 R1 D3 L3 F3 L2 D2 F3 L3 F2 R2 F3 L2 U1 L1
+Solved 68 in 17 probes 7831522 evals 2333702 time 0.983123
+ B2 R1 B1 U2 L3 D1 B3 D3 L1 F1 L1 R3 B1 L1 U2 L1 F1
+Solved 69 in 18 probes 19211580 evals 5940559 time 2.48085
+ U2 B1 R3 B2 U2 F1 B1 L2 U2 F3 R1 D1 B1 L1 B1 U3 L2 F3
+Solved 70 in 18 probes 25258457 evals 7978777 time 3.11801
+ D3 F2 U3 B2 L1 B2 R2 D3 B2 L1 F3 L3 D1 L2 F3 L2 B1 L2
+Solved 71 in 17 probes 1298638 evals 397441 time 0.154956
+ D1 F3 B3 D1 B1 L3 U2 R1 B3 D2 R1 F3 D2 L1 D3 R3 B2
+Solved 72 in 18 probes 15413632 evals 4846755 time 1.79949
+ F3 D1 R3 U2 B1 R2 L1 B2 D3 F2 B1 D2 B3 D2 R2 B1 U3 L1
+Solved 73 in 17 probes 1465846 evals 443999 time 0.172115
+ U1 B2 R3 L2 U2 D3 F3 D2 R2 F3 D3 B1 U2 B2 R2 D1 F2
+Solved 74 in 17 probes 4923393 evals 1526062 time 0.608221
+ L3 U2 D1 R1 U3 D2 L3 U2 F2 L1 U1 B2 D3 F3 R2 F3 R1
+Solved 75 in 18 probes 31105762 evals 9534474 time 3.66158
+ U3 L1 U1 D2 F3 R2 B3 R3 L3 U1 L2 U3 L1 D2 R3 U1 L3 F1
+Solved 76 in 17 probes 1139654 evals 358070 time 0.137377
+ F1 R2 D2 F3 D1 L3 U3 L1 D1 L1 U2 B2 L3 D3 B2 U1 R2
+Solved 77 in 18 probes 68983444 evals 21866564 time 8.20879
+ L1 B1 R3 F1 R3 F1 R1 B3 R3 L3 U3 R1 F1 L1 D3 B1 L3 R2
+Solved 78 in 18 probes 89542367 evals 28413311 time 11.8057
+ U1 L1 F2 D2 F3 D3 F2 U1 R1 B1 D3 L1 R3 U1 L3 U1 B3 D1
+Solved 79 in 18 probes 22781928 evals 7045664 time 2.61539
+ B1 U2 F1 D2 B3 D1 L2 U2 R3 D1 U3 R1 U3 B3 R3 F1 U3 F3
+Solved 80 in 18 probes 15128374 evals 4816685 time 1.87798
+ U2 F2 L1 U3 R1 D2 F1 B1 U2 R1 U3 L2 U3 L1 D1 F1 L3 D3
+Solved 81 in 17 probes 7891714 evals 2396456 time 0.968165
+ F3 L3 U3 B2 U3 L3 B2 D3 R2 B3 U2 R2 D3 L1 B3 L1 B2
+Solved 82 in 18 probes 57443886 evals 17763630 time 6.57688
+ D2 B1 L2 F1 U3 L3 B2 L2 D2 L2 F3 U2 L1 R2 U1 L3 F3 U2
+Solved 83 in 18 probes 20119755 evals 6173822 time 2.38816
+ R3 U1 L1 B3 D2 R2 U3 D1 R2 B1 U3 L2 U1 F1 U3 F3 R2 D2
+Solved 84 in 18 probes 20527681 evals 6403821 time 2.38275
+ F3 B2 U3 R3 D3 F2 R1 U2 R1 D1 L3 F1 D2 F3 R2 F3 R3 U3
+Solved 85 in 17 probes 1275521 evals 399884 time 0.15218
+ U1 L1 F3 B3 U1 L2 D2 L2 U2 F1 D1 R3 U1 F1 U2 R3 U1
+Solved 86 in 17 probes 8857193 evals 2761402 time 1.05003
+ U3 R2 U1 D1 R2 F2 B3 U2 L2 U1 L1 F2 R3 D1 L2 B2 F1
+Solved 87 in 18 probes 28314195 evals 8576692 time 3.25957
+ B2 D1 F1 R1 U1 R2 F1 R2 U2 B3 L2 U1 B2 U3 R1 B3 L1 U3
+Solved 88 in 18 probes 17358396 evals 5458120 time 2.14372
+ L3 F3 B2 L3 B3 D2 F1 U1 B2 D3 F2 U2 L2 U3 F3 R1 D3 U2
+Solved 89 in 18 probes 32014292 evals 10108755 time 3.79144
+ L3 D2 R1 F3 R3 B1 U3 D1 L2 B3 R3 D2 F1 R1 D2 U3 B2 F2
+Solved 90 in 18 probes 20558784 evals 6416562 time 2.45454
+ B3 R2 U3 D2 L2 U2 F2 L2 U1 F3 R1 U1 B2 D2 R1 U2 L2 R1
+Solved 91 in 18 probes 16089225 evals 5036995 time 2.05331
+ L3 D3 F1 D1 R1 L2 D1 B1 U1 F1 D1 U3 F3 D3 R1 U3 F3 R3
+Solved 92 in 18 probes 27475113 evals 8555530 time 3.24804
+ R1 U1 F1 R3 F3 D1 R3 L3 F2 U2 L1 U2 B2 L3 F2 U1 R1 F2
+Solved 93 in 18 probes 16423425 evals 5188139 time 2.06443
+ L3 F3 B1 U3 B3 D2 B2 R2 D3 L2 U1 F2 L2 D3 F3 U1 B1 D3
+Solved 94 in 18 probes 11108081 evals 3564803 time 1.37047
+ U3 L2 D1 F3 B1 U3 R3 B1 U1 B1 R2 U3 L1 D1 F2 D2 F2 U2
+Solved 95 in 17 probes 4102139 evals 1277724 time 0.471916
+ F1 L3 B3 D1 B2 U2 F3 D3 R3 D1 B1 U3 L3 R1 B1 F2 R1
+Solved 96 in 16 probes 277080 evals 90990 time 0.0315011
+ R2 L3 B1 L3 F3 U3 D2 B1 L3 D3 F1 D3 L1 R1 B2 R2
+Solved 97 in 18 probes 86265896 evals 26736975 time 10.1962
+ L1 D3 R3 U3 F3 R3 L1 B2 R3 B1 D1 U1 L3 D2 L2 B3 L3 D2
+Solved 98 in 18 probes 13341328 evals 4236803 time 1.58212
+ D1 R1 B2 U1 L2 D2 F3 R3 D1 F1 D1 B3 U3 L2 R2 B1 D3 F3
+Solved 99 in 16 probes 557872 evals 168995 time 0.0630491
+ U3 F3 D1 B3 L3 D1 L3 D3 R3 U1 B1 L2 D1 R3 B1 L3
+Solved 100 in 17 probes 2385294 evals 745508 time 0.287888
+ B1 D1 F2 L2 F1 U3 D3 L2 B1 R3 U3 F2 L2 R3 U3 B3 F1
+Solved 101 in 18 probes 38560046 evals 11960265 time 4.4825
+ B2 R1 F3 L3 U3 B1 R2 U3 B3 U1 R3 L1 U3 L1 R1 D1 F3 L2
+Solved 102 in 18 probes 27542156 evals 8594852 time 3.17893
+ L2 U3 R2 D3 L1 U1 R1 U2 B3 U2 D2 R3 U1 B1 R3 U1 D2 R2
+Solved 103 in 18 probes 19793089 evals 6239531 time 2.44461
+ R2 D3 R2 F3 U2 R1 D2 R3 L3 D2 R3 U1 F1 U3 L3 B1 U3 B1
+Solved 104 in 18 probes 13549204 evals 4272909 time 1.58324
+ R1 F2 L1 F3 B2 D3 F2 U1 B1 L3 B1 D3 B3 L1 R3 U1 B2 F1
+Solved 105 in 17 probes 2296780 evals 683166 time 0.246699
+ R1 D1 B3 R1 F2 D2 F1 L1 U1 L2 U2 R1 F2 R3 F2 R3 F1
+Solved 106 in 17 probes 3528507 evals 1056966 time 0.405253
+ B3 U3 L3 B2 D1 F2 L3 B1 R2 B2 D3 R2 D2 R2 F1 U2 R2
+Solved 107 in 18 probes 119601367 evals 37896524 time 14.1709
+ F3 L3 D3 F3 U3 B3 U1 D1 R2 D1 B1 L1 U2 R1 B3 D1 L1 R2
+Finished searching depth 18 pos 194 in 46973048 probes 14425756 evals.
+Saving solution 194
+Finished searching depth 18 pos 175 in 74077846 probes 22881613 evals.
+Saving solution 175
+Finished searching depth 18 pos 108 in 151591416 probes 48846783 evals.
+Finished searching depth 18 pos 197 in 56429347 probes 17619389 evals.
+Saving solution 197
+Finished searching depth 19 pos 108 in 152409512 probes 49093260 evals.
+Solved 108 in 19 probes 152409512 evals 49093260 time 17.1067
+ B3 R1 F1 U3 B2 L2 F2 R3 U3 D2 L3 D1 F2 D3 F2 R2 B2 L1 D3
+Solved 109 in 18 probes 22413344 evals 7032255 time 2.62563
+ U1 F2 U3 D1 B3 D2 B1 D1 R1 L3 U2 R2 L1 B1 R1 D3 R3 F3
+Solved 110 in 18 probes 27081041 evals 8419217 time 3.13825
+ D3 L2 F1 U2 F2 R1 U3 D1 F3 R3 F3 U3 B1 L1 D2 R2 D3 R2
+Solved 111 in 17 probes 3431686 evals 1069746 time 0.406096
+ B2 R3 F3 D2 R1 B3 U2 L2 U2 B2 L3 F1 U3 B2 F2 U1 F2
+Solved 112 in 18 probes 38468682 evals 11828193 time 4.76653
+ D1 F1 B2 R1 D2 R1 U2 B1 L2 F1 U3 B3 R1 U3 F3 L1 B1 D1
+Solved 113 in 18 probes 22188150 evals 6729192 time 2.72641
+ F2 U1 R2 D2 B1 R2 U3 D1 F3 U2 R1 D2 U3 B1 D1 R3 D3 U2
+Solved 114 in 18 probes 13884443 evals 4422502 time 1.63073
+ D1 R3 U2 R1 D2 L2 U2 F1 B2 U2 B2 L2 D1 L2 U2 B1 D1 F2
+Solved 115 in 18 probes 18366871 evals 5775431 time 2.23342
+ L3 B3 U3 L3 B3 L2 F1 D2 L2 U2 F1 R1 F2 L1 D2 U3 R2 B2
+Solved 116 in 18 probes 15865637 evals 5014487 time 1.92952
+ L1 D1 L1 U2 F3 U3 R1 U2 L1 D1 L1 U2 F1 L1 D2 F3 R2 B1
+Solved 117 in 18 probes 22139823 evals 6869806 time 2.94028
+ R1 U1 R1 U3 D2 F2 D1 B2 D3 R2 U1 R3 U1 R2 B1 U3 B1 U1
+Solved 118 in 17 probes 6714549 evals 2054313 time 0.825978
+ L3 B2 D2 F2 R2 B1 L1 D1 L2 F3 R2 B3 D2 L2 D1 B3 F1
+Solved 119 in 17 probes 10536958 evals 3313324 time 1.27053
+ U1 D2 F1 U2 D2 F3 D1 R3 L2 B2 U1 B3 R1 B3 D1 R1 B2
+Solved 120 in 18 probes 18676243 evals 5852587 time 2.20307
+ F2 U1 L3 B3 U3 B2 L3 B2 R3 B1 R3 F1 U3 R3 B3 F3 D1 U2
+Solved 121 in 18 probes 38810222 evals 11972687 time 4.48508
+ R2 F3 D2 F1 B1 U1 B2 U3 L2 D3 U2 L3 F2 L1 U2 B3 D2 U2
+Solved 122 in 18 probes 28665448 evals 9057737 time 3.63085
+ U3 R2 L2 U1 R2 U1 B3 R1 U1 B3 R2 L1 U2 D1 B1 L2 D2 L3
+Solved 123 in 18 probes 49485515 evals 15415005 time 6.10025
+ R1 U2 F1 D2 R1 F3 D3 L3 F1 L3 F2 U1 B1 D1 L1 D3 U2 R1
+Solved 124 in 18 probes 32854537 evals 10145092 time 3.81503
+ U3 F3 B2 U2 R2 F2 R1 U1 D1 F1 L1 B3 L2 F2 D3 R1 L2 D2
+Solved 125 in 17 probes 3121237 evals 935687 time 0.360664
+ D1 R1 F2 U1 L2 U3 D3 F3 D3 L1 F1 U2 L3 D3 L2 F2 U3
+Solved 126 in 17 probes 4590317 evals 1404384 time 0.53317
+ F1 L1 D1 R3 D2 B3 D3 F1 R1 L2 B1 U1 B3 L2 D3 B3 R1
+Solved 127 in 17 probes 5123002 evals 1594314 time 0.619338
+ R2 F2 B3 R2 B1 D2 L2 D2 R1 F3 R1 D3 L3 D3 R2 D2 U1
+Solved 128 in 17 probes 2809804 evals 856704 time 0.327638
+ B1 R2 B1 U3 B2 L3 D3 R2 D3 F1 D3 B2 L1 R3 B1 R1 F2
+Solved 129 in 18 probes 18122264 evals 5649769 time 2.12259
+ L2 D1 L2 B2 U2 R3 B2 U2 L3 R3 F3 R1 U2 L3 F1 U1 F1 D2
+Solved 130 in 18 probes 72762955 evals 22939965 time 8.60511
+ L1 U1 L2 D1 R2 B2 R2 D1 R3 D2 B3 U2 R3 U1 L1 B2 U3 B2
+Solved 131 in 17 probes 1193947 evals 375589 time 0.14022
+ R3 D1 R2 U2 F1 U1 D1 R2 U1 D1 R1 U3 L1 F2 D3 L2 B2
+Solved 132 in 18 probes 30743391 evals 9469741 time 3.55865
+ B1 R1 B2 U1 B2 U1 R1 B3 U3 D3 L1 U1 L2 B2 L1 D3 L3 R1
+Solved 133 in 18 probes 66294638 evals 20957544 time 7.85716
+ F3 R1 U1 L2 U3 R1 F2 L3 B3 D3 R3 U1 F2 L1 R2 D2 U1 B1
+Solved 134 in 18 probes 46731643 evals 14636835 time 5.50116
+ D3 F2 L3 B2 U3 R3 L3 B2 L3 B3 U2 D3 B2 F2 R1 D1 B3 L1
+Solved 135 in 18 probes 17549981 evals 5497664 time 2.16017
+ U2 F2 D3 R2 B1 U3 R3 D1 L1 F1 D1 F3 D2 U2 B1 L3 B2 L2
+Solved 136 in 17 probes 12077575 evals 3784471 time 1.48922
+ B3 U3 L3 U1 F1 D3 L3 F2 L2 D3 B3 R3 B1 R1 D1 R1 F2
+Solved 137 in 17 probes 2378205 evals 728691 time 0.280331
+ B1 R1 D3 L2 D2 L1 D3 F3 B2 U2 B1 U1 L3 F3 R3 B1 R1
+Solved 138 in 18 probes 15285949 evals 4770657 time 1.87472
+ D1 L2 B3 D1 F2 R3 U2 B3 L1 B1 L2 B1 R3 B3 L3 D2 L3 U2
+Solved 139 in 18 probes 36171856 evals 11355314 time 4.24892
+ U3 F3 R1 D1 R1 F3 D1 R1 F1 D2 L3 R1 U3 B2 F1 L1 F3 U3
+Solved 140 in 16 probes 626964 evals 199979 time 0.070441
+ R3 L1 B1 R2 B1 D1 B2 L2 F2 B1 D3 L3 F3 U1 R2 F1
+Solved 141 in 18 probes 31185538 evals 9728565 time 3.61494
+ L2 B1 R1 D2 F2 B3 U1 D1 R1 L2 U2 B1 U3 R1 B3 F2 L3 U1
+Solved 142 in 17 probes 1307649 evals 408806 time 0.152801
+ D3 B2 R3 F3 B2 U1 R2 F1 R3 B2 D1 B2 D3 U3 F3 L2 U1
+Solved 143 in 18 probes 51344051 evals 16140090 time 6.92841
+ F2 D2 F1 U3 B2 L2 D2 L1 B3 D1 R3 D1 F3 R1 D2 R1 F2 L3
+Solved 144 in 17 probes 3637100 evals 1127362 time 0.423944
+ D3 B2 D3 B2 L1 D1 L3 U3 B3 U1 R2 D3 F3 U2 B3 D3 U2
+Solved 145 in 18 probes 16342762 evals 5072742 time 1.91238
+ L1 D3 R1 U2 D2 B3 D2 L2 F3 B2 R2 F2 U3 R2 F1 U1 L3 U2
+Solved 146 in 17 probes 8578376 evals 2678976 time 0.982272
+ B1 R1 D1 R2 F1 R2 B3 D1 R2 B3 L3 F3 D2 B2 R1 U1 L3
+Solved 147 in 18 probes 73372039 evals 22898121 time 8.35118
+ R1 D1 R3 D3 F3 R2 F1 L1 F2 U2 R3 F3 U3 D1 B1 R2 L3 B2
+Solved 148 in 17 probes 2273240 evals 714393 time 0.269951
+ R1 L2 U1 B1 R1 B2 U3 B2 L3 B1 L2 R2 D1 B2 R1 U2 F3
+Solved 149 in 18 probes 52602674 evals 16430052 time 6.3294
+ B2 R2 B1 D2 L3 D2 L2 D2 B3 U2 D3 L2 F1 L1 B3 U2 R2 U1
+Solved 150 in 18 probes 34809207 evals 10955032 time 4.13311
+ U1 B1 U1 R1 F1 D3 B3 U3 L2 D2 L3 B2 U1 B2 R1 F3 D3 L2
+Solved 151 in 17 probes 12664734 evals 3858661 time 1.46053
+ B1 D2 L2 B2 U1 B1 D1 R3 U1 D1 F3 B1 R1 D1 R3 U1 F2
+Solved 152 in 16 probes 291098 evals 94615 time 0.0314732
+ L2 U3 D3 L3 U1 L1 F2 D3 B1 R1 B1 L1 F3 D1 B3 D2
+Solved 153 in 18 probes 22620911 evals 6963181 time 2.78932
+ R1 D1 B3 L2 F2 D3 F1 U2 B1 L2 F2 U2 F1 R2 F2 L3 D3 B1
+Finished searching depth 18 pos 154 in 124425376 probes 38828718 evals.
+Solved 154 in 18 probes 124425376 evals 38828718 time 14.3021
+ L1 F2 B3 R1 B2 R3 D2 F3 R1 D2 B2 L3 B1 L1 U1 F2 L1 F3
+Solved 155 in 18 probes 29271124 evals 9131069 time 3.63041
+ F1 L1 F3 L2 B1 R3 D1 R1 U1 R3 F3 D2 L2 B1 L1 F1 D2 F3
+Solved 156 in 18 probes 64415482 evals 19814865 time 7.6122
+ R1 B1 R1 U2 R3 L1 F1 R2 U1 B3 R2 D2 R1 D1 R3 D1 L3 B3
+Solved 157 in 18 probes 26251783 evals 8112098 time 3.25666
+ F3 D2 B1 U2 B2 U2 D3 F3 L3 D2 R2 F3 U1 F3 L3 B3 L3 F1
+Solved 158 in 18 probes 19554524 evals 6012054 time 2.29069
+ F2 L1 U1 L1 D1 B3 U1 D1 R3 F1 R1 D2 U2 B3 R3 B1 R3 D2
+Solved 159 in 17 probes 13305484 evals 4252232 time 1.54969
+ F1 L1 D2 F1 U3 R2 U3 R2 L3 B3 U3 R1 B3 U3 L2 U1 F1
+Solved 160 in 18 probes 19979031 evals 6227086 time 2.31199
+ U2 L1 F2 R2 F3 R2 U1 F1 L3 F2 L1 F3 R1 B2 U3 L3 B1 U2
+Solved 161 in 18 probes 10784635 evals 3479405 time 1.27186
+ U1 L1 U2 D1 B3 R2 U2 F1 U2 D2 L2 D2 B3 L3 U1 L2 F3 U3
+Solved 162 in 18 probes 17626948 evals 5482470 time 2.0433
+ D1 R1 F1 U3 D1 R1 U3 R2 D2 B3 R2 D1 U3 F3 R1 B1 F1 L1
+Solved 163 in 18 probes 12673321 evals 4089106 time 1.54086
+ U1 R3 F3 L2 F3 B1 L2 F3 U3 D1 F3 R2 F3 D3 F3 U3 B1 L1
+Solved 164 in 18 probes 34449773 evals 10830250 time 3.9942
+ R3 B3 R3 U1 D2 L2 D1 R3 B3 R3 F2 L3 U2 F2 R1 F3 U2 B3
+Solved 165 in 18 probes 13559789 evals 4327464 time 1.6292
+ U3 R3 U3 F1 B2 L2 U3 L3 B1 L1 D3 B1 D2 F3 D2 B2 R3 F3
+Solved 166 in 18 probes 13061616 evals 4196805 time 1.53506
+ U1 B2 D2 F3 B2 R2 U2 R2 D2 B1 U3 F1 U1 D2 B2 R3 B3 R2
+Solved 167 in 17 probes 3855305 evals 1178093 time 0.423254
+ L3 F1 L1 D1 F2 B2 D1 B1 D3 L1 U1 R1 D2 R2 B1 D3 B1
+Solved 168 in 18 probes 64145342 evals 20145399 time 7.23698
+ B1 D1 R3 L3 F2 R1 B3 U1 L3 U3 B3 L1 B1 U3 B3 L3 U3 F2
+Solved 169 in 17 probes 3882899 evals 1188433 time 0.49558
+ L3 D3 L1 F1 U2 F3 B1 U3 R1 L1 U1 L2 U3 L1 F3 R2 B2
+Solved 170 in 18 probes 13841138 evals 4425112 time 1.47453
+ R2 L1 D3 L2 B1 D1 L3 F2 R3 D2 R2 U1 B3 L1 U2 L2 R1 D1
+Solved 171 in 18 probes 15344042 evals 4802130 time 1.79998
+ F1 D1 B3 U3 F1 L2 F3 R3 D3 L3 D1 U2 F1 D2 L1 D3 B2 L1
+Solved 172 in 17 probes 1539881 evals 476613 time 0.190103
+ R1 L1 B2 U2 L1 D2 B3 L2 D2 F2 B1 D3 L3 U2 D2 R2 U2
+Solved 173 in 17 probes 975097 evals 305686 time 0.111889
+ F2 R1 F3 L3 B2 D1 L2 F2 D3 B2 D3 L3 F2 D2 F1 U3 B3
+Solved 174 in 18 probes 16108165 evals 5052511 time 1.95943
+ U2 D1 R3 D1 L1 F2 R1 U2 F1 R3 L2 U2 F3 B3 L2 U2 L2 R3
+Solved 175 in 18 probes 74077846 evals 22881613 time 7.77609
+ R1 L3 B1 D1 L2 U2 B1 U3 L2 B2 L1 D3 L2 F1 D3 B2 D2 F2
+Solved 176 in 17 probes 6942262 evals 2156874 time 0.816364
+ U3 L3 U2 L2 B2 D1 B3 U3 F1 L2 F1 L2 R3 D1 B1 L3 B1
+Solved 177 in 17 probes 13336458 evals 4290186 time 1.62826
+ U1 R2 L2 U3 B3 R1 F3 U3 R2 D3 B2 D3 L2 R2 B2 F1 R3
+Solved 178 in 18 probes 24157423 evals 7605715 time 2.88327
+ R2 L1 U3 R2 L3 B3 L3 B3 U2 R2 B2 L2 R3 D2 L1 U1 B1 L2
+Solved 179 in 18 probes 16136724 evals 5092632 time 1.87047
+ D3 L1 D2 R1 F3 R1 F1 R3 B1 R3 B3 F1 U1 B2 U3 L2 B3 U1
+Solved 180 in 18 probes 35490262 evals 11194011 time 4.14978
+ D1 R1 L2 B2 U3 D1 L3 U2 R3 U1 F1 D2 B1 D1 B3 R3 B2 F2
+Finished searching depth 18 pos 192 in 95331238 probes 30111406 evals.
+Saving solution 192
+Finished searching depth 18 pos 190 in 105926038 probes 33728747 evals.
+Saving solution 190
+Finished searching depth 18 pos 187 in 142587406 probes 46003241 evals.
+Finished searching depth 19 pos 187 in 144241522 probes 46504976 evals.
+Saving solution 187
+Finished searching depth 18 pos 181 in 186803309 probes 58354558 evals.
+Finished searching depth 19 pos 181 in 235773562 probes 73114409 evals.
+Solved 181 in 19 probes 235773562 evals 73114409 time 26.9773
+ D3 R3 F2 B3 U2 B1 L3 F3 U1 B1 U1 L3 F3 R2 D2 B2 D1 L1 D2
+Solved 182 in 17 probes 5382225 evals 1634094 time 0.66523
+ D1 B1 L3 F2 U3 F1 B2 U2 L3 D2 R1 D1 R1 U1 F3 D2 U3
+Solved 183 in 17 probes 9390047 evals 2958053 time 1.24346
+ F1 U3 R2 F3 B1 U1 F2 B1 R3 F1 L3 U3 B2 D1 L1 U1 F2
+Solved 184 in 18 probes 36923805 evals 11455986 time 4.16248
+ L3 D1 R3 L2 B3 L2 B3 L1 U1 D2 F2 U1 B2 R2 B1 R3 B1 F1
+Solved 185 in 18 probes 11134559 evals 3591764 time 1.31579
+ U2 L2 D3 B1 U1 R3 L3 D3 R2 U3 R2 U1 R3 F3 R2 F3 R3 U3
+Solved 186 in 18 probes 13837284 evals 4437105 time 1.65262
+ U3 R3 D1 B1 U2 B3 D2 R1 D1 R3 D1 B1 D2 L3 D2 F1 R1 B3
+Solved 187 in 19 probes 144241522 evals 46504976 time 15.8164
+ R3 L1 F3 R3 B1 U1 L3 U3 R3 B2 F1 D3 F1 D1 R1 B3 D3 B3 R3
+Solved 188 in 17 probes 1774728 evals 540418 time 0.20842
+ R1 D3 R2 F2 U2 D2 R3 L2 F3 U1 F1 U1 L2 F2 L2 D1 B2
+Solved 189 in 18 probes 15740282 evals 4977461 time 1.83623
+ B3 U2 F2 L3 U3 R2 B3 R1 F1 U2 B3 U2 F3 D1 R2 D1 L3 U2
+Solved 190 in 18 probes 105926038 evals 33728747 time 11.0409
+ D3 L2 U2 B3 R2 D3 B1 L1 F3 L2 R3 D1 F2 L3 D3 L2 B1 L3
+Solved 191 in 18 probes 24154820 evals 7506485 time 2.74791
+ B1 L1 D2 L3 B3 R1 L1 F3 U1 F3 B1 U3 L1 F1 B1 R2 F2 R1
+Solved 192 in 18 probes 95331238 evals 30111406 time 10.4956
+ F3 U2 D2 F3 D2 R1 F2 L2 B1 L3 D3 R1 U2 L1 B1 U1 L2 U1
+Solved 193 in 18 probes 36481812 evals 11387635 time 4.16435
+ R3 F2 D1 B1 R1 F1 R1 U1 D3 R1 U3 F2 L1 F1 D2 B2 F2 R2
+Solved 194 in 18 probes 46973048 evals 14425756 time 5.28445
+ B1 R3 U2 R1 B3 R2 B2 D1 U1 F1 R3 D3 B1 L2 D3 U1 L3 F2
+Solved 195 in 18 probes 28223794 evals 8784323 time 3.27758
+ D3 F2 D2 F1 R3 F1 L2 U3 D1 R2 L2 D3 R3 F2 R3 F3 L1 R3
+Solved 196 in 16 probes 1047794 evals 330115 time 0.139975
+ B2 D2 L3 U1 R2 F2 D1 R1 D2 R2 B3 R2 D1 F1 L1 F2
+Solved 197 in 18 probes 56429347 evals 17619389 time 6.77696
+ B1 L2 D3 F1 L3 D2 R1 D3 R1 F2 U2 F2 L3 B2 D3 F1 R3 D3
+Solved 198 in 17 probes 11369651 evals 3509731 time 1.39769
+ F1 D2 R3 D2 B2 R1 B2 L2 B2 U1 L1 B1 L1 D2 R3 F3 D2
+Solved 199 in 18 probes 13014086 evals 4158315 time 1.55662
+ R3 U1 L1 D3 F3 L1 F1 R3 U1 L3 B1 D3 R3 F3 L3 R3 D3 U3
+Solved 200 in 16 probes 1396083 evals 423233 time 0.157831
+ L2 D1 L2 U3 F1 U2 F1 D2 R3 U2 L3 U3 R1 D2 L1 U2

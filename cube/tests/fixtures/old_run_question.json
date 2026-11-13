@@ -1,0 +1,6 @@
+{
+ "cube": "BLFUUBLRFDUDLRRUFBBBLLFUUFLRRFUDDBLRRFUBLFDRFRDUDBDDBL",
+ "system_text": "You are an expert Rubik's cube solver. Follow the requested answer format exactly.",
+ "user_text": "Here is a 3x3x3 Rubik's cube.\n\nColour scheme: the centre sticker of each face fixes its colour and never moves: U (up) = white W, D (down) = yellow Y, F (front) = green G, B (back) = blue B, R (right) = red R, L (left) = orange O.\nMoves: U, D, R, L, F, B each turn that face 90 degrees clockwise as seen looking directly at that face; X' is the 90 degree counterclockwise turn and X2 the 180 degree turn.\nThe allowed moves are exactly: U U' U2 D D' D2 R R' R2 L L' L2 F F' F2 B B' B2 (no whole-cube rotations).\n\nNet (each face seen from outside):\n          U\n        B O G\n        W W B\n        O R G\n  L       F       R       B\nR G W   B B O   Y W Y   R Y W\nB O G   O G W   O R R   Y B Y\nY R G   W G O   W G B   Y B O\n          D\n        R R G\n        W Y Y\n        B O R\nFacelet string (colour letters; faces in the order U R F D L B, 9 stickers each, read row by row as in the net):\nBOGWWBORGYWYORRWGBBBOOGWWGORRGWYYBORRGWBOGYRGRYWYBYYBO\n\nGive the single move that makes the most progress toward solving. Answer with `MOVE: <move>`.",
+ "made_by": "rk/render.py user_text_move from the old cube run's archive"
+}
