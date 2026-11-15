@@ -1,0 +1,13 @@
+depth  problems  guessing  lookahead_1  lookahead_2  lookahead_3  lookup  narrow_deep  recall  surface_relaxed  surface_strict                     best   room
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2       300     0.148        0.909        1.000        1.000   0.303        0.987   0.267            0.470           0.710  lookahead_2+lookahead_3  0.000
+    3       300     0.170        0.553        0.582        1.000   0.247        0.543   0.153            0.343           0.637              lookahead_3  0.000
+    4       300     0.228        0.372        0.552        0.471   0.273        0.440   0.127            0.370           0.587           surface_strict  0.413
+    5       300     0.256        0.286        0.500        0.470   0.267        0.378   0.103            0.353           0.520           surface_strict  0.480
+surface_strict: strength chosen 1.0
+depth 2: options only (lookup) 0.303, guessing 0.148; sequences examined {'lookahead_1': 11.436666666666667, 'lookahead_2': 200.8, 'lookahead_3': 200.8}, identities worked out {'narrow_deep': 57.35666666666667}
+depth 3: options only (lookup) 0.247, guessing 0.170; sequences examined {'lookahead_1': 11.496666666666666, 'lookahead_2': 203.15, 'lookahead_3': 4392.64}, identities worked out {'narrow_deep': 188.15}
+depth 4: options only (lookup) 0.273, guessing 0.228; sequences examined {'lookahead_1': 11.373333333333333, 'lookahead_2': 199.57333333333332, 'lookahead_3': 4291.126666666667}, identities worked out {'narrow_deep': 231.27}
+depth 5: options only (lookup) 0.267, guessing 0.256; sequences examined {'lookahead_1': 11.226666666666667, 'lookahead_2': 195.54666666666665, 'lookahead_3': 4179.493333333333}, identities worked out {'narrow_deep': 242.21666666666667}
+checks on the programs hold
+EXIT 0

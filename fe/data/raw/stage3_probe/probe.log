@@ -1,0 +1,66 @@
+18:39:47Z think_end id 248069
+18:39:47Z start train-2-0001 seed 106332171
+18:39:47Z start train-3-0001 seed 1258061973
+18:39:47Z start train-4-0001 seed 1077512588
+18:39:47Z start train-5-0001 seed 210995474
+18:39:47Z start train-2-0002 seed 68173394
+18:39:47Z start train-3-0002 seed 1220165324
+18:39:47Z start train-4-0002 seed 1115633621
+18:39:47Z start train-5-0002 seed 248854347
+18:39:47Z start train-2-0003 seed 97670245
+18:39:47Z start train-3-0003 seed 1232622843
+18:39:47Z start train-4-0003 seed 1136483810
+18:39:47Z start train-5-0003 seed 253189500
+18:39:47Z start train-2-0004 seed 10306272
+18:39:47Z start train-3-0004 seed 1278689918
+18:39:47Z start train-4-0004 seed 1190284135
+18:39:47Z start train-5-0004 seed 173558777
+18:42:56Z done train-2-0004 {"status": "finished", "thinking_tokens": 13532, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 189.379}
+18:42:56Z start train-2-0005 seed 23013591
+18:43:29Z done train-2-0002 {"status": "finished", "thinking_tokens": 15608, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 221.881}
+18:43:29Z start train-3-0005 seed 1307912265
+18:44:22Z done train-2-0003 {"status": "finished", "thinking_tokens": 19292, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 275.701}
+18:44:22Z start train-4-0005 seed 1194336592
+18:48:16Z done train-2-0005 {"status": "finished", "thinking_tokens": 20564, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 320.037}
+18:48:16Z start train-5-0005 seed 194650574
+18:48:49Z done train-2-0001 {"status": "finished", "thinking_tokens": 36047, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 542.08}
+18:48:49Z start train-2-0006 seed 52008590
+18:49:38Z done train-3-0004 {"status": "finished", "thinking_tokens": 38984, "answer_tokens": 14, "finish_reason": "stop", "move_readable": true, "seconds": 591.702}
+18:49:38Z start train-3-0006 seed 1337169424
+18:50:20Z done train-3-0002 {"status": "finished", "thinking_tokens": 41468, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 633.643}
+18:50:20Z start train-4-0006 seed 1165401865
+18:52:59Z done train-3-0005 {"status": "finished", "thinking_tokens": 34949, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 570.552}
+18:52:59Z start train-5-0006 seed 165453719
+18:53:34Z done train-2-0006 {"status": "finished", "thinking_tokens": 16481, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 285.712}
+18:53:34Z start train-2-0007 seed 47971513
+18:55:26Z done train-4-0005 {"status": "finished", "thinking_tokens": 39280, "answer_tokens": 9, "finish_reason": "stop", "move_readable": true, "seconds": 663.237}
+18:55:26Z start train-3-0007 seed 1316092967
+18:56:55Z done train-5-0004 {"status": "finished", "thinking_tokens": 63341, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 1028.494}
+18:56:55Z start train-4-0007 seed 1152709950
+18:57:11Z done train-5-0003 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 1043.696}
+18:57:11Z start train-5-0007 seed 136246688
+18:57:11Z done train-4-0001 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 1043.526}
+18:57:11Z start train-2-0008 seed 159890308
+18:57:11Z done train-4-0002 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 1043.581}
+18:57:11Z done train-3-0001 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 1043.569}
+18:57:11Z start train-3-0008 seed 1160624922
+18:57:11Z done train-4-0004 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 1043.549}
+18:57:11Z start train-4-0008 seed 1340649987
+18:57:11Z done train-4-0003 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 1043.639}
+18:57:11Z done train-5-0002 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 1043.545}
+18:57:11Z done train-3-0003 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 1043.639}
+18:57:11Z start train-5-0008 seed 54702749
+18:57:11Z done train-5-0001 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 1043.623}
+19:00:29Z done train-2-0008 {"status": "finished", "thinking_tokens": 13218, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 198.146}
+19:02:51Z done train-3-0006 {"status": "finished", "thinking_tokens": 47272, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 792.695}
+19:04:41Z done train-3-0007 {"status": "finished", "thinking_tokens": 34344, "answer_tokens": 9, "finish_reason": "stop", "move_readable": true, "seconds": 555.188}
+19:05:14Z done train-2-0007 {"status": "finished", "thinking_tokens": 42398, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 699.749}
+19:06:02Z done train-5-0005 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 1065.389}
+19:07:49Z done train-4-0006 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 1049.064}
+19:08:42Z done train-3-0008 {"status": "finished", "thinking_tokens": 45083, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 691.448}
+19:09:57Z done train-5-0006 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 1017.791}
+19:10:40Z done train-4-0008 {"status": "finished", "thinking_tokens": 53696, "answer_tokens": 10, "finish_reason": "stop", "move_readable": true, "seconds": 808.784}
+19:12:41Z done train-4-0007 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 946.174}
+19:12:51Z done train-5-0007 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 940.199}
+19:12:51Z done train-5-0008 {"status": "finished", "thinking_tokens": 64000, "answer_tokens": 0, "finish_reason": "length", "move_readable": false, "seconds": 939.932}
+19:12:52Z ALL DONE 32

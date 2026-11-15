@@ -4,6 +4,7 @@ private/
 
 # Bulky raw output (model transcripts, solver logs). Small result tables are kept.
 cube/data/raw/
+mizar/data/raw/
 
 # Python and editor leftovers
 __pycache__/

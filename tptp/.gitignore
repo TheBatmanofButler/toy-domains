@@ -1,0 +1,6 @@
+data/calls/
+data/first/
+data/second/
+__pycache__/
+.coverage
+private/

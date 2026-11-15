@@ -1,7 +1,8 @@
 """Stage 4: score everything and write the report.
 
 Reads test_problems.jsonl, program_picks.jsonl, model_answers.jsonl and (for the tokens one equation takes to
-write out) model_run_check.json from --data. Writes scores_by_depth.json, problem_by_problem.json,
+write out) model_run_check.json from --data. Stops if the answers were not all asked under the same settings
+(fe_ladder/run_settings.py). Writes scores_by_depth.json, problem_by_problem.json,
 wrong_moves.json, report.txt and curve.svg. Every figure comes from fe_ladder/scoring.py and, for the same wrong
 moves, fe_ladder/wrong_moves.py.
 """
@@ -12,7 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from fe_ladder import report, scoring, wrong_moves  # noqa: E402
+from fe_ladder import report, run_settings, scoring, wrong_moves  # noqa: E402
 from fe_ladder.problems import read_jsonl  # noqa: E402
 
 
@@ -55,7 +56,11 @@ def main(argv=None):
     picks = read_jsonl(data / "program_picks.jsonl")
     answers = read_jsonl(data / "model_answers.jsonl")
     tokens_per_identity = json.loads((data / "model_run_check.json").read_text())["tokens_per_equation"]
-    allowance = answers[0]["settings"]["thinking_allowance"]
+    # Every answer's settings are read: answers asked in different ways must not be mixed in one report.
+    try:
+        allowance = run_settings.shared_settings(answers)["thinking_allowance"]
+    except run_settings.SettingsDiffer as error:
+        sys.exit(f"STOP: {error}")
 
     by_depth = scoring.scores_by_depth(test, picks, answers, args.tries)
     for row in by_depth.values():

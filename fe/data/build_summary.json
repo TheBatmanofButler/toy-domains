@@ -1,0 +1,92 @@
+{
+ "seed": 20261112,
+ "attempts": 22580,
+ "count_by_kind": {
+  "taken": 5200,
+  "no equation found": 92,
+  "depth 1": 6,
+  "no open place at its depth": 17272,
+  "same as one taken": 10
+ },
+ "test_count_by_depth": {
+  "2": 300,
+  "3": 300,
+  "4": 300,
+  "5": 300
+ },
+ "training_count_by_depth": {
+  "2": 1000,
+  "3": 1000,
+  "4": 1000,
+  "5": 1000
+ },
+ "training_depths_left_short": [],
+ "solve_seconds_by_kind": {
+  "taken": 18675.781141143525,
+  "no equation found": 0.0,
+  "depth 1": 0.06920701311901212,
+  "no open place at its depth": 30399.850160834147,
+  "same as one taken": 0.5603279841598123
+ },
+ "build_seconds": 2197.1096303791273,
+ "test_by_depth": {
+  "2": {
+   "problems": 300,
+   "mean_right_moves": 1.68,
+   "mean_options": 11.436666666666667,
+   "mean_share_right": 0.14834220409220408,
+   "share_shorter_than_planted": 1.0
+  },
+  "3": {
+   "problems": 300,
+   "mean_right_moves": 1.9366666666666668,
+   "mean_options": 11.496666666666666,
+   "mean_share_right": 0.16977117327117328,
+   "share_shorter_than_planted": 0.41
+  },
+  "4": {
+   "problems": 300,
+   "mean_right_moves": 2.5533333333333332,
+   "mean_options": 11.373333333333333,
+   "mean_share_right": 0.22783820808820812,
+   "share_shorter_than_planted": 0.3933333333333333
+  },
+  "5": {
+   "problems": 300,
+   "mean_right_moves": 2.8266666666666667,
+   "mean_options": 11.226666666666667,
+   "mean_share_right": 0.2557675472675473,
+   "share_shorter_than_planted": 0.0
+  }
+ },
+ "train_by_depth": {
+  "2": {
+   "problems": 1000,
+   "mean_right_moves": 1.746,
+   "mean_options": 11.407,
+   "mean_share_right": 0.15423309190809192,
+   "share_shorter_than_planted": 1.0
+  },
+  "3": {
+   "problems": 1000,
+   "mean_right_moves": 1.951,
+   "mean_options": 11.407,
+   "mean_share_right": 0.1735017177267177,
+   "share_shorter_than_planted": 0.416
+  },
+  "4": {
+   "problems": 1000,
+   "mean_right_moves": 2.355,
+   "mean_options": 11.283,
+   "mean_share_right": 0.21137195027195027,
+   "share_shorter_than_planted": 0.402
+  },
+  "5": {
+   "problems": 1000,
+   "mean_right_moves": 2.784,
+   "mean_options": 11.276,
+   "mean_share_right": 0.25054273504273505,
+   "share_shorter_than_planted": 0.0
+  }
+ }
+}

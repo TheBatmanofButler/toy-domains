@@ -1,0 +1,206 @@
+Margins of error. Each standard error is the sample standard deviation (n - 1) of the per-problem figures
+over the square root of the number of problems at that depth (n/a with one problem): for every score, and
+for the model minus each program on the same problems. Beside the count of problems only the model gets,
+the count expected if the model's successes were unrelated to the program's is m x p (m problems the
+program misses, p the share the model gets), with standard error sqrt(m p (1 - p)). In the same-wrong-moves
+table each is across the problems with a wrong try (n/a with fewer than two), because the tries on one
+problem are not independent. These margins reflect the choice of test problems only; for the surface
+readers they do not say what a different training set would give. With 4 depths, an occasional gap of two
+standard errors is expected by luck alone.
+
+Scores by depth (room = 1 - best simple program)
+depth  problems  guessing  lookahead_1  lookahead_2  lookahead_3  lookup  narrow_deep  recall  surface_relaxed  surface_strict                     best   room  model  unreadable  not_available  forced  thinking_tokens
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2       300     0.148        0.909        1.000        1.000   0.303        0.987   0.267            0.470           0.710  lookahead_2+lookahead_3  0.000  0.787       0.007          0.003   0.975         7980.374
+    3       300     0.170        0.553        0.582        1.000   0.247        0.543   0.153            0.343           0.637              lookahead_3  0.000  0.519       0.009          0.007   1.000         7998.994
+    4       300     0.228        0.372        0.552        0.471   0.273        0.440   0.127            0.370           0.587           surface_strict  0.413  0.421       0.007          0.011   1.000         7998.996
+    5       300     0.256        0.286        0.500        0.470   0.267        0.378   0.103            0.353           0.520           surface_strict  0.480  0.372       0.013          0.011   1.000         7998.996
+
+Standard errors of the scores (room's is the named best program's)
+depth  guessing  lookahead_1  lookahead_2  lookahead_3  lookup  narrow_deep  recall  surface_relaxed  surface_strict   room         room_of  model
+--------------------------------------------------------------------------------------------------------------------------------------------------
+    2     0.003        0.014        0.000        0.000   0.027        0.007   0.026            0.029           0.026  0.000     lookahead_2  0.016
+    3     0.005        0.027        0.023        0.000   0.025        0.025   0.021            0.027           0.028  0.000     lookahead_3  0.019
+    4     0.008        0.026        0.025        0.020   0.026        0.025   0.019            0.028           0.028  0.028  surface_strict  0.018
+    5     0.008        0.024        0.026        0.023   0.026        0.024   0.018            0.028           0.029  0.029  surface_strict  0.017
+
+Model minus each program, per-problem difference on the same problems: mean, then standard error
+depth  guessing  guessing_se  lookahead_1  lookahead_1_se  lookahead_2  lookahead_2_se  lookahead_3  lookahead_3_se  lookup  lookup_se  narrow_deep  narrow_deep_se  recall  recall_se  surface_relaxed  surface_relaxed_se  surface_strict  surface_strict_se
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2     0.639        0.016       -0.121           0.020       -0.213           0.016       -0.213           0.016   0.484      0.028       -0.199           0.016   0.521      0.029            0.317               0.028           0.077              0.029
+    3     0.350        0.018       -0.034           0.028       -0.063           0.028       -0.481           0.019   0.273      0.028       -0.023           0.027   0.366      0.026            0.176               0.030          -0.117              0.032
+    4     0.193        0.016        0.048           0.026       -0.131           0.027       -0.051           0.023   0.147      0.028       -0.019           0.026   0.294      0.024            0.051               0.028          -0.166              0.028
+    5     0.116        0.015        0.086           0.026       -0.128           0.027       -0.098           0.025   0.105      0.027       -0.006           0.027   0.269      0.022            0.019               0.029          -0.148              0.031
+
+Forced and unforced answers: how many, and the share right among each
+depth  forced  forced_right  unforced  unforced_right
+-----------------------------------------------------
+    2    1463         0.782        37           1.000
+    3    1500         0.519         0             n/a
+    4    1500         0.421         0             n/a
+    5    1500         0.372         0             n/a
+
+Budgets, each in its own units: the model's allowance, tokens actually used and share of forced answers;
+each lookahead's number of sequences examined; the narrow-and-deep program's number of identities worked
+out. One common figure, as an upper limit only (tokens_used is one too):
+the most identities the model could have written out in its tokens
+(most_identities_written: tokens used over the tokens of one identity, the equation's).
+This places the model among the programs and does not rank them on equal terms.
+depth  allowance  thinking_tokens  without_thinking_count  tokens_used  forced  cut_off_readable  lookahead_1_sequences  lookahead_2_sequences  lookahead_3_sequences  narrow_deep_identities  most_identities_written
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2       8000         7980.374                       0     8014.164   0.975             0.000                 11.437                200.800                200.800                  57.357                  159.327
+    3       8000         7998.994                       0     8033.695   1.000             0.000                 11.497                203.150               4392.640                 188.150                  159.716
+    4       8000         7998.996                       0     8033.859   1.000             0.000                 11.373                199.573               4291.127                 231.270                  159.719
+    5       8000         7998.996                       0     8034.055   1.000             0.000                 11.227                195.547               4179.493                 242.217                  159.723
+
+Problem by problem (model gets a problem: more than half its tries right; a program: more than half its weight on right moves). Programs are exact; the model's 3 of 5 is a noisy estimate (a model right 55% of the time on a problem gets it about 59% of the time).
+guessing
+depth  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------
+    2     0         254             0       46                   9.548                    254.000              6.241
+    3     2         157             0      141                  15.992                    157.940              8.616
+    4     5         113             3      179                  31.981                    114.853              8.347
+    5     9          90             6      195                  35.752                     94.050              7.938
+
+lookahead_1
+depth  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------
+    2   227          27            37        9                   0.572                     30.480              2.162
+    3    98          61            53       88                   4.443                     78.970              6.092
+    4    51          67            41      141                  19.835                     81.813              7.045
+    5    38          61            32      169                  28.243                     75.900              7.131
+
+lookahead_2
+depth  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------
+    2   254           0            46        0                   0.000                      0.000              0.000
+    3    76          83            58       83                   8.109                     87.980              6.430
+    4    66          52            69      113                  16.344                     64.900              6.275
+    5    58          41            72      129                  16.571                     56.100              6.131
+
+lookahead_3
+depth  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------
+    2   254           0            46        0                   0.000                      0.000              0.000
+    3   159           0           141        0                   0.000                      0.000              0.000
+    4    41          77            39      143                  24.234                     86.533              7.245
+    5    45          54            58      143                  22.836                     65.010              6.600
+
+lookup
+depth  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------
+    2    87         167             4       42                   5.595                    176.953              5.209
+    3    49         110            25      116                  11.392                    119.780              7.503
+    4    46          72            36      146                  20.013                     85.747              7.212
+    5    38          61            42      159                  27.011                     72.600              6.974
+
+narrow_deep
+depth  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------
+    2   254           0            42        4                   0.026                      3.387              0.721
+    3    83          76            48       93                   5.391                     89.570              6.488
+    4    53          65            47      135                  18.045                     78.667              6.908
+    5    36          63            49      152                  24.702                     70.950              6.895
+
+recall
+depth  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------
+    2    70         184            10       36                   6.229                    186.267              5.344
+    3    33         126            13      128                  13.007                    134.620              7.954
+    4    18         100            20      162                  28.941                    103.053              7.907
+    5    16          83            15      186                  38.193                     88.770              7.712
+
+surface_relaxed
+depth  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------
+    2   137         117             4       42                   4.258                    134.620              4.543
+    3    72          87            31      110                   8.693                    104.410              7.005
+    4    59          59            52      130                  15.150                     74.340              6.716
+    5    45          54            61      140                  21.556                     64.020              6.549
+
+surface_strict
+depth  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------
+    2   187          67            26       20                   2.037                     73.660              3.361
+    3   111          48            80       61                   4.089                     57.770              5.211
+    4    89          29            87       95                   6.620                     48.773              5.440
+    5    66          33            90      111                  13.431                     47.520              5.643
+
+Same wrong moves, over the problems where the model gave a readable wrong move: the weight the program's
+pick puts on that move (match), what even guessing among the wrong moves would give (uniform), the same moves
+set against the program's picks on the other problems at that depth (shuffle), match minus shuffle (excess),
+and the excess less each control's on the same problems (over_...), with standard errors across problems.
+Moves that are not available are left out (no program can put weight on them); left_out_not_available
+gives how many tries that was.
+It describes a resemblance between the model's mistakes and the program's, nothing more.
+guessing
+depth  problems  wrong_tries  left_out_not_available  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se  over_surface_strict  over_surface_strict_se
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2       144          304                       4  0.089    0.089    0.085   0.004      0.001       -0.014           0.022                0.043                   0.019
+    3       246          697                      10  0.089    0.089    0.085   0.003      0.001       -0.041           0.013                0.008                   0.015
+    4       269          842                      17  0.090    0.090    0.086   0.004      0.001       -0.056           0.014                0.020                   0.010
+    5       286          907                      16  0.091    0.091    0.087   0.004      0.001       -0.074           0.013               -0.004                   0.013
+
+lookahead_1
+depth  problems  wrong_tries  left_out_not_available  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se  over_surface_strict  over_surface_strict_se
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2       144          304                       4  0.052    0.010    0.089  -0.037      0.016       -0.055           0.028                0.003                   0.019
+    3       246          697                      10  0.128    0.052    0.083   0.045      0.016        0.001           0.019                0.050                   0.020
+    4       269          842                      17  0.163    0.077    0.097   0.066      0.016        0.006           0.020                0.082                   0.018
+    5       286          907                      16  0.183    0.088    0.098   0.085      0.015        0.007           0.019                0.077                   0.019
+
+lookahead_2
+depth  problems  wrong_tries  left_out_not_available  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se  over_surface_strict  over_surface_strict_se
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2       144          304                       4  0.000    0.000    0.113  -0.113      0.003       -0.131           0.023               -0.073                   0.019
+    3       246          697                      10  0.095    0.044    0.092   0.003      0.012       -0.041           0.018                0.008                   0.018
+    4       269          842                      17  0.100    0.052    0.103  -0.003      0.010       -0.064           0.018                0.012                   0.014
+    5       286          907                      16  0.100    0.060    0.100   0.001      0.011       -0.078           0.018               -0.008                   0.016
+
+lookahead_3
+depth  problems  wrong_tries  left_out_not_available  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se  over_surface_strict  over_surface_strict_se
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2       144          304                       4  0.000    0.000    0.113  -0.113      0.003       -0.131           0.023               -0.073                   0.019
+    3       246          697                      10  0.000    0.000    0.090  -0.090      0.001       -0.135           0.013               -0.086                   0.015
+    4       269          842                      17  0.124    0.064    0.107   0.017      0.009       -0.043           0.016                0.033                   0.013
+    5       286          907                      16  0.112    0.064    0.106   0.005      0.009       -0.073           0.016               -0.003                   0.015
+
+lookup
+depth  problems  wrong_tries  left_out_not_available  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se  over_surface_strict  over_surface_strict_se
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2       144          304                       4  0.109    0.077    0.120  -0.011      0.010       -0.030           0.024                0.028                   0.022
+    3       246          697                      10  0.134    0.084    0.137  -0.002      0.006       -0.046           0.014                0.002                   0.015
+    4       269          842                      17  0.116    0.086    0.121  -0.005      0.006       -0.065           0.014                0.011                   0.012
+    5       286          907                      16  0.107    0.089    0.115  -0.008      0.004       -0.087           0.013               -0.016                   0.014
+
+narrow_deep
+depth  problems  wrong_tries  left_out_not_available  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se  over_surface_strict  over_surface_strict_se
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2       144          304                       4  0.006    0.003    0.111  -0.104      0.005       -0.123           0.023               -0.065                   0.019
+    3       246          697                      10  0.088    0.050    0.093  -0.005      0.010       -0.049           0.017               -0.001                   0.016
+    4       269          842                      17  0.118    0.066    0.103   0.015      0.011       -0.045           0.018                0.031                   0.014
+    5       286          907                      16  0.133    0.075    0.105   0.028      0.011       -0.051           0.018                0.020                   0.017
+
+recall
+depth  problems  wrong_tries  left_out_not_available  match  uniform  shuffle  excess  excess_se  over_surface_strict  over_surface_strict_se
+---------------------------------------------------------------------------------------------------------------------------------------------
+    2       144          304                       4  0.232    0.083    0.213   0.019      0.023                0.058                   0.030
+    3       246          697                      10  0.165    0.092    0.121   0.044      0.013                0.049                   0.021
+    4       269          842                      17  0.226    0.106    0.165   0.060      0.014                0.076                   0.018
+    5       286          907                      16  0.236    0.115    0.157   0.079      0.013                0.070                   0.020
+
+surface_relaxed
+depth  problems  wrong_tries  left_out_not_available  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se  over_surface_strict  over_surface_strict_se
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+    2       144          304                       4  0.144    0.068    0.141   0.003      0.022       -0.016           0.033                0.042                   0.028
+    3       246          697                      10  0.125    0.072    0.114   0.011      0.012       -0.033           0.019                0.016                   0.019
+    4       269          842                      17  0.110    0.074    0.102   0.008      0.012       -0.052           0.018                0.024                   0.015
+    5       286          907                      16  0.099    0.077    0.104  -0.004      0.009       -0.083           0.017               -0.013                   0.016
+
+surface_strict
+depth  problems  wrong_tries  left_out_not_available  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se
+-----------------------------------------------------------------------------------------------------------------------------
+    2       144          304                       4  0.073    0.028    0.113  -0.039      0.019       -0.058           0.030
+    3       246          697                      10  0.086    0.038    0.091  -0.005      0.015       -0.049           0.021
+    4       269          842                      17  0.064    0.046    0.080  -0.016      0.010       -0.076           0.018
+    5       286          907                      16  0.100    0.056    0.092   0.008      0.013       -0.070           0.020

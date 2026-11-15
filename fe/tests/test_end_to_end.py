@@ -10,7 +10,8 @@ forced 1/5, all right; unforced 20, of which 5 right (0.25). Thinking tokens: th
 then the end-of-thinking token and 10 answer tokens (101 in all), or reaches the budget after 8,000 tokens,
 when the server's end-of-thinking text adds 19 thinking tokens and the end-of-thinking token, then 4 answer
 tokens (8,024 in all). The thinking figure is the model's own, the 8,000 before the end text for a forced
-answer: (4 x 90 + 8000) / 5 = 1672; tokens used (4 x 101 + 8024) / 5 = 1685.6.
+answer: (4 x 90 + 8000) / 5 = 1672, with no answer lacking a count; tokens used (4 x 101 + 8024) / 5 = 1685.6.
+Every answer is asked with the same settings and model version, so the report stage goes ahead.
 The model gets problems 1 and 5. Lookahead of depth k scores 1 at depths up to k, so room is 0 at 2 and 3, and
 lookahead_3 gets every problem: both 2, only the program 3, only the model 0, neither 0, and no "only the model"
 problem expected by chance either way.
@@ -132,6 +133,8 @@ def test_final_scores_equal_the_hand_worked_table(chain):
         assert (row["forced_answers"], row["forced_share_right"]) == (5, 1.0)
         assert (row["unforced_answers"], row["unforced_share_right"]) == (20, 0.25)
         assert row["thinking_tokens_mean"] == pytest.approx(1672) and row["tokens_used_mean"] == pytest.approx(1685.6)
+        # The stand-in gives token ids with every reply, so no answer lacks a thinking count.
+        assert row["answers_without_thinking_count"] == 0
         assert row["most_identities_written"] == pytest.approx(1685.6 / tokens_per_equation)
         for k in (1, 2, 3):
             if int(depth) <= k:

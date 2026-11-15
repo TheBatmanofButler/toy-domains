@@ -1,0 +1,1 @@
+Join: cat parts/model_answers.jsonl.xz.part_0[0-4] > model_answers.jsonl.xz && sha256sum -c xz_sha256.txt (path bring/ in file: compare by hash), then xz -dk model_answers.jsonl.xz; check against answers_sha256.txt.

@@ -1,0 +1,1 @@
+{"think_end_tokens": [248069], "model": "Qwen3.8-27B", "run_seed": 20261112, "max_tokens": 64000, "sampling": {"temperature": 1.0, "top_p": 0.95, "top_k": 20, "min_p": 0.0}, "timeout": 7200, "in_flight": 16}

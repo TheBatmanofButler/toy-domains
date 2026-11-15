@@ -1,0 +1,11 @@
+the search reproduces the earlier run on all 60 earlier problems
+the plain search agrees on 40 test problems of depth 2 and 3
+wrote 1200 test problems and 4000 training problems to data
+attempts 22580, by kind {'taken': 5200, 'no equation found': 92, 'depth 1': 6, 'no open place at its depth': 17272, 'same as one taken': 10}
+seconds: build 2197, solving by kind {'taken': 18675.781141143525, 'no equation found': 0.0, 'depth 1': 0.06920701311901212, 'no open place at its depth': 30399.850160834147, 'same as one taken': 0.5603279841598123}
+training problems per depth: {2: 1000, 3: 1000, 4: 1000, 5: 1000}
+depth 2: 300 test problems, mean right moves 1.68 of 11.44 options (share right 0.148), shorter than the planted proof 1.00
+depth 3: 300 test problems, mean right moves 1.94 of 11.50 options (share right 0.170), shorter than the planted proof 0.41
+depth 4: 300 test problems, mean right moves 2.55 of 11.37 options (share right 0.228), shorter than the planted proof 0.39
+depth 5: 300 test problems, mean right moves 2.83 of 11.23 options (share right 0.256), shorter than the planted proof 0.00
+EXIT 0

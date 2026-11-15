@@ -1,0 +1,47 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.1.1, pluggy-1.7.0
+rootdir: /workspace/integ
+collected 253 items
+
+tests/test_answer_use.py .....                                           [  1%]
+tests/test_answers.py ....                                               [  3%]
+tests/test_budget_check.py .......                                       [  6%]
+tests/test_common.py ....                                                [  7%]
+tests/test_end_to_end.py ........                                        [ 11%]
+tests/test_fairness.py .                                                 [ 11%]
+tests/test_generator.py ....                                             [ 13%]
+tests/test_guessing.py .                                                 [ 13%]
+tests/test_how_thinking_ended.py ...............                         [ 19%]
+tests/test_identities.py ........................                        [ 28%]
+tests/test_lookahead.py ........                                         [ 32%]
+tests/test_lookup_and_recall.py ...                                      [ 33%]
+tests/test_model_run.py .................                                [ 39%]
+tests/test_model_run_saving.py ...                                       [ 41%]
+tests/test_model_run_servers.py ........                                 [ 44%]
+tests/test_moves.py ....                                                 [ 45%]
+tests/test_narrow_deep.py .....                                          [ 47%]
+tests/test_probe.py ....                                                 [ 49%]
+tests/test_problems.py ..........                                        [ 53%]
+tests/test_proof.py ......                                               [ 55%]
+tests/test_question.py ....                                              [ 57%]
+tests/test_report.py ........                                            [ 60%]
+tests/test_run_check.py ............                                     [ 65%]
+tests/test_run_speed.py ........                                         [ 68%]
+tests/test_scoring.py .................                                  [ 75%]
+tests/test_shortest.py ......s.                                          [ 78%]
+tests/test_stage_3.py .........                                          [ 81%]
+tests/test_stage_3_budget.py ....                                        [ 83%]
+tests/test_stage_4.py .....                                              [ 85%]
+tests/test_stages.py ...............                                     [ 91%]
+tests/test_surface_readers.py .......                                    [ 94%]
+tests/test_thinking_end.py ......                                        [ 96%]
+tests/test_wrong_moves.py .........                                      [100%]
+
+=============================== warnings summary ===============================
+tests/test_end_to_end.py::test_files_are_written
+  /workspace/integ/venv/lib/python3.12/site-packages/sklearn/linear_model/_logistic.py:1447: UserWarning: The number of unique classes is greater than 50% of the number of samples. `y` could represent a regression problem, not a classification problem.
+    check_classification_targets(y)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+============ 252 passed, 1 skipped, 1 warning in 127.84s (0:02:07) =============
+EXIT 0

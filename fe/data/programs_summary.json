@@ -1,0 +1,173 @@
+{
+ "surface_strict_strength": 1.0,
+ "surface_strict_cross_validation": {
+  "0.01": 0.5455,
+  "0.1": 0.6285000000000001,
+  "1.0": 0.6395,
+  "10.0": 0.63825
+ },
+ "narrow_deep_settings": {
+  "paths": 3,
+  "most_moves": 5,
+  "seed": 20261112
+ },
+ "scores_by_depth": {
+  "2": {
+   "problems": 300,
+   "programs": {
+    "guessing": 0.14834220409220408,
+    "lookahead_1": 0.9085000000000001,
+    "lookahead_2": 1.0,
+    "lookahead_3": 1.0,
+    "lookup": 0.30333333333333334,
+    "narrow_deep": 0.9866666666666667,
+    "recall": 0.26666666666666666,
+    "surface_relaxed": 0.47,
+    "surface_strict": 0.71
+   },
+   "programs_standard_error": {
+    "guessing": 0.0027615876111108284,
+    "lookahead_1": 0.013633849760212013,
+    "lookahead_2": 0.0,
+    "lookahead_3": 0.0,
+    "lookup": 0.02658501993650098,
+    "narrow_deep": 0.0066331375354149675,
+    "recall": 0.025574048533225716,
+    "surface_relaxed": 0.028863651326417043,
+    "surface_strict": 0.026241737033622717
+   },
+   "best_programs": [
+    "lookahead_2",
+    "lookahead_3"
+   ],
+   "room": 0.0,
+   "room_standard_error_of": "lookahead_2",
+   "room_standard_error": 0.0,
+   "sequences_examined_mean": {
+    "lookahead_1": 11.436666666666667,
+    "lookahead_2": 200.8,
+    "lookahead_3": 200.8
+   },
+   "identities_worked_out_mean": {
+    "narrow_deep": 57.35666666666667
+   }
+  },
+  "3": {
+   "problems": 300,
+   "programs": {
+    "guessing": 0.16977117327117328,
+    "lookahead_1": 0.553,
+    "lookahead_2": 0.5822222222222222,
+    "lookahead_3": 1.0,
+    "lookup": 0.24666666666666667,
+    "narrow_deep": 0.5427777777777778,
+    "recall": 0.15333333333333332,
+    "surface_relaxed": 0.3433333333333333,
+    "surface_strict": 0.6366666666666667
+   },
+   "programs_standard_error": {
+    "guessing": 0.0050902435007161625,
+    "lookahead_1": 0.02712618982931922,
+    "lookahead_2": 0.022815473968995477,
+    "lookahead_3": 0.0,
+    "lookup": 0.024929480622100805,
+    "narrow_deep": 0.02520347437080943,
+    "recall": 0.02083717913221543,
+    "surface_relaxed": 0.027459642357098978,
+    "surface_strict": 0.027814616968981933
+   },
+   "best_programs": [
+    "lookahead_3"
+   ],
+   "room": 0.0,
+   "room_standard_error_of": "lookahead_3",
+   "room_standard_error": 0.0,
+   "sequences_examined_mean": {
+    "lookahead_1": 11.496666666666666,
+    "lookahead_2": 203.15,
+    "lookahead_3": 4392.64
+   },
+   "identities_worked_out_mean": {
+    "narrow_deep": 188.15
+   }
+  },
+  "4": {
+   "problems": 300,
+   "programs": {
+    "guessing": 0.22783820808820812,
+    "lookahead_1": 0.37233333333333335,
+    "lookahead_2": 0.5517777777777778,
+    "lookahead_3": 0.47138888888888886,
+    "lookup": 0.2733333333333333,
+    "narrow_deep": 0.44,
+    "recall": 0.12666666666666668,
+    "surface_relaxed": 0.37,
+    "surface_strict": 0.5866666666666667
+   },
+   "programs_standard_error": {
+    "guessing": 0.007653472082791051,
+    "lookahead_1": 0.025750792362968143,
+    "lookahead_2": 0.024790000368177953,
+    "lookahead_3": 0.019856018699406702,
+    "lookup": 0.02577379228278591,
+    "narrow_deep": 0.02463105688375353,
+    "recall": 0.01923470788354457,
+    "surface_relaxed": 0.027921294063982024,
+    "surface_strict": 0.028478055207315906
+   },
+   "best_programs": [
+    "surface_strict"
+   ],
+   "room": 0.41333333333333333,
+   "room_standard_error_of": "surface_strict",
+   "room_standard_error": 0.028478055207315906,
+   "sequences_examined_mean": {
+    "lookahead_1": 11.373333333333333,
+    "lookahead_2": 199.57333333333332,
+    "lookahead_3": 4291.126666666667
+   },
+   "identities_worked_out_mean": {
+    "narrow_deep": 231.27
+   }
+  },
+  "5": {
+   "problems": 300,
+   "programs": {
+    "guessing": 0.2557675472675473,
+    "lookahead_1": 0.28588888888888886,
+    "lookahead_2": 0.4998333333333333,
+    "lookahead_3": 0.47025396825396826,
+    "lookup": 0.26666666666666666,
+    "narrow_deep": 0.37777777777777777,
+    "recall": 0.10333333333333333,
+    "surface_relaxed": 0.35333333333333333,
+    "surface_strict": 0.52
+   },
+   "programs_standard_error": {
+    "guessing": 0.008271745008972793,
+    "lookahead_1": 0.02392394651762968,
+    "lookahead_2": 0.026150059702516694,
+    "lookahead_3": 0.022907104768887722,
+    "lookup": 0.025574048533225716,
+    "narrow_deep": 0.02442619500528283,
+    "recall": 0.017603545131283895,
+    "surface_relaxed": 0.027643749490906915,
+    "surface_strict": 0.028892604740584603
+   },
+   "best_programs": [
+    "surface_strict"
+   ],
+   "room": 0.48,
+   "room_standard_error_of": "surface_strict",
+   "room_standard_error": 0.028892604740584603,
+   "sequences_examined_mean": {
+    "lookahead_1": 11.226666666666667,
+    "lookahead_2": 195.54666666666665,
+    "lookahead_3": 4179.493333333333
+   },
+   "identities_worked_out_mean": {
+    "narrow_deep": 242.21666666666667
+   }
+  }
+ }
+}

@@ -15,12 +15,14 @@ ladder of simple programs. Started 2026-11-12.
   against training on test problems); `question.py`, `model_server.py`, `model_run.py`, `thinking_end.py`,
   `run_check.py` and `answers.py` ask the model, see how its thinking ended, check the run and read its answers;
   `scoring.py` works out every figure, except the same-wrong-moves comparison, which is in `wrong_moves.py`;
-  `report.py` writes the tables and the curve. `model_server.py`, `model_run.py`, `thinking_end.py`,
-  `run_check.py`, `scoring.py`, `wrong_moves.py` and `report.py` are the cube experiment's files, adapted.
+  `run_settings.py` checks that every answer was asked under the same settings; `report.py` writes the tables
+  and the curve. `model_server.py`, `model_run.py`, `thinking_end.py`, `run_check.py`, `scoring.py`,
+  `wrong_moves.py`, `run_settings.py` and `report.py` are the cube experiment's files, adapted.
 - `stages/`: one command per stage of `fe_plan.md`. Stages talk only through files in a data folder.
 - `probe/`: the thinking-length probe that comes before the model run (the cube's, adapted); not part of the
   package, and no stage uses it.
-- `tests/`: tests of every file, an end-to-end test, a stand-in model server (its tokenizer and scripted
+- `tests/`: tests of every file (`run_settings.py` with the report stage that uses it, in `test_stage_4.py`),
+  an end-to-end test, a stand-in model server (its tokenizer and scripted
   replies in `stand_in_replies.py`), small made-up problems (`small_problems.py`, `made_up.py`), saved fixtures
   from the earlier run of this puzzle (`tests/fixtures/`, made by `tests/reference/make_fixtures.py`), and a copy
   of the earlier run's core code used only as a second opinion (`tests/reference/earlier_core.py`). The earlier
@@ -122,6 +124,16 @@ Each stage reads from and writes to the folder given as `--data`, prints what it
    gives each lookahead's sequences examined, narrow-and-deep's identities worked out, and, as an upper limit
    only, the most identities the model could have written out in its tokens. It reads only saved
    files, and run twice it writes the same files.
+
+   It reads the settings of every answer, not just the first: if the thinking allowance, the answer
+   allowance, the stop sentence, the sampling values or the model version differ between answers, it stops
+   and names each setting that differs with every value and how many answers have it
+   (`fe_ladder/run_settings.py`), rather than mixing answers asked in different ways under one allowance.
+
+   The thinking-tokens figure at each depth is the mean over the answers whose thinking tokens were counted
+   (the server gave token ids). Beside it, `answers_without_thinking_count` says how many answers that did not
+   fail lack a count; the budgets table always shows it as a column (0 in the normal case), so the table has
+   one shape. The figure is n/a only when no answer at the depth has a count.
 
 ## Words used in the files
 

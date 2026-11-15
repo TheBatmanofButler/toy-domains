@@ -1,0 +1,2 @@
+mismatches against saved fields: {'move': 0, 'option': 0, 'right': 0, 'option_of_disagrees': 0}
+figures compared with the stage's files: 904 differences: 0

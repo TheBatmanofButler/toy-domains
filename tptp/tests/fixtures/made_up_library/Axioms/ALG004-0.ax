@@ -1,0 +1,11 @@
+%------
+% File     : ALG004-0 : TPTP v0.0 (made up, for tests).
+% Domain   : Made up, for tests
+% Status   : Unsatisfiable
+%------
+cnf(associativity,axiom,
+    m(X,m(Y,Z)) = m(m(X,Y),Z) ).
+cnf(left_identity,axiom,
+    m(e,X) = X ).
+cnf(left_inverse,axiom,
+    m(i(X),X) = e ).

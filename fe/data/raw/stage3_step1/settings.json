@@ -1,0 +1,1 @@
+{"sampling": {"temperature": 1.0, "top_p": 0.95, "top_k": 20, "min_p": 0.0}, "source": "Qwen/Qwen3.8-27B model card on Hugging Face, thinking mode, read 2026-11-13"}

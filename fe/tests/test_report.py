@@ -43,18 +43,21 @@ def test_tied_best_programs_are_all_shown():
 def test_budgets_table():
     by_depth, _ = figures()
     lines = report.budgets_text(by_depth, 8000).splitlines()
-    assert lines[0].split() == ["depth", "allowance", "thinking_tokens", "tokens_used", "forced", "cut_off_readable",
-                                "lookahead_1_sequences", "most_identities_written"]
-    # Depth 1: tokens used 1570, so at most 1570 / 40 = 39.25 identities of the equation's length.
-    assert lines[2].split() == ["1", "8000", "1560.000", "1570.000", "0.080", "0.040", "18.000", "39.250"]
+    # The column of answers without a thinking count is always there, so the table has one shape.
+    assert lines[0].split() == ["depth", "allowance", "thinking_tokens", "without_thinking_count", "tokens_used",
+                                "forced", "cut_off_readable", "lookahead_1_sequences", "most_identities_written"]
+    # Depth 1: every answer has a count (0 without); tokens used 1570, so at most 1570 / 40 = 39.25 identities
+    # of the equation's length.
+    assert lines[2].split() == ["1", "8000", "1560.000", "0", "1570.000", "0.080", "0.040", "18.000", "39.250"]
     by_depth["2"]["thinking_tokens_mean"] = None
-    assert report.budgets_text(by_depth, 8000).splitlines()[3].split()[2] == "n/a"
+    by_depth["2"]["answers_without_thinking_count"] = 25
+    assert report.budgets_text(by_depth, 8000).splitlines()[3].split()[2:4] == ["n/a", "25"]
     # Narrow-and-deep's budget is shown as identities worked out.
     for row in by_depth.values():
         row["identities_worked_out_mean"] = {"narrow_deep": 200.0}
     lines = report.budgets_text(by_depth, 8000).splitlines()
-    assert lines[0].split()[6:] == ["lookahead_1_sequences", "narrow_deep_identities", "most_identities_written"]
-    assert lines[2].split()[6:] == ["18.000", "200.000", "39.250"]
+    assert lines[0].split()[7:] == ["lookahead_1_sequences", "narrow_deep_identities", "most_identities_written"]
+    assert lines[2].split()[7:] == ["18.000", "200.000", "39.250"]
 
 
 def test_problem_by_problem_table_with_both_chance_columns():

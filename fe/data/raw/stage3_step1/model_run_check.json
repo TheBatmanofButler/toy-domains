@@ -1,0 +1,43 @@
+{
+ "passed": true,
+ "problems": [],
+ "answers_checked": 100,
+ "share_with_thinking": 1.0,
+ "forced_readable_share": 1.0,
+ "unforced_readable_share": null,
+ "readable_margin": 0.15,
+ "forced_comparison": "not tested",
+ "forced_answers_compared": 100,
+ "unforced_answers_compared": 0,
+ "fewest_to_compare": 10,
+ "fewest_forced_to_judge": 3,
+ "answers": 100,
+ "failed_share": 0.0,
+ "unreadable_share": 0.0,
+ "forced_share": 1.0,
+ "cut_off_but_readable_share": 0.0,
+ "thinking_tokens_mean": 7998.99,
+ "answers_without_thinking_count": 0,
+ "tokens_used_mean": 8033.83,
+ "budget_check": "as assumed",
+ "budget_misfits": [],
+ "budget_misfit_count": 0,
+ "end_text_inside_budget_count": 0,
+ "end_text_outside_budget_count": 100,
+ "thinking_allowances": [
+  8000
+ ],
+ "answers_per_hour": 1228.1102523852296,
+ "projected_hours": 4.885554850101471,
+ "projected_cost": 25.844585157036782,
+ "price_per_hour": 5.29,
+ "cost_ceiling": 250.0,
+ "tokens_per_equation": 50.3,
+ "servers": [
+  "http://127.0.0.1:8000"
+ ],
+ "servers_given": [
+  "http://127.0.0.1:8000"
+ ],
+ "carried_on": false
+}

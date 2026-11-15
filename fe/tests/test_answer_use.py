@@ -23,11 +23,32 @@ def test_answer_use_counts_failed_answers_apart():
     assert scoring.answer_use(answers) == {"answers": 4, "failed_share": 0.25, "unreadable_share": 0.25,
                                            "forced_share": 0.25, "cut_off_but_readable_share": 0.25,
                                            "thinking_tokens_mean": pytest.approx(13000 / 3),
+                                           "answers_without_thinking_count": 0,
                                            "tokens_used_mean": pytest.approx(13300 / 3)}
+    # A failed answer has no tokens at all; it is a failure, not an answer without a count.
     use = scoring.answer_use(answers[:1])
     assert use["thinking_tokens_mean"] is None and use["tokens_used_mean"] is None
-    # One answer without exact thinking tokens makes the exact mean unknown; tokens used are still counted.
-    assert scoring.answer_use([answer(move_text(6)), answer(move_text(0), thinking=None)])["thinking_tokens_mean"] is None
+    assert use["answers_without_thinking_count"] == 0
+
+
+def test_the_thinking_mean_is_over_the_answers_with_a_count():
+    # Three answers at a depth. One lacks a count: the mean is over the other two, (1000 + 4000) / 2 = 2500,
+    # and the one is counted; tokens used are over all three, (1100 + 4100 + 2100) / 3. The forced one counts
+    # its 4,000 before the end text.
+    one_lacking = [answer(move_text(6), thinking=1000, used=1100),
+                   answer(move_text(0), forced=True, thinking=4000, used=4100),
+                   answer(move_text(13), thinking=None, used=2100)]
+    use = scoring.answer_use(one_lacking)
+    assert use["thinking_tokens_mean"] == 2500 and use["answers_without_thinking_count"] == 1
+    assert use["tokens_used_mean"] == pytest.approx(7300 / 3)
+    # All three lacking: no mean, and 3 counted.
+    all_lacking = [answer(move_text(n), thinking=None) for n in (6, 0, 13)]
+    use = scoring.answer_use(all_lacking)
+    assert use["thinking_tokens_mean"] is None and use["answers_without_thinking_count"] == 3
+    # None lacking, as in the run: (1000 + 4000 + 2000) / 3, and 0.
+    none_lacking = one_lacking[:2] + [answer(move_text(13), thinking=2000, used=2100)]
+    use = scoring.answer_use(none_lacking)
+    assert use["thinking_tokens_mean"] == pytest.approx(7000 / 3) and use["answers_without_thinking_count"] == 0
 
 
 def test_a_readable_move_that_is_not_available_is_counted_apart_from_unreadable_ones():

@@ -1,0 +1,9 @@
+cnf(ax0,axiom,(multiply(identity,X)=X)).
+cnf(ax1,axiom,(multiply(inverse(X),X)=identity)).
+cnf(ax2,axiom,(multiply(multiply(X,Y),Z)=multiply(X,multiply(Y,Z)))).
+cnf(ax3,axiom,(multiply(X,identity)=X)).
+cnf(ax4,axiom,(multiply(X,inverse(X))=identity)).
+cnf(ax5,axiom,(multiply(X,X)=identity)).
+cnf(ax6,axiom,(multiply(a,b)=c)).
+cnf(option,axiom,(multiply(inverse(X),multiply(X,Y))=Y)).
+cnf(goal,negated_conjecture,(multiply(b,a)!=c)).
