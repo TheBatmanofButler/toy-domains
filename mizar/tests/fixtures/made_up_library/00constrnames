@@ -1,0 +1,9 @@
+k1_basic_0 +
+r1_basic_0 <=
+v1_basic_0 small
+k1_xboole_0 {}
+k2_xboole_0 \/
+k2_xboole_0 union
+k3_xboole_0 /\
+r1_xboole_0 misses
+r2_hidden in

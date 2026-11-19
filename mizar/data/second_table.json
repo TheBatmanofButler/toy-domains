@@ -1,0 +1,199 @@
+{
+ "bins": {
+  "proved without an option": 6,
+  "has right options": 88,
+  "no option proves it": 165,
+  "stopped for another reason": 41
+ },
+ "runs_disagreed_share": 0.006881720430107527,
+ "problems": 88,
+ "model": {
+  "prover": {
+   "mean": 0.9181818181818181,
+   "standard_error": 0.020092878289476916
+  },
+  "either": {
+   "mean": 0.9181818181818181,
+   "standard_error": 0.020092878289476916
+  },
+  "author": {
+   "mean": 0.890909090909091,
+   "standard_error": 0.024170478402760168
+  }
+ },
+ "programs": {
+  "guessing": {
+   "prover": {
+    "mean": 0.04318181818181818,
+    "standard_error": 0.002755523405576019
+   },
+   "either": {
+    "mean": 0.04318181818181818,
+    "standard_error": 0.002755523405576019
+   },
+   "author": {
+    "mean": 0.03333333333333333,
+    "standard_error": 0.0
+   }
+  },
+  "lookup": {
+   "prover": {
+    "mean": 0.16477272727272727,
+    "standard_error": 0.03936007758159313
+   },
+   "either": {
+    "mean": 0.16477272727272727,
+    "standard_error": 0.03936007758159313
+   },
+   "author": {
+    "mean": 0.14204545454545456,
+    "standard_error": 0.03698829176317431
+   }
+  },
+  "options_only": {
+   "prover": {
+    "mean": 0.1590909090909091,
+    "standard_error": 0.03921367808156148
+   },
+   "either": {
+    "mean": 0.1590909090909091,
+    "standard_error": 0.03921367808156148
+   },
+   "author": {
+    "mean": 0.14772727272727273,
+    "standard_error": 0.03804170814840831
+   }
+  },
+  "recall": {
+   "prover": {
+    "mean": 0.18181818181818182,
+    "standard_error": 0.04135080237703109
+   },
+   "either": {
+    "mean": 0.18181818181818182,
+    "standard_error": 0.04135080237703109
+   },
+   "author": {
+    "mean": 0.17045454545454544,
+    "standard_error": 0.04031482334670715
+   }
+  },
+  "surface_symbols": {
+   "prover": {
+    "mean": 0.28258088650802554,
+    "standard_error": 0.037533516200612724
+   },
+   "either": {
+    "mean": 0.28258088650802554,
+    "standard_error": 0.037533516200612724
+   },
+   "author": {
+    "mean": 0.2692416058391994,
+    "standard_error": 0.037915558119288616
+   }
+  },
+  "surface_trained": {
+   "prover": {
+    "mean": 0.3977272727272727,
+    "standard_error": 0.052472246551079
+   },
+   "either": {
+    "mean": 0.3977272727272727,
+    "standard_error": 0.052472246551079
+   },
+   "author": {
+    "mean": 0.375,
+    "standard_error": 0.05190342490858748
+   }
+  }
+ },
+ "model_minus_program": {
+  "guessing": {
+   "prover": {
+    "mean": 0.875,
+    "standard_error": 0.020552354613471928
+   },
+   "either": {
+    "mean": 0.875,
+    "standard_error": 0.020552354613471928
+   },
+   "author": {
+    "mean": 0.8575757575757575,
+    "standard_error": 0.024170478402760168
+   }
+  },
+  "lookup": {
+   "prover": {
+    "mean": 0.7534090909090909,
+    "standard_error": 0.04363777182288953
+   },
+   "either": {
+    "mean": 0.7534090909090909,
+    "standard_error": 0.04363777182288953
+   },
+   "author": {
+    "mean": 0.7488636363636364,
+    "standard_error": 0.04279285718889643
+   }
+  },
+  "options_only": {
+   "prover": {
+    "mean": 0.759090909090909,
+    "standard_error": 0.04362841707510747
+   },
+   "either": {
+    "mean": 0.759090909090909,
+    "standard_error": 0.04362841707510747
+   },
+   "author": {
+    "mean": 0.7431818181818183,
+    "standard_error": 0.04616413219955929
+   }
+  },
+  "recall": {
+   "prover": {
+    "mean": 0.7363636363636363,
+    "standard_error": 0.045087335955774396
+   },
+   "either": {
+    "mean": 0.7363636363636363,
+    "standard_error": 0.045087335955774396
+   },
+   "author": {
+    "mean": 0.7204545454545455,
+    "standard_error": 0.04745781525866005
+   }
+  },
+  "surface_symbols": {
+   "prover": {
+    "mean": 0.6356009316737926,
+    "standard_error": 0.03769033784579078
+   },
+   "either": {
+    "mean": 0.6356009316737926,
+    "standard_error": 0.03769033784579078
+   },
+   "author": {
+    "mean": 0.6216674850698914,
+    "standard_error": 0.03889498361462945
+   }
+  },
+  "surface_trained": {
+   "prover": {
+    "mean": 0.5204545454545454,
+    "standard_error": 0.055571484528101074
+   },
+   "either": {
+    "mean": 0.5204545454545454,
+    "standard_error": 0.055571484528101074
+   },
+   "author": {
+    "mean": 0.5159090909090909,
+    "standard_error": 0.05770982713048461
+   }
+  }
+ },
+ "held_back_right_share": 1.0,
+ "other_right_mean": 0.29545454545454547,
+ "proved_without_use_calls": 6
+}

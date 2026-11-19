@@ -1,0 +1,30 @@
+== cpu
+CPU(s):                                  256
+Model name:                              AMD EPYC 7713 64-Core Processor
+Thread(s) per core:                      2
+Core(s) per socket:                      64
+Socket(s):                               2
+CPU(s) scaling MHz:                      51%
+32
+== mem
+               total        used        free      shared  buff/cache   available
+Mem:            1007         141         397           0         474         866
+Swap:              0           0           0
+MemTotal:       1056585756 kB
+== cgroup
+128000000000
+cat: /sys/fs/cgroup/memory/memory.limit_in_bytes: No such file or directory
+max 100000
+== ulimit
+t unlimited v unlimited d unlimited
+== libc
+ldd (Debian GLIBC 2.36-9+deb12u14) 2.36
+== python
+Python 3.12.16
+== malloc env names
+none
+== uname
+Linux d8eded4371f6 6.8.0-147-generic #147-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep 24 11:33:16 UTC 2026 x86_64 GNU/Linux
+== disk
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          80G  644M   80G   1% /

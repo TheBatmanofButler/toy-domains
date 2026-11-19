@@ -1,0 +1,53 @@
+fof(d1_basic_0, axiom, (! [A] : (v1_basic_0(A) <=> r1_basic_0(A, k1_basic_0(A, A))))).
+fof(d1_xboole_0, axiom, (! [A] : (A=k1_xboole_0 <=> ~ (? [B] : r2_hidden(B, A))))).
+fof(d2_basic_0, axiom, (! [A, B] : (r1_basic_0(A, B) <=> ~ (r1_basic_0(B, A))))).
+fof(l1_basic_0, axiom, (! [A] : (v1_basic_0(A) => r1_basic_0(A, A)))).
+fof(l2_basic_0, axiom, (! [A, B] : (r1_basic_0(A, B) | r1_basic_0(B, A)))).
+fof(reflexivity_r1_basic_0, axiom, (! [A] : r1_basic_0(A, A))).
+fof(t10_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c10_basic_0)))).
+fof(t11_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c11_basic_0)))).
+fof(t12_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c12_basic_0)))).
+fof(t13_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c13_basic_0)))).
+fof(t14_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c14_basic_0)))).
+fof(t15_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c15_basic_0)))).
+fof(t16_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c16_basic_0)))).
+fof(t17_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c17_basic_0)))).
+fof(t18_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c18_basic_0)))).
+fof(t19_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c19_basic_0)))).
+fof(t1_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c1_basic_0)))).
+fof(t1_later_0, axiom, (! [A] : r1_basic_0(A, k2_xboole_0(A, A)))).
+fof(t1_xboole_0, axiom, (! [A] : k2_xboole_0(A, k1_xboole_0)=A)).
+fof(t1_xboole_1, axiom, (! [A, B] : k2_xboole_0(A, B)=k2_xboole_0(B, A))).
+fof(t20_basic_0, axiom, (! [B] : r1_basic_0(B, k1_basic_0(B, c5_basic_0)))).
+fof(t21_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c21_basic_0)))).
+fof(t22_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c22_basic_0)))).
+fof(t23_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c23_basic_0)))).
+fof(t24_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c24_basic_0)))).
+fof(t25_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c25_basic_0)))).
+fof(t26_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c26_basic_0)))).
+fof(t27_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c27_basic_0)))).
+fof(t28_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c28_basic_0)))).
+fof(t29_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c29_basic_0)))).
+fof(t2_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c2_basic_0)))).
+fof(t2_later_0, axiom, (! [A] : k3_xboole_0(A, A)=A)).
+fof(t2_xboole_0, axiom, (! [A] : k3_xboole_0(A, k1_xboole_0)=k1_xboole_0)).
+fof(t2_xboole_1, axiom, (! [A] : r1_basic_0(k1_xboole_0, A))).
+fof(t30_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c30_basic_0)))).
+fof(t31_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c31_basic_0)))).
+fof(t32_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c32_basic_0)))).
+fof(t33_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c33_basic_0)))).
+fof(t34_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c34_basic_0)))).
+fof(t3_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c3_basic_0)))).
+fof(t3_later_0, axiom, (! [A, B] : k3_xboole_0(A, B)=k3_xboole_0(B, A))).
+fof(t3_xboole_0, axiom, (! [A, B] : r1_basic_0(k3_xboole_0(A, B), k2_xboole_0(A, B)))).
+fof(t3_xboole_1, axiom, (! [A] : (v1_basic_0(A) => v1_basic_0(k2_xboole_0(A, A))))).
+fof(t4_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c4_basic_0)))).
+fof(t4_xboole_0, axiom, (! [A] : (r1_xboole_0(A, k1_xboole_0) & k1_xboole_0=o_0_0_xboole_0))).
+fof(t4_xboole_1, axiom, (! [A] : r1_basic_0(c42_xboole_1, A))).
+fof(t5_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c5_basic_0)))).
+fof(t5_xboole_0, axiom, (! [A] : r1_basic_0(A, c41_xboole_0))).
+fof(t5_xboole_1, axiom, (! [A, B] : r1_basic_0(A, c43_xboole_1))).
+fof(t6_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c6_basic_0)))).
+fof(t7_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c7_basic_0)))).
+fof(t8_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c8_basic_0)))).
+fof(t9_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c9_basic_0)))).

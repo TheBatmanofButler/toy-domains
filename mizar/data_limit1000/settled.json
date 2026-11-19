@@ -1,0 +1,137 @@
+{
+ "calls": 9300,
+ "unsettled": 14,
+ "unsettled_share": 0.0015053763440860215,
+ "by_way": {
+  "the endings differed": 13,
+  "the use of the option differed": 1
+ },
+ "unsettled_calls": [
+  {
+   "problem_id": "test-0002",
+   "option": 3,
+   "why": "the use of the option differed",
+   "endings": [
+    "proved",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0074",
+   "option": 15,
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "nothing left"
+   ]
+  },
+  {
+   "problem_id": "test-0074",
+   "option": 22,
+   "why": "the endings differed",
+   "endings": [
+    "nothing left",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0078",
+   "option": 3,
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0078",
+   "option": 4,
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0078",
+   "option": 10,
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0078",
+   "option": 23,
+   "why": "the endings differed",
+   "endings": [
+    "proved",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0105",
+   "option": 8,
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "nothing left"
+   ]
+  },
+  {
+   "problem_id": "test-0105",
+   "option": 18,
+   "why": "the endings differed",
+   "endings": [
+    "nothing left",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0113",
+   "option": 3,
+   "why": "the endings differed",
+   "endings": [
+    "proved",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0128",
+   "option": 7,
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0128",
+   "option": 10,
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0128",
+   "option": 12,
+   "why": "the endings differed",
+   "endings": [
+    "proved",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0128",
+   "option": 22,
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "proved"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,940 @@
+{
+ "guessing": {
+  "all problems": {
+   "problems": 124,
+   "wrong_tries": 342,
+   "match_rate": 0.03333333333333333,
+   "match_rate_standard_error": 0.0,
+   "uniform": 0.03333333333333333,
+   "shuffle": 0.03333333333333333,
+   "excess": 0.0,
+   "excess_standard_error": 0.0,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.02589283573680488,
+     "standard_error": 0.018282904616105947
+    },
+    "surface_symbols": {
+     "mean": -0.08532550158934041,
+     "standard_error": 0.019531636527715335
+    }
+   }
+  },
+  "2 to 3 cited": {
+   "problems": 39,
+   "wrong_tries": 92,
+   "match_rate": 0.03333333333333333,
+   "match_rate_standard_error": 0.0,
+   "uniform": 0.03333333333333333,
+   "shuffle": 0.03333333333333333,
+   "excess": 0.0,
+   "excess_standard_error": 0.0,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.03508888086352875,
+     "standard_error": 0.03834769745320466
+    },
+    "surface_symbols": {
+     "mean": -0.10100321946539524,
+     "standard_error": 0.038063641455778764
+    }
+   }
+  },
+  "4 to 6 cited": {
+   "problems": 40,
+   "wrong_tries": 113,
+   "match_rate": 0.03333333333333333,
+   "match_rate_standard_error": 0.0,
+   "uniform": 0.03333333333333333,
+   "shuffle": 0.03333333333333333,
+   "excess": 0.0,
+   "excess_standard_error": 0.0,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.0013227911646586355,
+     "standard_error": 0.01854393023721207
+    },
+    "surface_symbols": {
+     "mean": -0.09368270058254999,
+     "standard_error": 0.03824602924062755
+    }
+   }
+  },
+  "7 or more cited": {
+   "problems": 45,
+   "wrong_tries": 137,
+   "match_rate": 0.03333333333333333,
+   "match_rate_standard_error": 0.0,
+   "uniform": 0.03333333333333333,
+   "shuffle": 0.03333333333333333,
+   "excess": 0.0,
+   "excess_standard_error": 0.0,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.039753086419753086,
+     "standard_error": 0.03431083810970579
+    },
+    "surface_symbols": {
+     "mean": -0.06088446889758618,
+     "standard_error": 0.025676241395398227
+    }
+   }
+  },
+  "sets, relations and functions": {
+   "problems": 49,
+   "wrong_tries": 116,
+   "match_rate": 0.03333333333333333,
+   "match_rate_standard_error": 0.0,
+   "uniform": 0.03333333333333333,
+   "shuffle": 0.03333333333333333,
+   "excess": 0.0,
+   "excess_standard_error": 0.0,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.03812181122448979,
+     "standard_error": 0.03193390610809121
+    },
+    "surface_symbols": {
+     "mean": -0.10808950079790838,
+     "standard_error": 0.03382654493291966
+    }
+   }
+  },
+  "orderings and lattices": {
+   "problems": 44,
+   "wrong_tries": 129,
+   "match_rate": 0.03333333333333333,
+   "match_rate_standard_error": 0.0,
+   "uniform": 0.03333333333333333,
+   "shuffle": 0.03333333333333333,
+   "excess": 0.0,
+   "excess_standard_error": 0.0,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.0017283950617283945,
+     "standard_error": 0.02385845979922829
+    },
+    "surface_symbols": {
+     "mean": -0.10074537293981738,
+     "standard_error": 0.032538573854449096
+    }
+   }
+  },
+  "topology": {
+   "problems": 31,
+   "wrong_tries": 97,
+   "match_rate": 0.03333333333333333,
+   "match_rate_standard_error": 0.0,
+   "uniform": 0.03333333333333333,
+   "shuffle": 0.03333333333333333,
+   "excess": 0.0,
+   "excess_standard_error": 0.0,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.03358513679052674,
+     "standard_error": 0.04067025853684673
+    },
+    "surface_symbols": {
+     "mean": -0.03306520638594955,
+     "standard_error": 0.032848345489218056
+    }
+   }
+  }
+ },
+ "lookup": {
+  "all problems": {
+   "problems": 124,
+   "wrong_tries": 342,
+   "match_rate": 0.04032258064516129,
+   "match_rate_standard_error": 0.013895789142885856,
+   "uniform": 0.023808861698183168,
+   "shuffle": 0.032275438738447154,
+   "excess": 0.008047141906714139,
+   "excess_standard_error": 0.01393913394771482,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.017845693830090742,
+     "standard_error": 0.017246101772675312
+    },
+    "surface_symbols": {
+     "mean": -0.07727835968262627,
+     "standard_error": 0.025146661086923164
+    }
+   }
+  },
+  "2 to 3 cited": {
+   "problems": 39,
+   "wrong_tries": 92,
+   "match_rate": 0.046153846153846156,
+   "match_rate_standard_error": 0.029122606901539862,
+   "uniform": 0.022104332449160033,
+   "shuffle": 0.03140749769270896,
+   "excess": 0.014746348461137192,
+   "excess_standard_error": 0.029568433522989525,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.020342532402391554,
+     "standard_error": 0.034167883478494435
+    },
+    "surface_symbols": {
+     "mean": -0.08625687100425804,
+     "standard_error": 0.05099824097302267
+    }
+   }
+  },
+  "4 to 6 cited": {
+   "problems": 40,
+   "wrong_tries": 113,
+   "match_rate": 0.05166666666666667,
+   "match_rate_standard_error": 0.02990845481658438,
+   "uniform": 0.024511494252873564,
+   "shuffle": 0.03577058232931727,
+   "excess": 0.015896084337349396,
+   "excess_standard_error": 0.029721736805157252,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.014573293172690762,
+     "standard_error": 0.026253345140852705
+    },
+    "surface_symbols": {
+     "mean": -0.07778661624520058,
+     "standard_error": 0.05101861197285167
+    }
+   }
+  },
+  "7 or more cited": {
+   "problems": 45,
+   "wrong_tries": 137,
+   "match_rate": 0.025185185185185185,
+   "match_rate_standard_error": 0.01180440840798794,
+   "uniform": 0.024661558109833972,
+   "shuffle": 0.030571330589849108,
+   "excess": -0.005386145404663923,
+   "excess_standard_error": 0.011971566161312645,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.04513923182441701,
+     "standard_error": 0.0286862502166433
+    },
+    "surface_symbols": {
+     "mean": -0.0662706143022501,
+     "standard_error": 0.03033823539669859
+    }
+   }
+  },
+  "sets, relations and functions": {
+   "problems": 49,
+   "wrong_tries": 116,
+   "match_rate": 0.07142857142857142,
+   "match_rate_standard_error": 0.03260253318483132,
+   "uniform": 0.02674173117522871,
+   "shuffle": 0.030979884141156464,
+   "excess": 0.040448687287414964,
+   "excess_standard_error": 0.03288358830056731,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.0023268760629251693,
+     "standard_error": 0.03236213608340568
+    },
+    "surface_symbols": {
+     "mean": -0.06764081351049342,
+     "standard_error": 0.05033007018883521
+    }
+   }
+  },
+  "orderings and lattices": {
+   "problems": 44,
+   "wrong_tries": 129,
+   "match_rate": 0.017424242424242422,
+   "match_rate_standard_error": 0.010078889920947024,
+   "uniform": 0.02125130616509927,
+   "shuffle": 0.03146745230078563,
+   "excess": -0.01404320987654321,
+   "excess_standard_error": 0.010273245524073469,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.015771604938271604,
+     "standard_error": 0.02406378556129096
+    },
+    "surface_symbols": {
+     "mean": -0.1147885828163606,
+     "standard_error": 0.03481167457157012
+    }
+   }
+  },
+  "topology": {
+   "problems": 31,
+   "wrong_tries": 97,
+   "match_rate": 0.023655913978494626,
+   "match_rate_standard_error": 0.01366903103834039,
+   "uniform": 0.022803114571746382,
+   "shuffle": 0.03216448890703689,
+   "excess": -0.008508574928542264,
+   "excess_standard_error": 0.0136717986061535,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.042093711719069005,
+     "standard_error": 0.031242207938866142
+    },
+    "surface_symbols": {
+     "mean": -0.04157378131449181,
+     "standard_error": 0.036477080658028245
+    }
+   }
+  }
+ },
+ "options_only": {
+  "all problems": {
+   "problems": 124,
+   "wrong_tries": 342,
+   "match_rate": 0.03575268817204301,
+   "match_rate_standard_error": 0.013878211056343839,
+   "uniform": 0.02474972191323693,
+   "shuffle": 0.033181842701478045,
+   "excess": 0.0025708454705649663,
+   "excess_standard_error": 0.013920637870481768,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.023321990266239916,
+     "standard_error": 0.012391439551302235
+    },
+    "surface_symbols": {
+     "mean": -0.08275465611877544,
+     "standard_error": 0.025247636706199193
+    }
+   }
+  },
+  "2 to 3 cited": {
+   "problems": 39,
+   "wrong_tries": 92,
+   "match_rate": 0.02564102564102564,
+   "match_rate_standard_error": 0.02564102564102564,
+   "uniform": 0.022104332449160033,
+   "shuffle": 0.03506079210304562,
+   "excess": -0.00941976646201998,
+   "excess_standard_error": 0.025725998993449704,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.044508647325548725,
+     "standard_error": 0.02940639371093033
+    },
+    "surface_symbols": {
+     "mean": -0.11042298592741522,
+     "standard_error": 0.04862722627369282
+    }
+   }
+  },
+  "4 to 6 cited": {
+   "problems": 40,
+   "wrong_tries": 113,
+   "match_rate": 0.03125,
+   "match_rate_standard_error": 0.018317665216243006,
+   "uniform": 0.02672413793103448,
+   "shuffle": 0.03475401606425703,
+   "excess": -0.003504016064257029,
+   "excess_standard_error": 0.01838012284527489,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.004826807228915665,
+     "standard_error": 0.005668266295006869
+    },
+    "surface_symbols": {
+     "mean": -0.09718671664680702,
+     "standard_error": 0.04448519013269038
+    }
+   }
+  },
+  "7 or more cited": {
+   "problems": 45,
+   "wrong_tries": 137,
+   "match_rate": 0.048518518518518516,
+   "match_rate_standard_error": 0.026852374312808753,
+   "uniform": 0.02528735632183908,
+   "shuffle": 0.030200617283950616,
+   "excess": 0.0183179012345679,
+   "excess_standard_error": 0.026565249378457466,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.021435185185185182,
+     "standard_error": 0.0225854947682503
+    },
+    "surface_symbols": {
+     "mean": -0.04256656766301828,
+     "standard_error": 0.039479216649432464
+    }
+   }
+  },
+  "sets, relations and functions": {
+   "problems": 49,
+   "wrong_tries": 116,
+   "match_rate": 0.05102040816326531,
+   "match_rate_standard_error": 0.025232330144486035,
+   "uniform": 0.028149190710767068,
+   "shuffle": 0.03389668367346939,
+   "excess": 0.01712372448979592,
+   "excess_standard_error": 0.025279288502116953,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.020998086734693874,
+     "standard_error": 0.020491064510925465
+    },
+    "surface_symbols": {
+     "mean": -0.09096577630811246,
+     "standard_error": 0.04570318853397015
+    }
+   }
+  },
+  "orderings and lattices": {
+   "problems": 44,
+   "wrong_tries": 129,
+   "match_rate": 0.0303030303030303,
+   "match_rate_standard_error": 0.02378892238142107,
+   "uniform": 0.022727272727272728,
+   "shuffle": 0.03243686868686869,
+   "excess": -0.0021338383838383837,
+   "excess_standard_error": 0.023740099752271284,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.003862233445566778,
+     "standard_error": 0.005243795679947625
+    },
+    "surface_symbols": {
+     "mean": -0.10287921132365577,
+     "standard_error": 0.04194049213570065
+    }
+   }
+  },
+  "topology": {
+   "problems": 31,
+   "wrong_tries": 97,
+   "match_rate": 0.01935483870967742,
+   "match_rate_standard_error": 0.01935483870967742,
+   "uniform": 0.02224694104560623,
+   "shuffle": 0.03585817340411052,
+   "excess": -0.016503334694433103,
+   "excess_standard_error": 0.019538856694247108,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.050088471484959846,
+     "standard_error": 0.0374091457588806
+    },
+    "surface_symbols": {
+     "mean": -0.049568541080382646,
+     "standard_error": 0.03846878520104617
+    }
+   }
+  }
+ },
+ "recall": {
+  "all problems": {
+   "problems": 124,
+   "wrong_tries": 342,
+   "match_rate": 0.058333333333333334,
+   "match_rate_standard_error": 0.018239753538470745,
+   "uniform": 0.023637374860956618,
+   "shuffle": 0.03244049759652845,
+   "excess": 0.02589283573680488,
+   "excess_standard_error": 0.018282904616105947,
+   "excess_over_control": {
+    "surface_symbols": {
+     "mean": -0.05943266585253553,
+     "standard_error": 0.02819832931703674
+    }
+   }
+  },
+  "2 to 3 cited": {
+   "problems": 39,
+   "wrong_tries": 92,
+   "match_rate": 0.06666666666666667,
+   "match_rate_standard_error": 0.03841202390849431,
+   "uniform": 0.021220159151193633,
+   "shuffle": 0.031577785803137914,
+   "excess": 0.03508888086352875,
+   "excess_standard_error": 0.03834769745320466,
+   "excess_over_control": {
+    "surface_symbols": {
+     "mean": -0.06591433860186649,
+     "standard_error": 0.05779128651125332
+    }
+   }
+  },
+  "4 to 6 cited": {
+   "problems": 40,
+   "wrong_tries": 113,
+   "match_rate": 0.03625,
+   "match_rate_standard_error": 0.018775623517250723,
+   "uniform": 0.02413793103448276,
+   "shuffle": 0.03492720883534137,
+   "excess": 0.0013227911646586355,
+   "excess_standard_error": 0.01854393023721207,
+   "excess_over_control": {
+    "surface_symbols": {
+     "mean": -0.09235990941789135,
+     "standard_error": 0.04338931346990409
+    }
+   }
+  },
+  "7 or more cited": {
+   "problems": 45,
+   "wrong_tries": 137,
+   "match_rate": 0.07074074074074074,
+   "match_rate_standard_error": 0.03414481750082812,
+   "uniform": 0.02528735632183908,
+   "shuffle": 0.030987654320987653,
+   "excess": 0.039753086419753086,
+   "excess_standard_error": 0.03431083810970579,
+   "excess_over_control": {
+    "surface_symbols": {
+     "mean": -0.021131382477833093,
+     "standard_error": 0.04599714405439897
+    }
+   }
+  },
+  "sets, relations and functions": {
+   "problems": 49,
+   "wrong_tries": 116,
+   "match_rate": 0.07142857142857142,
+   "match_rate_standard_error": 0.03177701860723604,
+   "uniform": 0.028149190710767068,
+   "shuffle": 0.03330676020408163,
+   "excess": 0.03812181122448979,
+   "excess_standard_error": 0.03193390610809121,
+   "excess_over_control": {
+    "surface_symbols": {
+     "mean": -0.06996768957341858,
+     "standard_error": 0.04972365812258658
+    }
+   }
+  },
+  "orderings and lattices": {
+   "problems": 44,
+   "wrong_tries": 129,
+   "match_rate": 0.034848484848484844,
+   "match_rate_standard_error": 0.024086664874496514,
+   "uniform": 0.018808777429467086,
+   "shuffle": 0.03312008978675645,
+   "excess": 0.0017283950617283945,
+   "excess_standard_error": 0.02385845979922829,
+   "excess_over_control": {
+    "surface_symbols": {
+     "mean": -0.099016977878089,
+     "standard_error": 0.04155564459497126
+    }
+   }
+  },
+  "topology": {
+   "problems": 31,
+   "wrong_tries": 97,
+   "match_rate": 0.07096774193548387,
+   "match_rate_standard_error": 0.041007093115021175,
+   "uniform": 0.02335928809788654,
+   "shuffle": 0.03738260514495712,
+   "excess": 0.03358513679052674,
+   "excess_standard_error": 0.04067025853684673,
+   "excess_over_control": {
+    "surface_symbols": {
+     "mean": 0.0005199304045771945,
+     "standard_error": 0.05459966412147908
+    }
+   }
+  }
+ },
+ "search": {
+  "all problems": {
+   "problems": 124,
+   "wrong_tries": 342,
+   "match_rate": 0.04442204301075269,
+   "match_rate_standard_error": 0.006931902592404679,
+   "uniform": 0.028232427565019334,
+   "shuffle": 0.03315217712395132,
+   "excess": 0.01126986588680137,
+   "excess_standard_error": 0.00696399358624038,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.01462296985000351,
+     "standard_error": 0.018151978682559928
+    },
+    "surface_symbols": {
+     "mean": -0.07405563570253904,
+     "standard_error": 0.021085461425495704
+    }
+   }
+  },
+  "2 to 3 cited": {
+   "problems": 39,
+   "wrong_tries": 92,
+   "match_rate": 0.06752136752136752,
+   "match_rate_standard_error": 0.021550944622123463,
+   "uniform": 0.02013599427392531,
+   "shuffle": 0.032889523752199806,
+   "excess": 0.03463184376916771,
+   "excess_standard_error": 0.02177946700209063,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.0004570370943610383,
+     "standard_error": 0.03759919935915024
+    },
+    "surface_symbols": {
+     "mean": -0.06637137569622752,
+     "standard_error": 0.04714656213138456
+    }
+   }
+  },
+  "4 to 6 cited": {
+   "problems": 40,
+   "wrong_tries": 113,
+   "match_rate": 0.034375,
+   "match_rate_standard_error": 0.003016270869345947,
+   "uniform": 0.030387931034482757,
+   "shuffle": 0.033627008032128515,
+   "excess": 0.0007479919678714862,
+   "excess_standard_error": 0.003311175190146393,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.0005747991967871487,
+     "standard_error": 0.018474369877116308
+    },
+    "surface_symbols": {
+     "mean": -0.0929347086146785,
+     "standard_error": 0.03748835381484341
+    }
+   }
+  },
+  "7 or more cited": {
+   "problems": 45,
+   "wrong_tries": 137,
+   "match_rate": 0.03333333333333333,
+   "match_rate_standard_error": 0.0,
+   "uniform": 0.03333333333333333,
+   "shuffle": 0.03333333333333333,
+   "excess": 0.0,
+   "excess_standard_error": 0.0,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.039753086419753086,
+     "standard_error": 0.03431083810970579
+    },
+    "surface_symbols": {
+     "mean": -0.06088446889758618,
+     "standard_error": 0.025676241395398227
+    }
+   }
+  },
+  "sets, relations and functions": {
+   "problems": 49,
+   "wrong_tries": 116,
+   "match_rate": 0.06275510204081633,
+   "match_rate_standard_error": 0.01721240515181378,
+   "uniform": 0.023474414396300394,
+   "shuffle": 0.03158449242792355,
+   "excess": 0.031170609612892777,
+   "excess_standard_error": 0.01744303090518914,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.006951201611597021,
+     "standard_error": 0.032366750544234206
+    },
+    "surface_symbols": {
+     "mean": -0.0769188911850156,
+     "standard_error": 0.039433236070310004
+    }
+   }
+  },
+  "orderings and lattices": {
+   "problems": 44,
+   "wrong_tries": 129,
+   "match_rate": 0.03257575757575758,
+   "match_rate_standard_error": 0.0007575757575757576,
+   "uniform": 0.03257575757575758,
+   "shuffle": 0.03474747474747474,
+   "excess": -0.002171717171717171,
+   "excess_standard_error": 0.0013116334272780569,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.0039001122334455644,
+     "standard_error": 0.023765580251936962
+    },
+    "surface_symbols": {
+     "mean": -0.10291709011153456,
+     "standard_error": 0.03242633529432952
+    }
+   }
+  },
+  "topology": {
+   "problems": 31,
+   "wrong_tries": 97,
+   "match_rate": 0.03225806451612903,
+   "match_rate_standard_error": 0.0028852490032255356,
+   "uniform": 0.029588431590656283,
+   "shuffle": 0.035436232475840476,
+   "excess": -0.0031781679597114453,
+   "excess_standard_error": 0.0026246505736104665,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.03676330475023819,
+     "standard_error": 0.03986979001885536
+    },
+    "surface_symbols": {
+     "mean": -0.03624337434566099,
+     "standard_error": 0.03303368456796044
+    }
+   }
+  }
+ },
+ "surface_symbols": {
+  "all problems": {
+   "problems": 124,
+   "wrong_tries": 342,
+   "match_rate": 0.11903786252576574,
+   "match_rate_standard_error": 0.019452274680311233,
+   "uniform": 0.030666175994318375,
+   "shuffle": 0.03371236093642534,
+   "excess": 0.08532550158934041,
+   "excess_standard_error": 0.019531636527715335,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.05943266585253553,
+     "standard_error": 0.02819832931703674
+    }
+   }
+  },
+  "2 to 3 cited": {
+   "problems": 39,
+   "wrong_tries": 92,
+   "match_rate": 0.13591011552550014,
+   "match_rate_standard_error": 0.03787392417761648,
+   "uniform": 0.030139135842053612,
+   "shuffle": 0.0349068960601049,
+   "excess": 0.10100321946539524,
+   "excess_standard_error": 0.038063641455778764,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.06591433860186649,
+     "standard_error": 0.05779128651125332
+    }
+   }
+  },
+  "4 to 6 cited": {
+   "problems": 40,
+   "wrong_tries": 113,
+   "match_rate": 0.12733859890109891,
+   "match_rate_standard_error": 0.03841709272687359,
+   "uniform": 0.03201832650108512,
+   "shuffle": 0.03365589831854892,
+   "excess": 0.09368270058254999,
+   "excess_standard_error": 0.03824602924062755,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.09235990941789135,
+     "standard_error": 0.04338931346990409
+    }
+   }
+  },
+  "7 or more cited": {
+   "problems": 45,
+   "wrong_tries": 137,
+   "match_rate": 0.09703681092569981,
+   "match_rate_standard_error": 0.025696221495095727,
+   "uniform": 0.029921032564710723,
+   "shuffle": 0.03615234202811363,
+   "excess": 0.06088446889758618,
+   "excess_standard_error": 0.025676241395398227,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.021131382477833093,
+     "standard_error": 0.04599714405439897
+    }
+   }
+  },
+  "sets, relations and functions": {
+   "problems": 49,
+   "wrong_tries": 116,
+   "match_rate": 0.13891159860547614,
+   "match_rate_standard_error": 0.03390910941770127,
+   "uniform": 0.028668112323988467,
+   "shuffle": 0.030822097807567776,
+   "excess": 0.10808950079790838,
+   "excess_standard_error": 0.03382654493291966,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.06996768957341858,
+     "standard_error": 0.04972365812258658
+    }
+   }
+  },
+  "orderings and lattices": {
+   "problems": 44,
+   "wrong_tries": 129,
+   "match_rate": 0.13356807544307545,
+   "match_rate_standard_error": 0.03236487807754514,
+   "uniform": 0.03234256165290648,
+   "shuffle": 0.032822702503258055,
+   "excess": 0.10074537293981738,
+   "excess_standard_error": 0.032538573854449096,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.099016977878089,
+     "standard_error": 0.04155564459497126
+    }
+   }
+  },
+  "topology": {
+   "problems": 31,
+   "wrong_tries": 97,
+   "match_rate": 0.06700100974294523,
+   "match_rate_standard_error": 0.03233554966307024,
+   "uniform": 0.031445019570714786,
+   "shuffle": 0.03393580335699568,
+   "excess": 0.03306520638594955,
+   "excess_standard_error": 0.032848345489218056,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.0005199304045771945,
+     "standard_error": 0.05459966412147908
+    }
+   }
+  }
+ },
+ "surface_trained": {
+  "all problems": {
+   "problems": 124,
+   "wrong_tries": 342,
+   "match_rate": 0.0661290322580645,
+   "match_rate_standard_error": 0.017653633238656805,
+   "uniform": 0.020022246941045607,
+   "shuffle": 0.03294449239400151,
+   "excess": 0.03318453986406301,
+   "excess_standard_error": 0.01777087646209145,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.007291704127258126,
+     "standard_error": 0.02240867496678443
+    },
+    "surface_symbols": {
+     "mean": -0.052140961725277414,
+     "standard_error": 0.026321832176438468
+    }
+   }
+  },
+  "2 to 3 cited": {
+   "problems": 39,
+   "wrong_tries": 92,
+   "match_rate": 0.10085470085470084,
+   "match_rate_standard_error": 0.04167880488040748,
+   "uniform": 0.015915119363395226,
+   "shuffle": 0.030796316359696638,
+   "excess": 0.0700583844950042,
+   "excess_standard_error": 0.042006686644879145,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.03496950363147546,
+     "standard_error": 0.04189684379751782
+    },
+    "surface_symbols": {
+     "mean": -0.03094483497039102,
+     "standard_error": 0.05966495432628973
+    }
+   }
+  },
+  "4 to 6 cited": {
+   "problems": 40,
+   "wrong_tries": 113,
+   "match_rate": 0.045,
+   "match_rate_standard_error": 0.026054676237599918,
+   "uniform": 0.023275862068965515,
+   "shuffle": 0.0336495983935743,
+   "excess": 0.011350401606425704,
+   "excess_standard_error": 0.026146563202757406,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.01002761044176707,
+     "standard_error": 0.028572431770400104
+    },
+    "surface_symbols": {
+     "mean": -0.08233229897612428,
+     "standard_error": 0.047490933426117835
+    }
+   }
+  },
+  "7 or more cited": {
+   "problems": 45,
+   "wrong_tries": 137,
+   "match_rate": 0.054814814814814816,
+   "match_rate_standard_error": 0.02301991417088619,
+   "uniform": 0.020689655172413793,
+   "shuffle": 0.03709362139917695,
+   "excess": 0.01772119341563786,
+   "excess_standard_error": 0.02352235362590451,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.022031893004115226,
+     "standard_error": 0.04398011345100357
+    },
+    "surface_symbols": {
+     "mean": -0.04316327548194832,
+     "standard_error": 0.029552237361080896
+    }
+   }
+  },
+  "sets, relations and functions": {
+   "problems": 49,
+   "wrong_tries": 116,
+   "match_rate": 0.08775510204081632,
+   "match_rate_standard_error": 0.03304429500389502,
+   "uniform": 0.02040816326530612,
+   "shuffle": 0.030062181122448982,
+   "excess": 0.05769292091836735,
+   "excess_standard_error": 0.03308503273513612,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.019571109693877552,
+     "standard_error": 0.036351429176772164
+    },
+    "surface_symbols": {
+     "mean": -0.05039657987954103,
+     "standard_error": 0.049584664921839224
+    }
+   }
+  },
+  "orderings and lattices": {
+   "problems": 44,
+   "wrong_tries": 129,
+   "match_rate": 0.07045454545454545,
+   "match_rate_standard_error": 0.03025255662575929,
+   "uniform": 0.02115987460815047,
+   "shuffle": 0.03429292929292929,
+   "excess": 0.036161616161616165,
+   "excess_standard_error": 0.030467580350707336,
+   "excess_over_control": {
+    "recall": {
+     "mean": 0.03443322109988777,
+     "standard_error": 0.04025709427088025
+    },
+    "surface_symbols": {
+     "mean": -0.06458375677820122,
+     "standard_error": 0.041331594550000496
+    }
+   }
+  },
+  "topology": {
+   "problems": 31,
+   "wrong_tries": 97,
+   "match_rate": 0.025806451612903226,
+   "match_rate_standard_error": 0.020196743022578748,
+   "uniform": 0.017797552836484983,
+   "shuffle": 0.03738260514495712,
+   "excess": -0.0115761535320539,
+   "excess_standard_error": 0.019669334651859514,
+   "excess_over_control": {
+    "recall": {
+     "mean": -0.04516129032258064,
+     "standard_error": 0.03727313108492319
+    },
+    "surface_symbols": {
+     "mean": -0.04464135991800345,
+     "standard_error": 0.03927357683780201
+    }
+   }
+  }
+ }
+}

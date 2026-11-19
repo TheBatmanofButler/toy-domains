@@ -1,0 +1,457 @@
+{
+ "guessing": {
+  "all problems": {
+   "both": 0,
+   "only_model": 240,
+   "only_program": 0,
+   "neither": 60,
+   "only_model_expected_by_chance": 0.10562962962963023,
+   "only_model_expected_if_independent": 240.0,
+   "only_model_if_independent_standard_error": 6.928203230275508
+  },
+  "2 to 3 cited": {
+   "both": 0,
+   "only_model": 128,
+   "only_program": 0,
+   "neither": 15,
+   "only_model_expected_by_chance": 0.050350123456790255,
+   "only_model_expected_if_independent": 128.0,
+   "only_model_if_independent_standard_error": 3.6642288993147556
+  },
+  "4 to 6 cited": {
+   "both": 0,
+   "only_model": 66,
+   "only_program": 0,
+   "neither": 18,
+   "only_model_expected_by_chance": 0.02957629629629627,
+   "only_model_expected_if_independent": 66.0,
+   "only_model_if_independent_standard_error": 3.7606990231680526
+  },
+  "7 or more cited": {
+   "both": 0,
+   "only_model": 46,
+   "only_program": 0,
+   "neither": 27,
+   "only_model_expected_by_chance": 0.02570320987654319,
+   "only_model_expected_if_independent": 46.0,
+   "only_model_if_independent_standard_error": 4.124766494013569
+  },
+  "sets, relations and functions": {
+   "both": 0,
+   "only_model": 110,
+   "only_program": 0,
+   "neither": 19,
+   "only_model_expected_by_chance": 0.04542074074074083,
+   "only_model_expected_if_independent": 110.0,
+   "only_model_if_independent_standard_error": 4.0251149533394575
+  },
+  "orderings and lattices": {
+   "both": 0,
+   "only_model": 69,
+   "only_program": 0,
+   "neither": 22,
+   "only_model_expected_by_chance": 0.032040987654320965,
+   "only_model_expected_if_independent": 69.0,
+   "only_model_if_independent_standard_error": 4.084277008396796
+  },
+  "topology": {
+   "both": 0,
+   "only_model": 61,
+   "only_program": 0,
+   "neither": 19,
+   "only_model_expected_by_chance": 0.028167901234567878,
+   "only_model_expected_if_independent": 61.0,
+   "only_model_if_independent_standard_error": 3.8062448686336516
+  }
+ },
+ "lookup": {
+  "all problems": {
+   "both": 46,
+   "only_model": 194,
+   "only_program": 19,
+   "neither": 41,
+   "only_model_expected_by_chance": 0.08274320987654361,
+   "only_model_expected_if_independent": 188.0,
+   "only_model_if_independent_standard_error": 6.131883886702356
+  },
+  "2 to 3 cited": {
+   "both": 28,
+   "only_model": 100,
+   "only_program": 5,
+   "neither": 10,
+   "only_model_expected_by_chance": 0.0387308641975309,
+   "only_model_expected_if_independent": 98.46153846153847,
+   "only_model_if_independent_standard_error": 3.2137413407205755
+  },
+  "4 to 6 cited": {
+   "both": 14,
+   "only_model": 52,
+   "only_program": 6,
+   "neither": 12,
+   "only_model_expected_by_chance": 0.022534320987654306,
+   "only_model_expected_if_independent": 50.285714285714285,
+   "only_model_if_independent_standard_error": 3.2826072265931594
+  },
+  "7 or more cited": {
+   "both": 4,
+   "only_model": 42,
+   "only_program": 8,
+   "neither": 19,
+   "only_model_expected_by_chance": 0.02147802469135801,
+   "only_model_expected_if_independent": 38.438356164383556,
+   "only_model_if_independent_standard_error": 3.7705339479416202
+  },
+  "sets, relations and functions": {
+   "both": 27,
+   "only_model": 83,
+   "only_program": 4,
+   "neither": 15,
+   "only_model_expected_by_chance": 0.03450567901234568,
+   "only_model_expected_if_independent": 83.56589147286822,
+   "only_model_if_independent_standard_error": 3.5082979574174358
+  },
+  "orderings and lattices": {
+   "both": 11,
+   "only_model": 58,
+   "only_program": 9,
+   "neither": 13,
+   "only_model_expected_by_chance": 0.024999012345678993,
+   "only_model_expected_if_independent": 53.83516483516483,
+   "only_model_if_independent_standard_error": 3.6076439396529385
+  },
+  "topology": {
+   "both": 8,
+   "only_model": 53,
+   "only_program": 6,
+   "neither": 13,
+   "only_model_expected_by_chance": 0.023238518518518502,
+   "only_model_expected_if_independent": 50.324999999999996,
+   "only_model_if_independent_standard_error": 3.4571935872901305
+  }
+ },
+ "options_only": {
+  "all problems": {
+   "both": 50,
+   "only_model": 190,
+   "only_program": 20,
+   "neither": 40,
+   "only_model_expected_by_chance": 0.0809827160493831,
+   "only_model_expected_if_independent": 184.0,
+   "only_model_if_independent_standard_error": 6.06630035524124
+  },
+  "2 to 3 cited": {
+   "both": 28,
+   "only_model": 100,
+   "only_program": 6,
+   "neither": 9,
+   "only_model_expected_by_chance": 0.038378765432098796,
+   "only_model_expected_if_independent": 97.56643356643356,
+   "only_model_if_independent_standard_error": 3.1991000739571014
+  },
+  "4 to 6 cited": {
+   "both": 17,
+   "only_model": 49,
+   "only_program": 5,
+   "neither": 13,
+   "only_model_expected_by_chance": 0.02183012345679011,
+   "only_model_expected_if_independent": 48.714285714285715,
+   "only_model_if_independent_standard_error": 3.230909393685326
+  },
+  "7 or more cited": {
+   "both": 5,
+   "only_model": 41,
+   "only_program": 9,
+   "neither": 18,
+   "only_model_expected_by_chance": 0.020773827160493814,
+   "only_model_expected_if_independent": 37.17808219178082,
+   "only_model_if_independent_standard_error": 3.708206779966218
+  },
+  "sets, relations and functions": {
+   "both": 25,
+   "only_model": 85,
+   "only_program": 3,
+   "neither": 16,
+   "only_model_expected_by_chance": 0.03556197530864198,
+   "only_model_expected_if_independent": 86.12403100775194,
+   "only_model_if_independent_standard_error": 3.561591610444883
+  },
+  "orderings and lattices": {
+   "both": 9,
+   "only_model": 60,
+   "only_program": 12,
+   "neither": 10,
+   "only_model_expected_by_chance": 0.024646913580246895,
+   "only_model_expected_if_independent": 53.07692307692307,
+   "only_model_if_independent_standard_error": 3.5821479032857324
+  },
+  "topology": {
+   "both": 16,
+   "only_model": 45,
+   "only_program": 5,
+   "neither": 14,
+   "only_model_expected_by_chance": 0.020773827160493814,
+   "only_model_expected_if_independent": 44.9875,
+   "only_model_if_independent_standard_error": 3.2687201241464527
+  }
+ },
+ "recall": {
+  "all problems": {
+   "both": 53,
+   "only_model": 187,
+   "only_program": 24,
+   "neither": 36,
+   "only_model_expected_by_chance": 0.07851802469135839,
+   "only_model_expected_if_independent": 178.4,
+   "only_model_if_independent_standard_error": 5.973273809227231
+  },
+  "2 to 3 cited": {
+   "both": 31,
+   "only_model": 97,
+   "only_program": 7,
+   "neither": 8,
+   "only_model_expected_by_chance": 0.03697037037037039,
+   "only_model_expected_if_independent": 93.98601398601399,
+   "only_model_if_independent_standard_error": 3.139852352537573
+  },
+  "4 to 6 cited": {
+   "both": 18,
+   "only_model": 48,
+   "only_program": 7,
+   "neither": 11,
+   "only_model_expected_by_chance": 0.020773827160493814,
+   "only_model_expected_if_independent": 46.357142857142854,
+   "only_model_if_independent_standard_error": 3.1517730675586013
+  },
+  "7 or more cited": {
+   "both": 4,
+   "only_model": 42,
+   "only_program": 10,
+   "neither": 17,
+   "only_model_expected_by_chance": 0.020773827160493814,
+   "only_model_expected_if_independent": 37.17808219178082,
+   "only_model_if_independent_standard_error": 3.708206779966218
+  },
+  "sets, relations and functions": {
+   "both": 26,
+   "only_model": 84,
+   "only_program": 4,
+   "neither": 15,
+   "only_model_expected_by_chance": 0.03485777777777778,
+   "only_model_expected_if_independent": 84.41860465116278,
+   "only_model_if_independent_standard_error": 3.5261520063486618
+  },
+  "orderings and lattices": {
+   "both": 11,
+   "only_model": 58,
+   "only_program": 14,
+   "neither": 8,
+   "only_model_expected_by_chance": 0.023238518518518502,
+   "only_model_expected_if_independent": 50.043956043956044,
+   "only_model_if_independent_standard_error": 3.4782953905345
+  },
+  "topology": {
+   "both": 16,
+   "only_model": 45,
+   "only_program": 6,
+   "neither": 13,
+   "only_model_expected_by_chance": 0.020421728395061716,
+   "only_model_expected_if_independent": 44.224999999999994,
+   "only_model_if_independent_standard_error": 3.240900723564361
+  }
+ },
+ "search": {
+  "all problems": {
+   "both": 80,
+   "only_model": 160,
+   "only_program": 3,
+   "neither": 57,
+   "only_model_expected_by_chance": 0.07640543209876578,
+   "only_model_expected_if_independent": 173.60000000000002,
+   "only_model_if_independent_standard_error": 5.892367945062494
+  },
+  "2 to 3 cited": {
+   "both": 73,
+   "only_model": 55,
+   "only_program": 2,
+   "neither": 13,
+   "only_model_expected_by_chance": 0.0239427160493827,
+   "only_model_expected_if_independent": 60.86713286713287,
+   "only_model_if_independent_standard_error": 2.5267893237787336
+  },
+  "4 to 6 cited": {
+   "both": 7,
+   "only_model": 59,
+   "only_program": 1,
+   "neither": 17,
+   "only_model_expected_by_chance": 0.026759506172839485,
+   "only_model_expected_if_independent": 59.714285714285715,
+   "only_model_if_independent_standard_error": 3.577138293013976
+  },
+  "7 or more cited": {
+   "both": 0,
+   "only_model": 46,
+   "only_program": 0,
+   "neither": 27,
+   "only_model_expected_by_chance": 0.02570320987654319,
+   "only_model_expected_if_independent": 46.0,
+   "only_model_if_independent_standard_error": 4.124766494013569
+  },
+  "sets, relations and functions": {
+   "both": 58,
+   "only_model": 52,
+   "only_program": 2,
+   "neither": 17,
+   "only_model_expected_by_chance": 0.024294814814814797,
+   "only_model_expected_if_independent": 58.837209302325576,
+   "only_model_if_independent_standard_error": 2.943797811697754
+  },
+  "orderings and lattices": {
+   "both": 11,
+   "only_model": 58,
+   "only_program": 0,
+   "neither": 22,
+   "only_model_expected_by_chance": 0.028167901234567878,
+   "only_model_expected_if_independent": 60.65934065934066,
+   "only_model_if_independent_standard_error": 3.829477189384528
+  },
+  "topology": {
+   "both": 11,
+   "only_model": 50,
+   "only_program": 1,
+   "neither": 18,
+   "only_model_expected_by_chance": 0.0239427160493827,
+   "only_model_expected_if_independent": 51.849999999999994,
+   "only_model_if_independent_standard_error": 3.509184378171087
+  }
+ },
+ "surface_symbols": {
+  "all problems": {
+   "both": 38,
+   "only_model": 202,
+   "only_program": 0,
+   "neither": 60,
+   "only_model_expected_by_chance": 0.09224987654321036,
+   "only_model_expected_if_independent": 209.60000000000002,
+   "only_model_if_independent_standard_error": 6.474565622495458
+  },
+  "2 to 3 cited": {
+   "both": 24,
+   "only_model": 104,
+   "only_program": 0,
+   "neither": 15,
+   "only_model_expected_by_chance": 0.041899753086419814,
+   "only_model_expected_if_independent": 106.51748251748252,
+   "only_model_if_independent_standard_error": 3.3426280830857973
+  },
+  "4 to 6 cited": {
+   "both": 8,
+   "only_model": 58,
+   "only_program": 0,
+   "neither": 18,
+   "only_model_expected_by_chance": 0.026759506172839485,
+   "only_model_expected_if_independent": 59.714285714285715,
+   "only_model_if_independent_standard_error": 3.577138293013976
+  },
+  "7 or more cited": {
+   "both": 6,
+   "only_model": 40,
+   "only_program": 0,
+   "neither": 27,
+   "only_model_expected_by_chance": 0.0235906172839506,
+   "only_model_expected_if_independent": 42.21917808219178,
+   "only_model_if_independent_standard_error": 3.951621495204039
+  },
+  "sets, relations and functions": {
+   "both": 18,
+   "only_model": 92,
+   "only_program": 0,
+   "neither": 19,
+   "only_model_expected_by_chance": 0.039082962962963,
+   "only_model_expected_if_independent": 94.65116279069767,
+   "only_model_if_independent_standard_error": 3.733747305076333
+  },
+  "orderings and lattices": {
+   "both": 10,
+   "only_model": 59,
+   "only_program": 0,
+   "neither": 22,
+   "only_model_expected_by_chance": 0.028519999999999976,
+   "only_model_expected_if_independent": 61.417582417582416,
+   "only_model_if_independent_standard_error": 3.8533370911868885
+  },
+  "topology": {
+   "both": 10,
+   "only_model": 51,
+   "only_program": 0,
+   "neither": 19,
+   "only_model_expected_by_chance": 0.024646913580246895,
+   "only_model_expected_if_independent": 53.375,
+   "only_model_if_independent_standard_error": 3.560416057148378
+  }
+ },
+ "surface_trained": {
+  "all problems": {
+   "both": 107,
+   "only_model": 133,
+   "only_program": 25,
+   "neither": 35,
+   "only_model_expected_by_chance": 0.0591525925925928,
+   "only_model_expected_if_independent": 134.4,
+   "only_model_if_independent_standard_error": 5.184592558726288
+  },
+  "2 to 3 cited": {
+   "both": 53,
+   "only_model": 75,
+   "only_program": 8,
+   "neither": 7,
+   "only_model_expected_by_chance": 0.028872098765432074,
+   "only_model_expected_if_independent": 73.3986013986014,
+   "only_model_if_independent_standard_error": 2.774734941009733
+  },
+  "4 to 6 cited": {
+   "both": 32,
+   "only_model": 34,
+   "only_program": 7,
+   "neither": 11,
+   "only_model_expected_by_chance": 0.01584444444444444,
+   "only_model_expected_if_independent": 35.357142857142854,
+   "only_model_if_independent_standard_error": 2.752549838285385
+  },
+  "7 or more cited": {
+   "both": 22,
+   "only_model": 24,
+   "only_program": 10,
+   "neither": 17,
+   "only_model_expected_by_chance": 0.014436049382716044,
+   "only_model_expected_if_independent": 25.835616438356162,
+   "only_model_if_independent_standard_error": 3.0912196551931213
+  },
+  "sets, relations and functions": {
+   "both": 50,
+   "only_model": 60,
+   "only_program": 7,
+   "neither": 12,
+   "only_model_expected_by_chance": 0.02535111111111109,
+   "only_model_expected_if_independent": 61.3953488372093,
+   "only_model_if_independent_standard_error": 3.007112534929231
+  },
+  "orderings and lattices": {
+   "both": 29,
+   "only_model": 40,
+   "only_program": 11,
+   "neither": 11,
+   "only_model_expected_by_chance": 0.01795703703703703,
+   "only_model_expected_if_independent": 38.67032967032967,
+   "only_model_if_independent_standard_error": 3.0575923386400734
+  },
+  "topology": {
+   "both": 28,
+   "only_model": 33,
+   "only_program": 7,
+   "neither": 12,
+   "only_model_expected_by_chance": 0.01584444444444444,
+   "only_model_expected_if_independent": 34.3125,
+   "only_model_if_independent_standard_error": 2.8546836514752387
+  }
+ }
+}

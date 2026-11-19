@@ -1,0 +1,5 @@
+% Mizar problem: t5_basic_0,basic_0,1,1 
+fof(t5_basic_0, conjecture, (! [A] : r1_basic_0(A, k1_basic_0(A, c5_basic_0)))).
+fof(d1_basic_0, axiom, (! [A] : (v1_basic_0(A) <=> r1_basic_0(A, k1_basic_0(A, A))))).
+fof(reflexivity_r1_basic_0, axiom, (! [A] : r1_basic_0(A, A))).
+fof(t4_basic_0, axiom, (! [A] : r1_basic_0(A, k1_basic_0(A, c4_basic_0)))).

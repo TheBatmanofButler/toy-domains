@@ -1,0 +1,12 @@
+{
+ "seed": 20261112,
+ "limit": 4000,
+ "prover_version": "E 2.6 Floral Guranse (8e8bfa2a3f682a4a7d96975eaa7b1133c4267b13)",
+ "prover_checksum": "605cfec005de2bc624358bacbc9e7fdfd27ef58715829e3b28fc1cce5216cb96",
+ "prover_program_checksum": "03d2c2a37cf88dee8730aa2755146934e225d0f537815ac16365e69032d54cc4",
+ "prover_environment": {
+  "PATH": "/usr/bin:/bin",
+  "LC_ALL": "C"
+ },
+ "c_library": "glibc 2.36"
+}

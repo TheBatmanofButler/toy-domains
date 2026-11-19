@@ -1,0 +1,150 @@
+{
+ "id": "test-fixed",
+ "theorem": "t70_zfmisc_1",
+ "article": "zfmisc_1",
+ "statement": "(! [A] :  (! [B] :  ((bool(A) \\/ bool(B))=bool((A \\/ B)) => A are_c=-comparable B) ) )",
+ "given": [
+  {
+   "name": "d1_zfmisc_1",
+   "statement": "(! [A] :  (! [B] :  (B=bool(A) <=>  (! [C] :  (in(C, B) <=> C c= A) ) ) ) )"
+  },
+  {
+   "name": "d3_xboole_0",
+   "statement": "(! [A] :  (! [B] :  (! [C] :  (C=(A \\/ B) <=>  (! [D] :  (in(D, C) <=>  (in(D, A) | in(D, B)) ) ) ) ) ) )"
+  },
+  {
+   "name": "d10_xboole_0",
+   "statement": "(! [A] :  (! [B] :  (A=B <=>  (A c= B & B c= A) ) ) )"
+  },
+  {
+   "name": "d9_xboole_0",
+   "statement": "(! [A] :  (! [B] :  (A are_c=-comparable B <=>  (A c= B | B c= A) ) ) )"
+  }
+ ],
+ "options": [
+  {
+   "name": "t1_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] :  ( (A c= B & B c= C)  => A c= C) ) ) )"
+  },
+  {
+   "name": "t3_xboole_1",
+   "statement": "(! [A] :  (A c= {} => A={}) )"
+  },
+  {
+   "name": "t113_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] :  (! [D] : (((A \\/ B) \\/ C) \\/ D)=(A \\/ ((B \\/ C) \\/ D))) ) ) )"
+  },
+  {
+   "name": "t42_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] : ((A \\/ B) \\ C)=((A \\ C) \\/ (B \\ C))) ) )"
+  },
+  {
+   "name": "t83_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (misses(A, B) <=> (A \\ B)=A) ) )"
+  },
+  {
+   "name": "t90_xboole_1",
+   "statement": "(! [A] :  (! [B] : misses((A \\ (A /\\ B)), B)) )"
+  },
+  {
+   "name": "t51_xboole_1",
+   "statement": "(! [A] :  (! [B] : ((A /\\ B) \\/ (A \\ B))=A) )"
+  },
+  {
+   "name": "l58_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] :  ( (A c= B & B c< C)  => A c< C) ) ) )"
+  },
+  {
+   "name": "t105_xboole_1",
+   "statement": "(! [A] :  (! [B] :  ~ ( (A c< B & (B \\ A)={}) ) ) )"
+  },
+  {
+   "name": "t49_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] : (A /\\ (B \\ C))=((A /\\ B) \\ C)) ) )"
+  },
+  {
+   "name": "t104_xboole_1",
+   "statement": "(! [A] :  (! [B] :  ( ~ ( ( ~ (A c< B)  &  ( ~ (A=B)  &  ~ (B c< A) ) ) )  <=> A are_c=-comparable B) ) )"
+  },
+  {
+   "name": "t87_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] :  (misses(A, B) => ((C \\ A) \\/ B)=((C \\/ B) \\ A)) ) ) )"
+  },
+  {
+   "name": "t19_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] :  ( (A c= B & A c= C)  => A c= (B /\\ C)) ) ) )"
+  },
+  {
+   "name": "t91_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] : ((A \\+\\ B) \\+\\ C)=(A \\+\\ (B \\+\\ C))) ) )"
+  },
+  {
+   "name": "t62_xboole_1",
+   "statement": "(! [A] :  ~ (A c< {}) )"
+  },
+  {
+   "name": "t89_xboole_1",
+   "statement": "(! [A] :  (! [B] : misses((A /\\ B), (A \\ B))) )"
+  },
+  {
+   "name": "t111_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] : ((A /\\ B) \\ (C /\\ B))=((A \\ C) /\\ B)) ) )"
+  },
+  {
+   "name": "t97_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] :  ( ((A \\ B) c= C & (B \\ A) c= C)  => (A \\+\\ B) c= C) ) ) )"
+  },
+  {
+   "name": "t21_xboole_1",
+   "statement": "(! [A] :  (! [B] : (A /\\ (A \\/ B))=A) )"
+  },
+  {
+   "name": "t112_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] : ((A /\\ B) \\+\\ (C /\\ B))=((A \\+\\ C) /\\ B)) ) )"
+  },
+  {
+   "name": "t107_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] :  (A c= (B \\+\\ C) <=>  (A c= (B \\/ C) & misses(A, (B /\\ C))) ) ) ) )"
+  },
+  {
+   "name": "t45_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (A c= B => B=(A \\/ (B \\ A))) ) )"
+  },
+  {
+   "name": "t11_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] :  ((A \\/ B) c= C => A c= C) ) ) )"
+  },
+  {
+   "name": "t65_xboole_1",
+   "statement": "(! [A] : misses(A, {}))"
+  },
+  {
+   "name": "t7_xboole_1",
+   "statement": "(! [A] :  (! [B] : A c= (A \\/ B)) )"
+  },
+  {
+   "name": "l97_xboole_1",
+   "statement": "(! [A] :  (! [B] : misses((A /\\ B), (A \\+\\ B))) )"
+  },
+  {
+   "name": "t6_xboole_1",
+   "statement": "(! [A] :  (! [B] : (A \\/ (A \\/ B))=(A \\/ B)) )"
+  },
+  {
+   "name": "t22_xboole_1",
+   "statement": "(! [A] :  (! [B] : (A \\/ (A /\\ B))=A) )"
+  },
+  {
+   "name": "t99_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] : ((A \\+\\ B) \\ C)=((A \\ (B \\/ C)) \\/ (B \\ (A \\/ C)))) ) )"
+  },
+  {
+   "name": "t41_xboole_1",
+   "statement": "(! [A] :  (! [B] :  (! [C] : ((A \\ B) \\ C)=(A \\ (B \\/ C))) ) )"
+  }
+ ],
+ "held_back": 25,
+ "cited_count": 5,
+ "group": "sets, relations and functions",
+ "seed": 20261112
+}

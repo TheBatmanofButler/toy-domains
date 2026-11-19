@@ -1,0 +1,651 @@
+{
+ "calls": 9300,
+ "unsettled": 64,
+ "unsettled_share": 0.006881720430107527,
+ "by_way": {
+  "the endings differed": 62,
+  "the use of the option differed": 2
+ },
+ "unsettled_calls": [
+  {
+   "problem_id": "test-0002",
+   "option": 3,
+   "option_name": "l32_xboole_1",
+   "why": "the use of the option differed",
+   "endings": [
+    "proved",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0003",
+   "option": 3,
+   "option_name": "t34_xboole_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0026",
+   "option": 19,
+   "option_name": "t38_xboole_1",
+   "why": "the use of the option differed",
+   "endings": [
+    "proved",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0028",
+   "option": null,
+   "option_name": null,
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0028",
+   "option": 1,
+   "option_name": "t18_xtuple_0",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0036",
+   "option": 11,
+   "option_name": "l1_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0046",
+   "option": 30,
+   "option_name": "t83_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0047",
+   "option": 4,
+   "option_name": "t3_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0047",
+   "option": 6,
+   "option_name": "t96_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0047",
+   "option": 7,
+   "option_name": "t100_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0047",
+   "option": 10,
+   "option_name": "t58_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0047",
+   "option": 16,
+   "option_name": "t101_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0047",
+   "option": 17,
+   "option_name": "t49_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0047",
+   "option": 20,
+   "option_name": "t122_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0047",
+   "option": 21,
+   "option_name": "t120_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0047",
+   "option": 24,
+   "option_name": "t13_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0047",
+   "option": 30,
+   "option_name": "l42_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0053",
+   "option": 2,
+   "option_name": "t7_subset_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0053",
+   "option": 28,
+   "option_name": "t31_subset_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0055",
+   "option": 20,
+   "option_name": "t9_subset_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0055",
+   "option": 21,
+   "option_name": "t15_subset_1",
+   "why": "the endings differed",
+   "endings": [
+    "nothing left",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0055",
+   "option": 22,
+   "option_name": "t18_subset_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0055",
+   "option": 26,
+   "option_name": "t25_subset_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0058",
+   "option": 24,
+   "option_name": "t102_xboole_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0060",
+   "option": 26,
+   "option_name": "t10_relat_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0066",
+   "option": null,
+   "option_name": null,
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0066",
+   "option": 8,
+   "option_name": "t7_relat_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0086",
+   "option": 11,
+   "option_name": "t34_funct_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0086",
+   "option": 16,
+   "option_name": "t19_funct_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0105",
+   "option": 8,
+   "option_name": "t44_mcart_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "nothing left"
+   ]
+  },
+  {
+   "problem_id": "test-0113",
+   "option": 3,
+   "option_name": "t6_relset_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0128",
+   "option": 7,
+   "option_name": "t103_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0128",
+   "option": 10,
+   "option_name": "t72_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0128",
+   "option": 12,
+   "option_name": "t128_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0128",
+   "option": 18,
+   "option_name": "t26_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0128",
+   "option": 22,
+   "option_name": "t98_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "proved",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0182",
+   "option": 2,
+   "option_name": "t2_domain_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0182",
+   "option": 18,
+   "option_name": "t18_domain_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0182",
+   "option": 21,
+   "option_name": "t30_domain_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0182",
+   "option": 26,
+   "option_name": "t32_domain_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0183",
+   "option": 7,
+   "option_name": "t41_filter_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0183",
+   "option": 23,
+   "option_name": "t34_filter_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0184",
+   "option": null,
+   "option_name": null,
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0184",
+   "option": 2,
+   "option_name": "t28_domain_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0184",
+   "option": 3,
+   "option_name": "t24_domain_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0184",
+   "option": 8,
+   "option_name": "t27_domain_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0184",
+   "option": 11,
+   "option_name": "t21_domain_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0184",
+   "option": 15,
+   "option_name": "t23_domain_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0184",
+   "option": 19,
+   "option_name": "t34_domain_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0184",
+   "option": 23,
+   "option_name": "t4_domain_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0185",
+   "option": 3,
+   "option_name": "t34_filter_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0185",
+   "option": 6,
+   "option_name": "t21_filter_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0185",
+   "option": 12,
+   "option_name": "t30_filter_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0185",
+   "option": 15,
+   "option_name": "t23_filter_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0185",
+   "option": 17,
+   "option_name": "t11_filter_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0185",
+   "option": 23,
+   "option_name": "t35_filter_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0185",
+   "option": 25,
+   "option_name": "t33_filter_1",
+   "why": "the endings differed",
+   "endings": [
+    "term cap",
+    "clause limit"
+   ]
+  },
+  {
+   "problem_id": "test-0185",
+   "option": 29,
+   "option_name": "t10_filter_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0219",
+   "option": 13,
+   "option_name": "t1_waybel_0",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0219",
+   "option": 20,
+   "option_name": "t7_waybel_0",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0219",
+   "option": 25,
+   "option_name": "t6_waybel_0",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "term cap"
+   ]
+  },
+  {
+   "problem_id": "test-0241",
+   "option": 25,
+   "option_name": "t1_tsep_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0257",
+   "option": 22,
+   "option_name": "t56_tsep_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "proved"
+   ]
+  },
+  {
+   "problem_id": "test-0299",
+   "option": 24,
+   "option_name": "t57_zfmisc_1",
+   "why": "the endings differed",
+   "endings": [
+    "clause limit",
+    "proved"
+   ]
+  }
+ ]
+}

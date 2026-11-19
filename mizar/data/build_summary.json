@@ -1,0 +1,225 @@
+{
+ "seed": 20261112,
+ "test_articles": [
+  "xboole_0",
+  "xboole_1",
+  "enumset1",
+  "zfmisc_1",
+  "subset_1",
+  "setfam_1",
+  "relat_1",
+  "funct_1",
+  "ordinal1",
+  "wellord1",
+  "relset_1",
+  "mcart_1",
+  "wellord2",
+  "funct_2",
+  "finset_1",
+  "pre_topc",
+  "orders_2",
+  "lattices",
+  "tops_1",
+  "tops_2",
+  "compts_1",
+  "connsp_2",
+  "filter_1",
+  "lattice3",
+  "yellow_0",
+  "yellow_1",
+  "waybel_0",
+  "tmap_1",
+  "tex_2",
+  "yellow_6",
+  "waybel_7",
+  "waybel_9",
+  "yellow19"
+ ],
+ "bins": {
+  "all": {
+   "not usable": 615,
+   "too few neighbours": 355,
+   "qualifies": 1200
+  },
+  "xboole_0": {
+   "not usable": 1,
+   "too few neighbours": 7,
+   "qualifies": 0
+  },
+  "xboole_1": {
+   "not usable": 54,
+   "too few neighbours": 25,
+   "qualifies": 43
+  },
+  "enumset1": {
+   "not usable": 12,
+   "too few neighbours": 30,
+   "qualifies": 54
+  },
+  "zfmisc_1": {
+   "not usable": 53,
+   "too few neighbours": 25,
+   "qualifies": 79
+  },
+  "subset_1": {
+   "not usable": 24,
+   "too few neighbours": 10,
+   "qualifies": 17
+  },
+  "setfam_1": {
+   "not usable": 34,
+   "too few neighbours": 1,
+   "qualifies": 14
+  },
+  "relat_1": {
+   "not usable": 94,
+   "too few neighbours": 15,
+   "qualifies": 71
+  },
+  "funct_1": {
+   "not usable": 31,
+   "too few neighbours": 22,
+   "qualifies": 58
+  },
+  "ordinal1": {
+   "not usable": 10,
+   "too few neighbours": 19,
+   "qualifies": 5
+  },
+  "wellord1": {
+   "not usable": 8,
+   "too few neighbours": 18,
+   "qualifies": 33
+  },
+  "relset_1": {
+   "not usable": 6,
+   "too few neighbours": 5,
+   "qualifies": 21
+  },
+  "mcart_1": {
+   "not usable": 29,
+   "too few neighbours": 21,
+   "qualifies": 29
+  },
+  "wellord2": {
+   "not usable": 3,
+   "too few neighbours": 3,
+   "qualifies": 12
+  },
+  "funct_2": {
+   "not usable": 42,
+   "too few neighbours": 1,
+   "qualifies": 81
+  },
+  "finset_1": {
+   "not usable": 8,
+   "too few neighbours": 2,
+   "qualifies": 8
+  },
+  "pre_topc": {
+   "not usable": 12,
+   "too few neighbours": 11,
+   "qualifies": 14
+  },
+  "orders_2": {
+   "not usable": 14,
+   "too few neighbours": 12,
+   "qualifies": 35
+  },
+  "lattices": {
+   "not usable": 21,
+   "too few neighbours": 9,
+   "qualifies": 1
+  },
+  "tops_1": {
+   "not usable": 16,
+   "too few neighbours": 5,
+   "qualifies": 55
+  },
+  "tops_2": {
+   "not usable": 22,
+   "too few neighbours": 3,
+   "qualifies": 41
+  },
+  "compts_1": {
+   "not usable": 3,
+   "too few neighbours": 5,
+   "qualifies": 15
+  },
+  "connsp_2": {
+   "not usable": 2,
+   "too few neighbours": 8,
+   "qualifies": 20
+  },
+  "filter_1": {
+   "not usable": 3,
+   "too few neighbours": 22,
+   "qualifies": 40
+  },
+  "lattice3": {
+   "not usable": 13,
+   "too few neighbours": 13,
+   "qualifies": 32
+  },
+  "yellow_0": {
+   "not usable": 20,
+   "too few neighbours": 12,
+   "qualifies": 38
+  },
+  "yellow_1": {
+   "not usable": 4,
+   "too few neighbours": 7,
+   "qualifies": 22
+  },
+  "waybel_0": {
+   "not usable": 15,
+   "too few neighbours": 6,
+   "qualifies": 55
+  },
+  "tmap_1": {
+   "not usable": 11,
+   "too few neighbours": 5,
+   "qualifies": 126
+  },
+  "tex_2": {
+   "not usable": 22,
+   "too few neighbours": 4,
+   "qualifies": 51
+  },
+  "yellow_6": {
+   "not usable": 17,
+   "too few neighbours": 5,
+   "qualifies": 29
+  },
+  "waybel_7": {
+   "not usable": 0,
+   "too few neighbours": 11,
+   "qualifies": 38
+  },
+  "waybel_9": {
+   "not usable": 6,
+   "too few neighbours": 3,
+   "qualifies": 40
+  },
+  "yellow19": {
+   "not usable": 5,
+   "too few neighbours": 10,
+   "qualifies": 23
+  }
+ },
+ "test_problems": 300,
+ "training_problems": 900,
+ "options": {
+  "problems": 300,
+  "all_options_from_one_article": 300,
+  "held_back_from_the_theorems_own_article": 114,
+  "held_back_from_an_earlier_article": 186,
+  "held_back_theorems": 284,
+  "held_back_lemmas": 16,
+  "right_option_length_mean": 23.123333333333335,
+  "wrong_option_length_mean": 24.656091954022987,
+  "right_option_facts_above_theorem_mean": 15086.06,
+  "wrong_option_facts_above_theorem_mean": 15078.532068965516,
+  "problems_showing_a_symbol_without_a_mizar_name": 38
+ }
+}

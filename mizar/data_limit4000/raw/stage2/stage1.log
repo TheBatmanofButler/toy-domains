@@ -1,0 +1,16 @@
+Sun Nov 15 18:08:29 UTC 2026
+wrote 2170 theorems, 300 test problems and 900 training problems
+bins: not usable 615, too few neighbours 355, qualifies 1200
+  problems: 300
+  all_options_from_one_article: 300
+  held_back_from_the_theorems_own_article: 114
+  held_back_from_an_earlier_article: 186
+  held_back_theorems: 284
+  held_back_lemmas: 16
+  right_option_length_mean: 23.12
+  wrong_option_length_mean: 24.66
+  right_option_facts_above_theorem_mean: 15086.06
+  wrong_option_facts_above_theorem_mean: 15078.53
+  problems_showing_a_symbol_without_a_mizar_name: 38
+stage1_rc 0
+Sun Nov 15 18:11:25 UTC 2026

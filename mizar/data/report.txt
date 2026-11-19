@@ -1,0 +1,310 @@
+Margins of error. Each standard error is the sample standard deviation (n - 1) of the per-problem figures
+over the square root of the number of problems in the row (n/a with one problem): for every score, and
+for the model minus each program on the same problems. Beside the count of problems only the model gets,
+the count expected if the model's successes were unrelated to the program's is m x p (m problems the
+program misses, p the share the model gets), with standard error sqrt(m p (1 - p)). In the same-wrong-answers
+table each is across the problems with a wrong try (n/a with fewer than two), because the tries on one
+problem are not independent. These margins reflect the choice of test problems only; for the trained
+readers they do not say what a different training set would give. With seven rows, an occasional gap of two
+standard errors is expected by luck alone.
+
+Scores (room = 1 - best simple program)
+                          row  problems  guessing  lookup  options_only  recall  search  surface_symbols  surface_trained             best   room  model  unreadable  forced  thinking_tokens
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems       300     0.033   0.243         0.233   0.257   0.320            0.198            0.440  surface_trained  0.560  0.772       0.000   0.774        14227.770
+                 2 to 3 cited       143     0.033   0.254         0.238   0.266   0.577            0.272            0.427           search  0.423  0.871       0.000   0.607        12677.476
+                 4 to 6 cited        84     0.033   0.264         0.262   0.298   0.132            0.152            0.464  surface_trained  0.536  0.731       0.000   0.895        15422.683
+              7 or more cited        73     0.033   0.196         0.192   0.192   0.033            0.106            0.438  surface_trained  0.562  0.625       0.000   0.962        15889.679
+sets, relations and functions       129     0.033   0.255         0.217   0.233   0.520            0.240            0.442           search  0.480  0.820       0.000   0.691        13442.940
+       orderings and lattices        91     0.033   0.253         0.231   0.275   0.150            0.164            0.440  surface_trained  0.560  0.716       0.000   0.800        14487.448
+                     topology        80     0.033   0.212         0.263   0.275   0.190            0.169            0.438  surface_trained  0.562  0.758       0.000   0.877        15197.925
+
+Standard errors of the scores (room's is the named best program's)
+                          row  guessing  lookup  options_only  recall  search  surface_symbols  surface_trained   room          room_of  model
+----------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems     0.000   0.024         0.024   0.025   0.025            0.019            0.029  0.029  surface_trained  0.019
+                 2 to 3 cited     0.000   0.035         0.036   0.037   0.038            0.030            0.042  0.038           search  0.022
+                 4 to 6 cited     0.000   0.046         0.048   0.050   0.031            0.033            0.055  0.055  surface_trained  0.039
+              7 or more cited     0.000   0.044         0.046   0.046   0.000            0.032            0.058  0.058  surface_trained  0.045
+sets, relations and functions     0.000   0.038         0.036   0.037   0.041            0.030            0.044  0.041           search  0.025
+       orderings and lattices     0.000   0.044         0.044   0.047   0.033            0.033            0.052  0.052  surface_trained  0.039
+                     topology     0.000   0.043         0.050   0.050   0.039            0.037            0.056  0.056  surface_trained  0.041
+
+Model minus each program, per-problem difference on the same problems: mean, then standard error
+                          row  guessing  guessing_se  lookup  lookup_se  options_only  options_only_se  recall  recall_se  search  search_se  surface_symbols  surface_symbols_se  surface_trained  surface_trained_se
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems     0.739        0.019   0.529      0.033         0.539            0.033   0.515      0.034   0.452      0.027            0.574               0.024            0.332               0.034
+                 2 to 3 cited     0.838        0.022   0.617      0.045         0.634            0.045   0.606      0.047   0.295      0.039            0.600               0.033            0.445               0.050
+                 4 to 6 cited     0.698        0.039   0.467      0.063         0.469            0.061   0.433      0.066   0.599      0.049            0.579               0.045            0.267               0.061
+              7 or more cited     0.591        0.045   0.429      0.072         0.433            0.072   0.433      0.074   0.591      0.045            0.518               0.051            0.186               0.067
+sets, relations and functions     0.787        0.025   0.565      0.044         0.603            0.042   0.588      0.043   0.300      0.039            0.580               0.035            0.378               0.049
+       orderings and lattices     0.683        0.039   0.464      0.068         0.486            0.070   0.442      0.075   0.566      0.044            0.552               0.042            0.277               0.064
+                     topology     0.724        0.041   0.546      0.066         0.495            0.066   0.483      0.067   0.568      0.053            0.589               0.048            0.320               0.069
+
+Budget (tokens_used is an upper limit on thinking)
+                          row  allowance  thinking_tokens  without_thinking_count  tokens_used  forced  cut_off_readable
+------------------------------------------------------------------------------------------------------------------------
+                 all problems      16000        14227.770                       0    14253.309   0.774             0.000
+                 2 to 3 cited      16000        12677.476                       0    12699.203   0.607             0.000
+                 4 to 6 cited      16000        15422.683                       0    15451.007   0.895             0.000
+              7 or more cited      16000        15889.679                       0    15919.479   0.962             0.000
+sets, relations and functions      16000        13442.940                       0    13466.633   0.691             0.000
+       orderings and lattices      16000        14487.448                       0    14513.574   0.800             0.000
+                     topology      16000        15197.925                       0    15225.772   0.877             0.000
+
+Problem by problem (model gets a problem: more than half its tries right; a program: more than half its weight on the right option). Programs are exact; the model's 3 of 5 is a noisy estimate (a model right 55% of the time on a problem gets it about 59% of the time).
+guessing
+                          row  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems     0         240             0       60                   0.106                    240.000              6.928
+                 2 to 3 cited     0         128             0       15                   0.050                    128.000              3.664
+                 4 to 6 cited     0          66             0       18                   0.030                     66.000              3.761
+              7 or more cited     0          46             0       27                   0.026                     46.000              4.125
+sets, relations and functions     0         110             0       19                   0.045                    110.000              4.025
+       orderings and lattices     0          69             0       22                   0.032                     69.000              4.084
+                     topology     0          61             0       19                   0.028                     61.000              3.806
+
+lookup
+                          row  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems    46         194            19       41                   0.083                    188.000              6.132
+                 2 to 3 cited    28         100             5       10                   0.039                     98.462              3.214
+                 4 to 6 cited    14          52             6       12                   0.023                     50.286              3.283
+              7 or more cited     4          42             8       19                   0.021                     38.438              3.771
+sets, relations and functions    27          83             4       15                   0.035                     83.566              3.508
+       orderings and lattices    11          58             9       13                   0.025                     53.835              3.608
+                     topology     8          53             6       13                   0.023                     50.325              3.457
+
+options_only
+                          row  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems    50         190            20       40                   0.081                    184.000              6.066
+                 2 to 3 cited    28         100             6        9                   0.038                     97.566              3.199
+                 4 to 6 cited    17          49             5       13                   0.022                     48.714              3.231
+              7 or more cited     5          41             9       18                   0.021                     37.178              3.708
+sets, relations and functions    25          85             3       16                   0.036                     86.124              3.562
+       orderings and lattices     9          60            12       10                   0.025                     53.077              3.582
+                     topology    16          45             5       14                   0.021                     44.987              3.269
+
+recall
+                          row  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems    53         187            24       36                   0.079                    178.400              5.973
+                 2 to 3 cited    31          97             7        8                   0.037                     93.986              3.140
+                 4 to 6 cited    18          48             7       11                   0.021                     46.357              3.152
+              7 or more cited     4          42            10       17                   0.021                     37.178              3.708
+sets, relations and functions    26          84             4       15                   0.035                     84.419              3.526
+       orderings and lattices    11          58            14        8                   0.023                     50.044              3.478
+                     topology    16          45             6       13                   0.020                     44.225              3.241
+
+search
+                          row  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems    80         160             3       57                   0.076                    173.600              5.892
+                 2 to 3 cited    73          55             2       13                   0.024                     60.867              2.527
+                 4 to 6 cited     7          59             1       17                   0.027                     59.714              3.577
+              7 or more cited     0          46             0       27                   0.026                     46.000              4.125
+sets, relations and functions    58          52             2       17                   0.024                     58.837              2.944
+       orderings and lattices    11          58             0       22                   0.028                     60.659              3.829
+                     topology    11          50             1       18                   0.024                     51.850              3.509
+
+surface_symbols
+                          row  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems    38         202             0       60                   0.092                    209.600              6.475
+                 2 to 3 cited    24         104             0       15                   0.042                    106.517              3.343
+                 4 to 6 cited     8          58             0       18                   0.027                     59.714              3.577
+              7 or more cited     6          40             0       27                   0.024                     42.219              3.952
+sets, relations and functions    18          92             0       19                   0.039                     94.651              3.734
+       orderings and lattices    10          59             0       22                   0.029                     61.418              3.853
+                     topology    10          51             0       19                   0.025                     53.375              3.560
+
+surface_trained
+                          row  both  only_model  only_program  neither  only_model_if_guessing  only_model_if_independent  if_independent_se
+--------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems   107         133            25       35                   0.059                    134.400              5.185
+                 2 to 3 cited    53          75             8        7                   0.029                     73.399              2.775
+                 4 to 6 cited    32          34             7       11                   0.016                     35.357              2.753
+              7 or more cited    22          24            10       17                   0.014                     25.836              3.091
+sets, relations and functions    50          60             7       12                   0.025                     61.395              3.007
+       orderings and lattices    29          40            11       11                   0.018                     38.670              3.058
+                     topology    28          33             7       12                   0.016                     34.312              2.855
+
+Counted together: problems the best single program gets, at least one program gets (guessing left out),
+none gets; and of the last two, how many the model gets (3 of 5 tries right)
+                          row  problems  best_single    best_programs  at_least_one  none  model_of_at_least_one  model_of_none
+-------------------------------------------------------------------------------------------------------------------------------
+                 all problems       300          132  surface_trained           216    84                    177             63
+                 2 to 3 cited       143           75           search           116    27                    106             22
+                 4 to 6 cited        84           39  surface_trained            60    24                     46             20
+              7 or more cited        73           32  surface_trained            40    33                     25             21
+sets, relations and functions       129           60           search           101    28                     90             20
+       orderings and lattices        91           40  surface_trained            60    31                     42             27
+                     topology        80           35  surface_trained            55    25                     45             16
+
+Same wrong answers, over the problems where the model gave a readable wrong option: the weight the program's
+pick puts on that option (match), what even guessing among the wrong options would give (uniform), the same
+option numbers set against the program's picks on the other problems in the row (shuffle), match minus
+shuffle (excess), and the excess less each control's on the same problems (over_...), with standard errors
+across problems. It describes a resemblance between the model's mistakes and the program's, nothing more.
+guessing
+                          row  problems  wrong_tries  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se  over_surface_symbols  over_surface_symbols_se
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems       124          342  0.033    0.033    0.033   0.000      0.000       -0.026           0.018                -0.085                    0.020
+                 2 to 3 cited        39           92  0.033    0.033    0.033   0.000      0.000       -0.035           0.038                -0.101                    0.038
+                 4 to 6 cited        40          113  0.033    0.033    0.033   0.000      0.000       -0.001           0.019                -0.094                    0.038
+              7 or more cited        45          137  0.033    0.033    0.033   0.000      0.000       -0.040           0.034                -0.061                    0.026
+sets, relations and functions        49          116  0.033    0.033    0.033   0.000      0.000       -0.038           0.032                -0.108                    0.034
+       orderings and lattices        44          129  0.033    0.033    0.033   0.000      0.000       -0.002           0.024                -0.101                    0.033
+                     topology        31           97  0.033    0.033    0.033   0.000      0.000       -0.034           0.041                -0.033                    0.033
+
+lookup
+                          row  problems  wrong_tries  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se  over_surface_symbols  over_surface_symbols_se
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems       124          342  0.040    0.024    0.032   0.008      0.014       -0.018           0.017                -0.077                    0.025
+                 2 to 3 cited        39           92  0.046    0.022    0.031   0.015      0.030       -0.020           0.034                -0.086                    0.051
+                 4 to 6 cited        40          113  0.052    0.025    0.036   0.016      0.030        0.015           0.026                -0.078                    0.051
+              7 or more cited        45          137  0.025    0.025    0.031  -0.005      0.012       -0.045           0.029                -0.066                    0.030
+sets, relations and functions        49          116  0.071    0.027    0.031   0.040      0.033        0.002           0.032                -0.068                    0.050
+       orderings and lattices        44          129  0.017    0.021    0.031  -0.014      0.010       -0.016           0.024                -0.115                    0.035
+                     topology        31           97  0.024    0.023    0.032  -0.009      0.014       -0.042           0.031                -0.042                    0.036
+
+options_only
+                          row  problems  wrong_tries  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se  over_surface_symbols  over_surface_symbols_se
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems       124          342  0.036    0.025    0.033   0.003      0.014       -0.023           0.012                -0.083                    0.025
+                 2 to 3 cited        39           92  0.026    0.022    0.035  -0.009      0.026       -0.045           0.029                -0.110                    0.049
+                 4 to 6 cited        40          113  0.031    0.027    0.035  -0.004      0.018       -0.005           0.006                -0.097                    0.044
+              7 or more cited        45          137  0.049    0.025    0.030   0.018      0.027       -0.021           0.023                -0.043                    0.039
+sets, relations and functions        49          116  0.051    0.028    0.034   0.017      0.025       -0.021           0.020                -0.091                    0.046
+       orderings and lattices        44          129  0.030    0.023    0.032  -0.002      0.024       -0.004           0.005                -0.103                    0.042
+                     topology        31           97  0.019    0.022    0.036  -0.017      0.020       -0.050           0.037                -0.050                    0.038
+
+recall
+                          row  problems  wrong_tries  match  uniform  shuffle  excess  excess_se  over_surface_symbols  over_surface_symbols_se
+-----------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems       124          342  0.058    0.024    0.032   0.026      0.018                -0.059                    0.028
+                 2 to 3 cited        39           92  0.067    0.021    0.032   0.035      0.038                -0.066                    0.058
+                 4 to 6 cited        40          113  0.036    0.024    0.035   0.001      0.019                -0.092                    0.043
+              7 or more cited        45          137  0.071    0.025    0.031   0.040      0.034                -0.021                    0.046
+sets, relations and functions        49          116  0.071    0.028    0.033   0.038      0.032                -0.070                    0.050
+       orderings and lattices        44          129  0.035    0.019    0.033   0.002      0.024                -0.099                    0.042
+                     topology        31           97  0.071    0.023    0.037   0.034      0.041                 0.001                    0.055
+
+search
+                          row  problems  wrong_tries  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se  over_surface_symbols  over_surface_symbols_se
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems       124          342  0.044    0.028    0.033   0.011      0.007       -0.015           0.018                -0.074                    0.021
+                 2 to 3 cited        39           92  0.068    0.020    0.033   0.035      0.022       -0.000           0.038                -0.066                    0.047
+                 4 to 6 cited        40          113  0.034    0.030    0.034   0.001      0.003       -0.001           0.018                -0.093                    0.037
+              7 or more cited        45          137  0.033    0.033    0.033   0.000      0.000       -0.040           0.034                -0.061                    0.026
+sets, relations and functions        49          116  0.063    0.023    0.032   0.031      0.017       -0.007           0.032                -0.077                    0.039
+       orderings and lattices        44          129  0.033    0.033    0.035  -0.002      0.001       -0.004           0.024                -0.103                    0.032
+                     topology        31           97  0.032    0.030    0.035  -0.003      0.003       -0.037           0.040                -0.036                    0.033
+
+surface_symbols
+                          row  problems  wrong_tries  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se
+-----------------------------------------------------------------------------------------------------------------------------
+                 all problems       124          342  0.119    0.031    0.034   0.085      0.020        0.059           0.028
+                 2 to 3 cited        39           92  0.136    0.030    0.035   0.101      0.038        0.066           0.058
+                 4 to 6 cited        40          113  0.127    0.032    0.034   0.094      0.038        0.092           0.043
+              7 or more cited        45          137  0.097    0.030    0.036   0.061      0.026        0.021           0.046
+sets, relations and functions        49          116  0.139    0.029    0.031   0.108      0.034        0.070           0.050
+       orderings and lattices        44          129  0.134    0.032    0.033   0.101      0.033        0.099           0.042
+                     topology        31           97  0.067    0.031    0.034   0.033      0.033       -0.001           0.055
+
+surface_trained
+                          row  problems  wrong_tries  match  uniform  shuffle  excess  excess_se  over_recall  over_recall_se  over_surface_symbols  over_surface_symbols_se
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems       124          342  0.066    0.020    0.033   0.033      0.018        0.007           0.022                -0.052                    0.026
+                 2 to 3 cited        39           92  0.101    0.016    0.031   0.070      0.042        0.035           0.042                -0.031                    0.060
+                 4 to 6 cited        40          113  0.045    0.023    0.034   0.011      0.026        0.010           0.029                -0.082                    0.047
+              7 or more cited        45          137  0.055    0.021    0.037   0.018      0.024       -0.022           0.044                -0.043                    0.030
+sets, relations and functions        49          116  0.088    0.020    0.030   0.058      0.033        0.020           0.036                -0.050                    0.050
+       orderings and lattices        44          129  0.070    0.021    0.034   0.036      0.030        0.034           0.040                -0.065                    0.041
+                     topology        31           97  0.026    0.018    0.037  -0.012      0.020       -0.045           0.037                -0.045                    0.039
+
+The second table: scored again with the prover's key (search left out)
+Prover bins: proved without an option 6, has right options 88, no option proves it 165, stopped for another reason 41; the prover's two runs disagreed on 0.007 of the calls. The table is over the 88 problems with right options.
+
+Scores under the prover's key, under either key, and under the author's key
+                 prover  prover_se  either  either_se  author  author_se
+------------------------------------------------------------------------
+       guessing   0.043      0.003   0.043      0.003   0.033      0.000
+         lookup   0.165      0.039   0.165      0.039   0.142      0.037
+   options_only   0.159      0.039   0.159      0.039   0.148      0.038
+         recall   0.182      0.041   0.182      0.041   0.170      0.040
+surface_symbols   0.283      0.038   0.283      0.038   0.269      0.038
+surface_trained   0.398      0.052   0.398      0.052   0.375      0.052
+          model   0.918      0.020   0.918      0.020   0.891      0.024
+
+Model minus each program on the same problems
+                 prover  prover_se  either  either_se  author  author_se
+------------------------------------------------------------------------
+       guessing   0.875      0.021   0.875      0.021   0.858      0.024
+         lookup   0.753      0.044   0.753      0.044   0.749      0.043
+   options_only   0.759      0.044   0.759      0.044   0.743      0.046
+         recall   0.736      0.045   0.736      0.045   0.720      0.047
+surface_symbols   0.636      0.038   0.636      0.038   0.622      0.039
+surface_trained   0.520      0.056   0.520      0.056   0.516      0.058
+
+Held-back option right under the prover's key: 1.000; other options right under it, per problem: 0.295; option calls that proved the theorem without the option in the proof: 6
+
+Named against renamed: the same problems and tries asked with every symbol replaced by a meaningless code.
+Drop = the mean over problems of the named score minus the renamed score. both / named_only / renamed_only /
+neither are shares of the paired tries (same problem, same try).
+                          row  problems  named  named_se  renamed  renamed_se   drop  drop_se   both  named_only  renamed_only  neither  forced_named  forced_renamed  thinking_named  thinking_renamed
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems       300  0.772     0.019    0.553       0.023  0.219    0.020  0.505       0.267         0.048    0.180         0.774           0.851       14227.770         14736.755
+                 2 to 3 cited       143  0.871     0.022    0.740       0.029  0.131    0.025  0.695       0.176         0.045    0.084         0.607           0.715       12677.476         13501.460
+                 4 to 6 cited        84  0.731     0.039    0.479       0.043  0.252    0.040  0.421       0.310         0.057    0.212         0.895           0.957       15422.683         15768.057
+              7 or more cited        73  0.625     0.045    0.271       0.039  0.353    0.041  0.227       0.397         0.044    0.332         0.962           0.995       15889.679         15969.874
+sets, relations and functions       129  0.820     0.025    0.665       0.034  0.155    0.028  0.605       0.216         0.060    0.119         0.691           0.757       13442.940         13879.626
+       orderings and lattices        91  0.716     0.039    0.451       0.043  0.266    0.041  0.400       0.316         0.051    0.233         0.800           0.912       14487.448         15248.497
+                     topology        80  0.758     0.041    0.487       0.043  0.270    0.036  0.463       0.295         0.025    0.217         0.877           0.932       15197.925         15536.767
+
+Renamed model minus each program, per-problem difference on the same problems: mean, then standard error
+                          row  guessing  guessing_se  lookup  lookup_se  options_only  options_only_se  recall  recall_se  search  search_se  surface_symbols  surface_symbols_se  surface_trained  surface_trained_se
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems     0.519        0.023   0.310      0.034         0.319            0.033   0.296      0.035   0.233      0.026            0.355               0.025            0.113               0.036
+                 2 to 3 cited     0.707        0.029   0.486      0.049         0.502            0.048   0.474      0.050   0.163      0.037            0.468               0.036            0.313               0.050
+                 4 to 6 cited     0.445        0.043   0.214      0.060         0.217            0.056   0.181      0.063   0.347      0.054            0.327               0.045            0.014               0.064
+              7 or more cited     0.238        0.039   0.076      0.060         0.079            0.063   0.079      0.066   0.238      0.039            0.165               0.042           -0.167               0.068
+sets, relations and functions     0.632        0.034   0.410      0.049         0.448            0.045   0.433      0.047   0.145      0.039            0.425               0.041            0.223               0.053
+       orderings and lattices     0.417        0.043   0.198      0.062         0.220            0.064   0.176      0.069   0.300      0.044            0.286               0.041            0.011               0.066
+                     topology     0.454        0.043   0.276      0.068         0.225            0.067   0.212      0.068   0.297      0.050            0.319               0.043            0.050               0.071
+
+Named against renamed at a thinking allowance of 21000: the same problems and tries asked with every symbol replaced by a meaningless code.
+Drop = the mean over problems of the named score minus the renamed score. both / named_only / renamed_only /
+neither are shares of the paired tries (same problem, same try).
+                          row  problems  named  named_se  renamed  renamed_se   drop  drop_se   both  named_only  renamed_only  neither  forced_named  forced_renamed  thinking_named  thinking_renamed
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems       300  0.772     0.019    0.577       0.023  0.195    0.020  0.525       0.247         0.052    0.176         0.774           0.810       14227.770         18754.639
+                 2 to 3 cited       143  0.871     0.022    0.750       0.029  0.122    0.025  0.706       0.165         0.043    0.085         0.607           0.649       12677.476         16610.599
+                 4 to 6 cited        84  0.731     0.039    0.510       0.042  0.221    0.042  0.433       0.298         0.076    0.193         0.895           0.929       15422.683         20527.890
+              7 or more cited        73  0.625     0.045    0.315       0.040  0.310    0.041  0.274       0.351         0.041    0.334         0.962           0.989       15889.679         20914.156
+sets, relations and functions       129  0.820     0.025    0.701       0.032  0.119    0.026  0.637       0.183         0.064    0.116         0.691           0.705       13442.940         17329.533
+       orderings and lattices        91  0.716     0.039    0.503       0.043  0.213    0.041  0.444       0.273         0.059    0.224         0.800           0.873       14487.448         19560.046
+                     topology        80  0.758     0.041    0.460       0.043  0.297    0.038  0.435       0.323         0.025    0.217         0.877           0.907       15197.925         20136.472
+
+Renamed model minus each program, per-problem difference on the same problems: mean, then standard error
+                          row  guessing  guessing_se  lookup  lookup_se  options_only  options_only_se  recall  recall_se  search  search_se  surface_symbols  surface_symbols_se  surface_trained  surface_trained_se
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems     0.543        0.023   0.334      0.034         0.343            0.034   0.320      0.035   0.257      0.025            0.379               0.025            0.137               0.036
+                 2 to 3 cited     0.716        0.029   0.495      0.050         0.512            0.049   0.484      0.051   0.173      0.037            0.478               0.037            0.323               0.051
+                 4 to 6 cited     0.476        0.042   0.245      0.059         0.248            0.057   0.212      0.061   0.378      0.053            0.358               0.046            0.045               0.066
+              7 or more cited     0.282        0.040   0.119      0.060         0.123            0.062   0.123      0.065   0.282      0.040            0.209               0.041           -0.123               0.062
+sets, relations and functions     0.667        0.032   0.446      0.048         0.484            0.046   0.468      0.047   0.181      0.039            0.461               0.039            0.259               0.053
+       orderings and lattices     0.470        0.043   0.250      0.063         0.273            0.065   0.229      0.068   0.353      0.044            0.339               0.043            0.064               0.065
+                     topology     0.427        0.043   0.248      0.067         0.198            0.066   0.185      0.067   0.270      0.048            0.291               0.045            0.022               0.070
+
+Renamed at the two allowances: the named run's and 21000, on the same problems and tries; difference = the mean over problems of the score at 21000 minus the score at the named run's allowance
+                          row  problems  at_named  at_named_se  at_other  at_other_se  difference  difference_se   both  named_only  other_only  neither  forced_named  forced_other  thinking_named  thinking_other
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems       300     0.553        0.023     0.577        0.023       0.024          0.012  0.462       0.091       0.115    0.333         0.851         0.810       14736.755       18754.639
+                 2 to 3 cited       143     0.740        0.029     0.750        0.029       0.010          0.017  0.656       0.084       0.094    0.166         0.715         0.649       13501.460       16610.599
+                 4 to 6 cited        84     0.479        0.043     0.510        0.042       0.031          0.022  0.379       0.100       0.131    0.390         0.957         0.929       15768.057       20527.890
+              7 or more cited        73     0.271        0.039     0.315        0.040       0.044          0.025  0.178       0.093       0.137    0.592         0.995         0.989       15969.874       20914.156
+sets, relations and functions       129     0.665        0.034     0.701        0.032       0.036          0.016  0.588       0.078       0.113    0.222         0.757         0.705       13879.626       17329.533
+       orderings and lattices        91     0.451        0.043     0.503        0.043       0.053          0.024  0.380       0.070       0.123    0.426         0.912         0.873       15248.497       19560.046
+                     topology        80     0.487        0.043     0.460        0.043      -0.028          0.023  0.352       0.135       0.107    0.405         0.932         0.907       15536.767       20136.472

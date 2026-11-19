@@ -1,0 +1,283 @@
+{
+ "limit": 4000,
+ "scores": {
+  "all problems": {
+   "problems": 300,
+   "programs": {
+    "guessing": 0.03333333333333333,
+    "lookup": 0.24277777777777776,
+    "options_only": 0.23333333333333334,
+    "recall": 0.25666666666666665,
+    "search": 0.3198650793650794,
+    "surface_symbols": 0.19794679530708942,
+    "surface_trained": 0.44
+   },
+   "programs_standard_error": {
+    "guessing": 0.0,
+    "lookup": 0.02375564545071268,
+    "options_only": 0.024459979523511425,
+    "recall": 0.025260441987310457,
+    "search": 0.024818036339632536,
+    "surface_symbols": 0.019230587753566966,
+    "surface_trained": 0.02870679828121778
+   },
+   "best_programs": [
+    "surface_trained"
+   ],
+   "room": 0.56,
+   "room_standard_error_of": "surface_trained",
+   "room_standard_error": 0.02870679828121778
+  },
+  "2 to 3 cited": {
+   "problems": 143,
+   "programs": {
+    "guessing": 0.03333333333333333,
+    "lookup": 0.2543123543123543,
+    "options_only": 0.23776223776223776,
+    "recall": 0.26573426573426573,
+    "search": 0.5767565767565768,
+    "surface_symbols": 0.2717972712419442,
+    "surface_trained": 0.42657342657342656
+   },
+   "programs_standard_error": {
+    "guessing": 0.0,
+    "lookup": 0.035342263978871684,
+    "options_only": 0.035725021418155686,
+    "recall": 0.03706860462623555,
+    "search": 0.038461136700761414,
+    "surface_symbols": 0.030109343558200174,
+    "surface_trained": 0.04150416051729387
+   },
+   "best_programs": [
+    "search"
+   ],
+   "room": 0.42324342324342323,
+   "room_standard_error_of": "search",
+   "room_standard_error": 0.038461136700761414
+  },
+  "4 to 6 cited": {
+   "problems": 84,
+   "programs": {
+    "guessing": 0.03333333333333333,
+    "lookup": 0.2640873015873016,
+    "options_only": 0.2619047619047619,
+    "recall": 0.2976190476190476,
+    "search": 0.13154761904761905,
+    "surface_symbols": 0.15194573944573944,
+    "surface_trained": 0.4642857142857143
+   },
+   "programs_standard_error": {
+    "guessing": 0.0,
+    "lookup": 0.04648982116156267,
+    "options_only": 0.048260170611241805,
+    "recall": 0.05018543326712824,
+    "search": 0.03123539737503426,
+    "surface_symbols": 0.033289911110762314,
+    "surface_trained": 0.05474194552581068
+   },
+   "best_programs": [
+    "surface_trained"
+   ],
+   "room": 0.5357142857142857,
+   "room_standard_error_of": "surface_trained",
+   "room_standard_error": 0.05474194552581068
+  },
+  "7 or more cited": {
+   "problems": 73,
+   "programs": {
+    "guessing": 0.03333333333333333,
+    "lookup": 0.195662100456621,
+    "options_only": 0.1917808219178082,
+    "recall": 0.1917808219178082,
+    "search": 0.03333333333333333,
+    "surface_symbols": 0.10621351631625604,
+    "surface_trained": 0.4383561643835616
+   },
+   "programs_standard_error": {
+    "guessing": 0.0,
+    "lookup": 0.04355078935825374,
+    "options_only": 0.046398176787446524,
+    "recall": 0.046398176787446524,
+    "search": 0.0,
+    "surface_symbols": 0.032245779058520704,
+    "surface_trained": 0.058476020433176706
+   },
+   "best_programs": [
+    "surface_trained"
+   ],
+   "room": 0.5616438356164384,
+   "room_standard_error_of": "surface_trained",
+   "room_standard_error": 0.058476020433176706
+  },
+  "sets, relations and functions": {
+   "problems": 129,
+   "programs": {
+    "guessing": 0.03333333333333333,
+    "lookup": 0.25478036175710594,
+    "options_only": 0.21705426356589147,
+    "recall": 0.23255813953488372,
+    "search": 0.5200996677740863,
+    "surface_symbols": 0.24002752516774406,
+    "surface_trained": 0.4418604651162791
+   },
+   "programs_standard_error": {
+    "guessing": 0.0,
+    "lookup": 0.03771614147751215,
+    "options_only": 0.03643720092434722,
+    "recall": 0.03734079237984049,
+    "search": 0.040725515771398636,
+    "surface_symbols": 0.03022302296195664,
+    "surface_trained": 0.04389438625157412
+   },
+   "best_programs": [
+    "search"
+   ],
+   "room": 0.47990033222591366,
+   "room_standard_error_of": "search",
+   "room_standard_error": 0.040725515771398636
+  },
+  "orderings and lattices": {
+   "problems": 91,
+   "programs": {
+    "guessing": 0.03333333333333333,
+    "lookup": 0.2529304029304029,
+    "options_only": 0.23076923076923078,
+    "recall": 0.27472527472527475,
+    "search": 0.15018315018315018,
+    "surface_symbols": 0.16410994378027344,
+    "surface_trained": 0.43956043956043955
+   },
+   "programs_standard_error": {
+    "guessing": 0.0,
+    "lookup": 0.0435031528965227,
+    "options_only": 0.04441155916843275,
+    "recall": 0.04705213398778436,
+    "search": 0.033216619544537106,
+    "surface_symbols": 0.033193663144313386,
+    "surface_trained": 0.052318156985661904
+   },
+   "best_programs": [
+    "surface_trained"
+   ],
+   "room": 0.5604395604395604,
+   "room_standard_error_of": "surface_trained",
+   "room_standard_error": 0.052318156985661904
+  },
+  "topology": {
+   "problems": 80,
+   "programs": {
+    "guessing": 0.03333333333333333,
+    "lookup": 0.21187499999999998,
+    "options_only": 0.2625,
+    "recall": 0.275,
+    "search": 0.19,
+    "surface_symbols": 0.16858103701853702,
+    "surface_trained": 0.4375
+   },
+   "programs_standard_error": {
+    "guessing": 0.0,
+    "lookup": 0.0427086935252898,
+    "options_only": 0.0495030685661844,
+    "recall": 0.05023678111916795,
+    "search": 0.03914702353278973,
+    "surface_symbols": 0.03702626520579501,
+    "surface_trained": 0.055813177292586294
+   },
+   "best_programs": [
+    "surface_trained"
+   ],
+   "room": 0.5625,
+   "room_standard_error_of": "surface_trained",
+   "room_standard_error": 0.055813177292586294
+  }
+ },
+ "counted_together": {
+  "all problems": {
+   "problems": 300,
+   "best_single_program": 132,
+   "best_single_programs": [
+    "surface_trained"
+   ],
+   "at_least_one_program": 216,
+   "no_program": 84
+  },
+  "2 to 3 cited": {
+   "problems": 143,
+   "best_single_program": 75,
+   "best_single_programs": [
+    "search"
+   ],
+   "at_least_one_program": 116,
+   "no_program": 27
+  },
+  "4 to 6 cited": {
+   "problems": 84,
+   "best_single_program": 39,
+   "best_single_programs": [
+    "surface_trained"
+   ],
+   "at_least_one_program": 60,
+   "no_program": 24
+  },
+  "7 or more cited": {
+   "problems": 73,
+   "best_single_program": 32,
+   "best_single_programs": [
+    "surface_trained"
+   ],
+   "at_least_one_program": 40,
+   "no_program": 33
+  },
+  "sets, relations and functions": {
+   "problems": 129,
+   "best_single_program": 60,
+   "best_single_programs": [
+    "search"
+   ],
+   "at_least_one_program": 101,
+   "no_program": 28
+  },
+  "orderings and lattices": {
+   "problems": 91,
+   "best_single_program": 40,
+   "best_single_programs": [
+    "surface_trained"
+   ],
+   "at_least_one_program": 60,
+   "no_program": 31
+  },
+  "topology": {
+   "problems": 80,
+   "best_single_program": 35,
+   "best_single_programs": [
+    "surface_trained"
+   ],
+   "at_least_one_program": 55,
+   "no_program": 25
+  }
+ },
+ "prover_bins": {
+  "proved without an option": 6,
+  "has right options": 88,
+  "no option proves it": 165,
+  "stopped for another reason": 41
+ },
+ "runs_disagreed": {
+  "key": 0.006881720430107527,
+  "key_calls": 9300,
+  "key_by_way": {
+   "the endings differed": 62,
+   "the use of the option differed": 2
+  }
+ },
+ "failed_checks": [],
+ "held_back_call_nothing_left": 0,
+ "surface_trained_strength": 0.1,
+ "surface_trained_cross_validation": {
+  "0.01": 0.4518791546787278,
+  "0.1": 0.4618985997995476,
+  "1.0": 0.4596886573347561,
+  "10.0": 0.4596886573347561,
+  "100.0": 0.4596886573347561
+ }
+}

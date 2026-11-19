@@ -1,0 +1,300 @@
+{"problem_id": "test-0001", "bin": "has right options", "reason": null, "right": [16], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0002", "bin": "proved without an option", "reason": null, "right": [], "proved_without_use": [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 27, 28, 29, 30], "held_back_ending": "proved"}
+{"problem_id": "test-0003", "bin": "has right options", "reason": null, "right": [19], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0004", "bin": "has right options", "reason": null, "right": [1, 3, 6, 18], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0005", "bin": "has right options", "reason": null, "right": [30], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0006", "bin": "has right options", "reason": null, "right": [13], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0007", "bin": "has right options", "reason": null, "right": [30], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0008", "bin": "has right options", "reason": null, "right": [29], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0009", "bin": "has right options", "reason": null, "right": [20], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0010", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0011", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0012", "bin": "proved without an option", "reason": null, "right": [], "proved_without_use": [1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30], "held_back_ending": "proved"}
+{"problem_id": "test-0013", "bin": "has right options", "reason": null, "right": [1, 15, 21], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0014", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0015", "bin": "has right options", "reason": null, "right": [25], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0016", "bin": "has right options", "reason": null, "right": [7], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0017", "bin": "has right options", "reason": null, "right": [16], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0018", "bin": "has right options", "reason": null, "right": [25], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0019", "bin": "has right options", "reason": null, "right": [21], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0020", "bin": "has right options", "reason": null, "right": [15], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0021", "bin": "has right options", "reason": null, "right": [8, 16], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0022", "bin": "has right options", "reason": null, "right": [6], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0023", "bin": "has right options", "reason": null, "right": [8, 9, 15, 29], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0024", "bin": "has right options", "reason": null, "right": [13, 14, 16, 24], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0025", "bin": "has right options", "reason": null, "right": [12], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0026", "bin": "proved without an option", "reason": null, "right": [], "proved_without_use": [1, 2, 3, 4, 5, 7, 8, 9, 11, 13, 14, 15, 16, 17, 18, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30], "held_back_ending": "proved"}
+{"problem_id": "test-0027", "bin": "has right options", "reason": null, "right": [26], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0028", "bin": "stopped for another reason", "reason": "call without an option: unsettled", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0029", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0030", "bin": "has right options", "reason": null, "right": [20], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0031", "bin": "has right options", "reason": null, "right": [25], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0032", "bin": "has right options", "reason": null, "right": [20], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0033", "bin": "has right options", "reason": null, "right": [24], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0034", "bin": "has right options", "reason": null, "right": [9], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0035", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0036", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0037", "bin": "has right options", "reason": null, "right": [24], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0038", "bin": "has right options", "reason": null, "right": [7], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0039", "bin": "has right options", "reason": null, "right": [2], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0040", "bin": "has right options", "reason": null, "right": [26], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0041", "bin": "has right options", "reason": null, "right": [28], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0042", "bin": "has right options", "reason": null, "right": [24], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0043", "bin": "has right options", "reason": null, "right": [29], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0044", "bin": "has right options", "reason": null, "right": [1], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0045", "bin": "has right options", "reason": null, "right": [17], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0046", "bin": "has right options", "reason": null, "right": [19], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0047", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0048", "bin": "has right options", "reason": null, "right": [8], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0049", "bin": "has right options", "reason": null, "right": [19], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0050", "bin": "has right options", "reason": null, "right": [20], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0051", "bin": "has right options", "reason": null, "right": [4, 5, 6, 15, 29], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0052", "bin": "has right options", "reason": null, "right": [10, 15], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0053", "bin": "has right options", "reason": null, "right": [6], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0054", "bin": "has right options", "reason": null, "right": [2, 24, 26], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0055", "bin": "has right options", "reason": null, "right": [5], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0056", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0057", "bin": "stopped for another reason", "reason": "option 1: term cap; option 3: term cap; option 4: term cap; option 6: term cap; option 8: term cap; option 13: term cap; option 14: term cap; option 17: term cap; option 19: term cap; option 21: term cap; option 22: term cap; option 23: term cap; option 25: term cap; option 26: term cap; option 29: term cap", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0058", "bin": "stopped for another reason", "reason": "option 24: unsettled", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0059", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0060", "bin": "stopped for another reason", "reason": "option 12: term cap; option 20: term cap; option 26: unsettled", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0061", "bin": "has right options", "reason": null, "right": [11], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0062", "bin": "has right options", "reason": null, "right": [12], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0063", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0064", "bin": "has right options", "reason": null, "right": [4], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0065", "bin": "has right options", "reason": null, "right": [7, 25], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0066", "bin": "stopped for another reason", "reason": "call without an option: unsettled", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0067", "bin": "has right options", "reason": null, "right": [15], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0068", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0069", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0070", "bin": "stopped for another reason", "reason": "option 19: term cap; option 25: term cap", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0071", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0072", "bin": "has right options", "reason": null, "right": [23], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0073", "bin": "has right options", "reason": null, "right": [18], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0074", "bin": "has right options", "reason": null, "right": [26], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0075", "bin": "has right options", "reason": null, "right": [17, 24], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0076", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0077", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0078", "bin": "has right options", "reason": null, "right": [16], "proved_without_use": [1, 2, 3, 4, 10, 23], "held_back_ending": "proved"}
+{"problem_id": "test-0079", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0080", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0081", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0082", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0083", "bin": "stopped for another reason", "reason": "option 7: term cap; option 11: term cap; option 19: term cap; option 29: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0084", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0085", "bin": "stopped for another reason", "reason": "option 19: term cap; option 29: term cap", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0086", "bin": "has right options", "reason": null, "right": [27], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0087", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0088", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0089", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0090", "bin": "has right options", "reason": null, "right": [17], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0091", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0092", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0093", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0094", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0095", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0096", "bin": "has right options", "reason": null, "right": [9], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0097", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0098", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0099", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0100", "bin": "stopped for another reason", "reason": "option 9: term cap; option 25: term cap", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0101", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0102", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0103", "bin": "has right options", "reason": null, "right": [16], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0104", "bin": "has right options", "reason": null, "right": [10, 19], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0105", "bin": "has right options", "reason": null, "right": [13], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0106", "bin": "has right options", "reason": null, "right": [21], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0107", "bin": "has right options", "reason": null, "right": [14, 26], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0108", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0109", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0110", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0111", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0112", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0113", "bin": "stopped for another reason", "reason": "option 3: unsettled", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0114", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0115", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0116", "bin": "has right options", "reason": null, "right": [12, 21], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0117", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0118", "bin": "has right options", "reason": null, "right": [27], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0119", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0120", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0121", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0122", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0123", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0124", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0125", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0126", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0127", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0128", "bin": "proved without an option", "reason": null, "right": [], "proved_without_use": [1, 2, 4, 5, 6, 8, 9, 11, 13, 14, 15, 16, 20, 21, 23, 24, 25, 26, 27, 28, 29, 30], "held_back_ending": "proved"}
+{"problem_id": "test-0129", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0130", "bin": "proved without an option", "reason": null, "right": [], "proved_without_use": [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30], "held_back_ending": "proved"}
+{"problem_id": "test-0131", "bin": "has right options", "reason": null, "right": [20], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0132", "bin": "stopped for another reason", "reason": "option 16: term cap", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0133", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0134", "bin": "has right options", "reason": null, "right": [15], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0135", "bin": "has right options", "reason": null, "right": [1, 24], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0136", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0137", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0138", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0139", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0140", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0141", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0142", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0143", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0144", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0145", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0146", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0147", "bin": "has right options", "reason": null, "right": [9], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0148", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0149", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0150", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0151", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0152", "bin": "has right options", "reason": null, "right": [19], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0153", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0154", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0155", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0156", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0157", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0158", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0159", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0160", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0161", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0162", "bin": "has right options", "reason": null, "right": [6], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0163", "bin": "has right options", "reason": null, "right": [5], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0164", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0165", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0166", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0167", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0168", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0169", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0170", "bin": "has right options", "reason": null, "right": [16], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0171", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0172", "bin": "has right options", "reason": null, "right": [13, 16], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0173", "bin": "has right options", "reason": null, "right": [16], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0174", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0175", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0176", "bin": "has right options", "reason": null, "right": [13], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0177", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0178", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0179", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0180", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0181", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0182", "bin": "stopped for another reason", "reason": "option 1: term cap; option 2: unsettled; option 18: unsettled; option 19: term cap; option 21: unsettled; option 22: term cap; option 25: term cap; option 26: unsettled; option 28: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0183", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0184", "bin": "stopped for another reason", "reason": "call without an option: unsettled", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0185", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0186", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0187", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0188", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0189", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0190", "bin": "stopped for another reason", "reason": "option 1: term cap", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0191", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0192", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0193", "bin": "has right options", "reason": null, "right": [27], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0194", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0195", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0196", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0197", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0198", "bin": "has right options", "reason": null, "right": [23], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0199", "bin": "has right options", "reason": null, "right": [28], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0200", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0201", "bin": "has right options", "reason": null, "right": [20], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0202", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "term cap"}
+{"problem_id": "test-0203", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0204", "bin": "has right options", "reason": null, "right": [26], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0205", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0206", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0207", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0208", "bin": "has right options", "reason": null, "right": [11], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0209", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0210", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0211", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0212", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0213", "bin": "has right options", "reason": null, "right": [20], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0214", "bin": "has right options", "reason": null, "right": [17], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0215", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0216", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0217", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0218", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0219", "bin": "stopped for another reason", "reason": "call without an option: term cap", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0220", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0221", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0222", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0223", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0224", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0225", "bin": "has right options", "reason": null, "right": [10], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0226", "bin": "stopped for another reason", "reason": "option 27: term cap", "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0227", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0228", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0229", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0230", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0231", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0232", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0233", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0234", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0235", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0236", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0237", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0238", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0239", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0240", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0241", "bin": "stopped for another reason", "reason": "option 25: unsettled", "right": [], "proved_without_use": [], "held_back_ending": "unsettled"}
+{"problem_id": "test-0242", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0243", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0244", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0245", "bin": "has right options", "reason": null, "right": [4], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0246", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0247", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0248", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0249", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0250", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0251", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0252", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0253", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0254", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0255", "bin": "has right options", "reason": null, "right": [28], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0256", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0257", "bin": "proved without an option", "reason": null, "right": [], "proved_without_use": [3, 4, 6, 9, 11, 12, 13, 15, 16, 19, 20, 23, 29, 30], "held_back_ending": "proved"}
+{"problem_id": "test-0258", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0259", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0260", "bin": "has right options", "reason": null, "right": [15], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0261", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0262", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0263", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0264", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0265", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0266", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0267", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0268", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0269", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0270", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0271", "bin": "has right options", "reason": null, "right": [8], "proved_without_use": [], "held_back_ending": "proved"}
+{"problem_id": "test-0272", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0273", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0274", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0275", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0276", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0277", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0278", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0279", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0280", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0281", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0282", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0283", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0284", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0285", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0286", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0287", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0288", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0289", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0290", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0291", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0292", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0293", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0294", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0295", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0296", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0297", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0298", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}
+{"problem_id": "test-0299", "bin": "stopped for another reason", "reason": "option 24: unsettled", "right": [], "proved_without_use": [], "held_back_ending": "unsettled"}
+{"problem_id": "test-0300", "bin": "no option proves it", "reason": null, "right": [], "proved_without_use": [], "held_back_ending": "clause limit"}

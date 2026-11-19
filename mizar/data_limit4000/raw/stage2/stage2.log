@@ -1,0 +1,28 @@
+Sun Nov 15 18:12:09 UTC 2026
+options_only sits +0.200 above guessing (0.233 against 0.033)
+recall sits +0.223 above guessing (0.257 against 0.033)
+limit: 4000 processed clauses (not the experiment's 1000)
+prover bins: proved without an option 6, has right options 88, no option proves it 165, stopped for another reason 41
+calls on which the two runs disagreed: 0.007 of the key's 9300
+problems whose call with the held-back fact ended as nothing left: 0
+                          row  problems  guessing  lookup  options_only  recall  search  surface_symbols  surface_trained             best   room
+-------------------------------------------------------------------------------------------------------------------------------------------------
+                 all problems       300     0.033   0.243         0.233   0.257   0.320            0.198            0.440  surface_trained  0.560
+                 2 to 3 cited       143     0.033   0.254         0.238   0.266   0.577            0.272            0.427           search  0.423
+                 4 to 6 cited        84     0.033   0.264         0.262   0.298   0.132            0.152            0.464  surface_trained  0.536
+              7 or more cited        73     0.033   0.196         0.192   0.192   0.033            0.106            0.438  surface_trained  0.562
+sets, relations and functions       129     0.033   0.255         0.217   0.233   0.520            0.240            0.442           search  0.480
+       orderings and lattices        91     0.033   0.253         0.231   0.275   0.150            0.164            0.440  surface_trained  0.560
+                     topology        80     0.033   0.212         0.263   0.275   0.190            0.169            0.438  surface_trained  0.562
+Counted together (a program gets a problem: more than half its weight on the right option; guessing left out of at least one)
+                          row  problems  best_single    best_programs  at_least_one  none
+-----------------------------------------------------------------------------------------
+                 all problems       300          132  surface_trained           216    84
+                 2 to 3 cited       143           75           search           116    27
+                 4 to 6 cited        84           39  surface_trained            60    24
+              7 or more cited        73           32  surface_trained            40    33
+sets, relations and functions       129           60           search           101    28
+       orderings and lattices        91           40  surface_trained            60    31
+                     topology        80           35  surface_trained            55    25
+stage2_rc 0
+Sun Nov 15 18:16:07 UTC 2026

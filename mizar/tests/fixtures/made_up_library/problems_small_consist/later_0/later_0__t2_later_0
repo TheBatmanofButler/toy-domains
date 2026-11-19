@@ -1,0 +1,4 @@
+% Mizar problem: t2_later_0,later_0,1,1 
+fof(t2_later_0, conjecture, (! [A] : k3_xboole_0(A, A)=A)).
+fof(reflexivity_r1_basic_0, axiom, (! [A] : r1_basic_0(A, A))).
+fof(t1_xboole_1, axiom, (! [A, B] : k2_xboole_0(A, B)=k2_xboole_0(B, A))).

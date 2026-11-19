@@ -1,0 +1,79 @@
+{
+ "all problems": {
+  "problems": 300,
+  "best_single_program": 132,
+  "best_single_programs": [
+   "surface_trained"
+  ],
+  "at_least_one_program": 216,
+  "no_program": 84,
+  "model_gets_of_at_least_one_program": 177,
+  "model_gets_of_no_program": 63
+ },
+ "2 to 3 cited": {
+  "problems": 143,
+  "best_single_program": 75,
+  "best_single_programs": [
+   "search"
+  ],
+  "at_least_one_program": 116,
+  "no_program": 27,
+  "model_gets_of_at_least_one_program": 106,
+  "model_gets_of_no_program": 22
+ },
+ "4 to 6 cited": {
+  "problems": 84,
+  "best_single_program": 39,
+  "best_single_programs": [
+   "surface_trained"
+  ],
+  "at_least_one_program": 60,
+  "no_program": 24,
+  "model_gets_of_at_least_one_program": 46,
+  "model_gets_of_no_program": 20
+ },
+ "7 or more cited": {
+  "problems": 73,
+  "best_single_program": 32,
+  "best_single_programs": [
+   "surface_trained"
+  ],
+  "at_least_one_program": 40,
+  "no_program": 33,
+  "model_gets_of_at_least_one_program": 25,
+  "model_gets_of_no_program": 21
+ },
+ "sets, relations and functions": {
+  "problems": 129,
+  "best_single_program": 60,
+  "best_single_programs": [
+   "search"
+  ],
+  "at_least_one_program": 101,
+  "no_program": 28,
+  "model_gets_of_at_least_one_program": 90,
+  "model_gets_of_no_program": 20
+ },
+ "orderings and lattices": {
+  "problems": 91,
+  "best_single_program": 40,
+  "best_single_programs": [
+   "surface_trained"
+  ],
+  "at_least_one_program": 60,
+  "no_program": 31,
+  "model_gets_of_at_least_one_program": 42,
+  "model_gets_of_no_program": 27
+ },
+ "topology": {
+  "problems": 80,
+  "best_single_program": 35,
+  "best_single_programs": [
+   "surface_trained"
+  ],
+  "at_least_one_program": 55,
+  "no_program": 25,
+  "model_gets_of_at_least_one_program": 45,
+  "model_gets_of_no_program": 16
+ }
+}

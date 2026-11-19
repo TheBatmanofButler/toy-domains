@@ -1,0 +1,44 @@
+Statements are written in first-order logic in the provers' notation (! for all, ? for there exists, & and, | or, ~ not, => implies, <=> if and only if), with each symbol written as its name in the Mizar Mathematical Library.
+
+Theorem:
+(! [A] :  (! [B] :  ((bool(A) \/ bool(B))=bool((A \/ B)) => A are_c=-comparable B) ) )
+
+Given facts:
+G1. (! [A] :  (! [B] :  (B=bool(A) <=>  (! [C] :  (in(C, B) <=> C c= A) ) ) ) )
+G2. (! [A] :  (! [B] :  (! [C] :  (C=(A \/ B) <=>  (! [D] :  (in(D, C) <=>  (in(D, A) | in(D, B)) ) ) ) ) ) )
+G3. (! [A] :  (! [B] :  (A=B <=>  (A c= B & B c= A) ) ) )
+G4. (! [A] :  (! [B] :  (A are_c=-comparable B <=>  (A c= B | B c= A) ) ) )
+
+Options:
+1. (! [A] :  (! [B] :  (! [C] :  ( (A c= B & B c= C)  => A c= C) ) ) )
+2. (! [A] :  (A c= {} => A={}) )
+3. (! [A] :  (! [B] :  (! [C] :  (! [D] : (((A \/ B) \/ C) \/ D)=(A \/ ((B \/ C) \/ D))) ) ) )
+4. (! [A] :  (! [B] :  (! [C] : ((A \/ B) \ C)=((A \ C) \/ (B \ C))) ) )
+5. (! [A] :  (! [B] :  (misses(A, B) <=> (A \ B)=A) ) )
+6. (! [A] :  (! [B] : misses((A \ (A /\ B)), B)) )
+7. (! [A] :  (! [B] : ((A /\ B) \/ (A \ B))=A) )
+8. (! [A] :  (! [B] :  (! [C] :  ( (A c= B & B c< C)  => A c< C) ) ) )
+9. (! [A] :  (! [B] :  ~ ( (A c< B & (B \ A)={}) ) ) )
+10. (! [A] :  (! [B] :  (! [C] : (A /\ (B \ C))=((A /\ B) \ C)) ) )
+11. (! [A] :  (! [B] :  ( ~ ( ( ~ (A c< B)  &  ( ~ (A=B)  &  ~ (B c< A) ) ) )  <=> A are_c=-comparable B) ) )
+12. (! [A] :  (! [B] :  (! [C] :  (misses(A, B) => ((C \ A) \/ B)=((C \/ B) \ A)) ) ) )
+13. (! [A] :  (! [B] :  (! [C] :  ( (A c= B & A c= C)  => A c= (B /\ C)) ) ) )
+14. (! [A] :  (! [B] :  (! [C] : ((A \+\ B) \+\ C)=(A \+\ (B \+\ C))) ) )
+15. (! [A] :  ~ (A c< {}) )
+16. (! [A] :  (! [B] : misses((A /\ B), (A \ B))) )
+17. (! [A] :  (! [B] :  (! [C] : ((A /\ B) \ (C /\ B))=((A \ C) /\ B)) ) )
+18. (! [A] :  (! [B] :  (! [C] :  ( ((A \ B) c= C & (B \ A) c= C)  => (A \+\ B) c= C) ) ) )
+19. (! [A] :  (! [B] : (A /\ (A \/ B))=A) )
+20. (! [A] :  (! [B] :  (! [C] : ((A /\ B) \+\ (C /\ B))=((A \+\ C) /\ B)) ) )
+21. (! [A] :  (! [B] :  (! [C] :  (A c= (B \+\ C) <=>  (A c= (B \/ C) & misses(A, (B /\ C))) ) ) ) )
+22. (! [A] :  (! [B] :  (A c= B => B=(A \/ (B \ A))) ) )
+23. (! [A] :  (! [B] :  (! [C] :  ((A \/ B) c= C => A c= C) ) ) )
+24. (! [A] : misses(A, {}))
+25. (! [A] :  (! [B] : A c= (A \/ B)) )
+26. (! [A] :  (! [B] : misses((A /\ B), (A \+\ B))) )
+27. (! [A] :  (! [B] : (A \/ (A \/ B))=(A \/ B)) )
+28. (! [A] :  (! [B] : (A \/ (A /\ B))=A) )
+29. (! [A] :  (! [B] :  (! [C] : ((A \+\ B) \ C)=((A \ (B \/ C)) \/ (B \ (A \/ C)))) ) )
+30. (! [A] :  (! [B] :  (! [C] : ((A \ B) \ C)=(A \ (B \/ C))) ) )
+
+Exactly one of these facts is cited in the author's proof of the theorem, together with the given facts. Give its number. Answer with `FACT: <number>`.

@@ -1,0 +1,52 @@
+[
+ {
+  "name": "t3_xboole_1",
+  "statement": "(! [A] :  (r1_tarski(A, k1_xboole_0) => A=k1_xboole_0) )",
+  "shown": "(! [A] :  (A c= {} => A={}) )"
+ },
+ {
+  "name": "t4_xboole_1",
+  "statement": "(! [A] :  (! [B] :  (! [C] : k2_xboole_0(k2_xboole_0(A, B), C)=k2_xboole_0(A, k2_xboole_0(B, C))) ) )",
+  "shown": "(! [A] :  (! [B] :  (! [C] : ((A \\/ B) \\/ C)=(A \\/ (B \\/ C))) ) )"
+ },
+ {
+  "name": "d3_tarski",
+  "statement": "(! [A] :  (! [B] :  (r1_tarski(A, B) <=>  (! [C] :  (r2_hidden(C, A) => r2_hidden(C, B)) ) ) ) )",
+  "shown": "(! [A] :  (! [B] :  (A c= B <=>  (! [C] :  (in(C, A) => in(C, B)) ) ) ) )"
+ },
+ {
+  "name": "t1_funct_1",
+  "statement": "(! [A] :  (! [B] :  (! [C] :  ( (v1_relat_1(C) & v1_funct_1(C))  =>  (r2_hidden(k4_tarski(A, B), C) <=>  (r2_hidden(A, k9_xtuple_0(C)) & B=k1_funct_1(C, A)) ) ) ) ) )",
+  "shown": "(! [A] :  (! [B] :  (! [C] :  ( (Relation-like(C) & Function-like(C))  =>  (in([..](A, B), C) <=>  (in(A, proj1(C)) & B=(C . A)) ) ) ) ) )"
+ },
+ {
+  "name": "d2_xboole_0",
+  "statement": "k1_xboole_0=o_0_0_xboole_0",
+  "shown": "{}=o_0_0_xboole_0"
+ },
+ {
+  "name": "t65_xboole_1",
+  "statement": "(! [A] : r1_xboole_0(A, k1_xboole_0))",
+  "shown": "(! [A] : misses(A, {}))"
+ },
+ {
+  "name": "t79_xboole_1",
+  "statement": "(! [A] :  (! [B] : r1_xboole_0(k4_xboole_0(A, B), B)) )",
+  "shown": "(! [A] :  (! [B] : misses((A \\ B), B)) )"
+ },
+ {
+  "name": "t127_zfmisc_1",
+  "statement": "(! [A] :  (! [B] :  ~ (r2_hidden(A, k2_zfmisc_1(A, B))) ) )",
+  "shown": "(! [A] :  (! [B] :  ~ (in(A, [:..:](A, B))) ) )"
+ },
+ {
+  "name": "t158_relat_1",
+  "statement": "(! [A] :  (! [B] : r1_tarski(k9_xtuple_0(k2_zfmisc_1(A, B)), A)) )",
+  "shown": "(! [A] :  (! [B] : proj1([:..:](A, B)) c= A) )"
+ },
+ {
+  "name": "d1_lattices",
+  "statement": "(! [A] :  ( ( ~ (v2_struct_0(A))  & l2_lattices(A))  =>  (! [B] :  (m1_subset_1(B, u1_struct_0(A)) =>  (! [C] :  (m1_subset_1(C, u1_struct_0(A)) => k1_lattices(A, B, C)=k5_binop_1(u1_struct_0(A), u2_lattices(A), B, C)) ) ) ) ) )",
+  "shown": "(! [A] :  ( ( ~ (empty(A))  & \\/-SemiLattStr(A))  =>  (! [B] :  (Element(B, carrier(A)) =>  (! [C] :  (Element(C, carrier(A)) => \"\\/\"(A, B, C)=.(carrier(A), L_join(A), B, C)) ) ) ) ) )"
+ }
+]

@@ -1,0 +1,142 @@
+{
+ "all problems": {
+  "problems": 300,
+  "tries_paired": 1500,
+  "at_named_allowance": 0.5526666666666668,
+  "at_named_allowance_standard_error": 0.0233837327964252,
+  "at_other_allowance": 0.5766666666666667,
+  "at_other_allowance_standard_error": 0.022928483322158005,
+  "difference": {
+   "mean": 0.024,
+   "standard_error": 0.01178930603983035
+  },
+  "both_right": 0.462,
+  "named_allowance_only": 0.09066666666666667,
+  "other_allowance_only": 0.11466666666666667,
+  "neither": 0.33266666666666667,
+  "forced_share_named_allowance": 0.8506666666666667,
+  "forced_share_other_allowance": 0.81,
+  "thinking_tokens_named_allowance": 14736.754666666666,
+  "thinking_tokens_other_allowance": 18754.639333333333
+ },
+ "2 to 3 cited": {
+  "problems": 143,
+  "tries_paired": 715,
+  "at_named_allowance": 0.7398601398601399,
+  "at_named_allowance_standard_error": 0.028970650522331186,
+  "at_other_allowance": 0.7496503496503497,
+  "at_other_allowance_standard_error": 0.02879561696271322,
+  "difference": {
+   "mean": 0.00979020979020979,
+   "standard_error": 0.01699689965746131
+  },
+  "both_right": 0.6559440559440559,
+  "named_allowance_only": 0.08391608391608392,
+  "other_allowance_only": 0.0937062937062937,
+  "neither": 0.16643356643356644,
+  "forced_share_named_allowance": 0.7146853146853147,
+  "forced_share_other_allowance": 0.6489510489510489,
+  "thinking_tokens_named_allowance": 13501.460139860139,
+  "thinking_tokens_other_allowance": 16610.5986013986
+ },
+ "4 to 6 cited": {
+  "problems": 84,
+  "tries_paired": 420,
+  "at_named_allowance": 0.4785714285714286,
+  "at_named_allowance_standard_error": 0.042983653398362215,
+  "at_other_allowance": 0.5095238095238095,
+  "at_other_allowance_standard_error": 0.04222780091895042,
+  "difference": {
+   "mean": 0.030952380952380953,
+   "standard_error": 0.021555688494505277
+  },
+  "both_right": 0.37857142857142856,
+  "named_allowance_only": 0.1,
+  "other_allowance_only": 0.13095238095238096,
+  "neither": 0.3904761904761905,
+  "forced_share_named_allowance": 0.9571428571428572,
+  "forced_share_other_allowance": 0.9285714285714286,
+  "thinking_tokens_named_allowance": 15768.057142857142,
+  "thinking_tokens_other_allowance": 20527.890476190478
+ },
+ "7 or more cited": {
+  "problems": 73,
+  "tries_paired": 365,
+  "at_named_allowance": 0.27123287671232876,
+  "at_named_allowance_standard_error": 0.03869442064361715,
+  "at_other_allowance": 0.3150684931506849,
+  "at_other_allowance_standard_error": 0.0395787960810641,
+  "difference": {
+   "mean": 0.04383561643835616,
+   "standard_error": 0.025055972453550596
+  },
+  "both_right": 0.1780821917808219,
+  "named_allowance_only": 0.09315068493150686,
+  "other_allowance_only": 0.136986301369863,
+  "neither": 0.5917808219178082,
+  "forced_share_named_allowance": 0.9945205479452055,
+  "forced_share_other_allowance": 0.989041095890411,
+  "thinking_tokens_named_allowance": 15969.87397260274,
+  "thinking_tokens_other_allowance": 20914.156164383563
+ },
+ "sets, relations and functions": {
+  "problems": 129,
+  "tries_paired": 645,
+  "at_named_allowance": 0.6651162790697674,
+  "at_named_allowance_standard_error": 0.03375432722027479,
+  "at_other_allowance": 0.7007751937984497,
+  "at_other_allowance_standard_error": 0.03175457232288999,
+  "difference": {
+   "mean": 0.03565891472868217,
+   "standard_error": 0.016092274556526183
+  },
+  "both_right": 0.5875968992248062,
+  "named_allowance_only": 0.07751937984496124,
+  "other_allowance_only": 0.11317829457364341,
+  "neither": 0.22170542635658916,
+  "forced_share_named_allowance": 0.7565891472868217,
+  "forced_share_other_allowance": 0.7054263565891473,
+  "thinking_tokens_named_allowance": 13879.626356589148,
+  "thinking_tokens_other_allowance": 17329.533333333333
+ },
+ "orderings and lattices": {
+  "problems": 91,
+  "tries_paired": 455,
+  "at_named_allowance": 0.45054945054945056,
+  "at_named_allowance_standard_error": 0.043485886062338455,
+  "at_other_allowance": 0.5032967032967034,
+  "at_other_allowance_standard_error": 0.04312150393043294,
+  "difference": {
+   "mean": 0.05274725274725275,
+   "standard_error": 0.02356197031821268
+  },
+  "both_right": 0.3802197802197802,
+  "named_allowance_only": 0.07032967032967033,
+  "other_allowance_only": 0.12307692307692308,
+  "neither": 0.42637362637362636,
+  "forced_share_named_allowance": 0.9120879120879121,
+  "forced_share_other_allowance": 0.8725274725274725,
+  "thinking_tokens_named_allowance": 15248.496703296703,
+  "thinking_tokens_other_allowance": 19560.046153846153
+ },
+ "topology": {
+  "problems": 80,
+  "tries_paired": 400,
+  "at_named_allowance": 0.4875,
+  "at_named_allowance_standard_error": 0.043260141856190454,
+  "at_other_allowance": 0.45999999999999996,
+  "at_other_allowance_standard_error": 0.04304839784431036,
+  "difference": {
+   "mean": -0.027500000000000004,
+   "standard_error": 0.022986994121332552
+  },
+  "both_right": 0.3525,
+  "named_allowance_only": 0.135,
+  "other_allowance_only": 0.1075,
+  "neither": 0.405,
+  "forced_share_named_allowance": 0.9325,
+  "forced_share_other_allowance": 0.9075,
+  "thinking_tokens_named_allowance": 15536.7675,
+  "thinking_tokens_other_allowance": 20136.4725
+ }
+}

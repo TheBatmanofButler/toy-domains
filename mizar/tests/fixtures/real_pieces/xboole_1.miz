@@ -1,0 +1,60 @@
+:: Boolean Properties of Sets - Theorems
+::  by Library Committee
+::
+:: Received April 08, 2002
+:: Copyright (c) 2002-2012 Association of Mizar Users
+::           (Stowarzyszenie Uzytkownikow Mizara, Bialystok, Poland).
+:: This code can be distributed under the GNU General Public Licence
+:: version 3.0 or later, or the Creative Commons Attribution-ShareAlike
+:: License version 3.0 or later, subject to the binding interpretation
+:: detailed in file COPYING.interpretation.
+:: See COPYING.GPL and COPYING.CC-BY-SA for the full text of these
+:: licenses, or see http://www.gnu.org/licenses/gpl.html and
+:: http://creativecommons.org/licenses/by-sa/3.0/.
+
+environ
+
+ vocabularies TARSKI, XBOOLE_0;
+ notations TARSKI, XBOOLE_0;
+ constructors TARSKI, XBOOLE_0;
+ registrations XBOOLE_0;
+ requirements BOOLE;
+ definitions TARSKI, XBOOLE_0;
+ theorems TARSKI, XBOOLE_0;
+
+begin
+
+reserve x,A,B,X,X9,Y,Y9,Z,V for set;
+
+::$N Modus Barbara
+theorem Th1:
+  X c= Y & Y c= Z implies X c= Z
+proof
+  assume that
+A1: X c= Y and
+A2: Y c= Z;
+  let x;
+  assume x in X;
+  then x in Y by A1,TARSKI:def 3;
+  hence thesis by A2,TARSKI:def 3;
+end;
+
+theorem Th2:
+  {} c= X
+proof
+  let x;
+  thus thesis;
+end;
+
+theorem Th3:
+  X c= {} implies X = {}
+proof
+  assume X c= {};
+  hence X c= {} & {} c= X by Th2;
+end;
+
+theorem Th4:
+  (X \/ Y) \/ Z = X \/ (Y \/ Z)
+proof
+  thus (X \/ Y) \/ Z c= X \/ (Y \/ Z)
+  proof
