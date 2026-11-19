@@ -1,6 +1,6 @@
 # Toy domains
 
-Code and results for a post on telling apart what a language model does when it picks a good next step in a
+Code and results for a [post](https://thebatmanofbutler.substack.com/p/testing-for-mathematical-taste-with?r=2da4v3&utm_campaign=post&utm_medium=web&showWelcomeOnShare=true) on telling apart what a language model does when it picks a good next step in a
 piece of mathematics: memory, reading the surface, search, or something more. The method, from
 [the earlier post](https://www.lesswrong.com/posts/hMsmMRagzPpFxJzBc/how-to-find-the-basic-sauce-if-there-is-one),
 is to set the model beside a ladder of simple programs on the same questions and see whether it beats the best
